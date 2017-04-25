@@ -142,11 +142,7 @@ GraceOneWrite(int left)
 
         if (left > 0) {
             /* move the remaining characters (and the final '\0') */
-#ifdef HAVE_MEMMOVE
             memmove(buf, buf + written, left + 1);
-#else
-            bcopy(buf + written, buf, left + 1);
-#endif
         } else {
             /* clear the buffer */
             *buf = '\0';

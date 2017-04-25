@@ -63,14 +63,6 @@ struct passwd *getpwnam(char *name);
 #  endif  /* __CRTL_VER */
 #endif /* __VMS */
 
-#ifndef HAVE_MEMMOVE
-#  define memmove(a, b, c) bcopy((b), (a), (c))
-#endif
-
-#ifndef HAVE_MEMCPY
-#  define memcpy(a, b, c) bcopy ((b), (a), (c))
-#endif
-
 #ifndef HAVE_GETHOSTNAME
 #  define gethostname(a, n) (strncpy((a), "localhost", n)?0:1)
 #endif
