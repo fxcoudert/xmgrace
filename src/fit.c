@@ -148,7 +148,7 @@ int fitcurve(double *x, double *y, int n, int ideg, double *coeff)
     }
 	/* check coefficients */
 	for (i = 0; i <= ideg; i++) {
-	    if (!finite(coeff[i])) {
+	    if (!isfinite(coeff[i])) {
 	        errmsg("Linear_regression - all values of x or y are the same");
 			ifail = 3;
 			return ifail;
