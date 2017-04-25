@@ -435,15 +435,6 @@ AC_CHECK_FUNCS(gettimeofday)
 AC_CHECK_FUNCS(fnmatch)
 AC_CHECK_FUNCS(vsnprintf)
 AC_CHECK_FUNCS(on_exit)
-AC_CHECK_FUNCS(strerror)
-if test "$ac_cv_func_strerror" = no; then
-  AC_CACHE_CHECK([for sys_errlist declaration in stdio.h], ac_cv_sys_errlist_decl,
-      AC_EGREP_HEADER(sys_errlist, stdio.h, ac_cv_sys_errlist_decl="yes",
-      ac_cv_sys_errlist_decl="no"))
-  if test "$ac_cv_sys_errlist_decl" = yes; then
-    AC_DEFINE(HAVE_SYS_ERRLIST_DECL)
-  fi
-fi
 
 ICE_CHECK_DECL(drand48, stdlib.h)
 

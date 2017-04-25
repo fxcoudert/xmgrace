@@ -145,12 +145,6 @@
 /* Define if you have the strstr function.  */
 #undef HAVE_STRSTR
 
-/* Define if you have the strerror function.  */
-#undef HAVE_STRERROR
-
-/* Define if stdio.h defines the sys_errlist table */
-#undef HAVE_SYS_ERRLIST_DECL
-
 /* Define if you have the vsnprintf function.  */
 #undef HAVE_VSNPRINTF
 

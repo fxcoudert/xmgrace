@@ -92,22 +92,7 @@ static void
 GracePerror(const char *prefix)
 {
     char msg[1024];
-
-#ifdef HAVE_STRERROR
     sprintf(msg, "%s: %s", prefix, strerror(errno));
-#else
-# ifdef HAVE_SYS_ERRLIST_IN_STDIO_H
-    sprintf(msg, "%s: %s", prefix, sys_errlist[errno]);
-# else
-    if (errno == EPIPE) {
-        /* this one deserve special attention here */
-        sprintf(msg, "%s: Broken pipe", prefix);
-    } else {
-        sprintf(msg, "%s: System error (errno = %d)", prefix, errno);
-    }
-# endif
-#endif
-
     error_function(msg);
 }
 

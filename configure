@@ -6186,44 +6186,6 @@ _ACEOF
 fi
 done
 
-for ac_func in strerror
-do :
-  ac_fn_c_check_func "$LINENO" "strerror" "ac_cv_func_strerror"
-if test "x$ac_cv_func_strerror" = xyes; then :
-  cat >>confdefs.h <<_ACEOF
-#define HAVE_STRERROR 1
-_ACEOF
-
-fi
-done
-
-if test "$ac_cv_func_strerror" = no; then
-  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for sys_errlist declaration in stdio.h" >&5
-$as_echo_n "checking for sys_errlist declaration in stdio.h... " >&6; }
-if ${ac_cv_sys_errlist_decl+:} false; then :
-  $as_echo_n "(cached) " >&6
-else
-  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
-/* end confdefs.h.  */
-#include <stdio.h>
-
-_ACEOF
-if (eval "$ac_cpp conftest.$ac_ext") 2>&5 |
-  $EGREP "sys_errlist" >/dev/null 2>&1; then :
-  ac_cv_sys_errlist_decl="yes"
-else
-  ac_cv_sys_errlist_decl="no"
-fi
-rm -f conftest*
-
-fi
-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_sys_errlist_decl" >&5
-$as_echo "$ac_cv_sys_errlist_decl" >&6; }
-  if test "$ac_cv_sys_errlist_decl" = yes; then
-    $as_echo "#define HAVE_SYS_ERRLIST_DECL 1" >>confdefs.h
-
-  fi
-fi
 
 
 ice_tr=`echo drand48 | tr '[a-z]' '[A-Z]'`
