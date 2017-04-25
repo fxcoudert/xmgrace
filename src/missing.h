@@ -49,13 +49,6 @@ extern double drand48(void);
 #  endif
 #endif
 
-#ifndef HAVE_GETCWD
-#  ifdef OS2
-#    define getcwd _getcwd2
-#    define chdir _chdir2
-#  endif
-#endif
-
 #ifndef HAVE_POPEN
 FILE *popen(char *cmd, char *mode);
 int   pclose(FILE *fp);
