@@ -171,29 +171,6 @@ AC_ARG_ENABLE(editres,
   *) AC_MSG_ERROR(bad value ${enableval} for --enable-editres) ;;
 esac],[editres=true])
 
-dnl **** use libhelp
-AC_ARG_ENABLE(libhelp,
-[  --enable-libhelp             use libhelp [[no]]],
-[case "${enableval}" in
-  yes) libhelp=true ;;
-  no)  libhelp=false;;
-  *) AC_MSG_ERROR(bad value ${enableval} for --enable-libhelp) ;;
-esac],[libhelp=false])
-
-dnl **** use XmHTML
-AC_ARG_ENABLE(xmhtml,
-[  --enable-xmhtml              use XmHTML widget for on-line help [[yes]]],
-[case "${enableval}" in
-  yes) xmhtml=true ;;
-  no)  xmhtml=false;;
-  *) AC_MSG_ERROR(bad value ${enableval} for --enable-xmhtml) ;;
-esac],[xmhtml=true])
-
-if test $xmhtml = true && test $libhelp = true
-then
-  AC_MSG_ERROR(can't use both libhelp and XmHTML)
-fi
-
 dnl **** define editor
 GRACE_EDITOR="'xterm -e vi'"
 AC_ARG_WITH(editor,
@@ -549,21 +526,21 @@ then
                  AC_MSG_RESULT(--> using legacy unoptimized FFT code))
 fi
 
-dnl **** check for libz - needed for PDF and PNG drivers and XmHTML
-if test $pngdrv = true || test $pdfdrv = true || test $xmhtml = true
+dnl **** check for libz - needed for PDF and PNG drivers
+if test $pngdrv = true || test $pdfdrv = true
 then
   ACX_CHECK_ZLIB(1.0.3)
 fi
 
-dnl **** check for IJG's libjpeg - also, for PDF driver and XmHTML
-if test $jpegdrv = true || test $pdfdrv = true || test $xmhtml = true
+dnl **** check for IJG's libjpeg - also, for PDF driver
+if test $jpegdrv = true || test $pdfdrv = true
 then
   ACX_CHECK_JPEG(61, AC_DEFINE(HAVE_LIBJPEG),
                      AC_MSG_RESULT(--> JPEG backend is disabled))
 fi
 
-dnl **** check for libpng - needed for PDF and PNG drivers and XmHTML
-if test $pngdrv = true || test $pdfdrv = true || test $xmhtml = true
+dnl **** check for libpng - needed for PDF and PNG drivers
+if test $pngdrv = true || test $pdfdrv = true
 then
   ACX_CHECK_PNG(0.9.6, AC_DEFINE(HAVE_LIBPNG),
                        AC_MSG_RESULT(--> PNG backend is disabled))
@@ -658,19 +635,7 @@ dnl **** Check for Motif
       AC_MSG_RESULT(--> Good. Seems you have compatible version of Xbae installed)
     fi
 
-    dnl **** Check for libhelp
-    case $libhelp in
-      true) AC_CHECK_LIB(hlpclient,get_help,LIBHELP_LIB="-lhlpclient"; AC_DEFINE(WITH_LIBHELP));;
-      *)  ;;
-    esac
-
-    dnl **** Check for XmHTML widget
-    if test $xmhtml = true
-    then
-      ACX_CHECK_XMHTML(1105, AC_DEFINE(WITH_XMHTML), xmhtml=false)
-    fi
-
-    GUI_LIBS="$LIBHELP_LIB $XMHTML_LIB $XBAE_LIB $GUI_LIBS"
+    GUI_LIBS="$XBAE_LIB $GUI_LIBS"
 
     CPPFLAGS="$xsave_CPPFLAGS"
     LIBS="$xsave_LIBS"

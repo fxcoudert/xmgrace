@@ -350,12 +350,6 @@
 /* Define if you have the xpm.h header among X11 includes.  */
 #undef HAVE_X11_XPM_H
 
-/* Define if you have (and want to use) libhelp  */
-#undef WITH_LIBHELP
-
-/* Define if you have (and want to use) XmHTML widget  */
-#undef WITH_XMHTML
-
 /* Define if you have (and want to use) editres  */
 #undef WITH_EDITRES
 

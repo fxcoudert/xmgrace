@@ -740,8 +740,6 @@ enable_pngdrv
 enable_pdfdrv
 enable_f77_wrapper
 enable_editres
-enable_libhelp
-enable_xmhtml
 with_editor
 with_helpviewer
 with_printcmd
@@ -755,7 +753,6 @@ with_png_library
 with_pdf_library
 with_x
 with_motif_library
-with_xmhtml_library
 '
       ac_precious_vars='build_alias
 host_alias
@@ -1393,8 +1390,6 @@ Optional Features:
   --enable-pdfdrv              build PDF driver [yes]
   --enable-f77-wrapper         include Fortran wrapper for libgrace_np [yes]
   --enable-editres             enable editres support [yes]
-  --enable-libhelp             use libhelp [no]
-  --enable-xmhtml              use XmHTML widget for on-line help [yes]
   --enable-debug               turn on debugging [no]
   --enable-maintainer          enable maintainer's mode [no]
 
@@ -1419,7 +1414,6 @@ Optional Packages:
   --with-pdf-library=OBJ       use OBJ as PDFlib library [-lpdf]
   --with-x                use the X Window System
   --with-motif-library=OBJ     use OBJ as Motif library [-lXm]
-  --with-xmhtml-library=OBJ    use OBJ as XmHTML library [-lXmHTML]
 
 Some influential environment variables:
   CC          C compiler command
@@ -2721,35 +2715,6 @@ else
   editres=true
 fi
 
-
-# Check whether --enable-libhelp was given.
-if test "${enable_libhelp+set}" = set; then :
-  enableval=$enable_libhelp; case "${enableval}" in
-  yes) libhelp=true ;;
-  no)  libhelp=false;;
-  *) as_fn_error $? "bad value ${enableval} for --enable-libhelp" "$LINENO" 5 ;;
-esac
-else
-  libhelp=false
-fi
-
-
-# Check whether --enable-xmhtml was given.
-if test "${enable_xmhtml+set}" = set; then :
-  enableval=$enable_xmhtml; case "${enableval}" in
-  yes) xmhtml=true ;;
-  no)  xmhtml=false;;
-  *) as_fn_error $? "bad value ${enableval} for --enable-xmhtml" "$LINENO" 5 ;;
-esac
-else
-  xmhtml=true
-fi
-
-
-if test $xmhtml = true && test $libhelp = true
-then
-  as_fn_error $? "can't use both libhelp and XmHTML" "$LINENO" 5
-fi
 
 GRACE_EDITOR="'xterm -e vi'"
 
@@ -8268,7 +8233,7 @@ $as_echo "--> using legacy unoptimized FFT code" >&6; }
 
 fi
 
-if test $pngdrv = true || test $pdfdrv = true || test $xmhtml = true
+if test $pngdrv = true || test $pdfdrv = true
 then
 
 
@@ -8353,7 +8318,7 @@ $as_echo "$acx_cv_zlib" >&6; }
 
 fi
 
-if test $jpegdrv = true || test $pdfdrv = true || test $xmhtml = true
+if test $jpegdrv = true || test $pdfdrv = true
 then
 
 
@@ -8438,7 +8403,7 @@ $as_echo "--> JPEG backend is disabled" >&6; }
 
 fi
 
-if test $pngdrv = true || test $pdfdrv = true || test $xmhtml = true
+if test $pngdrv = true || test $pdfdrv = true
 then
 
 
@@ -9703,137 +9668,7 @@ $as_echo "--> Bundled version of Xbae library will be used" >&6; }
 $as_echo "--> Good. Seems you have compatible version of Xbae installed" >&6; }
     fi
 
-        case $libhelp in
-      true) { $as_echo "$as_me:${as_lineno-$LINENO}: checking for get_help in -lhlpclient" >&5
-$as_echo_n "checking for get_help in -lhlpclient... " >&6; }
-if ${ac_cv_lib_hlpclient_get_help+:} false; then :
-  $as_echo_n "(cached) " >&6
-else
-  ac_check_lib_save_LIBS=$LIBS
-LIBS="-lhlpclient  $LIBS"
-cat confdefs.h - <<_ACEOF >conftest.$ac_ext
-/* end confdefs.h.  */
-
-/* Override any GCC internal prototype to avoid an error.
-   Use char because int might match the return type of a GCC
-   builtin and then its argument prototype would still apply.  */
-#ifdef __cplusplus
-extern "C"
-#endif
-char get_help ();
-int
-main ()
-{
-return get_help ();
-  ;
-  return 0;
-}
-_ACEOF
-if ac_fn_c_try_link "$LINENO"; then :
-  ac_cv_lib_hlpclient_get_help=yes
-else
-  ac_cv_lib_hlpclient_get_help=no
-fi
-rm -f core conftest.err conftest.$ac_objext \
-    conftest$ac_exeext conftest.$ac_ext
-LIBS=$ac_check_lib_save_LIBS
-fi
-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_hlpclient_get_help" >&5
-$as_echo "$ac_cv_lib_hlpclient_get_help" >&6; }
-if test "x$ac_cv_lib_hlpclient_get_help" = xyes; then :
-  LIBHELP_LIB="-lhlpclient"; $as_echo "#define WITH_LIBHELP 1" >>confdefs.h
-
-fi
-;;
-      *)  ;;
-    esac
-
-        if test $xmhtml = true
-    then
-
-
-# Check whether --with-xmhtml_library was given.
-if test "${with_xmhtml_library+set}" = set; then :
-  withval=$with_xmhtml_library; xmhtml_library="$withval"
-fi
-
-  if test "x$xmhtml_library" = "x"
-  then
-    xmhtml_library=-lXmHTML
-  fi
-
-  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for XmHTML widget >= 1105" >&5
-$as_echo_n "checking for XmHTML widget >= 1105... " >&6; }
-if ${acx_cv_xmhtml+:} false; then :
-  $as_echo_n "(cached) " >&6
-else
-  if ${acx_cv_xmhtml_library+:} false; then :
-  $as_echo_n "(cached) " >&6
-else
-  acx_cv_xmhtml_library=$xmhtml_library
-fi
-
-
-    save_CFLAGS=$CFLAGS
-    save_CPPFLAGS=$CPPFLAGS
-    save_LDFLAGS=$LDFLAGS
-    save_LIBS=$LIBS
-
-    LIBS="$acx_cv_xmhtml_library $JPEG_LIB $PNG_LIB $Z_LIB $LIBS"
-    if test "$cross_compiling" = yes; then :
-  acx_cv_xmhtml="no"
-
-else
-  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
-/* end confdefs.h.  */
-
-#include <XmHTML/XmHTML.h>
-      int main(void) {
-        int vlib, vinc;
-        vlib = XmHTMLGetVersion();
-        vinc = XmHTMLVersion;
-        if (vinc < 1105) {
-          exit(1);
-        }
-        if (vinc != vlib) {
-          exit(2);
-        }
-        exit(0);
-      }
-
-_ACEOF
-if ac_fn_c_try_run "$LINENO"; then :
-  acx_cv_xmhtml="yes"
-else
-  acx_cv_xmhtml="no"
-fi
-rm -f core *.core core.conftest.* gmon.out bb.out conftest$ac_exeext \
-  conftest.$ac_objext conftest.beam conftest.$ac_ext
-fi
-
-
-    CFLAGS=$save_CFLAGS
-    CPPFLAGS=$save_CPPFLAGS
-    LDFLAGS=$save_LDFLAGS
-    LIBS=$save_LIBS
-
-
-fi
-{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $acx_cv_xmhtml" >&5
-$as_echo "$acx_cv_xmhtml" >&6; }
-  if test "$acx_cv_xmhtml" = "yes"
-  then
-    XMHTML_LIB="$acx_cv_xmhtml_library"
-    $as_echo "#define WITH_XMHTML 1" >>confdefs.h
-
-  else
-    XMHTML_LIB=
-    xmhtml=false
-  fi
-
-    fi
-
-    GUI_LIBS="$LIBHELP_LIB $XMHTML_LIB $XBAE_LIB $GUI_LIBS"
+    GUI_LIBS="$XBAE_LIB $GUI_LIBS"
 
     CPPFLAGS="$xsave_CPPFLAGS"
     LIBS="$xsave_LIBS"

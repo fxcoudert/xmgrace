@@ -46,10 +46,6 @@
 
 extern int cursortype;
 
-#if defined WITH_XMHTML || defined WITH_LIBHELP
-extern int force_external_viewer;
-#endif
-
 static Widget props_frame;
 
 /*
@@ -76,9 +72,6 @@ static Widget *hint_item;
 static Widget date_item;
 static Widget wrap_year_item;
 static Widget two_digits_years_item;
-#if defined WITH_XMHTML || defined WITH_LIBHELP
-static Widget force_external_viewer_item;
-#endif
 
 /*
  * Event and Notify proc declarations
@@ -124,10 +117,6 @@ void create_props_frame(void *data)
             CreateToggleButton(rc1, "Display focus markers");
 	autoredraw_type_item = CreateToggleButton(rc1, "Auto redraw");
 	cursor_type_item = CreateToggleButton(rc1, "Crosshair cursor");
-#if defined WITH_XMHTML || defined WITH_LIBHELP
-	force_external_viewer_item = CreateToggleButton(rc1,
-            "Use external help viewer for local documents");
-#endif        
 	fr = CreateFrame(props_frame, "Restrictions");
         AddDialogFormChild(props_frame, fr);
         rc1 = CreateVContainer(fr);
@@ -198,9 +187,6 @@ void update_props_items(void)
 	SetToggleButtonState(linkscroll_item, scrolling_islinked);
 	SetToggleButtonState(autoredraw_type_item, auto_redraw);
 	SetToggleButtonState(cursor_type_item, cursortype);
-#if defined WITH_XMHTML || defined WITH_LIBHELP
-	SetToggleButtonState(force_external_viewer_item, force_external_viewer);
-#endif
 	SetSpinChoice(max_path_item, (double) get_max_path_limit());
 	SetToggleButtonState(safe_mode_item, safe_mode);
 	iv = (int) rint(100*scrollper);
@@ -259,9 +245,6 @@ static int props_define_notify_proc(void *data)
     scrolling_islinked = GetToggleButtonState(linkscroll_item);
     auto_redraw = GetToggleButtonState(autoredraw_type_item);
     cursortype = GetToggleButtonState(cursor_type_item);
-#if defined WITH_XMHTML || defined WITH_LIBHELP
-    force_external_viewer = GetToggleButtonState(force_external_viewer_item);
-#endif
     set_max_path_limit((int) GetSpinChoice(max_path_item));
     safe_mode = GetToggleButtonState(safe_mode_item);
     scrollper = (double) GetScaleValue(scrollper_item)/100.0;
