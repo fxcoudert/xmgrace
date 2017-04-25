@@ -147,17 +147,6 @@ typedef union hdr
 
 static header *last_alloca_header = NULL;	/* -> last alloca header.  */
 
-#ifdef VMS
-#include <stdio.h>
-void follow_alloca_headers ()
-{
-  header *hp = last_alloca_header;
-  for (; hp != NULL; hp = hp->h.next)
-    printf ("Allocaheader %p, depth=%p\n", hp, hp->h.deep);
-  fflush (stdout);
-}
-#endif
-
 /* Return a pointer to at least SIZE bytes of storage,
    which will be automatically reclaimed upon exit from
    the procedure that called alloca.  Originally, this space
@@ -187,46 +176,12 @@ alloca (size)
     BLOCK_INPUT;
 #endif
 
-#ifdef RL_DEBUG
-    {
-      extern int vms_out_initial;
-      if (vms_out_initial)
-	{
-	  printf ("-----------------------\ncurrent depth = %p\n", depth);
-	  if (last_alloca_header != NULL
-	      && ((STACK_DIR > 0 && last_alloca_header->h.deep > depth)
-		  || (STACK_DIR < 0 && last_alloca_header->h.deep < depth)))
-	    {
-	      printf ("Some of these will be deleted:\n");
-	      follow_alloca_headers ();
-	    }
-	}
-    }
-#endif
-
     for (hp = last_alloca_header; hp != NULL;)
       if ((STACK_DIR > 0 && hp->h.deep > depth)
 	  || (STACK_DIR < 0 && hp->h.deep < depth))
 	{
 	  register header *np = hp->h.next;
-#ifdef RL_DEBUG
-	  {
-	    extern int vms_out_initial;
-	    if (vms_out_initial)
-	      {
-		if (hp->h.deep < (1 << 30))
-		  {
-		    printf ("There is something wrong here...\n");
-		    abort ();
-		  }
-		printf ("Freeing %p\n", hp);
-		fflush (stdout);
-	      }
-	  }
-#endif
-
 	  free ((pointer) hp);	/* Collect garbage.  */
-
 	  hp = np;		/* -> next header.  */
 	}
       else
@@ -255,16 +210,6 @@ alloca (size)
 
     /* User storage begins just after header.  */
 
-#ifdef RL_DEBUG
-    {
-      extern int vms_out_initial;
-      if (vms_out_initial)
-	{
-	  printf ("Allocation gave %p\n", (char *)new + sizeof (header));
-	  fflush (stdout);
-	}
-    }
-#endif
     return (pointer) ((char *) new + sizeof (header));
   }
 }

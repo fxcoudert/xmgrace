@@ -32,7 +32,6 @@
  *  + dlopen() (Linux, SunOS, Solaris, OSF, IRIX, AIX-4, UnixWare, ...)
  *  + shl_load() (HP/UX)
  *  + AIX-3 - there is a free dlopen() emulation library
- *  - VMS ??
  */
 
 #include <config.h>

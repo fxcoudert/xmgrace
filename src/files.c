@@ -726,14 +726,14 @@ char *grace_exe_path(char *fn)
     } else {
         cp = strchr(fn, ' ');
         if (cp == NULL) {
-            return exe_path_translate(grace_path(fn));
+            return grace_path(fn);
         } else {
             strcpy(buf, fn);
             buf[cp - fn] = '\0';
             strcpy(buf, grace_path(buf));
             strcat(buf, " ");
             strcat(buf, cp);
-            return exe_path_translate(buf);
+            return buf;
         }
     }
 }

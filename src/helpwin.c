@@ -121,12 +121,8 @@ void HelpCB(void *data)
     	        command[j++] = help_viewer[i];
     	    }
         }
-#ifdef VMS    
-        system_spawn(command);
-#else
         command = concat_strings(command, "&");    
         system_wrap(command);
-#endif
         xfree(command);
     } else {
 #ifdef WITH_XMHTML

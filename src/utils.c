@@ -1186,12 +1186,6 @@ char *mybasename(const char *s)
     int start, end;
     static char basename[GR_MAXPATHLEN];
     
-    s = path_translate(s);
-    if (s == NULL) {
-        errmsg("Could not translate basename:");
-        return "???";
-    }
-    
     end = strlen(s) - 1;
     
     /* root is a special case */

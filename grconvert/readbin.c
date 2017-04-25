@@ -6,20 +6,7 @@
 /*
  * for XDR
  */
-#ifndef VMS
-#  include <rpc/rpc.h>
-#else
-#  ifndef __ALPHA
-#    define _XOPEN_SOURCE_EXTENDED 1
-#  endif
-#  ifdef MULTINET
-#    include <types.h>
-#    define DONT_DECLARE_MALLOC
-#    include "multinet_root:[multinet.include.rpc]rpc.h"
-#  else
-#    include <ucx$rpcxdr.h>
-#  endif
-#endif
+#include <rpc/rpc.h>
 
 #include "grconvert.h"
 

@@ -35,34 +35,6 @@
 
 #include <stdio.h>
 
-#if defined(__VMS)
-#  ifndef __CRTL_VER
-#    define __CRTL_VER __VMS_VER
-#  endif
-   int system_spawn(const char *command);
-#  if __ALPHA || __DECC_VER >= 60000000
-#    include <builtins.h>
-#  endif
-#  if __CRTL_VER < 70000000 
-#    define O_NONBLOCK O_NDELAY
-struct passwd {
-    char  *pw_name;
-    char  *pw_passwd;
-    int   pw_uid;
-    int   pw_gid;
-    short pw_salt;
-    int   pw_encrypt;
-    char  *pw_age;
-    char  *pw_comment;
-    char  *pw_gecos;
-    char  *pw_dir;
-    char  *pw_shell;
-};
-char *getlogin();
-struct passwd *getpwnam(char *name);
-#  endif  /* __CRTL_VER */
-#endif /* __VMS */
-
 #ifndef HAVE_GETHOSTNAME
 #  define gethostname(a, n) (strncpy((a), "localhost", n)?0:1)
 #endif
@@ -84,13 +56,6 @@ extern double drand48(void);
 #  endif
 #endif
 
-#ifndef HAVE_UNLINK
-#  ifdef VMS
-#    include <unixio.h>
-#    define unlink delete
-#  endif
-#endif
-
 #ifndef HAVE_POPEN
 FILE *popen(char *cmd, char *mode);
 int   pclose(FILE *fp);
@@ -104,22 +69,5 @@ int gettimeofday (struct timeval *tp, void *tzp);
 #ifndef HAVE_ALLOCA
 void *alloca(unsigned int);
 #endif
-#if defined(__VMS) && (__ALPHA || __DECC_VER >= 60000000)
-#  define alloca __ALLOCA
-#endif
-
-#ifdef __EMX__
-char *exe_path_translate(char *path);
-#else
-#  define exe_path_translate(p) (p)
-#endif
-
-#ifdef __VMS
-char *path_translate(const char *path);
-#else
-#  define path_translate(p) (p)
-#endif
-
-
 
 #endif /* __MISSING_H_ */
