@@ -1,0 +1,28 @@
+#!/bin/sh
+PATH=/bin:/usr/bin:/usr/local/bin
+export PATH
+
+make configure
+
+cat << EOF > Make.conf
+.SUFFIXES:
+O=.o
+EXE=
+YACC=bison -y
+EOF
+
+make CHANGES
+make ChangeLog
+
+CDIR=`pwd`
+CDIR_BNAME=`basename $CDIR`
+cd src
+make pars.c
+cd ..
+cd doc
+make all; make clean
+cd ..
+rm -f Make.conf
+cd ..
+tar --exclude \*CVS\* --exclude .cvsignore --exclude autom4te.cache -cvzf ${CDIR_BNAME}.tar.gz $CDIR_BNAME
+cd -

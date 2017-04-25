@@ -1,0 +1,290 @@
+README for GRACE on VMS --  1-Oct-1999
+
+People who have worked on Grace for VMS:
+  Rolf Niepraschk (niepraschk@ptb.de)
+  John Hasstedt (John.Hasstedt@sunysb.edu)
+  Martin Zinser (zinser@decus.decus.de)
+
+1. Introduction
+
+ I have compiled this version of Grace on VMS version 7.2 with DECC version
+ 5.7.  I have allowed for other versions, but may have missed some things. 
+ Please send mail to John Hasstedt if you have any problems building;
+ include CONFIGURE.LOG in your message.
+
+ Grace calls library functions not included in VMS until version 7.
+ Starting with version 5.6 of DECC, Compaq distributes an object library
+ (sys$library:decc$crtl.olb) containing these new functions (see
+ sys$libray:decc$crtl.readme for information on it).  On VMS version 6
+ and older, you can build Grace using this library, or you can build it
+ with versions of the needed routines that are [.src]missing.c.  The
+ default is to use the decc$crtl library if it exists on VMS version
+ 6 and older, and to not use it on VMS version 7.
+
+ The build procedure runs a program (buildinfo) to create a header file
+ (buildinfo.h) contining information on when and where it is built.  This
+ program requires the new routines.  Instead of modifying it to work with
+ older versions, I wrote some DCL code to create buildinfo.h.  This code
+ is not executed automatically.  If you do not use decc$crtl on version 6
+ and older of VMS, you must do @[.ARCH.VMS]BUILD BUILDINFO before building
+ with MMK or MMS.
+
+ Grace requires Motif 1.2; it uses the Tab widget and Xbae, which do not
+ support with Motif 1.1.
+
+2. Other software
+
+ There are five libraries that can be included with Grace: FFTW does fast
+ fourier transforms and allows you to do non-power-of-2 length FFT's along
+ with the normal ones; NetCDF allows you to read files in the HDF format;
+ PNG, JPEG, and PDF allow you to write PNG, JPEG, and PDF files.  When you
+ compile the libraries, you should use the same floating point format
+ (IEEE, G_FLOAT, or D_FLOAT) as you use with Grace; note that the TIFF
+ library (which may be included with PDF) supports IEEE and D_FLOAT only.
+
+ The FFTW package is at http://www.fftw.org/.  Compile all the C files
+ in [.fftw] with the command
+
+     CC /FLOAT=IEEE /PREFIX=ALL /INCLUDE=[]
+
+ then create a library (fftw.olb) containing all the object files.  Change
+ the /FLOAT qualifier if you are using a different format.
+
+ The NETCDF package is at ftp://ftp.ncsa.uiuc.edu/HDF/, including precompiled
+ binaries for VAX and Alpha.
+
+ The JPEG library, the PNG library, and the ZLIB library (required if you
+ want PNG) are in the Ghostscript distribution at
+ http://www.cs.wisc.edu/~ghost/index.html.  You will need to modify the make
+ file to use the floating point format you use with Grace.  There is also a
+ precompiled version of the JPEG library in the netcdf distribution.
+
+ The TIFF library is at http://www.libtiff.org/.  By default, it uses IEEE
+ on Alpha and D_FLOAT on VAX; the code will not work with G_FLOAT, so you
+ must use IEEE or D_FLOAT for Grace.  Grace does not do TIFF output, but
+ configure.in says it may be needed for pdflib; my experience was that it
+ is not needed.
+
+ The PDF library is at http://www.pdflib.com/.  Get the Unix distribution
+ and compile the C files in [.pdflib] with the command
+
+     CC/FLOAT=IEEE/PREFIX=ALL -
+       /DEFINE=(HAVE_SETLOCALE="",HAVE_LIBZ,HAVE_LIBTIFF) -
+       /INCLUDE=(<zlib include directory>,<libtiff include directory>) -
+       /WARNING=(DISABLE=LONGEXTERN)
+
+ then create an object library (pdflib.olb) from all the files.  Change
+ the /FLOAT qualifier if you are using a different format.  If you don't
+ have the TIFF library, omit HAVE_LIBTIFF and the libtiff include directory.
+
+3. Compilation
+
+ In the top directory, do
+
+    @[.ARCH.VMS]CONFIGURE [OPTIONS]
+
+ Then do one of the following:
+
+    MMK
+    MMS /IGNORE=WARNING
+    @[.ARCH.VMS]BUILD
+
+ MMK is MadGoat's make utility; you can get it from
+ ftp://ftp.madgoat.com/madgoat/mmk.zip.
+
+ MMS is Compaq's make utility; the /IGNORE=WARNING is necessary with
+ MMS to get the T1 library to build.
+
+ If you don't have either make utility, the BUILD.COM command file will
+ compile and link Grace.
+
+ Configure accepts options as parameters on the command line.  Separate
+ multiple options with spaces.  Note that you CANNOT put spaces around the
+ equal sign.  Configure accepts the following options:
+
+    DECC$CRTL -- Use the DECC$CRTL.OLB library if it exists (see section 1).
+      The default is to use the library (if it exists) on systems running
+      version 6 and older of VMS.  If you do not use DECC$CRTL on version
+      6 or older of VMS, you must first do @[.ARCH.VMS]BUILD BUILDINFO if
+      you are building with MMK or MMS.
+
+    NODECC$CRTL -- Do not use the DECC$CRTL.
+
+    DPML -- Use the DPML if it exists.  This option allows you to override
+      a NODPML specified in a save file.  DPML is the Digital Portable Math
+      Library; it contains hyperbolic trig and other functions.  It does not
+      exist on the VAX.  Grace uses the routines in the cephes library if
+      you don't have the DPML.
+
+    NODPML -- Do not use the DPML even if the system has it.
+
+    OPTIMIZE -- Use the optimizer when you compile code.  This is the default.
+      This option allows you to override a NOOPTIMIZE specified in a save file.
+
+    NOOPTIMIZE -- Compile the code with /NOOPTIMIZE.
+
+    D_FLOAT, G_FLOAT, IEEE -- Specify the type of floating point; the
+      default is G on VAX and IEEE on Alpha.  IEEE is not available on
+      VAX.  You will get errors about overflow and underflow of some
+      constants in [.t1lib.type1]token.c from the T1 library if you use
+      D_FLOAT.  However, grace still works (you should use
+      MMS/IGNORE=WARNING to compile if you select D_FLOAT).  If you are
+      including libraries (FFTW, NETCDF, JPEG, ZLIB, PNG, TIFF, and PDF
+      options), you should compile the library using the same floating
+      point you use here.
+
+    HOME="/dev/dir" -- Specify the home directory for grace; it must be
+      in Unix format.  You can override this compiled in directory when
+      running grace by defining the logical name GRACE_HOME.  The default
+      is "", and you have to define the logical name.
+
+    PRINT="print cmd" -- Specify the default print command.  If you don't
+      specify a print command, configure will use
+        print/name="from Grace"/delete/queue=<queue>
+      where <queue> is specified with the QUEUE option.  You should not
+      double the quotes in the string: PRINT="print/name="from Grace"..."
+      You can override this compiled in command when running by defining
+      the logical name GRACE_PRINT_CMD.
+
+    QUEUE="queue" -- This option is ignored if you include the PRINT
+      option.  The default is decw$printer_format_ps.  Note that the
+      string you specify is appended to the string given above, so you
+      can add other print qualifiers.  For example,
+        QUEUE="psqueue/form=ps"
+
+    EDIT="edit command" -- The command used to open a new window and
+      start the text editor.  The default is edit/tpu/interface=motif.
+      You can override this compiled in command when running by
+      defining the logical name GRACE_EDITOR.
+
+    HELP="browser" -- Specify the command used to start the html browser
+      for viewing help; you can override this compiled in command by
+      defining the logical name GRACE_HELPVIEWER.  The default is mosaic.
+      A %s indicates where the URL should be added; if you omit it, " %s"
+      will be added to the end.  There is a command file,
+      [.arch.vms]netscape.com, that you can use with netscape.  When you
+      select help, this command file will start netscape if it is not
+      already running; otherwise, it will display the new help in a new
+      window using the existing netscape process.  To use it, you
+      need to specify HELP="@dev:[dir]netscape.com %s"; you cannot use
+      GRACE_HOME: instead of the device and directory because GRACE_HOME
+      is defined in Unix format.
+
+    FFTW=<header>=<library> -- Include the FFTW library.  <header> is the
+      directory containing the header files and <library> is the object
+      library.  The default library is fftw.olb in the <header> directory;
+      you can omit the second equal sign if you use the default.
+
+    NETCDF=<header>=<libraries> -- Include the netcdf library.  <header>
+      is the directory containing the netcdf header files.  <libraries> is
+      a list of the netcdf object libraries, separated by commas.
+
+    JPEG=<header>=<library> --
+    ZLIB=<header>=<library> --
+    PNG=<header>=<library> --
+    TIFF=<header>=<library> --
+    PDF=<header>=<library> -- Include the other graphics libraries.
+      <header> is the directory containing the header files and <library>
+      is the object library.  The default libraries are libjpeg.olb, libz.olb,
+      libpng.olb, tiff.olb, and pdflib.olb, respectively, and in the <header>
+      directory; you can omit the second equal sign if you use the default.
+      You must include ZLIB if you include PNG.
+
+    COPY -- Copy the build files from [.arch.vms] to the other directories
+      even if the files already exist in the other directories.  This option
+      is used when debugging the build procedures to make sure the version in
+      the other directories is the same as the version in [.arch.vms].
+
+    SAVE -- Save the command line parameters in [.arch.vms]saved.dat.  If
+      this file exists when you execute configure.com, configure.com reads
+      the file and processes the parameters in it before processing the
+      command line parameters.  If you specify the SAVE option and saved.dat
+      exists, the new command line parameters are appended to the file; if
+      you specify a parameter that is already in the save file, the original
+      parameter will remain in the file, but the new parameter will override
+      it.  For example, if you run configure with parameters QUEUE="psprinter"
+      and SAVE, in future runs of configure.com, QUEUE will default to
+      psprinter.  However, any value for QUEUE on the command line will
+      override this, and if you specify QUEUE and SAVE on a later run, the
+      new value of QUEUE will override the old one.  You can also edit
+      saved.dat to add or delete parameters.  The file is just the parameters
+      you specify on the command line, one on each line of the file.
+
+ Configure displays the versions and parameters it is using for the build
+ and writes this information to configure.log.
+
+4. Installation
+
+ To run, you need the files in [.doc] and [.fonts...], and
+ [.templates]default.agr.  You probably want the files in [.examples].
+ These directories should be subdirectories of the home directory.
+
+ Define a symbol for the executable:
+
+  $ xmgrace :== $disk:[path]xmgrace
+
+ Define the following logicals if necessary:
+
+  $ define GRACE_HOME "/disk/dir1/dir2/grace"
+  ! The path to the directory containing [.doc], [.fonts], and [.templates]
+  ! in Unix format.  See the description of the HOME= option above.
+
+  $ define GRACE_PRINT_CMD
+  ! See the description of the PRINT= option above.
+
+  $ define GRACE_EDITOR
+  ! See the description of the EDIT= option above.
+
+  $ define GRACE_HELPVIEWER "www-browser %s"
+  ! See the description of the HELP= option above.
+
+ X-resources:
+
+  The file [.SRC]XMGRACE.AD contains the x resources.  You may want to
+  copy this file to XMGRACE.DAT in either DECW$SYSTEM_DEFAULTS and/or
+  DECW$USER_DEFAULTS to customize the program.
+
+5. Testing
+
+  $ set default [.examples]
+  $ @dotest
+
+ Click exit after each test to display the next test.
+
+6. Other routines
+
+ Grace_np is a library for interfacing with Grace using pipes.  I have
+ not yet gotten it to work on VMS.  I have included my notes in case
+ someone wants to work on it.
+
+ I had to modify grace_np.c: I changed the call to execlp to execl; and
+ I changed the first parameter of the call to execl to the complete
+ file specification ("/dev/dir/xmgrace.exe").  I couldn't get it to
+ work with logical names or symbols.  I then compiled with
+
+    $ CFLAGS = "/INCLUDE=[-]/PREFIX=ALL"
+    $ DEFINE/NOLOG DECC$CRTLMAP SYS$LIBRARY:DECC$CRTL.EXE
+    $ CC'CFLAGS' TEST_NP
+    $ CC'CFLAGS' GRACE_NP
+    $ LINK TEST_NP,GRACE_NP,SYS$LIBRARY:DECC$CRTL.OLB/LIBRARY
+    $ RUN TEST_NP
+
+ The DEFINE and including DECC$CRTL.OLB on the link are not necessary
+ on VMS version 7.  TEST_NP will run Grace as a subprocess, but is not
+ able to pass any commands to it.
+
+ GRCONVERT is a program to convert the binary projects from older versions
+ of XMGR to ascii format.  It needs RPC routines included with TCPIP
+ software.  If you need it, there is a descrip.mms file in the directory.
+ The default is to compile with D floating point; use /MACRO=(FLOAT=<float>)
+ to compile with either G_FLOAT or IEEE format.  The default is for systems
+ running UCX.  I have added code to descrip.mms so you can use
+ /MACRO=(MULTINET=1) to compile with multinet; however, there are errors
+ about undefined symbols when linking, so you will need to do some
+ debugging if you need this.
+
+7. Bugs
+
+ Send questions about building on VMS to John.Hasstedt@sunysb.edu.  Send
+ questions about use or bug reports to the grace mailing list.
+

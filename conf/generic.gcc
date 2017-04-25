@@ -1,0 +1,30 @@
+#*****************************************************
+#* Generic Unix with gcc, X11 >= R5 and Motif >= 1.2 *
+#*****************************************************
+
+###############################
+# Compiler
+#
+CC="gcc"
+###############################
+
+###############################
+# C flags
+#
+CFLAGS="-fno-common \
+-Wall -pedantic -Wpointer-arith -Wnested-externs -Wno-implicit-int"
+#-Wshadow -Wmissing-prototypes -Wwrite-strings -Waggregate-return \
+#-W -Wcast-align -Wcast-qual -Wconversion -Wstrict-prototypes 
+###############################
+
+###############################
+# Misc optimization flags
+#
+OPTIMIZE="-O2"
+###############################
+
+###############################
+# Flags used for debugging
+#
+DEBUG="-g -O2"
+###############################

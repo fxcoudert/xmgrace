@@ -1,0 +1,1215 @@
+# Grace project file
+#
+@version 50002
+@page size 792 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman" , "Times-Roman"
+@map font 2 to "Times-Italic" , "Times-Italic"
+@map font 1 to "Times-Bold" , "Times-Bold"
+@map font 3 to "Times-BoldItalic" , "Times-BoldItalic"
+@map font 4 to "Helvetica" , "Helvetica"
+@map font 6 to "Helvetica-Oblique" , "Helvetica-Oblique"
+@map font 5 to "Helvetica-Bold" , "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique" , "Helvetica-BoldOblique"
+@map font 10 to "Courier-Bold" , "Courier-Bold"
+@map font 11 to "Courier-BoldOblique" , "Courier-BoldOblique"
+@map font 8 to "Symbol" , "Symbol"
+@map font 9 to "ZapfDingbats" , "ZapfDingbats"
+@default linewidth 1
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@background color 0
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Thu Nov  5 01:14:43 1998"
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type Chart
+@g0 stacked false
+@g0 bar hgap 0.005000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world xmin 0
+@    world xmax 11
+@    world ymin 0
+@    world ymax 20
+@    stack world 0, 0, 0, 0
+@    view xmin 0.100000
+@    view xmax 0.612059
+@    view ymin 0.100000
+@    view ymax 0.465000
+@    title ""
+@    title font 4
+@    title size 1.500000
+@    title color 1
+@    subtitle "Bar chart"
+@    subtitle font 4
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label op bottom
+@    xaxis  tick off
+@    xaxis  tick major 1
+@    xaxis  tick minor ticks 0
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel prec 1
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 1
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 0.680000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick op bottom
+@    xaxis  ticklabel type spec
+@    xaxis  tick type auto
+@    xaxis  ticklabel 0, ""
+@    xaxis  ticklabel 1, "Label 1"
+@    xaxis  ticklabel 2, "Label 2"
+@    xaxis  ticklabel 3, "Label 3"
+@    xaxis  ticklabel 4, "Label 4"
+@    xaxis  ticklabel 5, "Label 5"
+@    xaxis  ticklabel 6, "Label 6"
+@    xaxis  ticklabel 7, "Label 7"
+@    xaxis  ticklabel 8, "Label 8"
+@    xaxis  ticklabel 9, "Label 9"
+@    xaxis  ticklabel 10, "Label 10"
+@    xaxis  ticklabel 11, ""
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  label "Value"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label op left
+@    yaxis  tick on
+@    yaxis  tick major 5
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick op left
+@    yaxis  ticklabel type auto
+@    yaxis  tick type auto
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend x1 0.15
+@    legend y1 0.4
+@    legend box on
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 1
+@    frame linestyle 1
+@    frame linewidth 3
+@    frame color 1
+@    frame pattern 1
+@    frame background color 9
+@    frame background pattern 0
+@    s0 type bar
+@    s0 symbol 0
+@    s0 symbol size 0.600000
+@    s0 symbol color 7
+@    s0 symbol pattern 1
+@    s0 symbol fill color 2
+@    s0 symbol fill pattern 1
+@    s0 symbol linewidth 2
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 2
+@    s0 symbol skip 0
+@    s0 line type 0
+@    s0 line linestyle 1
+@    s0 line linewidth 3
+@    s0 line color 1
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 1
+@    s0 fill rule 0
+@    s0 fill color 2
+@    s0 fill pattern 3
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 2
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar off
+@    s0 errorbar type both
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1
+@    s0 errorbar riser linestyle 1
+@    s0 comment "tbar3.dat"
+@    s0 legend  "Data A"
+@    s1 type bar
+@    s1 symbol 0
+@    s1 symbol size 0.600000
+@    s1 symbol color 11
+@    s1 symbol pattern 1
+@    s1 symbol fill color 4
+@    s1 symbol fill pattern 1
+@    s1 symbol linewidth 2
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 2
+@    s1 symbol skip 0
+@    s1 line type 0
+@    s1 line linestyle 1
+@    s1 line linewidth 3
+@    s1 line color 1
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 1
+@    s1 fill rule 0
+@    s1 fill color 4
+@    s1 fill pattern 10
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 2
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar off
+@    s1 errorbar type both
+@    s1 errorbar length 1.000000
+@    s1 errorbar linewidth 1
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1
+@    s1 errorbar riser linestyle 1
+@    s1 comment "tbar3.dat"
+@    s1 legend  "Data B"
+@g1 on
+@g1 hidden false
+@g1 type Chart
+@g1 stacked true
+@g1 bar hgap 0.000000
+@g1 fixedpoint off
+@g1 fixedpoint type 0
+@g1 fixedpoint xy 0.000000, 0.000000
+@g1 fixedpoint format general general
+@g1 fixedpoint prec 6, 6
+@with g1
+@    world xmin 0
+@    world xmax 11
+@    world ymin 0
+@    world ymax 30
+@    stack world 0, 0, 0, 0
+@    view xmin 0.100000
+@    view xmax 0.612059
+@    view ymin 0.565000
+@    view ymax 0.930000
+@    title ""
+@    title font 4
+@    title size 1.500000
+@    title color 1
+@    subtitle "Stacked bar chart"
+@    subtitle font 4
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label op bottom
+@    xaxis  tick off
+@    xaxis  tick major 1
+@    xaxis  tick minor ticks 0
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel prec 1
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 1
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 0.680000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick op bottom
+@    xaxis  ticklabel type spec
+@    xaxis  tick type auto
+@    xaxis  ticklabel 0, ""
+@    xaxis  ticklabel 1, "Label 1"
+@    xaxis  ticklabel 2, "Label 2"
+@    xaxis  ticklabel 3, "Label 3"
+@    xaxis  ticklabel 4, "Label 4"
+@    xaxis  ticklabel 5, "Label 5"
+@    xaxis  ticklabel 6, "Label 6"
+@    xaxis  ticklabel 7, "Label 7"
+@    xaxis  ticklabel 8, "Label 8"
+@    xaxis  ticklabel 9, "Label 9"
+@    xaxis  ticklabel 10, "Label 10"
+@    xaxis  ticklabel 11, ""
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  label "Value"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label op left
+@    yaxis  tick on
+@    yaxis  tick major 10
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick op left
+@    yaxis  ticklabel type auto
+@    yaxis  tick type auto
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend x1 0.15
+@    legend y1 0.9
+@    legend box on
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 1
+@    frame linestyle 1
+@    frame linewidth 3
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 type bar
+@    s0 symbol 0
+@    s0 symbol size 1.200000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 4
+@    s0 symbol fill pattern 24
+@    s0 symbol linewidth 2
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 2
+@    s0 symbol skip 0
+@    s0 line type 0
+@    s0 line linestyle 1
+@    s0 line linewidth 3
+@    s0 line color 1
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 0
+@    s0 fill pattern 1
+@    s0 avalue on
+@    s0 avalue type 2
+@    s0 avalue char size 0.750000
+@    s0 avalue font 4
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.020000 , -0.010000
+@    s0 errorbar off
+@    s0 errorbar type both
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1
+@    s0 errorbar riser linestyle 1
+@    s0 comment "copy of set 0"
+@    s0 legend  "Data A"
+@    s1 type bar
+@    s1 symbol 0
+@    s1 symbol size 1.200000
+@    s1 symbol color 1
+@    s1 symbol pattern 1
+@    s1 symbol fill color 14
+@    s1 symbol fill pattern 18
+@    s1 symbol linewidth 2
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 2
+@    s1 symbol skip 0
+@    s1 line type 0
+@    s1 line linestyle 1
+@    s1 line linewidth 3
+@    s1 line color 1
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 0
+@    s1 fill pattern 1
+@    s1 avalue on
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 4
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.010000
+@    s1 errorbar off
+@    s1 errorbar type both
+@    s1 errorbar length 1.000000
+@    s1 errorbar linewidth 1
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1
+@    s1 errorbar riser linestyle 1
+@    s1 comment "copy of set 1"
+@    s1 legend  "Data B"
+@g2 on
+@g2 hidden false
+@g2 type Chart
+@g2 stacked false
+@g2 bar hgap 0.000000
+@g2 fixedpoint off
+@g2 fixedpoint type 0
+@g2 fixedpoint xy 0.000000, 0.000000
+@g2 fixedpoint format general general
+@g2 fixedpoint prec 6, 6
+@with g2
+@    world xmin 0
+@    world xmax 11
+@    world ymin 0
+@    world ymax 20
+@    stack world 0, 0, 0, 0
+@    view xmin 0.712059
+@    view xmax 1.224118
+@    view ymin 0.100000
+@    view ymax 0.465000
+@    title ""
+@    title font 4
+@    title size 1.500000
+@    title color 1
+@    subtitle "Scatter chart"
+@    subtitle font 4
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label op bottom
+@    xaxis  tick off
+@    xaxis  tick major 1
+@    xaxis  tick minor ticks 0
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel prec 1
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 1
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 0.680000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick op bottom
+@    xaxis  ticklabel type spec
+@    xaxis  tick type auto
+@    xaxis  ticklabel 0, ""
+@    xaxis  ticklabel 1, "Label 1"
+@    xaxis  ticklabel 2, "Label 2"
+@    xaxis  ticklabel 3, "Label 3"
+@    xaxis  ticklabel 4, "Label 4"
+@    xaxis  ticklabel 5, "Label 5"
+@    xaxis  ticklabel 6, "Label 6"
+@    xaxis  ticklabel 7, "Label 7"
+@    xaxis  ticklabel 8, "Label 8"
+@    xaxis  ticklabel 9, "Label 9"
+@    xaxis  ticklabel 10, "Label 10"
+@    xaxis  ticklabel 11, ""
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  label "Value"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label op left
+@    yaxis  tick on
+@    yaxis  tick major 5
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick op left
+@    yaxis  ticklabel type auto
+@    yaxis  tick type auto
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend x1 0.78
+@    legend y1 0.4
+@    legend box on
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 1
+@    frame linestyle 1
+@    frame linewidth 3
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 type xy
+@    s0 symbol 6
+@    s0 symbol size 0.750000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 4
+@    s0 symbol fill pattern 1
+@    s0 symbol linewidth 1
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 2
+@    s0 symbol skip 0
+@    s0 line type 0
+@    s0 line linestyle 1
+@    s0 line linewidth 2
+@    s0 line color 5
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline on
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 2
+@    s0 fill pattern 3
+@    s0 avalue on
+@    s0 avalue type 2
+@    s0 avalue char size 0.750000
+@    s0 avalue font 2
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.010000
+@    s0 errorbar off
+@    s0 errorbar type both
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1
+@    s0 errorbar riser linestyle 1
+@    s0 comment "copy of set 0"
+@    s0 legend  "Data A"
+@    s1 type xy
+@    s1 symbol 4
+@    s1 symbol size 0.750000
+@    s1 symbol color 1
+@    s1 symbol pattern 1
+@    s1 symbol fill color 7
+@    s1 symbol fill pattern 1
+@    s1 symbol linewidth 1
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 2
+@    s1 symbol skip 0
+@    s1 line type 0
+@    s1 line linestyle 1
+@    s1 line linewidth 2
+@    s1 line color 3
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline on
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 4
+@    s1 fill pattern 10
+@    s1 avalue on
+@    s1 avalue type 2
+@    s1 avalue char size 0.750000
+@    s1 avalue font 2
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.010000
+@    s1 errorbar off
+@    s1 errorbar type both
+@    s1 errorbar length 1.000000
+@    s1 errorbar linewidth 1
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1
+@    s1 errorbar riser linestyle 1
+@    s1 comment "copy of set 1"
+@    s1 legend  "Data B"
+@g3 on
+@g3 hidden false
+@g3 type Chart
+@g3 stacked true
+@g3 bar hgap 0.000000
+@g3 fixedpoint off
+@g3 fixedpoint type 0
+@g3 fixedpoint xy 0.000000, 0.000000
+@g3 fixedpoint format general general
+@g3 fixedpoint prec 6, 6
+@with g3
+@    world xmin 0
+@    world xmax 11
+@    world ymin 0
+@    world ymax 30
+@    stack world 0, 0, 0, 0
+@    view xmin 0.712059
+@    view xmax 1.224118
+@    view ymin 0.565000
+@    view ymax 0.930000
+@    title ""
+@    title font 4
+@    title size 1.500000
+@    title color 1
+@    subtitle "Stacked line chart"
+@    subtitle font 4
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label op bottom
+@    xaxis  tick off
+@    xaxis  tick major 1
+@    xaxis  tick minor ticks 0
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel prec 1
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 1
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 0.680000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick op bottom
+@    xaxis  ticklabel type spec
+@    xaxis  tick type auto
+@    xaxis  ticklabel 0, ""
+@    xaxis  ticklabel 1, "Label 1"
+@    xaxis  ticklabel 2, "Label 2"
+@    xaxis  ticklabel 3, "Label 3"
+@    xaxis  ticklabel 4, "Label 4"
+@    xaxis  ticklabel 5, "Label 5"
+@    xaxis  ticklabel 6, "Label 6"
+@    xaxis  ticklabel 7, "Label 7"
+@    xaxis  ticklabel 8, "Label 8"
+@    xaxis  ticklabel 9, "Label 9"
+@    xaxis  ticklabel 10, "Label 10"
+@    xaxis  ticklabel 11, ""
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  label "Value"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label op left
+@    yaxis  tick on
+@    yaxis  tick major 10
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel prec 0
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick op left
+@    yaxis  ticklabel type auto
+@    yaxis  tick type auto
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend x1 0.77
+@    legend y1 0.9
+@    legend box on
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert true
+@    frame type 1
+@    frame linestyle 1
+@    frame linewidth 3
+@    frame color 1
+@    frame pattern 1
+@    frame background color 7
+@    frame background pattern 0
+@    s0 type xy
+@    s0 symbol 2
+@    s0 symbol size 0.850000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 10
+@    s0 symbol fill pattern 1
+@    s0 symbol linewidth 1
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 2
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 2
+@    s0 line color 4
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline on
+@    s0 fill type 2
+@    s0 fill rule 0
+@    s0 fill color 7
+@    s0 fill pattern 1
+@    s0 avalue on
+@    s0 avalue type 2
+@    s0 avalue char size 0.750000
+@    s0 avalue font 2
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.007000 , 0.010000
+@    s0 errorbar off
+@    s0 errorbar type both
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1
+@    s0 errorbar riser linestyle 1
+@    s0 comment "copy of set 0"
+@    s0 legend  "Data A"
+@    s1 type xy
+@    s1 symbol 1
+@    s1 symbol size 0.850000
+@    s1 symbol color 1
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 1
+@    s1 symbol linewidth 1
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 2
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 2
+@    s1 line color 15
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline on
+@    s1 fill type 2
+@    s1 fill rule 0
+@    s1 fill color 9
+@    s1 fill pattern 1
+@    s1 avalue on
+@    s1 avalue type 2
+@    s1 avalue char size 0.900000
+@    s1 avalue font 0
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.015000
+@    s1 errorbar off
+@    s1 errorbar type both
+@    s1 errorbar length 1.000000
+@    s1 errorbar linewidth 1
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1
+@    s1 errorbar riser linestyle 1
+@    s1 comment "copy of set 1"
+@    s1 legend  "Data B"
+@target G0.S0
+@type bar
+               1                3
+               2                5
+               3                4
+               4                9
+               5                6
+               6                5
+               7                7
+               8                8
+               9                2
+              10                7
+&
+@target G0.S1
+@type bar
+               1                5
+               2                7
+               3                8
+               4                9
+               5                3
+               6                8
+               7                2
+               8               11
+               9               12
+              10               17
+&
+@target G1.S0
+@type bar
+               1                3
+               2                5
+               3                4
+               4                9
+               5                6
+               6                5
+               7                7
+               8                8
+               9                2
+              10                7
+&
+@target G1.S1
+@type bar
+               1                5
+               2                7
+               3                8
+               4                9
+               5                3
+               6                8
+               7                2
+               8               11
+               9               12
+              10               17
+&
+@target G2.S0
+@type xy
+               1                3
+               2                5
+               3                4
+               4                9
+               5                6
+               6                5
+               7                7
+               8                8
+               9                2
+              10                7
+&
+@target G2.S1
+@type xy
+               1                5
+               2                7
+               3                8
+               4                9
+               5                3
+               6                8
+               7                2
+               8               11
+               9               12
+              10               17
+&
+@target G3.S0
+@type xy
+               1                3
+               2                5
+               3                4
+               4                9
+               5                6
+               6                5
+               7                7
+               8                8
+               9                2
+              10                7
+&
+@target G3.S1
+@type xy
+               1                5
+               2                7
+               3                8
+               4                9
+               5                3
+               6                8
+               7                2
+               8               11
+               9               12
+              10               17
+&

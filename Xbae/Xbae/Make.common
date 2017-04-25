@@ -1,0 +1,11 @@
+#####################################################
+#     System-independent Make.common file for       #
+#            Xbae matrix widget library             #
+#####################################################
+
+SRCS =	Actions.c Clip.c Converters.c Create.c Draw.c \
+	Matrix.c Methods.c Public.c ScrollMgr.c Shadow.c Utils.c
+
+OBJS =	Actions$(O) Clip$(O) Converters$(O) Create$(O) Draw$(O) \
+	Matrix$(O) Methods$(O) Public$(O) ScrollMgr$(O) Shadow$(O) Utils$(O)
+

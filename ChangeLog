@@ -1,0 +1,2136 @@
+2015-02-15 00:58  fnevgeny
+
+	* COPYRIGHT, doc/UsersGuide.sgml, src/helpwin.c, src/main.c:
+	  Copyright notices updated.
+
+2015-02-15 00:42  fnevgeny
+
+	* doc/: Makefile, CHANGES.html: Fixed make rules for SGML->PDF.
+
+2015-02-15 00:17  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: Version 5.1.25.
+
+2015-02-15 00:10  fnevgeny
+
+	* src/computils.c: Fixed the FT DC term amplitude.
+
+2015-02-14 23:28  fnevgeny
+
+	* src/: motifutils.c, pars.yacc: Kill set data from GUI or scripts
+	  now clears comments.
+
+2015-02-14 23:21  fnevgeny
+
+	* src/Makefile: Replaced "mv" with "mv -f".
+
+2015-02-14 23:19  fnevgeny
+
+	* src/ssdata.c: Reverted last change.
+
+2014-08-29 20:44  fnevgeny
+
+	* scripts/makerelease: Clean after making PDF docs.
+
+2014-08-29 20:37  fnevgeny
+
+	* doc/CHANGES.html: 5.1.24.
+
+2014-08-29 19:41  fnevgeny
+
+	* doc/UsersGuide.sgml, src/buildinfo.c: Grace-5.1.24.
+
+2014-08-29 19:38  fnevgeny
+
+	* src/xmgrace.c: UTF8 XLocale problem (mostly copied a workaround
+	  from Nedit).
+
+2014-08-17 02:27  fnevgeny
+
+	* doc/: Makefile, gracebat.1, xmgrace.1: Use groff's .so mechanism
+	  instead of soft links for xmgrace.1/gracebat.1 man pages.
+
+2014-08-17 02:19  fnevgeny
+
+	* doc/Makefile: Install PDF docs instead of the DVI ones.
+
+2014-08-17 02:15  fnevgeny
+
+	* doc/UsersGuide.sgml: Fixed too wide tables.
+
+2014-08-17 02:09  fnevgeny
+
+	* doc/Makefile: Remove *.out on make clean.
+
+2014-08-17 02:08  fnevgeny
+
+	* doc/.cvsignore: Ignore *.out files.
+
+2014-08-17 02:04  fnevgeny
+
+	* COPYRIGHT, src/helpwin.c, src/main.c: Copyright notices updated.
+
+2014-08-17 01:58  fnevgeny
+
+	* src/ssdata.c: Always overwrite set comments when reading data in.
+
+2014-08-17 01:33  fnevgeny
+
+	* src/editpwin.c: Made spreadsheet dialog child of app_shell as the
+	  rest of the dialogs.
+
+2014-08-17 01:22  fnevgeny
+
+	* cephes/COPYING: Added cephes/COPYING (from Debian).
+
+2014-08-17 01:02  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess &
+	  config.sub.
+
+2014-08-17 00:56  fnevgeny
+
+	* ac-tools/configure.in: Replaced mdw_CHECK_MANYLIBS with
+	  AC_SEARCH_LIBS.
+
+2014-08-17 00:54  fnevgeny
+
+	* ac-tools/aclocal.m4: Renamed some local vars as _cv_ ones
+	  (cacheable). Got rid of mdw_CHECK_MANYLIBS.
+
+2012-10-01 01:29  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.23 released
+
+2012-09-30 23:53  fnevgeny
+
+	* COPYRIGHT, doc/UsersGuide.sgml, src/helpwin.c, src/main.c:
+	  Copyright updated.
+
+2012-02-14 22:28  fnevgeny
+
+	* fonts/Makefile: Oops. IsoLatin5.enc wasn't added to the Makefile.
+
+2011-06-08 21:10  fnevgeny
+
+	* grace_np/grace_np.c: Wrongly placed brackets (patch by Stan
+	  Maree).
+
+2011-01-29 23:37  fnevgeny
+
+	* src/rstdrv.c: Fix building against png-1.5 (patch by Thomas
+	  Klausner).
+
+2010-06-12 17:37  fnevgeny
+
+	* src/.cvsignore: Ignore .diff.
+
+2010-06-12 17:31  fnevgeny
+
+	* COPYRIGHT, src/helpwin.c: Copyright notice.
+
+2010-06-12 17:30  fnevgeny
+
+	* doc/UsersGuide.sgml: Graph types and INTEGRATE.
+
+2010-06-12 17:29  fnevgeny
+
+	* doc/FAQ.sgml: Julian dates.
+
+2010-06-12 17:28  fnevgeny
+
+	* doc/grace.1: List graph types.
+
+2010-02-01 00:03  fnevgeny
+
+	* src/motifutils.c: A workaround for a bug in recent Xorg not
+	  releasing grab of popup menus.
+
+2009-06-23 23:00  fnevgeny
+
+	* src/nonlfit.c: Renamed RMS per cent error -> relative error.
+
+2009-05-03 23:51  fnevgeny
+
+	* src/x11drv.c: Simplified xlib_setpen (backported from grace6).
+
+2009-04-05 23:47  fnevgeny
+
+	* src/main.c: Accept -graphtype chart instead of bar. List possible
+	  values in the help output.
+
+2009-01-23 00:16  fnevgeny
+
+	* doc/grace.1: Oops. undo stupid thing ;-(
+
+2009-01-23 00:02  fnevgeny
+
+	* doc/grace.1: Bad formatting (preventing part of the man page from
+	  rendering) fixed.
+
+2008-12-06 21:52  fnevgeny
+
+	* src/buildinfo.c: 5.1.23 started.
+
+2008-12-06 21:48  fnevgeny
+
+	* ac-tools/configure.in: Removed *86 specific optimizations.
+
+2008-12-06 21:47  fnevgeny
+
+	* Makefile: Cosmetics.
+
+2008-05-21 23:50  fnevgeny
+
+	* COPYRIGHT, doc/CHANGES.html, src/buildinfo.c, src/helpwin.c,
+	  src/main.c: 5.1.22 released.
+
+2008-05-20 23:54  fnevgeny
+
+	* doc/FAQ.sgml: Added FAQ on max drawing path length.
+
+2008-05-20 01:49  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: config.guess and config.sub
+	  updated.
+
+2008-05-20 01:35  fnevgeny
+
+	* doc/UsersGuide.sgml, src/Make.common, src/humlik.c,
+	  src/mathstuff.c, src/mathstuff.h, src/noxprotos.h, src/pars.yacc:
+	  Added Voigt function.
+
+2008-05-20 00:55  fnevgeny
+
+	* doc/UsersGuide.sgml, src/computils.c, src/compwin.c,
+	  src/noxprotos.h, src/pars.yacc: Added LINCONV() to the parser.
+
+2008-04-26 22:12  fnevgeny
+
+	* src/events.c: Mention object type when asking for user's
+	  confirmation on delete.
+
+2008-04-26 22:00  fnevgeny
+
+	* src/: noxprotos.h, objutils.c: Added object_types().
+
+2008-04-26 21:25  fnevgeny
+
+	* src/files.c: nb_rt counting in unregister_real_time_input was
+	  wrong.
+
+2008-04-26 00:12  fnevgeny
+
+	* grace_np/grace_np.c: Supposedly fixed kill(-1)...
+
+2008-04-03 00:31  fnevgeny
+
+	* src/motifutils.c: Safe check for an out-of-bounds value in
+	  SetChoice().
+
+2007-06-06 23:15  fnevgeny
+
+	* src/buildinfo.c: 5.1.22 started.
+
+2007-06-06 23:10  fnevgeny
+
+	* grace_np/grace_np.c: Fixed a stupid bug causing the GraceClose()
+	  to kill all user processes if by that time the Grace subprocess
+	  has exited.
+
+2007-02-17 00:43  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, doc/grace.1,
+	  src/buildinfo.c, templates/Default.agr: 5.1.21 final.
+
+2007-02-17 00:31  fnevgeny
+
+	* examples/Makefile, examples/dotest, examples/log2log.agr,
+	  src/xmgrace.c: Added log2log.agr example (showing also the
+	  computing and engineering tick labeling). Contributed by Harvey
+	  Richardson.
+
+2007-02-16 00:36  fnevgeny
+
+	* src/: defines.h, graphutils.c, motifutils.c, pars.yacc, utils.c:
+	  Added Computing tick label format (a patch by Harvey Richardson).
+
+2007-02-14 00:01  fnevgeny
+
+	* src/graphappwin.c: Allow for longer legend lines.
+
+2007-02-13 23:37  fnevgeny
+
+	* src/: pars.yacc, ssdata.c: Implemented  KILL BLOCK.
+
+2007-02-13 23:26  fnevgeny
+
+	* src/utils.c: Extended range of prefixes in Engineering format up
+	  to 10^{+/-24}.
+
+2007-02-13 23:22  fnevgeny
+
+	* src/drawticks.c: Fixed rounding-off probem with zero label (rep.
+	  #2098).
+
+2007-01-28 00:54  fnevgeny
+
+	* COPYRIGHT, src/helpwin.c, src/main.c: Copyright dates updated.
+
+2007-01-27 23:44  fnevgeny
+
+	* src/main.c: Added -maxpath command line option.
+
+2006-09-26 23:33  fnevgeny
+
+	* src/pars.yacc: Honour locale in number stringifications.
+
+2006-09-26 22:58  fnevgeny
+
+	* doc/grace.1: Man page cleaned (Debian patch).
+
+2006-09-23 19:18  fnevgeny
+
+	* cephes/: cephes.h, ellpk.c, gamma.c, hyperg.c, ndtri.c:
+	  Eliminated some gcc-4.1 warnings (patch by Ionut Georgescu).
+
+2006-09-23 18:56  fnevgeny
+
+	* fonts/enc/IsoLatin5.enc: Added IsoLatin5 encoding file.
+
+2006-08-06 01:45  fnevgeny
+
+	* src/pars.yacc: Output sensible error message when an attempt is
+	  made to redefine a variable.
+
+2006-08-06 01:42  fnevgeny
+
+	* src/buildinfo.c: 5.1.21 started.
+
+2006-06-04 00:21  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml, doc/grace.1,
+	  src/buildinfo.c: 5.1.20 released.
+
+2006-06-04 00:19  fnevgeny
+
+	* src/: editpwin.c, xmgrace.c: Changes to work better with newer
+	  Xbae.
+
+2006-05-17 23:53  fnevgeny
+
+	* src/nonlwin.c: Close file selection dialog when fit parameters
+	  file is read in successfully.
+
+2006-05-17 23:29  fnevgeny
+
+	* src/utils.c: Fixed buffer overflow.
+
+2006-05-04 00:40  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2006-05-04 00:27  fnevgeny
+
+	* src/defaults.c, templates/Default.agr: Changed default major axis
+	  tick spacings to 0.2.
+
+2006-05-04 00:21  fnevgeny
+
+	* ac-tools/configure.in: Got rid of "-pedantic" to silence newer
+	  gcc.
+
+2006-05-04 00:17  fnevgeny
+
+	* examples/tmc.c: Added stdlib.h for exit().
+
+2006-05-04 00:04  fnevgeny
+
+	* COPYRIGHT, src/helpwin.c, src/main.c: Updated copyright years.
+
+2006-05-03 23:43  fnevgeny
+
+	* src/: mathstuff.c, mathstuff.h, pars.yacc: Added sgn() function
+	  to the interpreter.
+
+2006-04-25 22:26  fnevgeny
+
+	* src/compwin.c: A "break" was forgotten...
+
+2006-04-25 22:26  fnevgeny
+
+	* src/helpwin.c: The latest versions of Mozilla/Firefox seem to
+	  treat the anchor symbol (#) differently if the URL is given
+	  without the "file://" specification.
+
+2006-02-12 23:54  fnevgeny
+
+	* src/pars.yacc: Oops. Undone last change.
+
+2006-02-12 23:39  fnevgeny
+
+	* src/pars.yacc: Got rid of unused ZEROXAXIS and ZEROYAXIS tokens.
+
+2005-11-28 23:59  fnevgeny
+
+	* src/buildinfo.c: 5.1.20 started.
+
+2005-11-28 23:59  fnevgeny
+
+	* src/main.c: Recognize pie in -graphtype.
+
+2005-11-27 00:11  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: Final 5.1.19 release.
+
+2005-11-20 23:28  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, src/buildinfo.c,
+	  templates/Default.agr: 5.1.19rc1 snapshot.
+
+2005-11-20 23:25  fnevgeny
+
+	* .cvsignore, scripts/makerelease: Ignore autom4te.cache dir.
+
+2005-11-20 23:14  fnevgeny
+
+	* ac-tools/: aclocal.m4, configure.in: Switched to autoconf 2.5.
+
+2005-11-20 22:58  fnevgeny
+
+	* doc/grace.1, src/Makefile, ac-tools/Make.conf.in,
+	  ac-tools/configure.in: Fixed --with-helpviewer configure option.
+	  Default set to "mozilla %s".
+
+2005-11-19 23:53  fnevgeny
+
+	* src/draw.c: Backported purge_dense_points() fixes from the main
+	  trunk.
+
+2005-11-13 00:46  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.19rc0.
+
+2005-11-13 00:45  fnevgeny
+
+	* src/dlmodule.c: Added const qualifier for error.
+
+2005-11-12 22:09  fnevgeny
+
+	* src/: monwin.c, utils.c, utils.h, xprotos.h: Added "const"
+	  qualifier for args of errmsg() and errwin().
+
+2005-11-08 23:18  fnevgeny
+
+	* src/dlmodule.c: Make sure dlerror() message is not from a
+	  previous dl* call.
+
+2005-11-08 23:11  fnevgeny
+
+	* src/psdrv.c: Volatile settings were put inside
+	  BeginSetup/EndSetup which broke cups accounting feature.
+
+2005-10-28 23:42  fnevgeny
+
+	* src/drawticks.c: Shut up gcc-4 about uninitialized variables.
+
+2005-10-22 23:56  fnevgeny
+
+	* src/fontwin.c: XtVaCreateWidget was used instead of
+	  XtCreateWidget.
+
+2005-05-19 23:41  fnevgeny
+
+	* COPYRIGHT, doc/UsersGuide.sgml, src/helpwin.c, src/main.c:
+	  Copyright notices updated.
+
+2005-05-19 23:30  fnevgeny
+
+	* src/plotone.c, doc/UsersGuide.sgml: Allow BARDY and BARDYDY sets
+	  in XY graphs.
+
+2005-05-19 23:18  fnevgeny
+
+	* src/buildinfo.c: 5.1.19 started.
+
+2005-01-02 01:46  fnevgeny
+
+	* src/buildinfo.c: 5.1.18 release.
+
+2004-12-28 01:43  fnevgeny
+
+	* doc/CHANGES.html: 5.1.18 release candidate.
+
+2004-12-28 01:40  fnevgeny
+
+	* src/pars.yacc: Implemented string concatenation.
+
+2004-12-28 01:39  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: 5.1.18
+	  release candidate.
+
+2004-12-28 01:35  fnevgeny
+
+	* ac-tools/config.guess: Updated config.guess.
+
+2004-09-23 00:56  fnevgeny
+
+	* src/pars.yacc: Set drawing objects' default properties in sync
+	  with grdefaults.
+
+2004-09-23 00:47  fnevgeny
+
+	* src/defaults.c: Set tick label size to grdefault's.
+
+2004-09-23 00:26  fnevgeny
+
+	* src/Tab.c: Backported font fixes for the Tab widget.
+
+2004-09-23 00:26  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.18 development.
+
+2004-08-13 23:27  fnevgeny
+
+	* doc/UsersGuide.sgml, src/buildinfo.c: 5.1.17 final.
+
+2004-08-13 00:46  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c, templates/Default.agr: 5.1.17rc1.
+
+2004-08-04 23:37  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.17rc0.
+
+2004-08-04 22:37  fnevgeny
+
+	* src/pdfdrv.c: Fixed crash in PDF when using patterns with
+	  PDF-1.4.
+
+2004-08-03 12:35  fnevgeny
+
+	* scripts/cvs2cl.pl: Updated cvs2cl.
+
+2004-08-02 22:54  fnevgeny
+
+	* Xbae/Xbae/Create.c: Backported font width fixes.
+
+2004-07-31 01:52  fnevgeny
+
+	* src/x11drv.c: Backported page frame fix.
+
+2004-07-31 00:36  fnevgeny
+
+	* src/: Tab.c, XMgrace.ad, xmgrace.c, Tab.h: Backported tabFontList
+	  changes.
+
+2004-07-31 00:31  fnevgeny
+
+	* src/pdfdrv.c: Changed default PDF dpi to 300.
+
+2004-07-31 00:30  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.17 development.
+
+2004-07-04 00:13  fnevgeny
+
+	* src/buildinfo.c: 5.1.16 final.
+
+2004-07-04 00:12  fnevgeny
+
+	* doc/CHANGES.html: Mangled emails.
+
+2004-07-03 23:47  fnevgeny
+
+	* COPYRIGHT, Makefile, cmath.h, ac-tools/config.h.in,
+	  arch/os2/config.h.os2, doc/CHANGES.html, src/alloca.c,
+	  src/as274c.c, src/as274c.h, src/bitmaps.h, src/computils.c,
+	  src/compwin.c, src/comwin.c, src/dates.c, src/defaults.c,
+	  src/defines.h, src/device.c, src/device.h, src/devlist.h,
+	  src/dlmodule.c, src/dlmodule.h, src/draw.c, src/draw.h,
+	  src/drawticks.c, src/dummydrv.c, src/dummydrv.h, src/eblockwin.c,
+	  src/editpwin.c, src/events.c, src/events.h, src/f2c.h,
+	  src/featext.c, src/files.c, src/files.h, src/fileswin.c,
+	  src/fit.c, src/fontwin.c, src/fourier.c, src/globals.h,
+	  src/graphappwin.c, src/graphs.c, src/graphs.h, src/graphutils.c,
+	  src/graphutils.h, src/helpwin.c, src/hotwin.c, src/iofilters.c,
+	  src/jbitmaps.h, src/lmdif.c, src/locatewin.c, src/main.c,
+	  src/mathstuff.c, src/mathstuff.h, src/mbitmaps.h, src/mfdrv.c,
+	  src/mfdrv.h, src/mifdrv.c, src/mifdrv.h, src/miscwin.c,
+	  src/missing.c, src/missing.h, src/monwin.c, src/motifinc.h,
+	  src/motifutils.c, src/nonlfit.c, src/nonlwin.c, src/noxprotos.h,
+	  src/objutils.c, src/params.c, src/pars.yacc, src/parser.h,
+	  src/patterns.h, src/pdfdrv.c, src/pdfdrv.h, src/plotone.c,
+	  src/plotone.h, src/plotwin.c, src/printwin.c, src/protos.h,
+	  src/psdrv.c, src/psdrv.h, src/ptswin.c, src/regionutils.c,
+	  src/regionwin.c, src/rstdrv.c, src/rstdrv.h, src/setappwin.c,
+	  src/setutils.c, src/setwin.c, src/ssdata.c, src/ssdata.h,
+	  src/strwin.c, src/svgdrv.c, src/svgdrv.h, src/t1fonts.c,
+	  src/t1fonts.h, src/tickwin.c, src/utils.c, src/utils.h,
+	  src/worldwin.c, src/x11drv.c, src/x11drv.h, src/xmgrace.c,
+	  src/xprotos.h, src/xutil.c: Got rid of my email @plasma-gate...
+
+2004-07-03 00:53  fnevgeny
+
+	* Xbae/Xbae/Matrix.c: Backported osfCancel fix.
+
+2004-07-01 10:17  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c, templates/Default.agr: 5.1.16
+	  release candidate 1.
+
+2004-07-01 01:03  fnevgeny
+
+	* src/editpwin.c: Make sure the last entered cell's data it
+	  commited.
+
+2004-06-26 01:11  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: 5.1.16 release candidate 0.
+
+2004-06-26 01:04  fnevgeny
+
+	* ac-tools/Make.conf.in, ac-tools/aclocal.m4,
+	  ac-tools/configure.in, src/Makefile: No longer check for libtiff.
+
+2004-06-26 00:46  fnevgeny
+
+	* src/pdfdrv.c: Backported PDFlib6 compatibility issues.
+
+2004-06-24 00:52  fnevgeny
+
+	* doc/FAQ.sgml: Maillists/forum updates.
+
+2004-06-07 20:31  fnevgeny
+
+	* src/ssdata.c: Replaced a meaningless error message when trying to
+	  load data with few string columns as a single set.
+
+2004-06-07 20:26  fnevgeny
+
+	* src/tickwin.c: Made custom ticks/labels table scroll by 1 row.
+
+2004-06-07 20:22  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.16 development.
+
+2004-05-30 23:24  fnevgeny
+
+	* src/buildinfo.c: Final 5.1.15 release.
+
+2004-05-27 00:10  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, src/buildinfo.c: 5.1.15rc1
+	  snapshot.
+
+2004-05-26 23:34  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2004-05-26 22:02  fnevgeny
+
+	* src/buildinfo.c: Replaced netscape->mozilla.
+
+2004-05-26 21:50  fnevgeny
+
+	* src/fit.c: In xcor, only the _absolute_ value at 0 is normalized
+	  to 1.
+
+2004-05-25 23:02  fnevgeny
+
+	* src/events.c: Fixed locator in polar coords.
+
+2004-05-10 00:06  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: 5.1.15rc0
+	  snapshot.
+
+2004-05-10 00:06  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2004-04-21 22:28  fnevgeny
+
+	* src/pars.yacc: F_PPPPD and F_OF_PPPPPD were added incorrectly...
+
+2004-04-16 23:19  fnevgeny
+
+	* src/featext.c: Fixed get_half_max_width(). Old version could give
+	  anything for multipeaks.
+
+2004-04-13 23:27  fnevgeny
+
+	* T1lib/t1lib/: sysconf.h, t1base.c, t1misc.h: Renamed MAXPATHLEN
+	  to T1_MAXPATHLEN.
+
+2004-01-24 14:44  fnevgeny
+
+	* src/params.c, src/pars.yacc, templates/Default.agr: Use one-line
+	  format when saving graph's world and viewport settings.
+
+2004-01-24 13:50  fnevgeny
+
+	* src/defines.h: Increased MAX_TICKS to 256 per popular demand.
+
+2004-01-24 13:43  fnevgeny
+
+	* src/pars.yacc: Added safety check for custom tick label number
+	  not exceeding MAX_TICKS.
+
+2004-01-24 13:35  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.15.
+
+2004-01-07 23:08  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: Final 5.1.14 release.
+
+2004-01-07 22:18  fnevgeny
+
+	* COPYRIGHT, doc/UsersGuide.sgml, src/helpwin.c, src/main.c:
+	  Updated the copyright notice.
+
+2003-12-24 23:08  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: 5.1.14
+	  release candidate 1.
+
+2003-12-24 21:51  fnevgeny
+
+	* grace_np/grace_np.c: Fixed race condition (patch by Tobias Oed).
+
+2003-12-24 21:32  fnevgeny
+
+	* src/xmgrace.c: Fixed page size sync in the free mode.
+
+2003-12-12 23:33  fnevgeny
+
+	* cmath.h, cephes/isnan.c: Chech for isnan() macro.
+
+2003-12-05 00:17  fnevgeny
+
+	* T1lib/t1lib/sysconf.h: Updated T1LIB_IDENT to "1.3.1p2-grace".
+
+2003-12-04 23:22  fnevgeny
+
+	* T1lib/t1lib/t1base.c: Fixed crash in T1_GetAfmFilePath() when the
+	  afm file doesn't exist.
+
+2003-12-04 23:06  fnevgeny
+
+	* src/t1fonts.c: Avoided calling grace_path() recursively.
+
+2003-12-03 23:10  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c,
+	  templates/Default.agr: Grace-5.1.14 release candidate #0.
+
+2003-12-03 23:08  fnevgeny
+
+	* src/pars.yacc: Allow for DL modules to define functions of 4 and
+	  5 parameters.
+
+2003-12-02 23:45  fnevgeny
+
+	* src/x11drv.c: xlibfillrule wasn't properly initialized due to a
+	  typo.
+
+2003-11-16 23:41  fnevgeny
+
+	* src/computils.c: Use mutiplication sign in output of regression
+	  report.
+
+2003-10-22 23:46  fnevgeny
+
+	* src/motifutils.c: Use XStringToKeysym() to convert char to
+	  XKeySym for mnemonics.
+
+2003-10-22 23:42  fnevgeny
+
+	* src/: compwin.c, featext.c, fileswin.c, graphappwin.c, hotwin.c,
+	  locatewin.c, miscwin.c, motifutils.c, regionwin.c, rstdrv.c,
+	  setappwin.c, setwin.c, strwin.c, tickwin.c, worldwin.c: In all
+	  calls to CreatePanelChoice(), end the vararg list with NULL, not
+	  0.  This is an issue on 64-bit platforms. Also, removed the last
+	  redundant arg.
+
+2003-10-22 23:27  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.14 development.
+
+2003-10-13 23:53  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: Final 5.1.13 release.
+
+2003-10-13 23:45  fnevgeny
+
+	* src/pars.yacc: Generalize VEC_D '.' LENGTH to array '.' LENGTH.
+
+2003-08-26 01:08  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: Grace-5.1.13 release candidate #1.
+
+2003-08-26 01:04  fnevgeny
+
+	* src/pars.yacc: Implemented IMIN() and IMAX() aggregate functions.
+
+2003-08-18 01:25  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2003-08-18 00:43  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: Grace-5.1.13 release
+	  candidate.
+
+2003-08-18 00:37  fnevgeny
+
+	* src/xmgrace.c: Fixed special parsing of the "-display" arg.
+
+2003-07-27 23:19  fnevgeny
+
+	* src/mifdrv.c: Added font kerning to the MIF driver.
+
+2003-04-23 12:08  fnevgeny
+
+	* src/tickwin.c: Minor cosmetic changes of the Axes dialog.
+
+2003-03-19 23:36  fnevgeny
+
+	* src/: graphs.c, plotone.c: Enabled avalues for HILO sets.
+
+2003-03-11 00:50  fnevgeny
+
+	* src/: fontwin.c, t1fonts.c, t1fonts.h: Compatibility changes for
+	  T1lib-5.0.0.
+
+2003-03-09 00:24  fnevgeny
+
+	* src/compwin.c: A typo fixed.
+
+2003-03-09 00:23  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.13 development.
+
+2003-02-24 00:05  fnevgeny
+
+	* src/buildinfo.c: Final 5.1.12 release.
+
+2003-02-22 00:20  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c:
+	  Grace-5.1.12 release candidate #2.
+
+2003-02-22 00:06  fnevgeny
+
+	* src/pars.yacc: Added RSUM(vexpr) - running sum.
+
+2003-02-21 23:36  fnevgeny
+
+	* src/setappwin.c: Use SpinChoice for symbol skip control; disallow
+	  negative values.
+
+2003-02-21 00:38  fnevgeny
+
+	* fonts/Makefile: enc/IsoLatin7.enc was missing in the list.
+
+2003-02-21 00:05  fnevgeny
+
+	* src/graphutils.c: Implemented zooming and scrolling of log plots.
+
+2003-02-19 22:45  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: Grace-5.1.12 release candidate #1.
+
+2003-02-18 22:41  fnevgeny
+
+	* fonts/enc/: IsoLatin1.enc, IsoLatin2.enc: Removed extraneous
+	  accent glyphs in the 0x9? range.
+
+2003-02-16 02:10  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c:
+	  Grace-5.1.12 release candidate.
+
+2003-02-16 01:41  fnevgeny
+
+	* src/pars.yacc: Verify validity of g[whichgraph] and
+	  g[whichgraph].t[naxis] accesses.
+
+2003-02-16 01:34  fnevgeny
+
+	* src/graphs.h: Added is_valid_axis() proto to graphs.h.
+
+2003-02-16 01:06  fnevgeny
+
+	* T1lib/t1lib/: parseAFM.c, sysconf.h: Fixed parsing of some fonts
+	  (patch by Rainer Menzner).
+
+2003-02-16 00:26  fnevgeny
+
+	* arch/os2/config.h.os2, ac-tools/config.h.in,
+	  ac-tools/configure.in, arch/vms/configure.com: Get rid of vfork
+	  stuff.
+
+2003-02-16 00:17  fnevgeny
+
+	* grace_np/grace_np.c: Proper handling of signals (SIGSTOP),
+	  getting rid of vfork and misc cleanings.  (The patch by Tobias
+	  Oed).
+
+2003-01-26 23:43  fnevgeny
+
+	* src/pars.yacc: Added INT(x,y).
+
+2003-01-26 23:16  fnevgeny
+
+	* src/motifutils.c: Fixed crash in GetTransformDialogSettings()
+	  with multiple sets selected.
+
+2003-01-22 23:47  fnevgeny
+
+	* src/ssdata.c: A memory leak fixed.
+
+2003-01-22 23:44  fnevgeny
+
+	* src/: files.c, ssdata.c: Fixed memory corruption when reading in
+	  block data.
+
+2003-01-22 23:17  fnevgeny
+
+	* src/buildinfo.c, templates/Default.agr: Started 5.1.12
+	  development.
+
+2003-01-19 02:27  fnevgeny
+
+	* doc/FAQ.sgml, src/buildinfo.c: Final 5.1.11 release.
+
+2003-01-08 23:47  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c:
+	  grace-5.1.11rc2 snapshot.
+
+2003-01-07 22:51  fnevgeny
+
+	* src/plotone.c: In XY charts, check that abscissas of all sets are
+	  the same.
+
+2003-01-03 00:45  fnevgeny
+
+	* doc/CHANGES.html: [no log message]
+
+2003-01-03 00:37  fnevgeny
+
+	* src/buildinfo.c: grace-5.1.11rc1 snapshot.
+
+2003-01-03 00:36  fnevgeny
+
+	* COPYRIGHT, doc/CHANGES.html, doc/UsersGuide.sgml, doc/grace.1,
+	  src/helpwin.c, src/main.c, templates/Default.agr: Updated
+	  copyright statements.
+
+2003-01-03 00:08  fnevgeny
+
+	* src/motifutils.c: Use "+"/"-" instead of "shown"/"hidden" in the
+	  graph selectors.
+
+2003-01-02 22:44  fnevgeny
+
+	* ac-tools/: aclocal.m4, configure.in: Modifications of the auto*
+	  stuff to work with autoconf-2.53. Allow the Fortran compiler to
+	  be defined with the full path.
+
+2002-12-28 01:02  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2002-12-25 02:31  fnevgeny
+
+	* src/files.c: Fixed a minor memory leak (during data file
+	  parsing).
+
+2002-12-24 22:50  fnevgeny
+
+	* scripts/makerelease: Exclude .cvsignore files from tar.gz.
+
+2002-12-24 22:47  fnevgeny
+
+	* examples/stackedb.agr: A bit more meaningful legends for the
+	  stackedb example ;-)
+
+2002-12-12 00:20  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml, doc/grace.1,
+	  src/buildinfo.c: Grace-5.1.11 release candidate #0.
+
+2002-12-11 23:52  fnevgeny
+
+	* src/: files.c, files.h, setutils.c: Replaced
+	  read_xyset_fromfile() with universal update_set_from_file(), thus
+	  enabling hotlinks for all set types.
+
+2002-12-11 23:29  fnevgeny
+
+	* src/hotwin.c: Run hotupdate on all graphs, not only the current
+	  one.
+
+2002-12-11 23:24  fnevgeny
+
+	* src/rstdrv.c: Set resolution in the png output.
+
+2002-12-11 23:23  fnevgeny
+
+	* src/pars.yacc: Got rid of the unused "UNLINK" token.
+
+2002-12-11 23:15  fnevgeny
+
+	* grace_np/grace_np.c: Detect pipe closing and/or exit of the Grace
+	  process. Some cleanup of the code.
+
+2002-12-11 00:54  fnevgeny
+
+	* src/pars.yacc: Verify the set selection is valid.
+
+2002-12-11 00:54  fnevgeny
+
+	* src/setutils.c: Make sure the negative (-1) arg isn't allowed in
+	  allocate_set().
+
+2002-12-07 15:50  fnevgeny
+
+	* fonts/: Makefile, enc/CP1251.enc, enc/KOI8-R.enc, enc/KOI8-U.enc:
+	  Added encoding files for Russian codepages koi8-r and cp1251 and
+	  for Ukrainian codepage koi8-u, contributed by Yura Zotov.
+
+2002-12-07 15:06  fnevgeny
+
+	* src/tickwin.c: Use higher precision for tick locations.
+
+2002-12-07 13:41  fnevgeny
+
+	* src/pars.yacc: Added UPDATEALL command.
+
+2002-12-07 13:35  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.11 development.
+
+2002-09-11 22:48  fnevgeny
+
+	* doc/FAQ.sgml, src/buildinfo.c: Final 5.1.10 release.
+
+2002-09-02 00:08  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: 5.1.10
+	  release candidate #1.
+
+2002-08-29 00:56  fnevgeny
+
+	* src/pdfdrv.c: The pdflib patterned->solid colorspace switch
+	  workaround added.
+
+2002-08-27 22:58  fnevgeny
+
+	* src/regionwin.c: Refresh canvas after a region was killed.
+
+2002-08-22 00:00  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c,
+	  templates/Default.agr: 5.1.10 release candidate #0.
+
+2002-08-21 23:19  fnevgeny
+
+	* src/fontwin.c: Auto-update font size so that font bbox fits into
+	  matrix cell.
+
+2002-08-21 22:37  fnevgeny
+
+	* src/editpwin.c: Set insertion position in the set editor
+	  corresponding to the mouse click.
+
+2002-08-20 23:13  fnevgeny
+
+	* fonts/enc/IsoLatin7.enc: Added IsoLatin7 encoding file.
+
+2002-08-20 23:04  fnevgeny
+
+	* src/fontwin.c: Calculate FontBBox if the font's entry is
+	  invalid/empty.
+
+2002-08-16 12:50  fnevgeny
+
+	* src/draw.c: Fixed power in the rgb->srgb conversion.
+
+2002-08-13 23:31  fnevgeny
+
+	* src/: draw.c, t1fonts.c: Invalidate AA gray levels' cache when
+	  colormap changes.
+
+2002-08-12 23:13  fnevgeny
+
+	* templates/Default.agr, src/globals.h: Changed default data format
+	  to %.8g.
+
+2002-08-07 23:51  fnevgeny
+
+	* src/: fontwin.c, t1fonts.c, t1fonts.h: Removed restriction on max
+	  font name length.
+
+2002-08-07 23:46  fnevgeny
+
+	* src/buildinfo.c: Replaced old-style "newwindow" openURL option
+	  with "new-window" compatible with mozilla.
+
+2002-08-06 00:33  fnevgeny
+
+	* src/motifutils.c: Disable showing hidden files by default and
+	  added a checkbox to alter this behaviour (Motif-2.* only).
+
+2002-08-06 00:32  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.10 development.
+
+2002-08-03 23:25  fnevgeny
+
+	* doc/CHANGES.html: A typo fixed.
+
+2002-08-03 23:22  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: Final
+	  5.1.9 release.
+
+2002-07-31 22:39  fnevgeny
+
+	* src/fit.c: A typo fixed in crosscorr().
+
+2002-07-30 00:46  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: 5.1.9 release candidate 1.
+
+2002-07-30 00:45  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2002-07-30 00:17  fnevgeny
+
+	* src/svgdrv.c: Transformation matrix fixed.
+
+2002-07-29 23:55  fnevgeny
+
+	* src/svgdrv.h: Added svg_updatecmap() proto.
+
+2002-07-29 23:55  fnevgeny
+
+	* src/svgdrv.c: Undo sRGB stuff.
+
+2002-07-29 23:53  fnevgeny
+
+	* src/svgdrv.c: SVG driver updates: added devupdatecmap(),
+	  clarified font names, use smarter coordinate transform, updated
+	  DTD reference - all by [MD].
+
+2002-07-29 23:37  fnevgeny
+
+	* T1lib/: t1lib/sysconf.h, t1lib/t1afmtool.c, t1lib/t1base.c,
+	  t1lib/t1enc.c, t1lib/t1env.c, t1lib/t1load.c, t1lib/t1subset.c,
+	  type1/scanfont.c, type1/t1io.c: Open all files in the binary
+	  mode.
+
+2002-07-22 23:23  fnevgeny
+
+	* src/pars.yacc: Allow trailing semicolon in the batch language.
+
+2002-07-13 01:25  fnevgeny
+
+	* src/device.c: Fixed rounding errors in set_page_dimensions() and
+	  get_device_page_dimensions().
+
+2002-07-12 00:46  fnevgeny
+
+	* ac-tools/configure.in: Check for PDFLIB >= 4.0.3 (due to the PNG
+	  conflict in previous ones).
+
+2002-07-03 01:00  fnevgeny
+
+	* src/nonlfit.c: Fixed 1/n error in correlation().
+
+2002-06-25 23:46  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c, templates/Default.agr: 5.1.9
+	  release candidate 0.
+
+2002-06-25 23:39  fnevgeny
+
+	* grace_np/grace_np.c: Run xmgrace in the nosafe mode when invoked
+	  from GraceOpen().
+
+2002-06-25 23:27  fnevgeny
+
+	* src/mifdrv.c: Derive fontfamily from fontalias.
+
+2002-06-22 14:40  fnevgeny
+
+	* Makefile, auxiliary/Makefile, doc/CHANGES.html, doc/Makefile,
+	  doc/UsersGuide.sgml, examples/Makefile, fonts/Makefile,
+	  grace_np/Makefile, grconvert/Makefile, src/Makefile,
+	  templates/Makefile: Make install fixes by Peter Breitenlohner:
+	  convcal now gets stripped, "make -n install links" works, and
+	  DESTDIR introduced for building binary packages.
+
+2002-06-20 22:26  fnevgeny
+
+	* src/plotone.h: Get rid of unused #define's.
+
+2002-06-19 23:00  fnevgeny
+
+	* src/svgdrv.c: Implemented patterned fills in SVG [MD].
+
+2002-06-17 23:49  fnevgeny
+
+	* src/draw.c: Extraneous semicolons removed.
+
+2002-06-17 23:20  fnevgeny
+
+	* src/: draw.c, draw.h: Added sRGB color transformations [MD].
+
+2002-06-17 23:04  fnevgeny
+
+	* src/pdfdrv.c: Patterned fills were transparent in PDF.
+
+2002-06-13 00:07  fnevgeny
+
+	* src/xmgrace.c: App name was missing in the XtDisplayInitialize()
+	  call.
+
+2002-06-07 00:43  fnevgeny
+
+	* src/main.c: Oops. -(no)safe flags were missed in the usage().
+
+2002-06-07 00:41  fnevgeny
+
+	* src/buildinfo.c: Started 5.1.9.
+
+2002-06-02 23:06  fnevgeny
+
+	* ac-tools/configure.in: PDFlib version string was misspelled.
+
+2002-06-02 23:05  fnevgeny
+
+	* src/hotwin.c: An unused variable removed.
+
+2002-06-01 23:03  fnevgeny
+
+	* src/buildinfo.c: Final 5.1.8 release.
+
+2002-05-28 23:25  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.8 release candidate #2.
+
+2002-05-28 00:17  fnevgeny
+
+	* doc/UsersGuide.sgml, src/hotwin.c: Removed broken "Command"
+	  function of the hotlink popup.
+
+2002-05-27 23:59  fnevgeny
+
+	* src/mifdrv.c: Better fontdefinitions in the MIF driver [MD].
+
+2002-05-27 23:59  fnevgeny
+
+	* src/: t1fonts.c, t1fonts.h: Added get_fontfullname(),
+	  get_fontfamilyname(), get_fontweight(), and get_italic_angle()
+	  wrappers around T1lib functions [MD].
+
+2002-05-27 23:10  fnevgeny
+
+	* src/featext.c: Update canvas after feature extraction.
+
+2002-05-27 23:07  fnevgeny
+
+	* src/helpwin.c: Updated PDFlib copyright.
+
+2002-05-24 00:17  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: 5.1.8
+	  release candidate #1.
+
+2002-05-24 00:00  fnevgeny
+
+	* src/pdfdrv.c: Move fillrule setting out of path construction.
+
+2002-05-23 22:40  fnevgeny
+
+	* ac-tools/configure.in: Check for PDFlib-4.0.1.
+
+2002-05-23 22:30  fnevgeny
+
+	* src/pdfdrv.c: Backported PDF patterns from 5.2 by MD.
+
+2002-05-22 23:48  fnevgeny
+
+	* doc/grace.1, src/globals.h, src/main.c, src/miscwin.c,
+	  src/pars.yacc: Implemented safe mode.
+
+2002-05-16 23:38  fnevgeny
+
+	* src/helpwin.c: An off-by-one allocation error fixed.
+
+2002-05-05 00:29  fnevgeny
+
+	* src/x11drv.c: Set solid fill style before flushing the X canvas
+	  background.
+
+2002-05-01 00:09  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, src/buildinfo.c,
+	  templates/Default.agr: 5.1.8 release candidate #0.
+
+2002-04-30 22:09  fnevgeny
+
+	* ac-tools/configure.in: Stop with error if Motif can't be found by
+	  configure.
+
+2002-04-07 23:07  fnevgeny
+
+	* src/utils.c: Use leading zeros in year formats.
+
+2002-03-29 23:22  fnevgeny
+
+	* src/ssdata.c: Use strchr() instead of BSD-ish index().
+
+2002-03-28 13:22  fnevgeny
+
+	* src/xmgrace.c: Don't open the display twice.
+
+2002-03-28 13:11  fnevgeny
+
+	* src/buildinfo.c: 5.1.8 development started.
+
+2002-03-18 23:43  fnevgeny
+
+	* src/buildinfo.c: Final 5.1.7 release.
+
+2002-03-17 01:10  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: 5.1.7 release candidate #2.
+
+2002-03-17 01:07  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2002-03-17 00:57  fnevgeny
+
+	* src/: psdrv.c, psdrv.h: Restrict PS output line length to 70
+	  chars.
+
+2002-03-16 18:57  fnevgeny
+
+	* src/xmgrace.c: Added a XtSetLanguageProc() call to the GUI
+	  initialization.
+
+2002-03-14 00:44  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: 5.1.7
+	  release candidate #1.
+
+2002-03-14 00:25  fnevgeny
+
+	* src/: graphutils.c, graphutils.h, pars.yacc, worldwin.c:
+	  Implemented snake matrix fill in arrange_graphs().
+
+2002-03-13 23:33  fnevgeny
+
+	* ac-tools/aclocal.m4: Removed cyclic dependence in
+	  CHECK_MOTIF->CHECK_LESSTIF->CHECK_MOTIF.
+
+2002-03-13 23:25  fnevgeny
+
+	* src/pars.yacc: When accessing drawing objects by id (e.g. "WITH
+	  STRING nexpr") allocate the referenced object if necessary.
+
+2002-03-12 23:46  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: 5.1.7 release candidate #0.
+
+2002-03-12 23:41  fnevgeny
+
+	* src/x11drv.c: Don't set BackingStore attribute of the root
+	  window.
+
+2002-03-12 23:26  fnevgeny
+
+	* src/x11drv.c: Detect max request size of the X server and set
+	  max_path_limit accordingly.
+
+2002-03-12 23:15  fnevgeny
+
+	* src/: computils.c, compwin.c, fit.c, noxprotos.h, pars.yacc,
+	  xmgrace.c: Extended x-correlation stuff to calculate
+	  x-covariance, too.
+
+2002-02-28 00:23  fnevgeny
+
+	* ac-tools/aclocal.m4: Include <Xm/XmAll.h> instead of <Xm/Xm.h> in
+	  the Motif check to make sure _all_ Motif headers are present.
+
+2002-02-28 00:10  fnevgeny
+
+	* src/graphs.c: When setting axis scaling to log from other type,
+	  set reasonable major/minor settings and world bounds.
+
+2002-02-27 22:29  fnevgeny
+
+	* src/: graphs.c, plotone.c: Honour symskip for error bars and all
+	  set types.
+
+2002-02-19 22:51  fnevgeny
+
+	* src/: main.c, pars.yacc, ssdata.c, ssdata.h: Allow defining
+	  string columns when creating sets from block data via the CLI or
+	  parser.
+
+2002-02-19 22:51  fnevgeny
+
+	* src/files.c: Simply ignore comments in data files instead of
+	  breaking current set.
+
+2002-02-19 22:39  fnevgeny
+
+	* src/x11drv.c: Set DPI of the X11 device from the X server props.
+
+2002-02-05 22:20  fnevgeny
+
+	* examples/axes.agr: Removed zero-length line objects in axes.agr.
+
+2002-02-04 22:55  fnevgeny
+
+	* src/plotone.c: Allow SET_XYZ in polar graphs.
+
+2002-02-04 22:45  fnevgeny
+
+	* src/graphs.c: Don't reset graph settings in set_graph_type() when
+	  the graph is already of the requested type.
+
+2002-02-01 22:24  fnevgeny
+
+	* src/Makefile: $(LDFLAGS) were missing in the -version output.
+
+2002-02-01 22:16  fnevgeny
+
+	* ac-tools/: aclocal.m4, configure.in: Fixed Motif checks.
+
+2002-01-31 23:58  fnevgeny
+
+	* src/buildinfo.c, templates/Default.agr: Started 5.1.7
+	  development.
+
+2002-01-27 21:54  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, src/buildinfo.c: Final 5.1.6
+	  release.
+
+2002-01-27 21:53  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2002-01-27 21:38  fnevgeny
+
+	* ac-tools/configure.in: Var names were interfering w/
+	  ACX_SAVE_STATE/ACX_RESTORE_STATE.
+
+2002-01-27 21:30  fnevgeny
+
+	* src/files.c: Lines starting with spaces weren't parsed.
+
+2002-01-21 18:41  fnevgeny
+
+	* src/utils.c: Fixed compilation on systems without setlocale().
+
+2002-01-12 23:54  fnevgeny
+
+	* src/: computils.c, fit.c: More xcorr fixes and checks.
+
+2002-01-12 22:53  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.6 release candidate #1.
+
+2002-01-12 21:57  fnevgeny
+
+	* src/: computils.c, fit.c, noxprotos.h: Fixed xcorrelation.
+
+2002-01-12 19:51  fnevgeny
+
+	* ac-tools/: aclocal.m4, configure.in: Check for FFTW library
+	  version >= 2.1.3.
+
+2002-01-12 19:05  fnevgeny
+
+	* ac-tools/: aclocal.m4, configure.in: Re-wrote Motif checks.
+
+2002-01-09 00:20  fnevgeny
+
+	* src/motifutils.c: Added a "My Computer" FSB entry for the Cygwin
+	  port.
+
+2002-01-09 00:15  fnevgeny
+
+	* ac-tools/aclocal.m4: Fixed order of X libs while detecting Motif.
+
+2002-01-03 23:26  fnevgeny
+
+	* arch/win32/README: Updated win32 README.
+
+2002-01-03 23:21  fnevgeny
+
+	* COPYRIGHT, doc/UsersGuide.sgml, src/helpwin.c, src/main.c:
+	  Upgraded copyright notices.
+
+2002-01-03 23:15  fnevgeny
+
+	* T1lib/t1lib/.dependencies, T1lib/t1lib/parseAFM.c,
+	  T1lib/t1lib/parseAFM.h, T1lib/t1lib/sysconf.h,
+	  T1lib/t1lib/t1aaset.c, T1lib/t1lib/t1aaset.h,
+	  T1lib/t1lib/t1afmtool.c, T1lib/t1lib/t1afmtool.h,
+	  T1lib/t1lib/t1base.c, T1lib/t1lib/t1base.h,
+	  T1lib/t1lib/t1delete.c, T1lib/t1lib/t1delete.h,
+	  T1lib/t1lib/t1enc.c, T1lib/t1lib/t1enc.h, T1lib/t1lib/t1env.c,
+	  T1lib/t1lib/t1env.h, T1lib/t1lib/t1extern.h,
+	  T1lib/t1lib/t1finfo.c, T1lib/t1lib/t1finfo.h,
+	  T1lib/t1lib/t1global.h, T1lib/t1lib/t1lib.h,
+	  T1lib/t1lib/t1load.c, T1lib/t1lib/t1load.h, T1lib/t1lib/t1misc.h,
+	  T1lib/t1lib/t1outline.c, T1lib/t1lib/t1outline.h,
+	  T1lib/t1lib/t1set.c, T1lib/t1lib/t1set.h, T1lib/t1lib/t1subset.c,
+	  T1lib/t1lib/t1subset.h, T1lib/t1lib/t1trans.c,
+	  T1lib/t1lib/t1trans.h, T1lib/t1lib/t1types.h,
+	  T1lib/type1/.dependencies, T1lib/type1/fontfcn.c,
+	  T1lib/type1/objects.c, T1lib/type1/pictures.h,
+	  T1lib/type1/regions.c, T1lib/type1/scanfont.c,
+	  T1lib/type1/t1io.c, ac-tools/configure.in: Upgraded T1lib to
+	  1.3.1.
+
+2001-12-30 00:20  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c, templates/Default.agr: 5.1.6 release candidate
+	  #0.
+
+2001-12-30 00:10  fnevgeny
+
+	* src/: Make.dep, files.c: If saving project under the same name,
+	  don't warn about overwriting.
+
+2001-12-26 23:42  fnevgeny
+
+	* Xbae/: LICENSE, README, Xbae/Create.c, Xbae/Input.c,
+	  Xbae/Input.h, Xbae/InputP.h, Xbae/LICENSE, Xbae/Make.common,
+	  Xbae/Matrix.c, Xbae/Matrix.h, Xbae/Methods.c: Backported from 5.2
+	  Xbae changes.
+
+2001-12-26 22:34  fnevgeny
+
+	* src/draw.c: Make sure angle2 > angle1 in arc drawing.
+
+2001-12-26 22:33  fnevgeny
+
+	* src/gd.c: Fixed arc drawing for negative angles.
+
+2001-12-18 23:37  fnevgeny
+
+	* src/motifutils.c: Fixed a typo in GetTransformDialogSettings()
+	  that broke the test for src/dest selection exclusiveness.
+
+2001-12-18 22:55  fnevgeny
+
+	* ac-tools/configure.in: Use the bundled Xbae by default.
+
+2001-12-18 00:25  fnevgeny
+
+	* src/drawticks.c: BBox for calculation of the axis label
+	  (auto)placement was left empty if tick marks weren't drawn.
+
+2001-12-18 00:19  fnevgeny
+
+	* src/motifutils.c: Optimized updating of pulldown selectors.
+
+2001-12-01 21:18  fnevgeny
+
+	* src/pars.yacc: Allow accessing array segments (e.g. x[4:10]).
+
+2001-12-01 16:23  fnevgeny
+
+	* src/pars.yacc: Added SUM(vexpr).
+
+2001-12-01 16:14  fnevgeny
+
+	* src/pars.yacc: Implemented KILL REGNUM.
+
+2001-12-01 15:58  fnevgeny
+
+	* src/pars.yacc: Implemented: region on set evaluation
+	  (REGNUM(selectset)), and applying region and logical restriction
+	  to a set (RESTRICT(selectset, vexpr) and RESTRICT(selectset,
+	  REGNUM, onoff)).
+
+2001-12-01 01:35  fnevgeny
+
+	* src/buildinfo.c: Hmm, why did I call it "rc"?
+
+2001-12-01 01:12  fnevgeny
+
+	* src/graphutils.c: Regions weren't cleaned up in wipeout().
+
+2001-11-30 23:43  fnevgeny
+
+	* src/: noxprotos.h, regionutils.c: Added kill_all_regions().
+
+2001-11-30 23:42  fnevgeny
+
+	* src/pars.yacc: Simplify polygon region reallocation.
+
+2001-11-30 23:37  fnevgeny
+
+	* src/buildinfo.c: 5.1.6 development started.
+
+2001-11-23 00:12  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: Final
+	  5.1.5 release.
+
+2001-11-23 00:10  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2001-11-23 00:00  fnevgeny
+
+	* src/buildinfo.c: Include uname.version in the "-v" output.
+
+2001-11-22 23:53  fnevgeny
+
+	* doc/Makefile: Implicitly set paper size in dvips params (in sync
+	  with linuxdoc).
+
+2001-11-15 11:09  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.5 release candidate #1.
+
+2001-11-15 10:49  fnevgeny
+
+	* src/draw.h: Extend max line width to 20.
+
+2001-11-15 10:45  fnevgeny
+
+	* doc/: CHANGES.html, Makefile: Explicitly set output to file in
+	  dvi->ps convertion.
+
+2001-11-15 10:29  fnevgeny
+
+	* src/: miscwin.c, motifinc.h, motifutils.c: Added one more
+	  argument to CreateScale() - delta, the value change when pressing
+	  Ctrl+Left/Right arrows.  Enlarged max symbol/font size to 1000.
+	  Set delta for font size controls to 25 and for angle controls -
+	  to 10.
+
+2001-11-15 10:10  fnevgeny
+
+	* src/: graphs.c, plotone.c: Honour X axis min & invert flag in pie
+	  charts.
+
+2001-11-13 22:48  fnevgeny
+
+	* src/motifutils.c: Removed a redundant call of
+	  UpdateOptionChoice() in CreateColorChoice().
+
+2001-11-13 22:36  fnevgeny
+
+	* src/graphappwin.c: Allow for negative gaps in bar charts.
+
+2001-11-13 22:22  fnevgeny
+
+	* src/x11drv.c: Added proper casts for color indices > 128.
+
+2001-10-27 00:23  fnevgeny
+
+	* src/: buildinfo.c, helpwin.c, main.c, utils.c, utils.h: Keep jpeg
+	  and pdflib version info.
+
+2001-10-26 23:37  fnevgeny
+
+	* src/xmgrace.c: Urge people to use at least LessTif-0.92.
+
+2001-10-14 23:24  fnevgeny
+
+	* src/motifutils.c: Optimize UpdateOptionChoice() for large N.
+
+2001-10-14 22:43  fnevgeny
+
+	* src/: draw.c, draw.h, plotone.c: Check for proper world &
+	  viewport settings in select_graph().
+
+2001-10-02 14:31  fnevgeny
+
+	* doc/: CHANGES.html, FAQ.sgml: Removed Q&A on low-resolution
+	  displays.
+
+2001-10-02 14:13  fnevgeny
+
+	* src/xmgrace.c: Automatically adjust Xresources for low-resolution
+	  displays (backported from 5.2.).
+
+2001-10-01 23:53  fnevgeny
+
+	* src/fit.c: Std. dev. was wrongly calculated using n instead of
+	  n-1 in the denominator.
+
+2001-10-01 23:42  fnevgeny
+
+	* src/: buildinfo.c, helpwin.c, main.c, utils.c, utils.h: Include
+	  libpng version in the buildinfo.
+
+2001-10-01 23:34  fnevgeny
+
+	* src/: as274c.h, computils.c, fit.c: Minor cosmetic fixes by AM.
+
+2001-10-01 23:30  fnevgeny
+
+	* src/pars.yacc: Implicitly cast to boolean double arguments used
+	  as bool in the parser.
+
+2001-09-15 23:24  fnevgeny
+
+	* doc/CHANGES.html, examples/Makefile, examples/dotest,
+	  examples/reciprocal.agr, examples/xycolor.agr, src/xmgrace.c:
+	  Added examples of XYCOLOR set presentation and reciprocal axis
+	  scale, contributed by Nels Dumin.
+
+2001-09-09 23:39  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.5 release candidate #1.
+
+2001-09-09 23:15  fnevgeny
+
+	* src/: events.c, graphappwin.c, xprotos.h: Update legend and
+	  viewport dialog props when moving legend or resizing graph from
+	  canvas.
+
+2001-09-05 01:01  fnevgeny
+
+	* src/pars.yacc: Date format hint was ignored in the parser.
+
+2001-08-19 00:01  fnevgeny
+
+	* doc/: Makefile, convcal.1: Added man page for convcal.
+
+2001-08-03 23:35  fnevgeny
+
+	* src/main.c: Make result file output line-buffered instead of
+	  block-buffered.
+
+2001-08-03 23:20  fnevgeny
+
+	* ac-tools/configure.in: The argument of --with-printcmd configure
+	  switch wasn't quoted.
+
+2001-08-03 21:45  fnevgeny
+
+	* T1lib/: README, README.t1lib: Use a generic README for T1lib.
+
+2001-07-27 01:17  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c, templates/Default.agr: 5.1.5
+	  release candidate #0.
+
+2001-07-27 01:11  fnevgeny
+
+	* src/plotone.c: Fixed drawing lef/right stairs line type.
+
+2001-07-27 00:51  fnevgeny
+
+	* T1lib/t1lib/t1finfo.c: A bug in T1_QueryLigs() fixed.
+
+2001-07-13 23:20  fnevgeny
+
+	* src/plotone.c: Don't use anything but main palette colors in
+	  XYCOLOR.
+
+2001-07-02 09:50  fnevgeny
+
+	* src/buildinfo.c: Final 5.1.4 release.
+
+2001-06-21 01:05  fnevgeny
+
+	* arch/os2/: Make.conf.os2, README, config.h.os2: Minor/cosmetics
+	  OS/2 changes (from AM).
+
+2001-06-21 01:03  fnevgeny
+
+	* doc/Tutorial.sgml: Minor enchancements from AM.
+
+2001-06-18 00:20  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: 5.1.4 release candidate #2.
+
+2001-06-17 23:44  fnevgeny
+
+	* examples/tmc.c: Explicitly activate graphs in tmc.c.
+
+2001-06-17 23:43  fnevgeny
+
+	* src/: graphs.c, graphs.h, pars.yacc: Added graph_allocate() - to
+	  allocate an initially hidden graph.  set_graph_active() uses it.
+
+2001-06-17 01:24  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, src/buildinfo.c: 5.1.4 release
+	  candidate #1.
+
+2001-06-16 00:39  fnevgeny
+
+	* src/: graphs.c, graphs.h, graphutils.c, main.c, motifutils.c,
+	  pars.yacc: Drop the second argument in set_graph_active().
+
+2001-06-07 23:45  fnevgeny
+
+	* src/graphs.c: Make set_graph_active() work as set_graph_hidden()
+	  when the flag is FALSE instead of kill_graph().
+
+2001-06-07 23:44  fnevgeny
+
+	* src/: Make.dep, mathstuff.c: Added "protos.h" (for missing.h,
+	  actually) to	mathstuff.c and updated the deps.
+
+2001-05-31 23:56  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c,
+	  templates/Default.agr: 5.1.4 release candidate #0.
+
+2001-05-31 23:34  fnevgeny
+
+	* doc/UsersGuide.sgml: Updated DLL docs for OS/2 (by AM).
+
+2001-05-31 23:23  fnevgeny
+
+	* src/: Make.common, Make.dep, mathstuff.c, mathstuff.h, pars.yacc:
+	  Moved all math wrappers/utility funcs from pars.yacc to the newly
+	  added mathstuff.*. Added wrappers around Cephes ellpe() and
+	  ellpk() which in fact calculated for (1-x) argument. The patch by
+	  AM.
+
+2001-05-31 23:05  fnevgeny
+
+	* src/compwin.c: In the "Sample points" dialog, even when the "log.
+	  expression" is selected, one had to input some values into
+	  start/step input fields anyway.
+
+2001-05-31 22:48  fnevgeny
+
+	* src/rstdrv.c: Check that freed ihandle pointer is not referenced.
+
+2001-04-08 16:02  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: Final
+	  5.1.3 release.
+
+2001-04-08 15:40  fnevgeny
+
+	* src/: draw.c, draw.h: Backported from 5.2 the linewidth/bbox
+	  stuff.
+
+2001-04-07 23:57  fnevgeny
+
+	* src/graphs.h: Use unsigned char as the symchar type in the
+	  'plotarr' struct.
+
+2001-04-07 22:49  fnevgeny
+
+	* src/: drawticks.c, graphs.c: Backported the axis label
+	  autoplacement stuff.
+
+2001-04-07 00:20  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/pars.yacc: Added
+	  AUTOSCALE ONREAD (by Luc).
+
+2001-03-31 16:29  fnevgeny
+
+	* ac-tools/shtool: Updated shtool to version 1.5.2.
+
+2001-03-31 16:23  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2001-03-31 15:50  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c: 5.1.3 release candidate #2.
+
+2001-03-31 15:41  fnevgeny
+
+	* doc/grace.1: Added RESOURCES and FILES sections.
+
+2001-03-31 01:38  fnevgeny
+
+	* src/pdfdrv.c: Setting PDF compression level was done outside the
+	  relevant scope.
+
+2001-03-27 02:24  fnevgeny
+
+	* src/device.c: Oops... how it happened that the last change not
+	  actually committed??
+
+2001-03-21 00:15  fnevgeny
+
+	* src/printwin.c: The "Rescale plot on page size change" option in
+	  the "File/Print setup" dialog had no effect if the selected
+	  device was X11.
+
+2001-03-15 22:00  fnevgeny
+
+	* src/: device.c, device.h: When switching output device, check
+	  whether it supports direct printing and if not, set output to
+	  file.
+
+2001-03-08 00:51  fnevgeny
+
+	* src/defines.h: Get rid of obsolete LOCWORLD/LOCVIEW defines.
+
+2001-03-06 00:25  fnevgeny
+
+	* src/pdfdrv.c: Include stdlib.h (for atoi()).
+
+2001-03-01 00:04  fnevgeny
+
+	* src/: files.c, utils.c, utils.h: Removed fexists() as a separate
+	  function.  Added check for return value of filter_write() in
+	  grace_openw().
+
+2001-02-26 23:44  fnevgeny
+
+	* doc/CHANGES.html, doc/UsersGuide.sgml, src/buildinfo.c: 5.1.3
+	  release candidate #1.
+
+2001-02-26 23:33  fnevgeny
+
+	* src/tickwin.c: When switching to log scale, set major/minor tick
+	  settings to 10/9 by default.
+
+2001-02-26 23:23  fnevgeny
+
+	* T1lib/type1/scanfont.c: A wrong pointer cast fixed.
+
+2001-02-25 13:49  fnevgeny
+
+	* src/xutil.c: A stupid typo fixed.
+
+2001-02-22 23:19  fnevgeny
+
+	* src/: utils.c, xutil.c: Set icon's title = project name.
+
+2001-02-19 23:44  fnevgeny
+
+	* T1lib/t1lib/: t1subset.c, t1subset.h: Oops. t1subset* forgotten.
+
+2001-02-19 23:43  fnevgeny
+
+	* src/pdfdrv.c, src/t1fonts.c, src/t1fonts.h, T1lib/Makefile,
+	  T1lib/t1lib/.dependencies, T1lib/t1lib/Makefile,
+	  T1lib/t1lib/sysconf.h, T1lib/t1lib/t1afmtool.c,
+	  T1lib/t1lib/t1base.c, T1lib/t1lib/t1base.h,
+	  T1lib/t1lib/t1finfo.c, T1lib/t1lib/t1lib.h, T1lib/t1lib/t1misc.h,
+	  T1lib/t1lib/t1outline.c, T1lib/type1/hdigit.h,
+	  T1lib/type1/paths.c, T1lib/type1/scanfont.c, T1lib/type1/t1io.c,
+	  T1lib/type1/type1.c, ac-tools/configure.in: Backported from the
+	  main trunk T1lib-1.1 & related changes.
+
+2001-02-14 00:46  fnevgeny
+
+	* src/utils.c: A text polish.
+
+2001-02-12 23:44  fnevgeny
+
+	* src/psdrv.c: List used fonts in %%DocumentNeededResources.
+
+2001-02-12 23:10  fnevgeny
+
+	* doc/Tutorial.sgml: Updated tutorials.
+
+2001-02-05 23:48  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Updated config.guess and
+	  config.sub.
+
+2001-02-05 23:20  fnevgeny
+
+	* scripts/cvs2cl.pl: Updated cvs2cl.pl.
+
+2001-02-03 15:46  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, doc/UsersGuide.sgml,
+	  src/buildinfo.c, templates/Default.agr: 5.1.3 release candidate
+	  #0.
+
+2001-02-03 15:29  fnevgeny
+
+	* ac-tools/configure.in: Allow to specify print command at
+	  `configure' time.
+
+2001-02-03 15:03  fnevgeny
+
+	* src/dates.c: Enable grace to read floats when they are explicitly
+	  signed and positive.
+
+2001-01-20 01:14  fnevgeny
+
+	* src/pars.yacc: Added "HELP url" and "HELP" to the parser.
+
+2001-01-20 00:54  fnevgeny
+
+	* COPYRIGHT, src/helpwin.c, src/main.c: Updated copyright dates.
+
+2001-01-20 00:52  fnevgeny
+
+	* src/plotone.c: Legend entries for BARDY and BARDYDY sets weren't
+	  drawn.
+
+2001-01-20 00:13  fnevgeny
+
+	* src/: buildinfo.c, mifdrv.c: Produce a mif-file with a textflow
+	  in which the graph is included, so it can be included in another
+	  FrameMaker document.	A conversion table added to generate the
+	  hex-codes needed in mif-files for special characters.  The patch
+	  by Matthias Dillier.
+
+2001-01-19 23:54  fnevgeny
+
+	* Xbae/Xbae/Input.c: Include stdio.h for *printf().
+
+2000-12-02 00:01  fnevgeny
+
+	* grace_np/grace_np.h: Removed unused EXIT_* #defines from
+	  grace_np.h.
+
+2000-12-01 23:22  fnevgeny
+
+	* src/defaults.c: Init legend's bbox.
+
+2000-11-30 23:18  fnevgeny
+
+	* src/tickwin.c: Precision of offsets in the Axes dialog were
+	  restricted to two digits.
+
+2000-11-30 23:11  fnevgeny
+
+	* src/motifutils.c: Fixed rounding error in calculation pulldown
+	  menu length.
+
+2000-09-10 02:59  fnevgeny
+
+	* src/buildinfo.c: Final 5.1.2 release.
+
+2000-09-10 02:50  fnevgeny
+
+	* examples/tstack.agr: Updated world stack manipulation example.
+
+2000-09-09 02:19  fnevgeny
+
+	* ac-tools/: config.guess, config.sub: Newest config.guess and
+	  config.sub from the GNU ftp site.
+
+2000-09-09 01:59  fnevgeny
+
+	* arch/os2/: Make.conf.os2, README, config.h.os2: Minor updates
+	  from AM.
+
+2000-09-07 02:59  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: grace-5.1.2rc2 snapshot.
+
+2000-09-07 02:50  fnevgeny
+
+	* templates/Default.agr: Updated default template.
+
+2000-09-07 02:40  fnevgeny
+
+	* src/: defines.h, setappwin.c, setutils.c: Implemented baseline
+	  setting to the set (y) average - based on the patch by Dominique
+	  Bissieres.
+
+2000-09-07 01:20  fnevgeny
+
+	* Xbae/Xbae/Create.c: Removed compile-time restriction on the
+	  number of X server screens.
+
+2000-09-07 00:33  fnevgeny
+
+	* src/draw.c: Fixed a floating point rounding bug in the polygon
+	  clipping.
+
+2000-09-01 00:59  fnevgeny
+
+	* doc/CHANGES.html, src/buildinfo.c: grace-5.1.2rc1 snapshot.
+
+2000-09-01 00:49  fnevgeny
+
+	* src/ssdata.c: create_set_fromblock() didn't copy but merely
+	  assigned strings. The patch by LM.
+
+2000-08-28 00:18  fnevgeny
+
+	* src/setutils.c: Remove XYZ hack from set_dataset_type().
+
+2000-08-24 01:05  fnevgeny
+
+	* doc/UsersGuide.sgml, src/pars.yacc: Added PAGE RESIZE xdim, ydim.
+
+2000-08-24 00:19  fnevgeny
+
+	* patches/sgmltools.patch: Removed sgmltools.patch since it's
+	  incorporated in the current linuxdoc suite.
+
+2000-08-24 00:13  fnevgeny
+
+	* ac-tools/configure.in, doc/UsersGuide.sgml: Require PDFlib-3.02.
+
+2000-08-22 00:56  fnevgeny
+
+	* src/buildinfo.c: 5.1.2 release candidate.
+
+2000-08-22 00:53  fnevgeny
+
+	* doc/CHANGES.html, doc/Makefile, doc/UsersGuide.sgml,
+	  src/computils.c, src/motifinc.h, src/motifutils.c,
+	  src/printwin.c, src/psdrv.c, src/psdrv.h: Backported some stuff
+	  from the main 5.2 trunk: - backslashes in PS; - DocumentData in
+	  PS; - monotonicity/splines; - tall pulldown menus; - linuxdoc for
+	  sgml processing; - file path in "Print setup".
+
+2000-08-14 01:53  fnevgeny
+
+	* src/: globals.h, main.c: Removed unused global var "readcdf".
+
+2000-08-03 01:10  fnevgeny
+
+	* Makefile: Build ChangeLog only for the 5.1 branch.
+
+2000-08-01 02:58  fnevgeny
+
+	* doc/CHANGES.html, doc/FAQ.sgml, src/buildinfo.c: grace-5.1.2dev1
+	  snapshot.
+

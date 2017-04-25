@@ -1,0 +1,10 @@
+
+In order to compile Grace, you'll need Cygnus's GNU-win32 development kit 
+(http://www.cygwin.com/), version 1.3.6 or above, a respective port of the
+XWindows libs, and an X server. You'll find all at the aforementioned site.
+
+Evgeny
+
+PS. Please don't send me private e-mails related to Grace; use the
+grace@plasma-gate.weizmann.ac.il mailing list instead.
+

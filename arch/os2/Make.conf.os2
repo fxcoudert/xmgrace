@@ -1,0 +1,130 @@
+# No make rules by default
+.SUFFIXES:
+
+# Extension of object files
+O=.o
+
+# Extension of executables
+EXE=.exe
+
+# Extension of batch files
+BAT=.cmd
+
+# Bourn shell
+SHELL=sh
+
+# Path prefix for installation links
+PREFIX=$(X11ROOT)/XFree86
+
+# List of subdirectories
+# I'll comment out if I have a DLL available of the library
+#SUBDIRS=cephes T1lib Xbae/Xbae src grace_np templates doc examples auxiliary
+SUBDIRS=cephes src grace_np templates doc examples auxiliary
+
+# Name of executable
+GRACE=xmgrace.exe
+
+# Location of the Grace home
+GRACE_HOME=$(X11ROOT)/XFree86/lib/grace
+
+# Relocatable that contains alloca()
+ALLOCA=
+
+# Type1 fonts library
+#T1_LIB=../../T1lib/t1lib.a
+T1_LIB=-lt1
+
+# T1 include path
+#T1_INC=-I../../T1lib
+T1_INC=
+
+# T1lib defines (if the bundled version to be used)
+T1_AA_TYPE16=short
+T1_AA_TYPE32=int
+T1_AA_TYPE64=
+
+# Library containing XDR functions
+XDR_LIB=-lrpc -lsocket
+
+# Library containing dll-related functions
+DL_LIB=
+
+# FFTW library
+FFTW_LIB=-lfftw
+
+# netCDF libraries
+NETCDF_LIBS=
+
+# JPEG library
+JPEG_LIB=-ljpeg
+
+# libz library
+Z_LIB=-lz
+
+# PNG library
+PNG_LIB=-lpng
+
+# TIFF library
+TIFF_LIB=-ltiff
+
+# PDFlib library
+PDF_LIB=-lpdf
+
+# Xbae include path
+#XBAE_INC=-I../Xbae
+XBAE_INC=
+
+# Location of yacc (or its substitution)
+YACC=yacc
+
+# C compiler
+CC=gcc
+
+# F77 compiler
+FC=g77
+
+# ar
+AR=ar
+
+# ranlib
+RANLIB=ar s
+
+# rm
+RM=rm -f
+
+# soft link
+LN_S=cp
+
+# BSD install
+INSTALL=
+INSTALL_PROGRAM=
+INSTALL_DATA=
+MKINSTALLDIRS=
+
+# CPP flags
+CPPFLAGS= -I$(X11ROOT)/XFree86/include
+
+# C flags
+CFLAGS0= -Wall -Wno-unused -O4 -mpentium -Zmt
+
+# GUI flags
+GUI_FLAGS=
+
+# LDFLAGS
+# -Zbin-files is removed. Not sure where this will hurt us (fftw, ?! ) ...
+LDFLAGS=-s -Zmt -Zcrtdll -Zbsd-signals -Zstack 0x3000
+
+# Libraries (all but GUI)
+NOGUI_LIBS=
+
+# GUI libraries
+GUI_LIBS= -L. -ldlfcn -L$(X11ROOT)/XFree86/lib -lhlpclient -lXbae -lXm -lXpm -lXt -lXext -lXmu -lX11 -lsocket
+
+# Commamd used to print
+PRINT_CMD='lp'
+
+# Editor
+GRACE_EDITOR=nedit
+
+# HTML help viewer command
+HELPVIEWER=-DGRACE_HELPVIEWER=\"xmhelp\"

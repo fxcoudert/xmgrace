@@ -1,0 +1,7 @@
+#
+# THIS FILE IS INTENTIONALLY LEFT BLANK!
+# 
+# (the dummy file is sourced ONLY if neither of
+# ./gracerc.user, ./.grace/gracerc.user, or ~/.grace/gracerc.user
+# exists)
+#

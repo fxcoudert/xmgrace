@@ -1,0 +1,53 @@
+
+# The following are for a version that does not link to
+# the X libraries.
+#
+# non-X version sources
+#
+
+PARS_Y = pars.yacc
+PARS_C = pars.c
+PARS_O = pars$(O)
+
+GRSRCS =  main.c plotone.c files.c ssdata.c utils.c drawticks.c \
+	nonlfit.c lmdif.c as274c.c fit.c fourier.c \
+	graphs.c graphutils.c setutils.c regionutils.c \
+	objutils.c computils.c defaults.c params.c \
+	draw.c dlmodule.c missing.c alloca.c \
+	iofilters.c dates.c t1fonts.c device.c mfdrv.c \
+	mifdrv.c psdrv.c pdfdrv.c svgdrv.c gd.c rstdrv.c dummydrv.c \
+	humlik.c mathstuff.c
+
+
+GROBJS =  main$(O) plotone$(O) files$(O) ssdata$(O) utils$(O) drawticks$(O) \
+	nonlfit$(O) lmdif$(O) as274c$(O) fit$(O) fourier$(O) \
+	graphs$(O) graphutils$(O) setutils$(O) regionutils$(O) \
+	objutils$(O) computils$(O) defaults$(O) params$(O) \
+	draw$(O) dlmodule$(O) $(PARS_O) missing$(O) $(ALLOCA) \
+	iofilters$(O) dates$(O) t1fonts$(O) device$(O) \
+	dummydrv$(O) mfdrv$(O) mifdrv$(O) psdrv$(O) \
+	pdfdrv$(O) svgdrv$(O) gd$(O) rstdrv$(O) humlik$(O) mathstuff$(O)
+
+# The following are for a GUI
+#
+# X/MOTIF sources
+#
+
+GUISRCS =  Tab.c motifutils.c \
+	compwin.c comwin.c eblockwin.c \
+	editpwin.c events.c featext.c fileswin.c plotwin.c \
+	graphappwin.c helpwin.c hotwin.c \
+	locatewin.c miscwin.c monwin.c \
+	nonlwin.c printwin.c ptswin.c regionwin.c \
+	setwin.c strwin.c setappwin.c \
+        tickwin.c worldwin.c fontwin.c xutil.c x11drv.c xmgrace.c
+
+GUIOBJS =  Tab$(O) motifutils$(O) \
+	compwin$(O) comwin$(O) eblockwin$(O) \
+	editpwin$(O) events$(O) featext$(O) fileswin$(O) plotwin$(O) \
+	graphappwin$(O) helpwin$(O) hotwin$(O) \
+	locatewin$(O) miscwin$(O) monwin$(O) \
+	nonlwin$(O) printwin$(O) ptswin$(O) regionwin$(O) \
+	setwin$(O) strwin$(O) setappwin$(O) \
+        tickwin$(O) worldwin$(O) fontwin$(O) xutil$(O) x11drv$(O) xmgrace$(O)
+

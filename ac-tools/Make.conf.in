@@ -1,0 +1,119 @@
+# No make rules by default
+.SUFFIXES:
+
+# Extension of object files
+O=@OBJEXT@
+
+# Extension of executables
+EXE=@EXEEXT@
+
+# Bourn shell
+SHELL=/bin/sh
+
+# Path prefix for installation links
+PREFIX=@prefix@
+
+# List of subdirectories
+SUBDIRS=@SUBDIRS@
+
+# Name of executable
+GRACE=@GRACE@$(EXE)
+
+# Location of the Grace home
+GRACE_HOME=@GRACE_HOME@
+
+# Relocatable that contains alloca()
+ALLOCA=@ALLOCA@
+
+# Type1 fonts library
+T1_LIB=@T1_LIB@
+
+# T1 include path
+T1_INC=@T1_INC@
+
+# T1lib defines (if the bundled version to be used)
+T1_AA_TYPE16=@T1_AA_TYPE16@
+T1_AA_TYPE32=@T1_AA_TYPE32@
+T1_AA_TYPE64=@T1_AA_TYPE64@
+
+# Library containing XDR functions
+XDR_LIB=@XDR_LIB@
+
+# Library containing dll-related functions
+DL_LIB=@DL_LIB@
+
+# FFTW library
+FFTW_LIB=@FFTW_LIB@
+
+# netCDF libraries
+NETCDF_LIBS=@NETCDF_LIBS@
+
+# JPEG library
+JPEG_LIB=@JPEG_LIB@
+
+# libz library
+Z_LIB=@Z_LIB@
+
+# PNG library
+PNG_LIB=@PNG_LIB@
+
+# PDFlib library
+PDF_LIB=@PDF_LIB@
+
+# Xbae include path
+XBAE_INC=@XBAE_INC@
+
+# Location of yacc (or its substitution)
+YACC=@YACC@
+
+# C compiler
+CC=@CC@
+
+# F77 compiler
+FC=@FC@
+
+# ar
+AR=@AR@
+
+# ranlib
+RANLIB=@RANLIB@
+
+# rm
+RM=rm -f
+
+# soft link
+LN_S=@LN_S@
+
+# BSD install
+INSTALL=@INSTALL@
+INSTALL_PROGRAM=@INSTALL_PROGRAM@
+INSTALL_DATA=@INSTALL_DATA@
+MKINSTALLDIRS=@MKINSTALLDIRS@
+
+# CPP flags
+CPPFLAGS=@CPPFLAGS@
+
+# C flags
+CFLAGS0=@CFLAGS@
+
+# GUI flags
+GUI_FLAGS=@GUI_FLAGS@
+
+# LDFLAGS
+LDFLAGS=@LDFLAGS@
+
+# Libraries (all but GUI)
+NOGUI_LIBS=@NOGUI_LIBS@
+
+# GUI libraries
+GUI_LIBS=@X_LIBS@ @GUI_LIBS@
+
+# Command used to print
+PRINT_CMD=@PRINT_CMD@
+
+# Editor
+GRACE_EDITOR=@GRACE_EDITOR@
+
+# HTML help viewer command
+GRACE_HELPVIEWER=@GRACE_HELPVIEWER@
+

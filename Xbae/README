@@ -1,0 +1,6 @@
+
+The code in this directory is the Xbae widget library specially modified and
+packaged for use with Grace. 
+For the original package, see http://www.lesstif.org/Xbae.html. Note, though,
+that it's NOT recommended to use the original library due to several bugs.
+

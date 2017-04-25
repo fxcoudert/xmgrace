@@ -1,0 +1,18 @@
+#     +------------------------------------+
+#     | An example of Grace resource file  |
+#     | You may need to edit paths         |
+#     +------------------------------------+
+#
+# Convert old binary projects on-the-fly
+DEFINE IFILTER "bin/grconvert %s -" MAGIC "00000031" 
+#
+# This one is for automatic import of Origin-4 fit description files
+DEFINE IFILTER "auxiliary/fdf2fit %s -" PATTERN "*.fdf"
+#
+# Save disk space by keeping files gzip'ed
+DEFINE IFILTER "gzip -dc %s" PATTERN "*.gz"
+DEFINE OFILTER "gzip - > %s" PATTERN "*.gz" 
+#
+# Allow user to add his/her own startup settings
+GETP "gracerc.user"
+#

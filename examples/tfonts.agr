@@ -1,0 +1,276 @@
+# Grace project file
+#
+@version 50000
+@page size 700 600
+@page scroll 5%
+@page inout 5%
+@link page off
+@default linestyle 1
+@default linewidth 1
+@default color 1
+@default char size 1.000000
+@default font 4
+@default font source 0
+@default symbol size 1.000000
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp linewidth 1
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 4
+@timestamp char size 1.000000
+@timestamp def "Sun Dec  7 00:39:47 1997"
+@g0 off
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.91
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.83
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 1
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.75
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.67
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 3
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.59
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.51
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.43
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 6
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.35
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 7
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.27
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 8
+@    string just 0
+@    string char size 0.700000
+@    string def " ! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.01, 0.19
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 8
+@    string just 0
+@    string char size 0.700000
+@    string def "\c#$%&'()*+,-./013456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnoqrstuvwxyz{|}~"
+@with string
+@    string on
+@    string loctype view
+@    string 0.051378, 0.951535
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Times-Roman"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.862682
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Times-Bold"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.785137
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Times-Italic"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.702746
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Times-BoldItalic"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.625202
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Helvetica"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.53958
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Helvetica-Bold"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.46042
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Helvetica-Oblique"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.382876
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Helvetica-BoldOblique"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.305331
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Symbol (lower 128 chars)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.05, 0.221325
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 0.700000
+@    string def "Symbol (continuation, upper 128 chars)"
+@with string
+@    string on
+@    string loctype view
+@    string 0.261905, 0.129241
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 5
+@    string just 0
+@    string char size 1.120000
+@    string def "Fonts and font mappings"
+@with string
+@    string on
+@    string loctype view
+@    string 0.037594, 0.077544
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.920000
+@    string def "Grace no longer uses the Hershey fonts for drawing text on the screen."
+@with string
+@    string on
+@    string loctype view
+@    string 0.037594, 0.048465
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.920000
+@    string def "There should be no discrepancies between the display and hardcopy outputs."

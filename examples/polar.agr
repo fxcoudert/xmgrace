@@ -1,0 +1,367 @@
+# Grace project file
+#
+@version 50000
+@page size 600 600
+@page scroll 5%
+@page inout 5%
+@link page off
+@default linewidth 1
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@background color 0
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Sun Sep  6 03:03:17 1998"
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type Polar
+@g0 autoscale type auto
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world xmin 0.785398163
+@    world xmax 5.49778714
+@    world ymin 2
+@    world ymax 10
+@    stack world 0, 0, 0, 0 tick 0, 0, 0, 0
+@    view xmin 0.150000
+@    view xmax 0.850000
+@    view ymin 0.150000
+@    view ymax 0.850000
+@    title "A polar plot"
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 0
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 2
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label op bottom
+@    xaxis  tick on
+@    xaxis  tick major 0.785398
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid on
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 3
+@    xaxis  tick minor grid on
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick op both
+@    xaxis  ticklabel type auto
+@    xaxis  tick type auto
+@    yaxis  on
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 0
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 2
+@    yaxis  label ""
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label op left
+@    yaxis  tick on
+@    yaxis  tick major 2
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid on
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 3
+@    yaxis  tick minor grid on
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.010000 , 0.000000
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick op both
+@    yaxis  ticklabel type auto
+@    yaxis  tick type auto
+@    altxaxis  off
+@    altyaxis  off
+@    legend off
+@    legend loctype view
+@    legend x1 0.5
+@    legend y1 0.8
+@    legend box off
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend box fill color 1
+@    legend box fill pattern 0
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 2
+@    frame color 1
+@    frame pattern 1
+@    frame background color 14
+@    frame background pattern 1
+@    s0 type xy
+@    s0 symbol 1
+@    s0 symbol size 0.500000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 1
+@    s0 symbol fill pattern 1
+@    s0 symbol linewidth 1
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol center false
+@    s0 symbol skip 10
+@    s0 line type 4
+@    s0 line linestyle 1
+@    s0 line linewidth 2
+@    s0 line color 2
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 2
+@    s0 fill rule 1
+@    s0 fill color 7
+@    s0 fill pattern 1
+@    s0 avalue on
+@    s0 avalue type 1
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 4
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.010000
+@    s0 errorbar off
+@    s0 errorbar type both
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1
+@    s0 errorbar riser linestyle 1
+@    s0 comment "X=x, Y=x"
+@    s0 legend  ""
+@WITH G0
+@G0 ON
+@TARGET S0
+@TYPE xy
+               0                0
+       0.0909091        0.0909091
+        0.181818         0.181818
+        0.272727         0.272727
+        0.363636         0.363636
+        0.454545         0.454545
+        0.545455         0.545455
+        0.636364         0.636364
+        0.727273         0.727273
+        0.818182         0.818182
+        0.909091         0.909091
+               1                1
+         1.09091          1.09091
+         1.18182          1.18182
+         1.27273          1.27273
+         1.36364          1.36364
+         1.45455          1.45455
+         1.54545          1.54545
+         1.63636          1.63636
+         1.72727          1.72727
+         1.81818          1.81818
+         1.90909          1.90909
+               2                2
+         2.09091          2.09091
+         2.18182          2.18182
+         2.27273          2.27273
+         2.36364          2.36364
+         2.45455          2.45455
+         2.54545          2.54545
+         2.63636          2.63636
+         2.72727          2.72727
+         2.81818          2.81818
+         2.90909          2.90909
+               3                3
+         3.09091          3.09091
+         3.18182          3.18182
+         3.27273          3.27273
+         3.36364          3.36364
+         3.45455          3.45455
+         3.54545          3.54545
+         3.63636          3.63636
+         3.72727          3.72727
+         3.81818          3.81818
+         3.90909          3.90909
+               4                4
+         4.09091          4.09091
+         4.18182          4.18182
+         4.27273          4.27273
+         4.36364          4.36364
+         4.45455          4.45455
+         4.54545          4.54545
+         4.63636          4.63636
+         4.72727          4.72727
+         4.81818          4.81818
+         4.90909          4.90909
+               5                5
+         5.09091          5.09091
+         5.18182          5.18182
+         5.27273          5.27273
+         5.36364          5.36364
+         5.45455          5.45455
+         5.54545          5.54545
+         5.63636          5.63636
+         5.72727          5.72727
+         5.81818          5.81818
+         5.90909          5.90909
+               6                6
+         6.09091          6.09091
+         6.18182          6.18182
+         6.27273          6.27273
+         6.36364          6.36364
+         6.45455          6.45455
+         6.54545          6.54545
+         6.63636          6.63636
+         6.72727          6.72727
+         6.81818          6.81818
+         6.90909          6.90909
+               7                7
+         7.09091          7.09091
+         7.18182          7.18182
+         7.27273          7.27273
+         7.36364          7.36364
+         7.45455          7.45455
+         7.54545          7.54545
+         7.63636          7.63636
+         7.72727          7.72727
+         7.81818          7.81818
+         7.90909          7.90909
+               8                8
+         8.09091          8.09091
+         8.18182          8.18182
+         8.27273          8.27273
+         8.36364          8.36364
+         8.45455          8.45455
+         8.54545          8.54545
+         8.63636          8.63636
+         8.72727          8.72727
+         8.81818          8.81818
+         8.90909          8.90909
+               9                9
+         9.09091          9.09091
+         9.18182          9.18182
+         9.27273          9.27273
+         9.36364          9.36364
+         9.45455          9.45455
+         9.54545          9.54545
+         9.63636          9.63636
+         9.72727          9.72727
+         9.81818          9.81818
+         9.90909          9.90909
+              10               10
+&

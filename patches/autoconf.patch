@@ -1,0 +1,25 @@
+This is a patch fixing AC_TRY_RUN() behaviour.
+It should be applied if you're going to re-generate the configure script.
+
+--- autoconf-2.13/acgeneral.m4.orig	Tue Jan  5 15:27:37 1999
++++ autoconf-2.13/acgeneral.m4	Wed Jun 28 01:02:43 2000
+@@ -1825,14 +1825,15 @@
+ EOF
+ if AC_TRY_EVAL(ac_link) && test -s conftest${ac_exeext} && (./conftest; exit) 2>/dev/null
+ then
++  ifelse([$2], , :, [ $2
++  rm -fr conftest*
++])
+ dnl Don't remove the temporary files here, so they can be examined.
+-  ifelse([$2], , :, [$2])
+ else
++ifelse([$3], , , [ $3 ]
+   echo "configure: failed program was:" >&AC_FD_CC
+   cat conftest.$ac_ext >&AC_FD_CC
+-ifelse([$3], , , [  rm -fr conftest*
+-  $3
+-])dnl
++)dnl
+ fi
+ rm -fr conftest*])
+ 

@@ -1,0 +1,455 @@
+# Grace project file
+#
+@version 50001
+@page size 792 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman" , "Times-Roman"
+@map font 2 to "Times-Italic" , "Times-Italic"
+@map font 1 to "Times-Bold" , "Times-Bold"
+@map font 3 to "Times-BoldItalic" , "Times-BoldItalic"
+@map font 4 to "Helvetica" , "Helvetica"
+@map font 6 to "Helvetica-Oblique" , "Helvetica-Oblique"
+@map font 5 to "Helvetica-Bold" , "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique" , "Helvetica-BoldOblique"
+@map font 8 to "Symbol" , "Symbol"
+@map font 9 to "ZapfDingbats" , "ZapfDingbats"
+@default linewidth 1
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 4
+@default char size 1.000000
+@default symbol size 1.000000
+@background color 0
+@timestamp on
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 90
+@timestamp font 4
+@timestamp char size 1.000000
+@timestamp def "Sun Sep 13 23:55:10 1998"
+@with box
+@    box on
+@    box loctype view
+@    box 0.067669, 0.129241, 0.185464, 0.245557
+@    box linestyle 1
+@    box linewidth 1
+@    box color 1
+@    box fill color 1
+@    box fill pattern 0
+@box def
+@with box
+@    box on
+@    box loctype view
+@    box 0.219298, 0.037157, 0.513784, 0.135703
+@    box linestyle 3
+@    box linewidth 3
+@    box color 1
+@    box fill color 8
+@    box fill pattern 1
+@box def
+@with line
+@    line on
+@    line loctype view
+@    line 0.075188, 0.282714, 0.176692, 0.282714
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.8, 0.534733, 0.89, 0.542811
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.8, 0.185, 0.8, 0.25
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.12782, 0.7, 0.241855, 0.516963
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.082417582418, 0.512355848435, 0.025, 0.38
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with string
+@    string on
+@    string loctype view
+@    string 0.077694, 0.369952
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "A text string"
+@with string
+@    string on
+@    string loctype view
+@    string 0.085213, 0.311793
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "A line"
+@with string
+@    string on
+@    string loctype view
+@    string 0.091479, 0.185784
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "A box"
+@with string
+@    string on
+@    string loctype view
+@    string 0.9, 0.547658
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Properties of the graph"
+@with string
+@    string on
+@    string loctype view
+@    string 0.9, 0.52
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Frame are set in"
+@with string
+@    string on
+@    string loctype view
+@    string 0.9, 0.48
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Plot/Graph appearance"
+@with string
+@    string on
+@    string loctype view
+@    string 0.743108, 0.17
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Properties of the tick"
+@with string
+@    string on
+@    string loctype view
+@    string 0.743108, 0.135
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "labels are set in"
+@with string
+@    string on
+@    string loctype view
+@    string 0.743108, 0.1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Plot/Axis properties"
+@with string
+@    string on
+@    string loctype view
+@    string 0.235, 0.085
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "A string in a filled box"
+@with string
+@    string on
+@    string loctype view
+@    string 0.028822, 0.756058
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Axis labels are defined"
+@with string
+@    string on
+@    string loctype view
+@    string 0.028, 0.725
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "in Plot/Axis properties"
+@with string
+@    string on
+@    string loctype view
+@    string 0.383459, 0.575121
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "The scaling of the axes"
+@with string
+@    string on
+@    string loctype view
+@    string 0.383459, 0.545
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "and tick mark spacing"
+@with string
+@    string on
+@    string loctype view
+@    string 0.383459, 0.515
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "are set in Plot/Axis properties"
+@with string
+@    string on
+@    string loctype view
+@    string 0.0206043956044, 0.532125205931
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Time stamp"
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 autoscale type auto
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world xmin 0
+@    world xmax 1
+@    world ymin 0
+@    world ymax 1
+@    stack world 0, 0, 0, 0 tick 0, 0, 0, 0
+@    view xmin 0.344771
+@    view xmax 0.800654
+@    view ymin 0.281046
+@    view ymax 0.689542
+@    title "Title"
+@    title font 4
+@    title size 1.500000
+@    title color 1
+@    subtitle "Subtitle"
+@    subtitle font 4
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  label "X-axis"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label op bottom
+@    xaxis  tick on
+@    xaxis  tick major 0.5
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel prec 1
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 1
+@    xaxis  ticklabel color 1
+@    xaxis  tick op both
+@    xaxis  ticklabel type auto
+@    xaxis  tick type auto
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  label "Y-axis"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label op left
+@    yaxis  tick on
+@    yaxis  tick major 0.5
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel prec 1
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 1
+@    yaxis  ticklabel color 1
+@    yaxis  tick op both
+@    yaxis  ticklabel type auto
+@    yaxis  tick type auto
+@    altxaxis  off
+@    altyaxis  off
+@    legend off
+@    legend loctype view
+@    legend x1 0.8
+@    legend y1 0.8
+@    legend box off
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 1
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 0
+@    legend hgap 1
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@WITH G0
+@G0 ON

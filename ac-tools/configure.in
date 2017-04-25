@@ -1,0 +1,694 @@
+dnl **** Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.57)
+
+AC_INIT(src/main.c)
+AC_CONFIG_AUX_DIR(ac-tools)
+
+AC_CONFIG_HEADER(config.h:ac-tools/config.h.in)
+
+AC_PREFIX_DEFAULT("/usr/local")
+
+builtin(include, ac-tools/aclocal.m4)
+
+AC_SUBST(EXEEXT)
+AC_SUBST(OBJEXT)
+AC_SUBST(BATEXT)
+
+AC_SUBST(MKINSTALLDIRS)
+
+AC_SUBST(GRACE)
+AC_SUBST(GRACE_HOME)
+AC_SUBST(GUI_FLAGS)
+AC_SUBST(FC)
+AC_SUBST(GUI_LIBS)
+AC_SUBST(NOGUI_LIBS)
+AC_SUBST(NETCDF_LIBS)
+AC_SUBST(XDR_LIB)
+AC_SUBST(DL_LIB)
+AC_SUBST(T1_LIB)
+AC_SUBST(T1_INC)
+AC_SUBST(FFTW_LIB)
+AC_SUBST(Z_LIB)
+AC_SUBST(JPEG_LIB)
+AC_SUBST(PNG_LIB)
+AC_SUBST(PDF_LIB)
+AC_SUBST(XBAE_INC)
+AC_SUBST(SUBDIRS)
+
+AC_SUBST(GRACE_EDITOR)
+AC_SUBST(GRACE_HELPVIEWER)
+AC_SUBST(PRINT_CMD)
+
+dnl **** Those are for T1lib
+
+AC_SUBST(T1_AA_TYPE16)
+AC_SUBST(T1_AA_TYPE32)
+AC_SUBST(T1_AA_TYPE64)
+
+dnl **** define home dir of Grace
+if test "x${prefix}" = "xNONE"
+then
+  GRACE_HOME=${ac_default_prefix}/grace
+else
+  GRACE_HOME=${prefix}/grace
+fi
+AC_ARG_ENABLE(grace-home,
+[  --enable-grace-home=DIR      define Grace home dir [[PREFIX/grace]]],
+[GRACE_HOME="${enableval}"])
+
+
+dnl **** option to define config file overriding autodetect
+AC_ARG_ENABLE(config,
+[  --enable-config=FILE         define configuration FILE to override
+                               autodetection (not recommended!)],
+                             [CONF_FILE="${enableval}"])
+
+dnl **** define C compiler
+CC=${CC-gcc}
+AC_ARG_WITH(cc,
+[  --with-cc=PROG               use PROG as C compiler [[${CC-gcc}]]],
+[CC="${withval}"])
+
+dnl **** define Fortran compiler
+FC=${FC-f77}
+AC_ARG_WITH(f77,
+[  --with-f77=PROG              use PROG as Fortran compiler [[${FC-f77}]]],
+[FC="${withval}"])
+
+dnl Chance to add include path
+AC_ARG_WITH(extra-incpath,
+[  --with-extra-incpath=PATH    define extra include path (dir1:dir2:...) [[none]]],
+[CPPFLAGS="${CPPFLAGS} -I`echo ${withval}|sed 's/:/\ -I/g'`"])
+
+dnl ... and ld path
+AC_ARG_WITH(extra-ldpath,
+[  --with-extra-ldpath=PATH     define extra ld path (dir1:dir2:...) [[none]]],
+[LDFLAGS="-L`echo ${withval}|sed 's/:/\ -L/g'` ${LDFLAGS}";
+  case "${host}" in
+    sparc-sun-solaris*) LDFLAGS="-R:${withval} ${LDFLAGS}";;
+  esac
+])
+
+dnl **** use bundled T1lib  
+AC_ARG_WITH(bundled_t1lib,
+[  --with-bundled-t1lib         use bundled T1lib [[no]]],
+[case "${withval}" in
+  yes) bundled_t1lib=true ;;
+  no)  bundled_t1lib=false;;
+  *) AC_MSG_ERROR(bad value ${withval} for --with-bundled-t1lib) ;;
+esac],[bundled_t1lib=false])
+
+dnl **** use bundled Xbae  
+AC_ARG_WITH(bundled_xbae,
+[  --with-bundled-xbae          use bundled Xbae [[yes]]],
+[case "${withval}" in
+  yes) bundled_xbae=true ;;
+  no)  bundled_xbae=false;;
+  *) AC_MSG_ERROR(bad value ${withval} for --with-bundled-xbae) ;;
+esac],[bundled_xbae=true])
+
+dnl **** use netcdf  
+AC_ARG_ENABLE(netcdf,
+[  --enable-netcdf              enable support for netCDF [[yes]]],
+[case "${enableval}" in
+  yes) netcdf=true ;;
+  no)  netcdf=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-netcdf) ;;
+esac],[netcdf=true])
+
+dnl **** use FFTW
+AC_ARG_WITH(fftw,
+[  --with-fftw                  use FFTW library for Fourier transforms [[yes]]],
+[case "${withval}" in
+  yes) fftw=true ;;
+  no)  fftw=false;;
+  *) AC_MSG_ERROR(bad value ${withval} for --with-fftw) ;;
+esac],[fftw=true])
+
+dnl **** whether to build JPEG driver
+AC_ARG_ENABLE(jpegdrv,
+[  --enable-jpegdrv             build JPEG driver [[yes]]],
+[case "${enableval}" in
+  yes) jpegdrv=true ;;
+  no)  jpegdrv=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-jpegdrv) ;;
+esac],[jpegdrv=true])
+
+dnl **** whether to build PNG driver
+AC_ARG_ENABLE(pngdrv,
+[  --enable-pngdrv              build PNG driver [[yes]]],
+[case "${enableval}" in
+  yes) pngdrv=true ;;
+  no)  pngdrv=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-pngdrv) ;;
+esac],[pngdrv=true])
+
+dnl **** whether to build PDF driver
+AC_ARG_ENABLE(pdfdrv,
+[  --enable-pdfdrv              build PDF driver [[yes]]],
+[case "${enableval}" in
+  yes) pdfdrv=true ;;
+  no)  pdfdrv=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-pdfdrv) ;;
+esac],[pdfdrv=true])
+
+dnl **** check if user wants to compile grace_np lib with support for Fortran
+AC_ARG_ENABLE(f77_wrapper,
+[  --enable-f77-wrapper         include Fortran wrapper for libgrace_np [[yes]]],
+[case "${enableval}" in
+  yes) f77_wrapper=true ;;
+  no)  f77_wrapper=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-f77-wrapper) ;;
+esac],[f77_wrapper=true])
+
+dnl **** use editres  
+AC_ARG_ENABLE(editres,
+[  --enable-editres             enable editres support [[yes]]],
+[case "${enableval}" in
+  yes) editres=true ;;
+  no)  editres=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-editres) ;;
+esac],[editres=true])
+
+dnl **** use libhelp
+AC_ARG_ENABLE(libhelp,
+[  --enable-libhelp             use libhelp [[no]]],
+[case "${enableval}" in
+  yes) libhelp=true ;;
+  no)  libhelp=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-libhelp) ;;
+esac],[libhelp=false])
+
+dnl **** use XmHTML
+AC_ARG_ENABLE(xmhtml,
+[  --enable-xmhtml              use XmHTML widget for on-line help [[yes]]],
+[case "${enableval}" in
+  yes) xmhtml=true ;;
+  no)  xmhtml=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-xmhtml) ;;
+esac],[xmhtml=true])
+
+if test $xmhtml = true && test $libhelp = true
+then
+  AC_MSG_ERROR(can't use both libhelp and XmHTML)
+fi
+
+dnl **** define editor
+GRACE_EDITOR="'xterm -e vi'"
+AC_ARG_WITH(editor,
+[  --with-editor=COMMAND        define editor [["xterm -e vi"]]],
+[GRACE_EDITOR="'${withval}'"])
+
+dnl **** define help viewer
+GRACE_HELPVIEWER="'mozilla %s'"
+AC_ARG_WITH(helpviewer,
+[  --with-helpviewer=COMMAND    define help viewer command [["mozilla %s"]]],
+[GRACE_HELPVIEWER="'${withval}'"])
+
+dnl **** define print command
+AC_ARG_WITH(printcmd,
+[  --with-printcmd=PROG         use PROG for printing],
+[if test "x${withval}" != "x"; then
+    PRINT_CMD="'${withval}'"
+ else
+    PRINT_CMD=NONE
+ fi],
+[PRINT_CMD=NONE]
+)
+
+dnl **** check if user wants to compile with debugging support
+AC_ARG_ENABLE(debug,
+[  --enable-debug               turn on debugging [[no]]],
+[case "${enableval}" in
+  yes) debug=true ;;
+  no)  debug=false ;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-debug) ;;
+esac],[debug=false])
+
+dnl **** maintainer mode
+AC_ARG_ENABLE(maintainer,
+[  --enable-maintainer          enable maintainer's mode [[no]]],
+[case "${enableval}" in
+  yes) maintainer=true; debug=true ;;
+  no)  maintainer=false ;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-maintainer) ;;
+esac],[maintainer=false])
+
+if test $maintainer = true
+then
+  AC_DEFINE(WITH_DEBUG)
+fi
+
+dnl Support for Fortran wrapper
+if test $f77_wrapper = true; then
+  AC_DEFINE(WITH_F77_WRAPPER)
+fi
+
+
+dnl **** Possibility to override defaults
+if test "x$CONF_FILE" != "x"
+then
+  if test -r $CONF_FILE
+  then
+    AC_MSG_RESULT(--> using \`$CONF_FILE' as config file)
+    . $CONF_FILE
+  else
+    AC_MSG_ERROR(--> Can't open file \`$CONF_FILE' for reading!)
+    exit 1
+  fi
+else
+  dnl **** Define CFLAGS etc empty to prevent configure from setting them
+  CFLAGS=${CFLAGS-""}
+  FFLAGS=${FFLAGS-""}
+  LDFLAGS=${LDFLAGS-""}
+  OPTIMIZE=${OPTIMIZE-""}
+  DEBUG=${DEBUG-""}
+fi
+
+dnl **** Check for host type
+AC_CANONICAL_HOST
+
+dnl Checks for C compiler
+AC_PROG_CC
+
+AC_ISC_POSIX
+AC_AIX
+AC_MINIX
+
+if test "x${CFLAGS}" = "x"
+then
+  if test "x${GCC}" = "xyes"
+  then
+    dnl **** default settings for gcc
+    DEBUG="-g -O2"
+    OPTIMIZE="-O2"
+    CFLAGS="-fno-common -Wall -Wpointer-arith -Wnested-externs"
+
+    dnl **** check for strength-reduce bug
+    ACX_GCC_STRENGTH_REDUCE(CFLAGS="$CFLAGS -fno-strength-reduce")
+
+    CFLAGS="$CPU_FLAGS $CFLAGS"
+  else
+    case "${host}" in
+      alpha*-dec-osf4.*)
+        CFLAGS="-std1 -w0"
+        OPTIMIZE="-O2"
+        DEBUG="-g3 -O2"
+        ;;
+      hppa*-hp-hpux*)
+        CFLAGS="-Aa -D_HPUX_SOURCE"
+        OPTIMIZE="-O"
+        DEBUG="-g -O"
+        ;;
+      mips-sgi-irix6.[[4-9]]*)
+        CFLAGS="-w"
+        OPTIMIZE="-O2 -OPT:Olimit=0"
+        DEBUG="-g3 -O2 -OPT:Olimit=0"
+        ;;
+      mips-sgi-irix*)
+        CFLAGS="-fullwarn -woff 835"
+        OPTIMIZE="-O2 -Olimit 3500"
+        ;;
+      rs6000-ibm-aix*)
+        CFLAGS="-D_ALL_SOURCE"
+        OPTIMIZE="-O2"
+        DEBUG="-g -O2"
+        ;;
+      *)
+        CFLAGS=""
+        OPTIMIZE="-O"
+        DEBUG="-g"
+        ;;
+    esac
+  fi
+fi
+
+case $debug in
+  true) CFLAGS="$DEBUG $CFLAGS";;
+  *) CFLAGS="$OPTIMIZE $CFLAGS";;
+esac
+
+case $FC in
+  /*|../*|./*)
+     if test ! -x $FC; then
+       FC=no
+     fi
+     ;;
+  *) AC_CHECK_PROG(fc, $FC, $FC, no)
+     FC=$ac_cv_prog_fc
+     ;;
+esac
+
+if test "${FC}" = "no"
+then
+  AC_MSG_RESULT(--> Fortran tests won't be compiled)
+  FC=:
+fi
+
+dnl **** Check for some compiler/system characteristics
+AC_C_CHAR_UNSIGNED
+AC_CHECK_SIZEOF(char,0)
+AC_CHECK_SIZEOF(short,0)
+AC_CHECK_SIZEOF(int,0)
+AC_CHECK_SIZEOF(long,0)
+AC_CHECK_SIZEOF(long long,0)
+AC_CHECK_SIZEOF(float,0)
+AC_CHECK_SIZEOF(double,0)
+AC_CHECK_SIZEOF(long double,0)
+AC_CHECK_SIZEOF(void *,0)
+
+dnl **** Check for endianess
+AC_C_BIGENDIAN
+
+dnl **** Checks for FPU arithmetics
+ACX_CHECK_FPU
+
+dnl **** .exe/.obj file extensions
+AC_EXEEXT
+AC_OBJEXT
+
+OBJEXT=".$OBJEXT"
+
+AC_PROG_MAKE_SET
+
+dnl **** Checks for programs.
+AC_CHECK_PROG(AR, ar, ar, NONE)
+if test "$AR" = "NONE"; then
+  AC_MSG_ERROR(--> Can't find \`ar'!)
+  AC_CACHE_SAVE
+  exit 1
+fi
+
+AC_PROG_RANLIB
+AC_PROG_LN_S
+AC_PROG_YACC
+
+AC_PROG_INSTALL
+case "x$INSTALL" in
+   x/*) ;;
+   *) INSTALL=`pwd`/ac-tools/"shtool install -c" ;
+esac
+
+MKINSTALLDIRS=`pwd`/ac-tools/"shtool mkdir -p -f"
+
+if test "x$PRINT_CMD" = "xNONE"; then
+  AC_CHECK_PROG(LP_CMD, lp, 'lp -c', "NONE")
+  if test "${ac_cv_prog_LP_CMD}" = "NONE"; then
+    AC_CHECK_PROG(LPR_CMD, lpr, 'lpr', "NONE")
+    if test "${ac_cv_prog_LPR_CMD}" = "NONE"; then
+      PRINT_CMD=
+    else
+      PRINT_CMD="${ac_cv_prog_LPR_CMD}"
+    fi
+  else
+    PRINT_CMD="${ac_cv_prog_LP_CMD}"
+  fi
+fi
+
+AC_MSG_RESULT(--> Using \"$PRINT_CMD\" to print)
+
+dnl **** Checks for header files.
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_CHECK_HEADERS(unistd.h fcntl.h)
+AC_CHECK_HEADERS(sys/param.h sys/time.h sys/select.h)
+AC_HEADER_TIME
+dnl **** math.h and related
+AC_CHECK_HEADERS(math.h float.h ieeefp.h)
+
+dnl **** Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_TYPE_PID_T
+AC_TYPE_SIZE_T
+AC_STRUCT_TM
+
+dnl **** Checks for library functions.
+AC_TYPE_SIGNAL
+AC_FUNC_ALLOCA
+AC_CHECK_FUNCS(getcwd gethostname)
+AC_CHECK_FUNCS(strstr)
+AC_CHECK_FUNCS(memcpy memmove)
+AC_CHECK_FUNCS(unlink fcntl)
+AC_CHECK_FUNCS(popen)
+AC_CHECK_FUNCS(gettimeofday)
+AC_CHECK_FUNCS(fnmatch)
+AC_CHECK_FUNCS(vsnprintf)
+AC_CHECK_FUNCS(on_exit)
+AC_CHECK_FUNCS(strerror)
+if test "$ac_cv_func_strerror" = no; then
+  AC_CACHE_CHECK([for sys_errlist declaration in stdio.h], ac_cv_sys_errlist_decl,
+      AC_EGREP_HEADER(sys_errlist, stdio.h, ac_cv_sys_errlist_decl="yes",
+      ac_cv_sys_errlist_decl="no"))
+  if test "$ac_cv_sys_errlist_decl" = yes; then
+    AC_DEFINE(HAVE_SYS_ERRLIST_DECL)
+  fi
+fi
+
+ICE_CHECK_DECL(drand48, stdlib.h)
+
+dnl **** Check for locale
+AC_CHECK_FUNCS(setlocale)
+
+dnl **** Check for buggy realloc()
+ACX_CHECK_REALLOC(AC_DEFINE(REALLOC_IS_BUGGY))
+
+dnl **** Checks for libm
+AC_CHECK_LIB(m, sin)
+
+dnl **** Those functions are usually found in libm but...
+ICE_CHECK_DECL(hypot, math.h)
+ICE_CHECK_DECL(rint, math.h)
+ICE_CHECK_DECL(cbrt, math.h)
+ICE_CHECK_DECL(log2, math.h)
+ICE_CHECK_DECL(asinh, math.h)
+ICE_CHECK_DECL(acosh, math.h)
+ICE_CHECK_DECL(atanh, math.h)
+ICE_CHECK_DECL(lgamma, math.h)
+
+dnl **** The machten4 (unix for mac) system does have signgam in libm
+dnl **** but it is not declared in <math.h>
+if test "$ac_cv_func_lgamma" = yes; then
+  AC_CACHE_CHECK([for signgam declaration in math.h], ac_cv_signgam_decl,
+      AC_EGREP_HEADER(signgam, math.h, ac_cv_signgam_decl="yes",
+      ac_cv_signgam_decl="no"))
+  if test "$ac_cv_signgam_decl" = yes; then
+    AC_DEFINE(HAVE_SIGNGAM_DECL)
+  fi
+fi
+
+ICE_CHECK_DECL(erf, math.h)
+ICE_CHECK_DECL(erfc, math.h)
+ICE_CHECK_DECL(j0, math.h)
+ICE_CHECK_DECL(j1, math.h)
+ICE_CHECK_DECL(jn, math.h)
+ICE_CHECK_DECL(y0, math.h)
+ICE_CHECK_DECL(y1, math.h)
+ICE_CHECK_DECL(yn, math.h)
+ICE_CHECK_DECL(finite, math.h)
+dnl **** C9X-compatible isfinite() may be a good replacement for finite()
+if test "$ac_cv_lib_m_finite" != yes; then
+  ICE_CHECK_DECL(isfinite, math.h)
+fi
+ICE_CHECK_DECL(isnan, math.h)
+
+dnl **** Check for T1lib installed
+if test $bundled_t1lib = false
+then
+  ACX_CHECK_T1LIB(1.3.1, AC_DEFINE(HAVE_LIBT1), bundled_t1lib=true)
+fi
+
+if test $bundled_t1lib = true
+then
+  dnl **** Use the bundled T1lib
+
+  AC_MSG_RESULT(--> Bundled version of T1lib will be used)
+
+  T1_LIB='$(TOP)/T1lib/libt1.a'
+  T1_INC='-I$(TOP)/T1lib/t1lib'
+  t1lib_dir="T1lib"
+
+  dnl **** Check ANSI types
+  ACX_ANSI_TYPES
+else
+  AC_MSG_RESULT(--> Good. Seems you have compatible version of T1lib installed)
+fi
+
+dnl **** Check for XDR
+AC_SEARCH_LIBS(xdrstdio_create, nsl rpc xdr rpclib, XDR_LIB=$mdw_cv_lib_xdrstdio_create, XDR_LIB="NONE")
+
+if test "${XDR_LIB}" = "NONE"; then
+  XDR_LIB=
+  AC_MSG_RESULT(--> No XDR library found; grconvert will not be built)
+else
+  grconvert_dir="grconvert"
+fi
+
+dnl **** Check for dlopen() interface
+dnl           (Linux, SunOS-[4,5], OSF, IRIX, AIX-4, UnixWare, ...)
+AC_SEARCH_LIBS(dlopen, dl, [DL_LIB=$mdw_cv_lib_dlopen; AC_DEFINE(HAVE_DLOPEN)], DL_LIB="NONE")
+
+if test "${DL_LIB}" != "NONE"; then
+  dnl **** Old implementations of dlopen() don't have RTLD_NOW
+  AC_CACHE_CHECK([whether RTLD_NOW is defined in dlfcn.h], ac_cv_rtld_now_in_dlfcn_h,  
+    AC_EGREP_CPP(yes,
+        [#include <dlfcn.h>
+         #ifdef RTLD_NOW
+            yes
+         #endif
+        ], ac_cv_rtld_now_in_dlfcn_h="yes"; AC_DEFINE(HAVE_RTLD_NOW),
+           ac_cv_rtld_now_in_dlfcn_h="no")
+  )
+fi
+
+if test "${DL_LIB}" = "NONE"; then
+  AC_MSG_RESULT(--> Support for dll modules will not be compiled)
+  DL_LIB=""
+fi
+
+if test $netcdf = true
+then
+  ACX_CHECK_NETCDF(3.0, AC_DEFINE(HAVE_NETCDF),
+                   AC_MSG_RESULT(--> support for netCDF is disabled))
+fi
+
+if test $fftw = true
+then
+  ACX_CHECK_FFTW(2.1.3, AC_DEFINE(HAVE_FFTW),
+                 AC_MSG_RESULT(--> using legacy unoptimized FFT code))
+fi
+
+dnl **** check for libz - needed for PDF and PNG drivers and XmHTML
+if test $pngdrv = true || test $pdfdrv = true || test $xmhtml = true
+then
+  ACX_CHECK_ZLIB(1.0.3)
+fi
+
+dnl **** check for IJG's libjpeg - also, for PDF driver and XmHTML
+if test $jpegdrv = true || test $pdfdrv = true || test $xmhtml = true
+then
+  ACX_CHECK_JPEG(61, AC_DEFINE(HAVE_LIBJPEG),
+                     AC_MSG_RESULT(--> JPEG backend is disabled))
+fi
+
+dnl **** check for libpng - needed for PDF and PNG drivers and XmHTML
+if test $pngdrv = true || test $pdfdrv = true || test $xmhtml = true
+then
+  ACX_CHECK_PNG(0.9.6, AC_DEFINE(HAVE_LIBPNG),
+                       AC_MSG_RESULT(--> PNG backend is disabled))
+fi
+
+dnl **** check for PDFlib
+if test $pdfdrv = true
+then
+  ACX_CHECK_PDFLIB(5.0.0, AC_DEFINE(HAVE_LIBPDF), pdfdrv=false)
+fi
+if test $pdfdrv != true; then
+  AC_MSG_RESULT(--> PDF driver is disabled)
+fi
+
+dnl **** TODO: undefine unneeded libraries
+
+NOGUI_LIBS="$LIBS"
+
+dnl **** Choose a GUI *****
+
+dnl **** default is gui-less
+GRACE=grace
+
+AC_PATH_XTRA
+if test "$no_x" = yes; then
+  GUI="NONE_GUI"
+else
+dnl **** Check for Motif
+  GUI_LIBS="-lXt -lXext -lX11 $X_PRE_LIBS $X_EXTRA_LIBS"
+
+  ACX_SAVE_STATE
+  
+  LIBS="$GUI_LIBS"
+  CFLAGS="$X_CFLAGS $CFLAGS"
+  CPPFLAGS="$X_CFLAGS $CPPFLAGS"
+  LDFLAGS="$X_LIBS $LDFLAGS"
+  
+  dnl **** use editres  
+  case $editres in
+    true) AC_CHECK_LIB(Xmu,_XEditResCheckMessages,GUI_LIBS="-lXmu $GUI_LIBS"; AC_DEFINE(WITH_EDITRES));;
+    *) ;;
+  esac
+  
+  if test "$ac_cv_lib_Xmu__XEditResCheckMessages" != yes; then
+    AC_MSG_RESULT(--> support for EditRes protocol is disabled)
+  fi
+
+  dnl **** some Motif-2.1 variants need the -lXp library
+  AC_CHECK_LIB(Xp,main,GUI_LIBS="-lXp $GUI_LIBS")
+
+  dnl **** and some - Xpm lib
+  AC_CHECK_LIB(Xpm,XpmCreatePixmapFromData,GUI_LIBS="-lXpm $GUI_LIBS"; AC_DEFINE(HAVE_XPM))
+
+  if test "$ac_cv_lib_Xpm_XpmCreatePixmapFromData" = yes; then
+    AC_CHECK_HEADERS(xpm.h X11/xpm.h)
+  fi
+  
+  ACX_RESTORE_STATE
+
+  ACX_CHECK_MOTIF(1002)
+  if test "$acx_cv_motif" = "no"; then
+    dnl **** only Motif GUI is supported by now:
+    GUI="NONE_GUI"
+    GUI_FLAGS=""
+    GUI_LIBS=""
+    AC_MSG_ERROR(M*tif has not been found)
+  else
+    GUI_LIBS="$MOTIF_LIB $GUI_LIBS"
+    GUI="MOTIF_GUI"
+    GUI_FLAGS="$X_CFLAGS"
+    GRACE=xmgrace
+
+    dnl **** Special Motif checks
+    xsave_CPPFLAGS="$CPPFLAGS"
+    xsave_LIBS="$LIBS"
+    CPPFLAGS="$CPPFLAGS $GUI_FLAGS"
+    LIBS="$X_LIBS $GUI_LIBS $LIBS"
+
+    dnl **** Check for Xbae widget
+    if test $bundled_xbae = false
+    then
+      AC_CHECK_LIB(Xbae, XbaeCreateMatrix, XBAE_LIB="-lXbae";AC_DEFINE(HAVE_LIBXBAE))
+    fi
+    if test -z "$XBAE_LIB"
+    then
+      dnl **** Use the bundled Xbae library
+      AC_MSG_RESULT(--> Bundled version of Xbae library will be used)
+      XBAE_LIB='$(TOP)/Xbae/Xbae/libXbae.a'
+      XBAE_INC='-I$(TOP)/Xbae'
+      xbae_dir="Xbae/Xbae"
+    else
+      AC_MSG_RESULT(--> Good. Seems you have compatible version of Xbae installed)
+    fi
+
+    dnl **** Check for libhelp
+    case $libhelp in
+      true) AC_CHECK_LIB(hlpclient,get_help,LIBHELP_LIB="-lhlpclient"; AC_DEFINE(WITH_LIBHELP));;
+      *)  ;;
+    esac
+
+    dnl **** Check for XmHTML widget
+    if test $xmhtml = true
+    then
+      ACX_CHECK_XMHTML(1105, AC_DEFINE(WITH_XMHTML), xmhtml=false)
+    fi
+
+    GUI_LIBS="$LIBHELP_LIB $XMHTML_LIB $XBAE_LIB $GUI_LIBS"
+
+    CPPFLAGS="$xsave_CPPFLAGS"
+    LIBS="$xsave_LIBS"
+    
+  fi
+fi
+
+dnl **** Final list of subdirs
+SUBDIRS="cephes ${t1lib_dir} ${xbae_dir} src ${grconvert_dir} grace_np fonts templates doc examples auxiliary"
+
+dnl **** Create Make.conf
+AC_OUTPUT(Make.conf:ac-tools/Make.conf.in)

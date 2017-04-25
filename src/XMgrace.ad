@@ -1,0 +1,25 @@
+!
+! X defaults for xmgrace
+!
+!XMgrace*fontList: -adobe-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*
+! Fixed font for "Results" window
+!XMgrace*background: #e5e5e5e5e5e5
+!XMgrace*XmPushButton*background: #b0b0c4c4dede
+!XMgrace*XmArrowButton*background: #b0b0c4c4dede
+!XMgrace*XmText*background: #ceb8e75be75b
+!XMgrace*XmMenuShell*background: #cccccccccccc
+!XMgrace*XmToggleButton.fillOnSelect: True
+!XMgrace*XmToggleButton.selectColor:  red
+!XMgrace*XmSeparator.margin: 0
+! Disable tear-off menus
+!XMgrace*menuBar*tearOffModel: XmTEAR_OFF_DISABLED
+! Use GXinvert rather than GXxor for rubberband lines
+! if the rubberbanding for zooms and lines, etc. doesn't
+! appear on the canvas, set the following resource to no.
+!XMgrace.invertDraw: True
+! Allow double clicks on canvas
+!XMgrace.allowDoubleClick: No
+! Switch toolbar(s) off
+!XMgrace*toolBar: Off
+!XMgrace*statusBar: Off
+!XMgrace*locatorBar: Off

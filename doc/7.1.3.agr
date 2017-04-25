@@ -1,0 +1,4708 @@
+# Grace project file
+#
+@version 50100
+@page size 600, 600
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap on
+@date wrap year 1900
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%16.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Fri Feb 11 13:59:23 2000"
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world xmin 0
+@    world xmax 50
+@    world ymin -5
+@    world ymax 5
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view xmin 0.100000
+@    view xmax 0.900000
+@    view ymin 0.100000
+@    view ymax 0.465000
+@    title ""
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 10
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label ""
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 2
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend x1 0.76
+@    legend y1 0.42
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 1
+@    legend box fill pattern 0
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 1
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 1.0
+@    s0 line color 1
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 1
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment "X=x 	, Y=sin(x)"
+@    s0 legend  "1"
+@    s1 hidden false
+@    s1 type xy
+@    s1 symbol 0
+@    s1 symbol size 1.000000
+@    s1 symbol color 2
+@    s1 symbol pattern 1
+@    s1 symbol fill color 2
+@    s1 symbol fill pattern 0
+@    s1 symbol linewidth 1.0
+@    s1 symbol linestyle 1
+@    s1 symbol char 65
+@    s1 symbol char font 0
+@    s1 symbol skip 0
+@    s1 line type 1
+@    s1 line linestyle 1
+@    s1 line linewidth 1.0
+@    s1 line color 2
+@    s1 line pattern 1
+@    s1 baseline type 0
+@    s1 baseline off
+@    s1 dropline off
+@    s1 fill type 0
+@    s1 fill rule 0
+@    s1 fill color 1
+@    s1 fill pattern 1
+@    s1 avalue off
+@    s1 avalue type 2
+@    s1 avalue char size 1.000000
+@    s1 avalue font 0
+@    s1 avalue color 1
+@    s1 avalue rot 0
+@    s1 avalue format general
+@    s1 avalue prec 3
+@    s1 avalue prepend ""
+@    s1 avalue append ""
+@    s1 avalue offset 0.000000 , 0.000000
+@    s1 errorbar on
+@    s1 errorbar place both
+@    s1 errorbar color 2
+@    s1 errorbar pattern 1
+@    s1 errorbar size 1.000000
+@    s1 errorbar linewidth 1.0
+@    s1 errorbar linestyle 1
+@    s1 errorbar riser linewidth 1.0
+@    s1 errorbar riser linestyle 1
+@    s1 errorbar riser clip off
+@    s1 errorbar riser clip length 0.100000
+@    s1 comment "X=x 	, Y=2*sin(2*x)"
+@    s1 legend  "2"
+@    s2 hidden false
+@    s2 type xy
+@    s2 symbol 0
+@    s2 symbol size 1.000000
+@    s2 symbol color 3
+@    s2 symbol pattern 1
+@    s2 symbol fill color 3
+@    s2 symbol fill pattern 0
+@    s2 symbol linewidth 1.0
+@    s2 symbol linestyle 1
+@    s2 symbol char 65
+@    s2 symbol char font 0
+@    s2 symbol skip 0
+@    s2 line type 1
+@    s2 line linestyle 1
+@    s2 line linewidth 1.0
+@    s2 line color 3
+@    s2 line pattern 1
+@    s2 baseline type 0
+@    s2 baseline off
+@    s2 dropline off
+@    s2 fill type 0
+@    s2 fill rule 0
+@    s2 fill color 1
+@    s2 fill pattern 1
+@    s2 avalue off
+@    s2 avalue type 2
+@    s2 avalue char size 1.000000
+@    s2 avalue font 0
+@    s2 avalue color 1
+@    s2 avalue rot 0
+@    s2 avalue format general
+@    s2 avalue prec 3
+@    s2 avalue prepend ""
+@    s2 avalue append ""
+@    s2 avalue offset 0.000000 , 0.000000
+@    s2 errorbar on
+@    s2 errorbar place both
+@    s2 errorbar color 3
+@    s2 errorbar pattern 1
+@    s2 errorbar size 1.000000
+@    s2 errorbar linewidth 1.0
+@    s2 errorbar linestyle 1
+@    s2 errorbar riser linewidth 1.0
+@    s2 errorbar riser linestyle 1
+@    s2 errorbar riser clip off
+@    s2 errorbar riser clip length 0.100000
+@    s2 comment "X=x 	, Y=4*sin(x/2)"
+@    s2 legend  "4"
+@    s3 hidden false
+@    s3 type xy
+@    s3 symbol 0
+@    s3 symbol size 1.000000
+@    s3 symbol color 4
+@    s3 symbol pattern 1
+@    s3 symbol fill color 4
+@    s3 symbol fill pattern 0
+@    s3 symbol linewidth 1.0
+@    s3 symbol linestyle 1
+@    s3 symbol char 65
+@    s3 symbol char font 0
+@    s3 symbol skip 0
+@    s3 line type 1
+@    s3 line linestyle 1
+@    s3 line linewidth 1.0
+@    s3 line color 4
+@    s3 line pattern 1
+@    s3 baseline type 0
+@    s3 baseline off
+@    s3 dropline off
+@    s3 fill type 0
+@    s3 fill rule 0
+@    s3 fill color 1
+@    s3 fill pattern 1
+@    s3 avalue off
+@    s3 avalue type 2
+@    s3 avalue char size 1.000000
+@    s3 avalue font 0
+@    s3 avalue color 1
+@    s3 avalue rot 0
+@    s3 avalue format general
+@    s3 avalue prec 3
+@    s3 avalue prepend ""
+@    s3 avalue append ""
+@    s3 avalue offset 0.000000 , 0.000000
+@    s3 errorbar on
+@    s3 errorbar place both
+@    s3 errorbar color 4
+@    s3 errorbar pattern 1
+@    s3 errorbar size 1.000000
+@    s3 errorbar linewidth 1.0
+@    s3 errorbar linestyle 1
+@    s3 errorbar riser linewidth 1.0
+@    s3 errorbar riser linestyle 1
+@    s3 errorbar riser clip off
+@    s3 errorbar riser clip length 0.100000
+@    s3 comment "X=x 	, Y=3*sin(x/2)*sin(x)"
+@    s3 legend  "8"
+@g1 on
+@g1 hidden false
+@g1 type XY
+@g1 stacked false
+@g1 bar hgap 0.000000
+@g1 fixedpoint off
+@g1 fixedpoint type 0
+@g1 fixedpoint xy 0.000000, 0.000000
+@g1 fixedpoint format general general
+@g1 fixedpoint prec 6, 6
+@with g1
+@    world xmin 0
+@    world xmax 1
+@    world ymin 0
+@    world ymax 1
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view xmin 0.100000
+@    view xmax 0.900000
+@    view ymin 0.535000
+@    view ymax 0.900000
+@    title ""
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label ""
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 0.5
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label ""
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 0.5
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend x1 0.5
+@    legend y1 0.8
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@target G0.S0
+@type xy
+               0                0
+       0.0368515        0.0368432
+       0.0737031        0.0736363
+        0.110555          0.11033
+        0.147406         0.146873
+        0.184258         0.183217
+        0.221109         0.219312
+        0.257961         0.255109
+        0.294812          0.29056
+        0.331664         0.325617
+        0.368515         0.360231
+        0.405367         0.394356
+        0.442218         0.427945
+         0.47907         0.460954
+        0.515921         0.493337
+        0.552773         0.525049
+        0.589624         0.556049
+        0.626476         0.586294
+        0.663327         0.615742
+        0.700179         0.644355
+        0.737031         0.672092
+        0.773882         0.698917
+        0.810734         0.724793
+        0.847585         0.749684
+        0.884437         0.773558
+        0.921288         0.796381
+         0.95814         0.818123
+        0.994991         0.838754
+         1.03184         0.858246
+         1.06869         0.876573
+         1.10555         0.893709
+          1.1424         0.909632
+         1.17925          0.92432
+          1.2161         0.937752
+         1.25295         0.949911
+          1.2898         0.960781
+         1.32665         0.970345
+         1.36351         0.978592
+         1.40036         0.985511
+         1.43721         0.991091
+         1.47406         0.995325
+         1.51091         0.998208
+         1.54776         0.999735
+         1.58462         0.999905
+         1.62147         0.998717
+         1.65832         0.996172
+         1.69517         0.992276
+         1.73202         0.987031
+         1.76887         0.980447
+         1.80572         0.972531
+         1.84258         0.963295
+         1.87943          0.95275
+         1.91628         0.940912
+         1.95313         0.927796
+         1.98998         0.913421
+         2.02683         0.897805
+         2.06369         0.880969
+         2.10054         0.862938
+         2.13739         0.843735
+         2.17424         0.823386
+         2.21109         0.801919
+         2.24794         0.779364
+         2.28479          0.75575
+         2.32165         0.731109
+          2.3585         0.705476
+         2.39535         0.678885
+          2.4322         0.651372
+         2.46905         0.622975
+          2.5059         0.593732
+         2.54276         0.563682
+         2.57961         0.532868
+         2.61646         0.501329
+         2.65331          0.46911
+         2.69016         0.436254
+         2.72701         0.402805
+         2.76386          0.36881
+         2.80072         0.334313
+         2.83757         0.299363
+         2.87442         0.264006
+         2.91127         0.228291
+         2.94812         0.192266
+         2.98497         0.155979
+         3.02183         0.119481
+         3.05868         0.082821
+         3.09553        0.0460481
+         3.13238       0.00921275
+         3.16923       -0.0276351
+         3.20608       -0.0644455
+         3.24293        -0.101168
+         3.27979        -0.137754
+         3.31664        -0.174152
+         3.35349        -0.210314
+         3.39034         -0.24619
+         3.42719        -0.281733
+         3.46404        -0.316892
+          3.5009        -0.351621
+         3.53775        -0.385873
+          3.5746        -0.419601
+         3.61145        -0.452759
+          3.6483        -0.485302
+         3.68515        -0.517186
+           3.722        -0.548368
+         3.75886        -0.578805
+         3.79571        -0.608457
+         3.83256        -0.637282
+         3.86941        -0.665242
+         3.90626        -0.692298
+         3.94311        -0.718415
+         3.97996        -0.743556
+         4.01682        -0.767687
+         4.05367        -0.790776
+         4.09052        -0.812791
+         4.12737        -0.833702
+         4.16422        -0.853481
+         4.20107        -0.872102
+         4.23793        -0.889538
+         4.27478        -0.905766
+         4.31163        -0.920765
+         4.34848        -0.934513
+         4.38533        -0.946992
+         4.42218        -0.958185
+         4.45903        -0.968077
+         4.49589        -0.976655
+         4.53274        -0.983906
+         4.56959        -0.989821
+         4.60644        -0.994393
+         4.64329        -0.997614
+         4.68014         -0.99948
+           4.717        -0.999989
+         4.75385        -0.999141
+          4.7907        -0.996935
+         4.82755        -0.993376
+          4.8644        -0.988468
+         4.90125        -0.982218
+          4.9381        -0.974634
+         4.97496        -0.965727
+         5.01181        -0.955508
+         5.04866        -0.943992
+         5.08551        -0.931194
+         5.12236        -0.917131
+         5.15921        -0.901824
+         5.19607        -0.885291
+         5.23292        -0.867557
+         5.26977        -0.848644
+         5.30662        -0.828579
+         5.34347        -0.807389
+         5.38032        -0.785103
+         5.41717        -0.761751
+         5.45403        -0.737364
+         5.49088        -0.711976
+         5.52773        -0.685621
+         5.56458        -0.658335
+         5.60143        -0.630155
+         5.63828         -0.60112
+         5.67514        -0.571268
+         5.71199        -0.540641
+         5.74884        -0.509279
+         5.78569        -0.477226
+         5.82254        -0.444525
+         5.85939         -0.41122
+         5.89624        -0.377357
+          5.9331        -0.342982
+         5.96995        -0.308141
+          6.0068        -0.272881
+         6.04365        -0.237251
+          6.0805        -0.201299
+         6.11735        -0.165073
+          6.1542        -0.128623
+         6.19106       -0.0919985
+         6.22791       -0.0552491
+         6.26476       -0.0184247
+         6.30161        0.0184247
+         6.33846        0.0552491
+         6.37531        0.0919985
+         6.41217         0.128623
+         6.44902         0.165073
+         6.48587         0.201299
+         6.52272         0.237251
+         6.55957         0.272881
+         6.59642         0.308141
+         6.63327         0.342982
+         6.67013         0.377357
+         6.70698          0.41122
+         6.74383         0.444525
+         6.78068         0.477226
+         6.81753         0.509279
+         6.85438         0.540641
+         6.89124         0.571268
+         6.92809          0.60112
+         6.96494         0.630155
+         7.00179         0.658335
+         7.03864         0.685621
+         7.07549         0.711976
+         7.11234         0.737364
+          7.1492         0.761751
+         7.18605         0.785103
+          7.2229         0.807389
+         7.25975         0.828579
+          7.2966         0.848644
+         7.33345         0.867557
+         7.37031         0.885291
+         7.40716         0.901824
+         7.44401         0.917131
+         7.48086         0.931194
+         7.51771         0.943992
+         7.55456         0.955508
+         7.59141         0.965727
+         7.62827         0.974634
+         7.66512         0.982218
+         7.70197         0.988468
+         7.73882         0.993376
+         7.77567         0.996935
+         7.81252         0.999141
+         7.84938         0.999989
+         7.88623          0.99948
+         7.92308         0.997614
+         7.95993         0.994393
+         7.99678         0.989821
+         8.03363         0.983906
+         8.07048         0.976655
+         8.10734         0.968077
+         8.14419         0.958185
+         8.18104         0.946992
+         8.21789         0.934513
+         8.25474         0.920765
+         8.29159         0.905766
+         8.32845         0.889538
+          8.3653         0.872102
+         8.40215         0.853481
+           8.439         0.833702
+         8.47585         0.812791
+          8.5127         0.790776
+         8.54955         0.767687
+         8.58641         0.743556
+         8.62326         0.718415
+         8.66011         0.692298
+         8.69696         0.665242
+         8.73381         0.637282
+         8.77066         0.608457
+         8.80751         0.578805
+         8.84437         0.548368
+         8.88122         0.517186
+         8.91807         0.485302
+         8.95492         0.452759
+         8.99177         0.419601
+         9.02862         0.385873
+         9.06548         0.351621
+         9.10233         0.316892
+         9.13918         0.281733
+         9.17603          0.24619
+         9.21288         0.210314
+         9.24973         0.174152
+         9.28658         0.137754
+         9.32344         0.101168
+         9.36029        0.0644455
+         9.39714        0.0276351
+         9.43399      -0.00921275
+         9.47084       -0.0460481
+         9.50769        -0.082821
+         9.54455        -0.119481
+          9.5814        -0.155979
+         9.61825        -0.192266
+          9.6551        -0.228291
+         9.69195        -0.264006
+          9.7288        -0.299363
+         9.76565        -0.334313
+         9.80251         -0.36881
+         9.83936        -0.402805
+         9.87621        -0.436254
+         9.91306         -0.46911
+         9.94991        -0.501329
+         9.98676        -0.532868
+         10.0236        -0.563682
+         10.0605        -0.593732
+         10.0973        -0.622975
+         10.1342        -0.651372
+          10.171        -0.678885
+         10.2079        -0.705476
+         10.2447        -0.731109
+         10.2816         -0.75575
+         10.3184        -0.779364
+         10.3553        -0.801919
+         10.3921        -0.823386
+          10.429        -0.843735
+         10.4658        -0.862938
+         10.5027        -0.880969
+         10.5395        -0.897805
+         10.5764        -0.913421
+         10.6132        -0.927796
+         10.6501        -0.940912
+         10.6869         -0.95275
+         10.7238        -0.963295
+         10.7606        -0.972531
+         10.7975        -0.980447
+         10.8343        -0.987031
+         10.8712        -0.992276
+         10.9081        -0.996172
+         10.9449        -0.998717
+         10.9818        -0.999905
+         11.0186        -0.999735
+         11.0555        -0.998208
+         11.0923        -0.995325
+         11.1292        -0.991091
+          11.166        -0.985511
+         11.2029        -0.978592
+         11.2397        -0.970345
+         11.2766        -0.960781
+         11.3134        -0.949911
+         11.3503        -0.937752
+         11.3871         -0.92432
+          11.424        -0.909632
+         11.4608        -0.893709
+         11.4977        -0.876573
+         11.5345        -0.858246
+         11.5714        -0.838754
+         11.6082        -0.818123
+         11.6451        -0.796381
+         11.6819        -0.773558
+         11.7188        -0.749684
+         11.7556        -0.724793
+         11.7925        -0.698917
+         11.8293        -0.672092
+         11.8662        -0.644355
+          11.903        -0.615742
+         11.9399        -0.586294
+         11.9767        -0.556049
+         12.0136        -0.525049
+         12.0504        -0.493337
+         12.0873        -0.460954
+         12.1242        -0.427945
+          12.161        -0.394356
+         12.1979        -0.360231
+         12.2347        -0.325617
+         12.2716         -0.29056
+         12.3084        -0.255109
+         12.3453        -0.219312
+         12.3821        -0.183217
+          12.419        -0.146873
+         12.4558         -0.11033
+         12.4927       -0.0736363
+         12.5295       -0.0368432
+         12.5664     -4.89843e-16
+         12.6032        0.0368432
+         12.6401        0.0736363
+         12.6769          0.11033
+         12.7138         0.146873
+         12.7506         0.183217
+         12.7875         0.219312
+         12.8243         0.255109
+         12.8612          0.29056
+          12.898         0.325617
+         12.9349         0.360231
+         12.9717         0.394356
+         13.0086         0.427945
+         13.0454         0.460954
+         13.0823         0.493337
+         13.1191         0.525049
+          13.156         0.556049
+         13.1928         0.586294
+         13.2297         0.615742
+         13.2665         0.644355
+         13.3034         0.672092
+         13.3403         0.698917
+         13.3771         0.724793
+          13.414         0.749684
+         13.4508         0.773558
+         13.4877         0.796381
+         13.5245         0.818123
+         13.5614         0.838754
+         13.5982         0.858246
+         13.6351         0.876573
+         13.6719         0.893709
+         13.7088         0.909632
+         13.7456          0.92432
+         13.7825         0.937752
+         13.8193         0.949911
+         13.8562         0.960781
+          13.893         0.970345
+         13.9299         0.978592
+         13.9667         0.985511
+         14.0036         0.991091
+         14.0404         0.995325
+         14.0773         0.998208
+         14.1141         0.999735
+          14.151         0.999905
+         14.1878         0.998717
+         14.2247         0.996172
+         14.2615         0.992276
+         14.2984         0.987031
+         14.3352         0.980447
+         14.3721         0.972531
+         14.4089         0.963295
+         14.4458          0.95275
+         14.4827         0.940912
+         14.5195         0.927796
+         14.5564         0.913421
+         14.5932         0.897805
+         14.6301         0.880969
+         14.6669         0.862938
+         14.7038         0.843735
+         14.7406         0.823386
+         14.7775         0.801919
+         14.8143         0.779364
+         14.8512          0.75575
+          14.888         0.731109
+         14.9249         0.705476
+         14.9617         0.678885
+         14.9986         0.651372
+         15.0354         0.622975
+         15.0723         0.593732
+         15.1091         0.563682
+          15.146         0.532868
+         15.1828         0.501329
+         15.2197          0.46911
+         15.2565         0.436254
+         15.2934         0.402805
+         15.3302          0.36881
+         15.3671         0.334313
+         15.4039         0.299363
+         15.4408         0.264006
+         15.4776         0.228291
+         15.5145         0.192266
+         15.5513         0.155979
+         15.5882         0.119481
+          15.625         0.082821
+         15.6619        0.0460481
+         15.6988       0.00921275
+         15.7356       -0.0276351
+         15.7725       -0.0644455
+         15.8093        -0.101168
+         15.8462        -0.137754
+          15.883        -0.174152
+         15.9199        -0.210314
+         15.9567         -0.24619
+         15.9936        -0.281733
+         16.0304        -0.316892
+         16.0673        -0.351621
+         16.1041        -0.385873
+          16.141        -0.419601
+         16.1778        -0.452759
+         16.2147        -0.485302
+         16.2515        -0.517186
+         16.2884        -0.548368
+         16.3252        -0.578805
+         16.3621        -0.608457
+         16.3989        -0.637282
+         16.4358        -0.665242
+         16.4726        -0.692298
+         16.5095        -0.718415
+         16.5463        -0.743556
+         16.5832        -0.767687
+           16.62        -0.790776
+         16.6569        -0.812791
+         16.6937        -0.833702
+         16.7306        -0.853481
+         16.7674        -0.872102
+         16.8043        -0.889538
+         16.8411        -0.905766
+          16.878        -0.920765
+         16.9149        -0.934513
+         16.9517        -0.946992
+         16.9886        -0.958185
+         17.0254        -0.968077
+         17.0623        -0.976655
+         17.0991        -0.983906
+          17.136        -0.989821
+         17.1728        -0.994393
+         17.2097        -0.997614
+         17.2465         -0.99948
+         17.2834        -0.999989
+         17.3202        -0.999141
+         17.3571        -0.996935
+         17.3939        -0.993376
+         17.4308        -0.988468
+         17.4676        -0.982218
+         17.5045        -0.974634
+         17.5413        -0.965727
+         17.5782        -0.955508
+          17.615        -0.943992
+         17.6519        -0.931194
+         17.6887        -0.917131
+         17.7256        -0.901824
+         17.7624        -0.885291
+         17.7993        -0.867557
+         17.8361        -0.848644
+          17.873        -0.828579
+         17.9098        -0.807389
+         17.9467        -0.785103
+         17.9835        -0.761751
+         18.0204        -0.737364
+         18.0572        -0.711976
+         18.0941        -0.685621
+          18.131        -0.658335
+         18.1678        -0.630155
+         18.2047         -0.60112
+         18.2415        -0.571268
+         18.2784        -0.540641
+         18.3152        -0.509279
+         18.3521        -0.477226
+         18.3889        -0.444525
+         18.4258         -0.41122
+         18.4626        -0.377357
+         18.4995        -0.342982
+         18.5363        -0.308141
+         18.5732        -0.272881
+           18.61        -0.237251
+         18.6469        -0.201299
+         18.6837        -0.165073
+         18.7206        -0.128623
+         18.7574       -0.0919985
+         18.7943       -0.0552491
+         18.8311       -0.0184247
+          18.868        0.0184247
+         18.9048        0.0552491
+         18.9417        0.0919985
+         18.9785         0.128623
+         19.0154         0.165073
+         19.0522         0.201299
+         19.0891         0.237251
+         19.1259         0.272881
+         19.1628         0.308141
+         19.1996         0.342982
+         19.2365         0.377357
+         19.2733          0.41122
+         19.3102         0.444525
+         19.3471         0.477226
+         19.3839         0.509279
+         19.4208         0.540641
+         19.4576         0.571268
+         19.4945          0.60112
+         19.5313         0.630155
+         19.5682         0.658335
+          19.605         0.685621
+         19.6419         0.711976
+         19.6787         0.737364
+         19.7156         0.761751
+         19.7524         0.785103
+         19.7893         0.807389
+         19.8261         0.828579
+          19.863         0.848644
+         19.8998         0.867557
+         19.9367         0.885291
+         19.9735         0.901824
+         20.0104         0.917131
+         20.0472         0.931194
+         20.0841         0.943992
+         20.1209         0.955508
+         20.1578         0.965727
+         20.1946         0.974634
+         20.2315         0.982218
+         20.2683         0.988468
+         20.3052         0.993376
+          20.342         0.996935
+         20.3789         0.999141
+         20.4157         0.999989
+         20.4526          0.99948
+         20.4894         0.997614
+         20.5263         0.994393
+         20.5632         0.989821
+            20.6         0.983906
+         20.6369         0.976655
+         20.6737         0.968077
+         20.7106         0.958185
+         20.7474         0.946992
+         20.7843         0.934513
+         20.8211         0.920765
+          20.858         0.905766
+         20.8948         0.889538
+         20.9317         0.872102
+         20.9685         0.853481
+         21.0054         0.833702
+         21.0422         0.812791
+         21.0791         0.790776
+         21.1159         0.767687
+         21.1528         0.743556
+         21.1896         0.718415
+         21.2265         0.692298
+         21.2633         0.665242
+         21.3002         0.637282
+          21.337         0.608457
+         21.3739         0.578805
+         21.4107         0.548368
+         21.4476         0.517186
+         21.4844         0.485302
+         21.5213         0.452759
+         21.5581         0.419601
+          21.595         0.385873
+         21.6318         0.351621
+         21.6687         0.316892
+         21.7055         0.281733
+         21.7424          0.24619
+         21.7793         0.210314
+         21.8161         0.174152
+          21.853         0.137754
+         21.8898         0.101168
+         21.9267        0.0644455
+         21.9635        0.0276351
+         22.0004      -0.00921275
+         22.0372       -0.0460481
+         22.0741        -0.082821
+         22.1109        -0.119481
+         22.1478        -0.155979
+         22.1846        -0.192266
+         22.2215        -0.228291
+         22.2583        -0.264006
+         22.2952        -0.299363
+          22.332        -0.334313
+         22.3689         -0.36881
+         22.4057        -0.402805
+         22.4426        -0.436254
+         22.4794         -0.46911
+         22.5163        -0.501329
+         22.5531        -0.532868
+           22.59        -0.563682
+         22.6268        -0.593732
+         22.6637        -0.622975
+         22.7005        -0.651372
+         22.7374        -0.678885
+         22.7742        -0.705476
+         22.8111        -0.731109
+         22.8479         -0.75575
+         22.8848        -0.779364
+         22.9216        -0.801919
+         22.9585        -0.823386
+         22.9954        -0.843735
+         23.0322        -0.862938
+         23.0691        -0.880969
+         23.1059        -0.897805
+         23.1428        -0.913421
+         23.1796        -0.927796
+         23.2165        -0.940912
+         23.2533         -0.95275
+         23.2902        -0.963295
+          23.327        -0.972531
+         23.3639        -0.980447
+         23.4007        -0.987031
+         23.4376        -0.992276
+         23.4744        -0.996172
+         23.5113        -0.998717
+         23.5481        -0.999905
+          23.585        -0.999735
+         23.6218        -0.998208
+         23.6587        -0.995325
+         23.6955        -0.991091
+         23.7324        -0.985511
+         23.7692        -0.978592
+         23.8061        -0.970345
+         23.8429        -0.960781
+         23.8798        -0.949911
+         23.9166        -0.937752
+         23.9535         -0.92432
+         23.9903        -0.909632
+         24.0272        -0.893709
+          24.064        -0.876573
+         24.1009        -0.858246
+         24.1378        -0.838754
+         24.1746        -0.818123
+         24.2115        -0.796381
+         24.2483        -0.773558
+         24.2852        -0.749684
+          24.322        -0.724793
+         24.3589        -0.698917
+         24.3957        -0.672092
+         24.4326        -0.644355
+         24.4694        -0.615742
+         24.5063        -0.586294
+         24.5431        -0.556049
+           24.58        -0.525049
+         24.6168        -0.493337
+         24.6537        -0.460954
+         24.6905        -0.427945
+         24.7274        -0.394356
+         24.7642        -0.360231
+         24.8011        -0.325617
+         24.8379         -0.29056
+         24.8748        -0.255109
+         24.9116        -0.219312
+         24.9485        -0.183217
+         24.9853        -0.146873
+         25.0222         -0.11033
+          25.059       -0.0736363
+         25.0959       -0.0368432
+         25.1327     -9.79685e-16
+         25.1696        0.0368432
+         25.2064        0.0736363
+         25.2433          0.11033
+         25.2801         0.146873
+          25.317         0.183217
+         25.3539         0.219312
+         25.3907         0.255109
+         25.4276          0.29056
+         25.4644         0.325617
+         25.5013         0.360231
+         25.5381         0.394356
+          25.575         0.427945
+         25.6118         0.460954
+         25.6487         0.493337
+         25.6855         0.525049
+         25.7224         0.556049
+         25.7592         0.586294
+         25.7961         0.615742
+         25.8329         0.644355
+         25.8698         0.672092
+         25.9066         0.698917
+         25.9435         0.724793
+         25.9803         0.749684
+         26.0172         0.773558
+          26.054         0.796381
+         26.0909         0.818123
+         26.1277         0.838754
+         26.1646         0.858246
+         26.2014         0.876573
+         26.2383         0.893709
+         26.2751         0.909632
+          26.312          0.92432
+         26.3488         0.937752
+         26.3857         0.949911
+         26.4225         0.960781
+         26.4594         0.970345
+         26.4962         0.978592
+         26.5331         0.985511
+           26.57         0.991091
+         26.6068         0.995325
+         26.6437         0.998208
+         26.6805         0.999735
+         26.7174         0.999905
+         26.7542         0.998717
+         26.7911         0.996172
+         26.8279         0.992276
+         26.8648         0.987031
+         26.9016         0.980447
+         26.9385         0.972531
+         26.9753         0.963295
+         27.0122          0.95275
+          27.049         0.940912
+         27.0859         0.927796
+         27.1227         0.913421
+         27.1596         0.897805
+         27.1964         0.880969
+         27.2333         0.862938
+         27.2701         0.843735
+          27.307         0.823386
+         27.3438         0.801919
+         27.3807         0.779364
+         27.4175          0.75575
+         27.4544         0.731109
+         27.4912         0.705476
+         27.5281         0.678885
+         27.5649         0.651372
+         27.6018         0.622975
+         27.6386         0.593732
+         27.6755         0.563682
+         27.7123         0.532868
+         27.7492         0.501329
+         27.7861          0.46911
+         27.8229         0.436254
+         27.8598         0.402805
+         27.8966          0.36881
+         27.9335         0.334313
+         27.9703         0.299363
+         28.0072         0.264006
+          28.044         0.228291
+         28.0809         0.192266
+         28.1177         0.155979
+         28.1546         0.119481
+         28.1914         0.082821
+         28.2283        0.0460481
+         28.2651       0.00921275
+          28.302       -0.0276351
+         28.3388       -0.0644455
+         28.3757        -0.101168
+         28.4125        -0.137754
+         28.4494        -0.174152
+         28.4862        -0.210314
+         28.5231         -0.24619
+         28.5599        -0.281733
+         28.5968        -0.316892
+         28.6336        -0.351621
+         28.6705        -0.385873
+         28.7073        -0.419601
+         28.7442        -0.452759
+          28.781        -0.485302
+         28.8179        -0.517186
+         28.8547        -0.548368
+         28.8916        -0.578805
+         28.9284        -0.608457
+         28.9653        -0.637282
+         29.0022        -0.665242
+          29.039        -0.692298
+         29.0759        -0.718415
+         29.1127        -0.743556
+         29.1496        -0.767687
+         29.1864        -0.790776
+         29.2233        -0.812791
+         29.2601        -0.833702
+          29.297        -0.853481
+         29.3338        -0.872102
+         29.3707        -0.889538
+         29.4075        -0.905766
+         29.4444        -0.920765
+         29.4812        -0.934513
+         29.5181        -0.946992
+         29.5549        -0.958185
+         29.5918        -0.968077
+         29.6286        -0.976655
+         29.6655        -0.983906
+         29.7023        -0.989821
+         29.7392        -0.994393
+          29.776        -0.997614
+         29.8129         -0.99948
+         29.8497        -0.999989
+         29.8866        -0.999141
+         29.9234        -0.996935
+         29.9603        -0.993376
+         29.9971        -0.988468
+          30.034        -0.982218
+         30.0708        -0.974634
+         30.1077        -0.965727
+         30.1445        -0.955508
+         30.1814        -0.943992
+         30.2183        -0.931194
+         30.2551        -0.917131
+          30.292        -0.901824
+         30.3288        -0.885291
+         30.3657        -0.867557
+         30.4025        -0.848644
+         30.4394        -0.828579
+         30.4762        -0.807389
+         30.5131        -0.785103
+         30.5499        -0.761751
+         30.5868        -0.737364
+         30.6236        -0.711976
+         30.6605        -0.685621
+         30.6973        -0.658335
+         30.7342        -0.630155
+          30.771         -0.60112
+         30.8079        -0.571268
+         30.8447        -0.540641
+         30.8816        -0.509279
+         30.9184        -0.477226
+         30.9553        -0.444525
+         30.9921         -0.41122
+          31.029        -0.377357
+         31.0658        -0.342982
+         31.1027        -0.308141
+         31.1395        -0.272881
+         31.1764        -0.237251
+         31.2132        -0.201299
+         31.2501        -0.165073
+         31.2869        -0.128623
+         31.3238       -0.0919985
+         31.3606       -0.0552491
+         31.3975       -0.0184247
+         31.4344        0.0184247
+         31.4712        0.0552491
+         31.5081        0.0919985
+         31.5449         0.128623
+         31.5818         0.165073
+         31.6186         0.201299
+         31.6555         0.237251
+         31.6923         0.272881
+         31.7292         0.308141
+          31.766         0.342982
+         31.8029         0.377357
+         31.8397          0.41122
+         31.8766         0.444525
+         31.9134         0.477226
+         31.9503         0.509279
+         31.9871         0.540641
+          32.024         0.571268
+         32.0608          0.60112
+         32.0977         0.630155
+         32.1345         0.658335
+         32.1714         0.685621
+         32.2082         0.711976
+         32.2451         0.737364
+         32.2819         0.761751
+         32.3188         0.785103
+         32.3556         0.807389
+         32.3925         0.828579
+         32.4293         0.848644
+         32.4662         0.867557
+          32.503         0.885291
+         32.5399         0.901824
+         32.5767         0.917131
+         32.6136         0.931194
+         32.6505         0.943992
+         32.6873         0.955508
+         32.7242         0.965727
+          32.761         0.974634
+         32.7979         0.982218
+         32.8347         0.988468
+         32.8716         0.993376
+         32.9084         0.996935
+         32.9453         0.999141
+         32.9821         0.999989
+          33.019          0.99948
+         33.0558         0.997614
+         33.0927         0.994393
+         33.1295         0.989821
+         33.1664         0.983906
+         33.2032         0.976655
+         33.2401         0.968077
+         33.2769         0.958185
+         33.3138         0.946992
+         33.3506         0.934513
+         33.3875         0.920765
+         33.4243         0.905766
+         33.4612         0.889538
+          33.498         0.872102
+         33.5349         0.853481
+         33.5717         0.833702
+         33.6086         0.812791
+         33.6454         0.790776
+         33.6823         0.767687
+         33.7191         0.743556
+          33.756         0.718415
+         33.7929         0.692298
+         33.8297         0.665242
+         33.8666         0.637282
+         33.9034         0.608457
+         33.9403         0.578805
+         33.9771         0.548368
+          34.014         0.517186
+         34.0508         0.485302
+         34.0877         0.452759
+         34.1245         0.419601
+         34.1614         0.385873
+         34.1982         0.351621
+         34.2351         0.316892
+         34.2719         0.281733
+         34.3088          0.24619
+         34.3456         0.210314
+         34.3825         0.174152
+         34.4193         0.137754
+         34.4562         0.101168
+          34.493        0.0644455
+         34.5299        0.0276351
+         34.5667      -0.00921275
+         34.6036       -0.0460481
+         34.6404        -0.082821
+         34.6773        -0.119481
+         34.7141        -0.155979
+          34.751        -0.192266
+         34.7878        -0.228291
+         34.8247        -0.264006
+         34.8615        -0.299363
+         34.8984        -0.334313
+         34.9352         -0.36881
+         34.9721        -0.402805
+          35.009        -0.436254
+         35.0458         -0.46911
+         35.0827        -0.501329
+         35.1195        -0.532868
+         35.1564        -0.563682
+         35.1932        -0.593732
+         35.2301        -0.622975
+         35.2669        -0.651372
+         35.3038        -0.678885
+         35.3406        -0.705476
+         35.3775        -0.731109
+         35.4143         -0.75575
+         35.4512        -0.779364
+          35.488        -0.801919
+         35.5249        -0.823386
+         35.5617        -0.843735
+         35.5986        -0.862938
+         35.6354        -0.880969
+         35.6723        -0.897805
+         35.7091        -0.913421
+          35.746        -0.927796
+         35.7828        -0.940912
+         35.8197         -0.95275
+         35.8565        -0.963295
+         35.8934        -0.972531
+         35.9302        -0.980447
+         35.9671        -0.987031
+         36.0039        -0.992276
+         36.0408        -0.996172
+         36.0776        -0.998717
+         36.1145        -0.999905
+         36.1513        -0.999735
+         36.1882        -0.998208
+         36.2251        -0.995325
+         36.2619        -0.991091
+         36.2988        -0.985511
+         36.3356        -0.978592
+         36.3725        -0.970345
+         36.4093        -0.960781
+         36.4462        -0.949911
+          36.483        -0.937752
+         36.5199         -0.92432
+         36.5567        -0.909632
+         36.5936        -0.893709
+         36.6304        -0.876573
+         36.6673        -0.858246
+         36.7041        -0.838754
+          36.741        -0.818123
+         36.7778        -0.796381
+         36.8147        -0.773558
+         36.8515        -0.749684
+         36.8884        -0.724793
+         36.9252        -0.698917
+         36.9621        -0.672092
+         36.9989        -0.644355
+         37.0358        -0.615742
+         37.0726        -0.586294
+         37.1095        -0.556049
+         37.1463        -0.525049
+         37.1832        -0.493337
+           37.22        -0.460954
+         37.2569        -0.427945
+         37.2937        -0.394356
+         37.3306        -0.360231
+         37.3674        -0.325617
+         37.4043         -0.29056
+         37.4412        -0.255109
+          37.478        -0.219312
+         37.5149        -0.183217
+         37.5517        -0.146873
+         37.5886         -0.11033
+         37.6254       -0.0736363
+         37.6623       -0.0368432
+         37.6991     -1.46953e-15
+&
+@target G0.S1
+@type xy
+               0                0
+       0.0368515         0.147273
+       0.0737031         0.293746
+        0.110555         0.438624
+        0.147406          0.58112
+        0.184258         0.720462
+        0.221109         0.855891
+        0.257961         0.986673
+        0.294812           1.1121
+        0.331664          1.23148
+        0.368515          1.34418
+        0.405367          1.44959
+        0.442218          1.54712
+         0.47907          1.63625
+        0.515921          1.71649
+        0.552773          1.78742
+        0.589624          1.84864
+        0.626476          1.89982
+        0.663327          1.94069
+        0.700179          1.97102
+        0.737031          1.99065
+        0.773882          1.99947
+        0.810734          1.99743
+        0.847585          1.98455
+        0.884437          1.96089
+        0.921288          1.92659
+         0.95814          1.88182
+        0.994991          1.82684
+         1.03184          1.76194
+         1.06869          1.68747
+         1.10555          1.60384
+          1.1424           1.5115
+         1.17925          1.41095
+          1.2161          1.30274
+         1.25295          1.18746
+          1.2898          1.06574
+         1.32665          0.93822
+         1.36351          0.80561
+         1.40036         0.668627
+         1.43721         0.528013
+         1.47406         0.384532
+         1.51091         0.238963
+         1.54776        0.0920962
+         1.58462       -0.0552703
+         1.62147        -0.202337
+         1.65832        -0.348304
+         1.69517        -0.492381
+         1.73202        -0.633784
+         1.76887        -0.771746
+         1.80572        -0.905518
+         1.84258         -1.03437
+         1.87943         -1.15761
+         1.91628         -1.27456
+         1.95313          -1.3846
+         1.98998         -1.48711
+         2.02683         -1.58155
+         2.06369          -1.6674
+         2.10054          -1.7442
+         2.13739         -1.81153
+         2.17424         -1.86903
+         2.21109         -1.91637
+         2.24794         -1.95331
+         2.28479         -1.97964
+         2.32165         -1.99523
+          2.3585         -1.99998
+         2.39535         -1.99387
+          2.4322         -1.97694
+         2.46905         -1.94927
+          2.5059         -1.91102
+         2.54276         -1.86239
+         2.57961         -1.80365
+         2.61646         -1.73511
+         2.65331         -1.65716
+         2.69016         -1.57021
+         2.72701         -1.47473
+         2.76386         -1.37124
+         2.80072         -1.26031
+         2.83757         -1.14254
+         2.87442         -1.01856
+         2.91127         -0.88905
+         2.94812        -0.754715
+         2.98497        -0.616281
+         3.02183        -0.474502
+         3.05868        -0.330146
+         3.09553        -0.183997
+         3.13238       -0.0368494
+         3.16923         0.110498
+         3.20608         0.257246
+         3.24293         0.402597
+         3.27979         0.545762
+         3.31664         0.685964
+         3.35349         0.822441
+         3.39034         0.954452
+         3.42719          1.08128
+         3.46404          1.20224
+          3.5009          1.31667
+         3.53775          1.42395
+          3.5746           1.5235
+         3.61145          1.61478
+          3.6483          1.69729
+         3.68515          1.77058
+           3.722          1.83426
+         3.75886          1.88798
+         3.79571          1.93145
+         3.83256          1.96444
+         3.86941          1.98675
+         3.90626          1.99828
+         3.94311          1.99896
+         3.97996          1.98879
+         4.01682          1.96781
+         4.05367          1.93615
+         4.09052          1.89398
+         4.12737          1.84153
+         4.16422          1.77908
+         4.20107          1.70696
+         4.23793          1.62558
+         4.27478          1.53537
+         4.31163          1.43683
+         4.34848          1.33048
+         4.38533          1.21691
+         4.42218          1.09674
+         4.45903         0.970604
+         4.49589         0.839202
+         4.53274         0.703243
+         4.56959         0.563465
+         4.60644         0.420628
+         4.64329         0.275508
+         4.68014         0.128891
+           4.717       -0.0184255
+         4.75385        -0.165642
+          4.7907        -0.311959
+         4.82755        -0.456582
+          4.8644        -0.598726
+         4.90125        -0.737619
+          4.9381        -0.872508
+         4.97496         -1.00266
+         5.01181         -1.12736
+         5.04866         -1.24595
+         5.08551         -1.35777
+         5.12236         -1.46222
+         5.15921         -1.55873
+         5.19607         -1.64677
+         5.23292         -1.72588
+         5.26977         -1.79561
+         5.30662         -1.85559
+         5.34347          -1.9055
+         5.38032         -1.94506
+         5.41717         -1.97406
+         5.45403         -1.99234
+         5.49088         -1.99981
+         5.52773         -1.99642
+         5.56458         -1.98218
+         5.60143         -1.95718
+         5.63828         -1.92156
+         5.67514          -1.8755
+         5.71199         -1.81926
+         5.74884         -1.75315
+         5.78569         -1.67751
+         5.82254         -1.59276
+         5.85939         -1.49937
+         5.89624         -1.39783
+          5.9331         -1.28871
+         5.96995         -1.17259
+          6.0068          -1.0501
+         6.04365        -0.921908
+          6.0805        -0.788712
+         6.11735        -0.651233
+          6.1542        -0.510218
+         6.19106        -0.366434
+         6.22791        -0.220659
+         6.26476       -0.0736864
+         6.30161        0.0736864
+         6.33846         0.220659
+         6.37531         0.366434
+         6.41217         0.510218
+         6.44902         0.651233
+         6.48587         0.788712
+         6.52272         0.921908
+         6.55957           1.0501
+         6.59642          1.17259
+         6.63327          1.28871
+         6.67013          1.39783
+         6.70698          1.49937
+         6.74383          1.59276
+         6.78068          1.67751
+         6.81753          1.75315
+         6.85438          1.81926
+         6.89124           1.8755
+         6.92809          1.92156
+         6.96494          1.95718
+         7.00179          1.98218
+         7.03864          1.99642
+         7.07549          1.99981
+         7.11234          1.99234
+          7.1492          1.97406
+         7.18605          1.94506
+          7.2229           1.9055
+         7.25975          1.85559
+          7.2966          1.79561
+         7.33345          1.72588
+         7.37031          1.64677
+         7.40716          1.55873
+         7.44401          1.46222
+         7.48086          1.35777
+         7.51771          1.24595
+         7.55456          1.12736
+         7.59141          1.00266
+         7.62827         0.872508
+         7.66512         0.737619
+         7.70197         0.598726
+         7.73882         0.456582
+         7.77567         0.311959
+         7.81252         0.165642
+         7.84938        0.0184255
+         7.88623        -0.128891
+         7.92308        -0.275508
+         7.95993        -0.420628
+         7.99678        -0.563465
+         8.03363        -0.703243
+         8.07048        -0.839202
+         8.10734        -0.970604
+         8.14419         -1.09674
+         8.18104         -1.21691
+         8.21789         -1.33048
+         8.25474         -1.43683
+         8.29159         -1.53537
+         8.32845         -1.62558
+          8.3653         -1.70696
+         8.40215         -1.77908
+           8.439         -1.84153
+         8.47585         -1.89398
+          8.5127         -1.93615
+         8.54955         -1.96781
+         8.58641         -1.98879
+         8.62326         -1.99896
+         8.66011         -1.99828
+         8.69696         -1.98675
+         8.73381         -1.96444
+         8.77066         -1.93145
+         8.80751         -1.88798
+         8.84437         -1.83426
+         8.88122         -1.77058
+         8.91807         -1.69729
+         8.95492         -1.61478
+         8.99177          -1.5235
+         9.02862         -1.42395
+         9.06548         -1.31667
+         9.10233         -1.20224
+         9.13918         -1.08128
+         9.17603        -0.954452
+         9.21288        -0.822441
+         9.24973        -0.685964
+         9.28658        -0.545762
+         9.32344        -0.402597
+         9.36029        -0.257246
+         9.39714        -0.110498
+         9.43399        0.0368494
+         9.47084         0.183997
+         9.50769         0.330146
+         9.54455         0.474502
+          9.5814         0.616281
+         9.61825         0.754715
+          9.6551          0.88905
+         9.69195          1.01856
+          9.7288          1.14254
+         9.76565          1.26031
+         9.80251          1.37124
+         9.83936          1.47473
+         9.87621          1.57021
+         9.91306          1.65716
+         9.94991          1.73511
+         9.98676          1.80365
+         10.0236          1.86239
+         10.0605          1.91102
+         10.0973          1.94927
+         10.1342          1.97694
+          10.171          1.99387
+         10.2079          1.99998
+         10.2447          1.99523
+         10.2816          1.97964
+         10.3184          1.95331
+         10.3553          1.91637
+         10.3921          1.86903
+          10.429          1.81153
+         10.4658           1.7442
+         10.5027           1.6674
+         10.5395          1.58155
+         10.5764          1.48711
+         10.6132           1.3846
+         10.6501          1.27456
+         10.6869          1.15761
+         10.7238          1.03437
+         10.7606         0.905518
+         10.7975         0.771746
+         10.8343         0.633784
+         10.8712         0.492381
+         10.9081         0.348304
+         10.9449         0.202337
+         10.9818        0.0552703
+         11.0186       -0.0920962
+         11.0555        -0.238963
+         11.0923        -0.384532
+         11.1292        -0.528013
+          11.166        -0.668627
+         11.2029         -0.80561
+         11.2397         -0.93822
+         11.2766         -1.06574
+         11.3134         -1.18746
+         11.3503         -1.30274
+         11.3871         -1.41095
+          11.424          -1.5115
+         11.4608         -1.60384
+         11.4977         -1.68747
+         11.5345         -1.76194
+         11.5714         -1.82684
+         11.6082         -1.88182
+         11.6451         -1.92659
+         11.6819         -1.96089
+         11.7188         -1.98455
+         11.7556         -1.99743
+         11.7925         -1.99947
+         11.8293         -1.99065
+         11.8662         -1.97102
+          11.903         -1.94069
+         11.9399         -1.89982
+         11.9767         -1.84864
+         12.0136         -1.78742
+         12.0504         -1.71649
+         12.0873         -1.63625
+         12.1242         -1.54712
+          12.161         -1.44959
+         12.1979         -1.34418
+         12.2347         -1.23148
+         12.2716          -1.1121
+         12.3084        -0.986673
+         12.3453        -0.855891
+         12.3821        -0.720462
+          12.419         -0.58112
+         12.4558        -0.438624
+         12.4927        -0.293746
+         12.5295        -0.147273
+         12.5664     -1.95937e-15
+         12.6032         0.147273
+         12.6401         0.293746
+         12.6769         0.438624
+         12.7138          0.58112
+         12.7506         0.720462
+         12.7875         0.855891
+         12.8243         0.986673
+         12.8612           1.1121
+          12.898          1.23148
+         12.9349          1.34418
+         12.9717          1.44959
+         13.0086          1.54712
+         13.0454          1.63625
+         13.0823          1.71649
+         13.1191          1.78742
+          13.156          1.84864
+         13.1928          1.89982
+         13.2297          1.94069
+         13.2665          1.97102
+         13.3034          1.99065
+         13.3403          1.99947
+         13.3771          1.99743
+          13.414          1.98455
+         13.4508          1.96089
+         13.4877          1.92659
+         13.5245          1.88182
+         13.5614          1.82684
+         13.5982          1.76194
+         13.6351          1.68747
+         13.6719          1.60384
+         13.7088           1.5115
+         13.7456          1.41095
+         13.7825          1.30274
+         13.8193          1.18746
+         13.8562          1.06574
+          13.893          0.93822
+         13.9299          0.80561
+         13.9667         0.668627
+         14.0036         0.528013
+         14.0404         0.384532
+         14.0773         0.238963
+         14.1141        0.0920962
+          14.151       -0.0552703
+         14.1878        -0.202337
+         14.2247        -0.348304
+         14.2615        -0.492381
+         14.2984        -0.633784
+         14.3352        -0.771746
+         14.3721        -0.905518
+         14.4089         -1.03437
+         14.4458         -1.15761
+         14.4827         -1.27456
+         14.5195          -1.3846
+         14.5564         -1.48711
+         14.5932         -1.58155
+         14.6301          -1.6674
+         14.6669          -1.7442
+         14.7038         -1.81153
+         14.7406         -1.86903
+         14.7775         -1.91637
+         14.8143         -1.95331
+         14.8512         -1.97964
+          14.888         -1.99523
+         14.9249         -1.99998
+         14.9617         -1.99387
+         14.9986         -1.97694
+         15.0354         -1.94927
+         15.0723         -1.91102
+         15.1091         -1.86239
+          15.146         -1.80365
+         15.1828         -1.73511
+         15.2197         -1.65716
+         15.2565         -1.57021
+         15.2934         -1.47473
+         15.3302         -1.37124
+         15.3671         -1.26031
+         15.4039         -1.14254
+         15.4408         -1.01856
+         15.4776         -0.88905
+         15.5145        -0.754715
+         15.5513        -0.616281
+         15.5882        -0.474502
+          15.625        -0.330146
+         15.6619        -0.183997
+         15.6988       -0.0368494
+         15.7356         0.110498
+         15.7725         0.257246
+         15.8093         0.402597
+         15.8462         0.545762
+          15.883         0.685964
+         15.9199         0.822441
+         15.9567         0.954452
+         15.9936          1.08128
+         16.0304          1.20224
+         16.0673          1.31667
+         16.1041          1.42395
+          16.141           1.5235
+         16.1778          1.61478
+         16.2147          1.69729
+         16.2515          1.77058
+         16.2884          1.83426
+         16.3252          1.88798
+         16.3621          1.93145
+         16.3989          1.96444
+         16.4358          1.98675
+         16.4726          1.99828
+         16.5095          1.99896
+         16.5463          1.98879
+         16.5832          1.96781
+           16.62          1.93615
+         16.6569          1.89398
+         16.6937          1.84153
+         16.7306          1.77908
+         16.7674          1.70696
+         16.8043          1.62558
+         16.8411          1.53537
+          16.878          1.43683
+         16.9149          1.33048
+         16.9517          1.21691
+         16.9886          1.09674
+         17.0254         0.970604
+         17.0623         0.839202
+         17.0991         0.703243
+          17.136         0.563465
+         17.1728         0.420628
+         17.2097         0.275508
+         17.2465         0.128891
+         17.2834       -0.0184255
+         17.3202        -0.165642
+         17.3571        -0.311959
+         17.3939        -0.456582
+         17.4308        -0.598726
+         17.4676        -0.737619
+         17.5045        -0.872508
+         17.5413         -1.00266
+         17.5782         -1.12736
+          17.615         -1.24595
+         17.6519         -1.35777
+         17.6887         -1.46222
+         17.7256         -1.55873
+         17.7624         -1.64677
+         17.7993         -1.72588
+         17.8361         -1.79561
+          17.873         -1.85559
+         17.9098          -1.9055
+         17.9467         -1.94506
+         17.9835         -1.97406
+         18.0204         -1.99234
+         18.0572         -1.99981
+         18.0941         -1.99642
+          18.131         -1.98218
+         18.1678         -1.95718
+         18.2047         -1.92156
+         18.2415          -1.8755
+         18.2784         -1.81926
+         18.3152         -1.75315
+         18.3521         -1.67751
+         18.3889         -1.59276
+         18.4258         -1.49937
+         18.4626         -1.39783
+         18.4995         -1.28871
+         18.5363         -1.17259
+         18.5732          -1.0501
+           18.61        -0.921908
+         18.6469        -0.788712
+         18.6837        -0.651233
+         18.7206        -0.510218
+         18.7574        -0.366434
+         18.7943        -0.220659
+         18.8311       -0.0736864
+          18.868        0.0736864
+         18.9048         0.220659
+         18.9417         0.366434
+         18.9785         0.510218
+         19.0154         0.651233
+         19.0522         0.788712
+         19.0891         0.921908
+         19.1259           1.0501
+         19.1628          1.17259
+         19.1996          1.28871
+         19.2365          1.39783
+         19.2733          1.49937
+         19.3102          1.59276
+         19.3471          1.67751
+         19.3839          1.75315
+         19.4208          1.81926
+         19.4576           1.8755
+         19.4945          1.92156
+         19.5313          1.95718
+         19.5682          1.98218
+          19.605          1.99642
+         19.6419          1.99981
+         19.6787          1.99234
+         19.7156          1.97406
+         19.7524          1.94506
+         19.7893           1.9055
+         19.8261          1.85559
+          19.863          1.79561
+         19.8998          1.72588
+         19.9367          1.64677
+         19.9735          1.55873
+         20.0104          1.46222
+         20.0472          1.35777
+         20.0841          1.24595
+         20.1209          1.12736
+         20.1578          1.00266
+         20.1946         0.872508
+         20.2315         0.737619
+         20.2683         0.598726
+         20.3052         0.456582
+          20.342         0.311959
+         20.3789         0.165642
+         20.4157        0.0184255
+         20.4526        -0.128891
+         20.4894        -0.275508
+         20.5263        -0.420628
+         20.5632        -0.563465
+            20.6        -0.703243
+         20.6369        -0.839202
+         20.6737        -0.970604
+         20.7106         -1.09674
+         20.7474         -1.21691
+         20.7843         -1.33048
+         20.8211         -1.43683
+          20.858         -1.53537
+         20.8948         -1.62558
+         20.9317         -1.70696
+         20.9685         -1.77908
+         21.0054         -1.84153
+         21.0422         -1.89398
+         21.0791         -1.93615
+         21.1159         -1.96781
+         21.1528         -1.98879
+         21.1896         -1.99896
+         21.2265         -1.99828
+         21.2633         -1.98675
+         21.3002         -1.96444
+          21.337         -1.93145
+         21.3739         -1.88798
+         21.4107         -1.83426
+         21.4476         -1.77058
+         21.4844         -1.69729
+         21.5213         -1.61478
+         21.5581          -1.5235
+          21.595         -1.42395
+         21.6318         -1.31667
+         21.6687         -1.20224
+         21.7055         -1.08128
+         21.7424        -0.954452
+         21.7793        -0.822441
+         21.8161        -0.685964
+          21.853        -0.545762
+         21.8898        -0.402597
+         21.9267        -0.257246
+         21.9635        -0.110498
+         22.0004        0.0368494
+         22.0372         0.183997
+         22.0741         0.330146
+         22.1109         0.474502
+         22.1478         0.616281
+         22.1846         0.754715
+         22.2215          0.88905
+         22.2583          1.01856
+         22.2952          1.14254
+          22.332          1.26031
+         22.3689          1.37124
+         22.4057          1.47473
+         22.4426          1.57021
+         22.4794          1.65716
+         22.5163          1.73511
+         22.5531          1.80365
+           22.59          1.86239
+         22.6268          1.91102
+         22.6637          1.94927
+         22.7005          1.97694
+         22.7374          1.99387
+         22.7742          1.99998
+         22.8111          1.99523
+         22.8479          1.97964
+         22.8848          1.95331
+         22.9216          1.91637
+         22.9585          1.86903
+         22.9954          1.81153
+         23.0322           1.7442
+         23.0691           1.6674
+         23.1059          1.58155
+         23.1428          1.48711
+         23.1796           1.3846
+         23.2165          1.27456
+         23.2533          1.15761
+         23.2902          1.03437
+          23.327         0.905518
+         23.3639         0.771746
+         23.4007         0.633784
+         23.4376         0.492381
+         23.4744         0.348304
+         23.5113         0.202337
+         23.5481        0.0552703
+          23.585       -0.0920962
+         23.6218        -0.238963
+         23.6587        -0.384532
+         23.6955        -0.528013
+         23.7324        -0.668627
+         23.7692         -0.80561
+         23.8061         -0.93822
+         23.8429         -1.06574
+         23.8798         -1.18746
+         23.9166         -1.30274
+         23.9535         -1.41095
+         23.9903          -1.5115
+         24.0272         -1.60384
+          24.064         -1.68747
+         24.1009         -1.76194
+         24.1378         -1.82684
+         24.1746         -1.88182
+         24.2115         -1.92659
+         24.2483         -1.96089
+         24.2852         -1.98455
+          24.322         -1.99743
+         24.3589         -1.99947
+         24.3957         -1.99065
+         24.4326         -1.97102
+         24.4694         -1.94069
+         24.5063         -1.89982
+         24.5431         -1.84864
+           24.58         -1.78742
+         24.6168         -1.71649
+         24.6537         -1.63625
+         24.6905         -1.54712
+         24.7274         -1.44959
+         24.7642         -1.34418
+         24.8011         -1.23148
+         24.8379          -1.1121
+         24.8748        -0.986673
+         24.9116        -0.855891
+         24.9485        -0.720462
+         24.9853         -0.58112
+         25.0222        -0.438624
+          25.059        -0.293746
+         25.0959        -0.147273
+         25.1327     -3.91874e-15
+         25.1696         0.147273
+         25.2064         0.293746
+         25.2433         0.438624
+         25.2801          0.58112
+          25.317         0.720462
+         25.3539         0.855891
+         25.3907         0.986673
+         25.4276           1.1121
+         25.4644          1.23148
+         25.5013          1.34418
+         25.5381          1.44959
+          25.575          1.54712
+         25.6118          1.63625
+         25.6487          1.71649
+         25.6855          1.78742
+         25.7224          1.84864
+         25.7592          1.89982
+         25.7961          1.94069
+         25.8329          1.97102
+         25.8698          1.99065
+         25.9066          1.99947
+         25.9435          1.99743
+         25.9803          1.98455
+         26.0172          1.96089
+          26.054          1.92659
+         26.0909          1.88182
+         26.1277          1.82684
+         26.1646          1.76194
+         26.2014          1.68747
+         26.2383          1.60384
+         26.2751           1.5115
+          26.312          1.41095
+         26.3488          1.30274
+         26.3857          1.18746
+         26.4225          1.06574
+         26.4594          0.93822
+         26.4962          0.80561
+         26.5331         0.668627
+           26.57         0.528013
+         26.6068         0.384532
+         26.6437         0.238963
+         26.6805        0.0920962
+         26.7174       -0.0552703
+         26.7542        -0.202337
+         26.7911        -0.348304
+         26.8279        -0.492381
+         26.8648        -0.633784
+         26.9016        -0.771746
+         26.9385        -0.905518
+         26.9753         -1.03437
+         27.0122         -1.15761
+          27.049         -1.27456
+         27.0859          -1.3846
+         27.1227         -1.48711
+         27.1596         -1.58155
+         27.1964          -1.6674
+         27.2333          -1.7442
+         27.2701         -1.81153
+          27.307         -1.86903
+         27.3438         -1.91637
+         27.3807         -1.95331
+         27.4175         -1.97964
+         27.4544         -1.99523
+         27.4912         -1.99998
+         27.5281         -1.99387
+         27.5649         -1.97694
+         27.6018         -1.94927
+         27.6386         -1.91102
+         27.6755         -1.86239
+         27.7123         -1.80365
+         27.7492         -1.73511
+         27.7861         -1.65716
+         27.8229         -1.57021
+         27.8598         -1.47473
+         27.8966         -1.37124
+         27.9335         -1.26031
+         27.9703         -1.14254
+         28.0072         -1.01856
+          28.044         -0.88905
+         28.0809        -0.754715
+         28.1177        -0.616281
+         28.1546        -0.474502
+         28.1914        -0.330146
+         28.2283        -0.183997
+         28.2651       -0.0368494
+          28.302         0.110498
+         28.3388         0.257246
+         28.3757         0.402597
+         28.4125         0.545762
+         28.4494         0.685964
+         28.4862         0.822441
+         28.5231         0.954452
+         28.5599          1.08128
+         28.5968          1.20224
+         28.6336          1.31667
+         28.6705          1.42395
+         28.7073           1.5235
+         28.7442          1.61478
+          28.781          1.69729
+         28.8179          1.77058
+         28.8547          1.83426
+         28.8916          1.88798
+         28.9284          1.93145
+         28.9653          1.96444
+         29.0022          1.98675
+          29.039          1.99828
+         29.0759          1.99896
+         29.1127          1.98879
+         29.1496          1.96781
+         29.1864          1.93615
+         29.2233          1.89398
+         29.2601          1.84153
+          29.297          1.77908
+         29.3338          1.70696
+         29.3707          1.62558
+         29.4075          1.53537
+         29.4444          1.43683
+         29.4812          1.33048
+         29.5181          1.21691
+         29.5549          1.09674
+         29.5918         0.970604
+         29.6286         0.839202
+         29.6655         0.703243
+         29.7023         0.563465
+         29.7392         0.420628
+          29.776         0.275508
+         29.8129         0.128891
+         29.8497       -0.0184255
+         29.8866        -0.165642
+         29.9234        -0.311959
+         29.9603        -0.456582
+         29.9971        -0.598726
+          30.034        -0.737619
+         30.0708        -0.872508
+         30.1077         -1.00266
+         30.1445         -1.12736
+         30.1814         -1.24595
+         30.2183         -1.35777
+         30.2551         -1.46222
+          30.292         -1.55873
+         30.3288         -1.64677
+         30.3657         -1.72588
+         30.4025         -1.79561
+         30.4394         -1.85559
+         30.4762          -1.9055
+         30.5131         -1.94506
+         30.5499         -1.97406
+         30.5868         -1.99234
+         30.6236         -1.99981
+         30.6605         -1.99642
+         30.6973         -1.98218
+         30.7342         -1.95718
+          30.771         -1.92156
+         30.8079          -1.8755
+         30.8447         -1.81926
+         30.8816         -1.75315
+         30.9184         -1.67751
+         30.9553         -1.59276
+         30.9921         -1.49937
+          31.029         -1.39783
+         31.0658         -1.28871
+         31.1027         -1.17259
+         31.1395          -1.0501
+         31.1764        -0.921908
+         31.2132        -0.788712
+         31.2501        -0.651233
+         31.2869        -0.510218
+         31.3238        -0.366434
+         31.3606        -0.220659
+         31.3975       -0.0736864
+         31.4344        0.0736864
+         31.4712         0.220659
+         31.5081         0.366434
+         31.5449         0.510218
+         31.5818         0.651233
+         31.6186         0.788712
+         31.6555         0.921908
+         31.6923           1.0501
+         31.7292          1.17259
+          31.766          1.28871
+         31.8029          1.39783
+         31.8397          1.49937
+         31.8766          1.59276
+         31.9134          1.67751
+         31.9503          1.75315
+         31.9871          1.81926
+          32.024           1.8755
+         32.0608          1.92156
+         32.0977          1.95718
+         32.1345          1.98218
+         32.1714          1.99642
+         32.2082          1.99981
+         32.2451          1.99234
+         32.2819          1.97406
+         32.3188          1.94506
+         32.3556           1.9055
+         32.3925          1.85559
+         32.4293          1.79561
+         32.4662          1.72588
+          32.503          1.64677
+         32.5399          1.55873
+         32.5767          1.46222
+         32.6136          1.35777
+         32.6505          1.24595
+         32.6873          1.12736
+         32.7242          1.00266
+          32.761         0.872508
+         32.7979         0.737619
+         32.8347         0.598726
+         32.8716         0.456582
+         32.9084         0.311959
+         32.9453         0.165642
+         32.9821        0.0184255
+          33.019        -0.128891
+         33.0558        -0.275508
+         33.0927        -0.420628
+         33.1295        -0.563465
+         33.1664        -0.703243
+         33.2032        -0.839202
+         33.2401        -0.970604
+         33.2769         -1.09674
+         33.3138         -1.21691
+         33.3506         -1.33048
+         33.3875         -1.43683
+         33.4243         -1.53537
+         33.4612         -1.62558
+          33.498         -1.70696
+         33.5349         -1.77908
+         33.5717         -1.84153
+         33.6086         -1.89398
+         33.6454         -1.93615
+         33.6823         -1.96781
+         33.7191         -1.98879
+          33.756         -1.99896
+         33.7929         -1.99828
+         33.8297         -1.98675
+         33.8666         -1.96444
+         33.9034         -1.93145
+         33.9403         -1.88798
+         33.9771         -1.83426
+          34.014         -1.77058
+         34.0508         -1.69729
+         34.0877         -1.61478
+         34.1245          -1.5235
+         34.1614         -1.42395
+         34.1982         -1.31667
+         34.2351         -1.20224
+         34.2719         -1.08128
+         34.3088        -0.954452
+         34.3456        -0.822441
+         34.3825        -0.685964
+         34.4193        -0.545762
+         34.4562        -0.402597
+          34.493        -0.257246
+         34.5299        -0.110498
+         34.5667        0.0368494
+         34.6036         0.183997
+         34.6404         0.330146
+         34.6773         0.474502
+         34.7141         0.616281
+          34.751         0.754715
+         34.7878          0.88905
+         34.8247          1.01856
+         34.8615          1.14254
+         34.8984          1.26031
+         34.9352          1.37124
+         34.9721          1.47473
+          35.009          1.57021
+         35.0458          1.65716
+         35.0827          1.73511
+         35.1195          1.80365
+         35.1564          1.86239
+         35.1932          1.91102
+         35.2301          1.94927
+         35.2669          1.97694
+         35.3038          1.99387
+         35.3406          1.99998
+         35.3775          1.99523
+         35.4143          1.97964
+         35.4512          1.95331
+          35.488          1.91637
+         35.5249          1.86903
+         35.5617          1.81153
+         35.5986           1.7442
+         35.6354           1.6674
+         35.6723          1.58155
+         35.7091          1.48711
+          35.746           1.3846
+         35.7828          1.27456
+         35.8197          1.15761
+         35.8565          1.03437
+         35.8934         0.905518
+         35.9302         0.771746
+         35.9671         0.633784
+         36.0039         0.492381
+         36.0408         0.348304
+         36.0776         0.202337
+         36.1145        0.0552703
+         36.1513       -0.0920962
+         36.1882        -0.238963
+         36.2251        -0.384532
+         36.2619        -0.528013
+         36.2988        -0.668627
+         36.3356         -0.80561
+         36.3725         -0.93822
+         36.4093         -1.06574
+         36.4462         -1.18746
+          36.483         -1.30274
+         36.5199         -1.41095
+         36.5567          -1.5115
+         36.5936         -1.60384
+         36.6304         -1.68747
+         36.6673         -1.76194
+         36.7041         -1.82684
+          36.741         -1.88182
+         36.7778         -1.92659
+         36.8147         -1.96089
+         36.8515         -1.98455
+         36.8884         -1.99743
+         36.9252         -1.99947
+         36.9621         -1.99065
+         36.9989         -1.97102
+         37.0358         -1.94069
+         37.0726         -1.89982
+         37.1095         -1.84864
+         37.1463         -1.78742
+         37.1832         -1.71649
+           37.22         -1.63625
+         37.2569         -1.54712
+         37.2937         -1.44959
+         37.3306         -1.34418
+         37.3674         -1.23148
+         37.4043          -1.1121
+         37.4412        -0.986673
+          37.478        -0.855891
+         37.5149        -0.720462
+         37.5517         -0.58112
+         37.5886        -0.438624
+         37.6254        -0.293746
+         37.6623        -0.147273
+         37.6991     -5.87811e-15
+&
+@target G0.S2
+@type xy
+               0                0
+       0.0368515        0.0736989
+       0.0737031         0.147373
+        0.110555         0.220997
+        0.147406         0.294545
+        0.184258         0.367994
+        0.221109         0.441318
+        0.257961         0.514492
+        0.294812         0.587491
+        0.331664         0.660291
+        0.368515         0.732867
+        0.405367         0.805194
+        0.442218         0.877248
+         0.47907         0.949003
+        0.515921          1.02044
+        0.552773          1.09152
+        0.589624          1.16224
+        0.626476          1.23256
+        0.663327          1.30247
+        0.700179          1.37193
+        0.737031          1.44092
+        0.773882          1.50943
+        0.810734          1.57742
+        0.847585          1.64488
+        0.884437          1.71178
+        0.921288           1.7781
+         0.95814          1.84382
+        0.994991           1.9089
+         1.03184          1.97335
+         1.06869          2.03712
+         1.10555           2.1002
+          1.1424          2.16256
+         1.17925           2.2242
+          1.2161          2.28507
+         1.25295          2.34517
+          1.2898          2.40448
+         1.32665          2.46297
+         1.36351          2.52062
+         1.40036          2.57742
+         1.43721          2.63334
+         1.47406          2.68837
+         1.51091          2.74248
+         1.54776          2.79567
+         1.58462           2.8479
+         1.62147          2.89917
+         1.65832          2.94946
+         1.69517          2.99874
+         1.73202            3.047
+         1.76887          3.09423
+         1.80572          3.14041
+         1.84258          3.18553
+         1.87943          3.22956
+         1.91628          3.27249
+         1.95313          3.31432
+         1.98998          3.35502
+         2.02683          3.39458
+         2.06369          3.43298
+         2.10054          3.47023
+         2.13739          3.50629
+         2.17424          3.54117
+         2.21109          3.57484
+         2.24794          3.60729
+         2.28479          3.63853
+         2.32165          3.66853
+          2.3585          3.69728
+         2.39535          3.72478
+          2.4322          3.75101
+         2.46905          3.77597
+          2.5059          3.79965
+         2.54276          3.82203
+         2.57961          3.84312
+         2.61646          3.86291
+         2.65331          3.88138
+         2.69016          3.89854
+         2.72701          3.91437
+         2.76386          3.92887
+         2.80072          3.94204
+         2.83757          3.95387
+         2.87442          3.96436
+         2.91127          3.97351
+         2.94812           3.9813
+         2.98497          3.98774
+         3.02183          3.99283
+         3.05868          3.99656
+         3.09553          3.99894
+         3.13238          3.99996
+         3.16923          3.99962
+         3.20608          3.99792
+         3.24293          3.99487
+         3.27979          3.99046
+         3.31664          3.98469
+         3.35349          3.97757
+         3.39034           3.9691
+         3.42719          3.95929
+         3.46404          3.94813
+          3.5009          3.93562
+         3.53775          3.92179
+          3.5746          3.90662
+         3.61145          3.89012
+          3.6483          3.87231
+         3.68515          3.85318
+           3.722          3.83274
+         3.75886            3.811
+         3.79571          3.78797
+         3.83256          3.76365
+         3.86941          3.73805
+         3.90626          3.71118
+         3.94311          3.68306
+         3.97996          3.65368
+         4.01682          3.62307
+         4.05367          3.59122
+         4.09052          3.55815
+         4.12737          3.52388
+         4.16422          3.48841
+         4.20107          3.45175
+         4.23793          3.41393
+         4.27478          3.37494
+         4.31163          3.33481
+         4.34848          3.29354
+         4.38533          3.25116
+         4.42218          3.20768
+         4.45903           3.1631
+         4.49589          3.11745
+         4.53274          3.07075
+         4.56959            3.023
+         4.60644          2.97422
+         4.64329          2.92444
+         4.68014          2.87366
+           4.717          2.82191
+         4.75385          2.76919
+          4.7907          2.71554
+         4.82755          2.66097
+          4.8644          2.60549
+         4.90125          2.54913
+          4.9381           2.4919
+         4.97496          2.43383
+         5.01181          2.37493
+         5.04866          2.31522
+         5.08551          2.25473
+         5.12236          2.19347
+         5.15921          2.13147
+         5.19607          2.06874
+         5.23292          2.00532
+         5.26977          1.94121
+         5.30662          1.87644
+         5.34347          1.81104
+         5.38032          1.74502
+         5.41717           1.6784
+         5.45403          1.61122
+         5.49088          1.54349
+         5.52773          1.47524
+         5.56458          1.40649
+         5.60143          1.33725
+         5.63828          1.26757
+         5.67514          1.19745
+         5.71199          1.12693
+         5.74884          1.05603
+         5.78569         0.984762
+         5.82254         0.913164
+         5.85939         0.841257
+         5.89624         0.769063
+          5.9331         0.696609
+         5.96995         0.623918
+          6.0068         0.551015
+         6.04365         0.477925
+          6.0805         0.404673
+         6.11735         0.331284
+          6.1542         0.257782
+         6.19106         0.184192
+         6.22791         0.110541
+         6.26476         0.036851
+         6.30161        -0.036851
+         6.33846        -0.110541
+         6.37531        -0.184192
+         6.41217        -0.257782
+         6.44902        -0.331284
+         6.48587        -0.404673
+         6.52272        -0.477925
+         6.55957        -0.551015
+         6.59642        -0.623918
+         6.63327        -0.696609
+         6.67013        -0.769063
+         6.70698        -0.841257
+         6.74383        -0.913164
+         6.78068        -0.984762
+         6.81753         -1.05603
+         6.85438         -1.12693
+         6.89124         -1.19745
+         6.92809         -1.26757
+         6.96494         -1.33725
+         7.00179         -1.40649
+         7.03864         -1.47524
+         7.07549         -1.54349
+         7.11234         -1.61122
+          7.1492          -1.6784
+         7.18605         -1.74502
+          7.2229         -1.81104
+         7.25975         -1.87644
+          7.2966         -1.94121
+         7.33345         -2.00532
+         7.37031         -2.06874
+         7.40716         -2.13147
+         7.44401         -2.19347
+         7.48086         -2.25473
+         7.51771         -2.31522
+         7.55456         -2.37493
+         7.59141         -2.43383
+         7.62827          -2.4919
+         7.66512         -2.54913
+         7.70197         -2.60549
+         7.73882         -2.66097
+         7.77567         -2.71554
+         7.81252         -2.76919
+         7.84938         -2.82191
+         7.88623         -2.87366
+         7.92308         -2.92444
+         7.95993         -2.97422
+         7.99678           -3.023
+         8.03363         -3.07075
+         8.07048         -3.11745
+         8.10734          -3.1631
+         8.14419         -3.20768
+         8.18104         -3.25116
+         8.21789         -3.29354
+         8.25474         -3.33481
+         8.29159         -3.37494
+         8.32845         -3.41393
+          8.3653         -3.45175
+         8.40215         -3.48841
+           8.439         -3.52388
+         8.47585         -3.55815
+          8.5127         -3.59122
+         8.54955         -3.62307
+         8.58641         -3.65368
+         8.62326         -3.68306
+         8.66011         -3.71118
+         8.69696         -3.73805
+         8.73381         -3.76365
+         8.77066         -3.78797
+         8.80751           -3.811
+         8.84437         -3.83274
+         8.88122         -3.85318
+         8.91807         -3.87231
+         8.95492         -3.89012
+         8.99177         -3.90662
+         9.02862         -3.92179
+         9.06548         -3.93562
+         9.10233         -3.94813
+         9.13918         -3.95929
+         9.17603          -3.9691
+         9.21288         -3.97757
+         9.24973         -3.98469
+         9.28658         -3.99046
+         9.32344         -3.99487
+         9.36029         -3.99792
+         9.39714         -3.99962
+         9.43399         -3.99996
+         9.47084         -3.99894
+         9.50769         -3.99656
+         9.54455         -3.99283
+          9.5814         -3.98774
+         9.61825          -3.9813
+          9.6551         -3.97351
+         9.69195         -3.96436
+          9.7288         -3.95387
+         9.76565         -3.94204
+         9.80251         -3.92887
+         9.83936         -3.91437
+         9.87621         -3.89854
+         9.91306         -3.88138
+         9.94991         -3.86291
+         9.98676         -3.84312
+         10.0236         -3.82203
+         10.0605         -3.79965
+         10.0973         -3.77597
+         10.1342         -3.75101
+          10.171         -3.72478
+         10.2079         -3.69728
+         10.2447         -3.66853
+         10.2816         -3.63853
+         10.3184         -3.60729
+         10.3553         -3.57484
+         10.3921         -3.54117
+          10.429         -3.50629
+         10.4658         -3.47023
+         10.5027         -3.43298
+         10.5395         -3.39458
+         10.5764         -3.35502
+         10.6132         -3.31432
+         10.6501         -3.27249
+         10.6869         -3.22956
+         10.7238         -3.18553
+         10.7606         -3.14041
+         10.7975         -3.09423
+         10.8343           -3.047
+         10.8712         -2.99874
+         10.9081         -2.94946
+         10.9449         -2.89917
+         10.9818          -2.8479
+         11.0186         -2.79567
+         11.0555         -2.74248
+         11.0923         -2.68837
+         11.1292         -2.63334
+          11.166         -2.57742
+         11.2029         -2.52062
+         11.2397         -2.46297
+         11.2766         -2.40448
+         11.3134         -2.34517
+         11.3503         -2.28507
+         11.3871          -2.2242
+          11.424         -2.16256
+         11.4608          -2.1002
+         11.4977         -2.03712
+         11.5345         -1.97335
+         11.5714          -1.9089
+         11.6082         -1.84382
+         11.6451          -1.7781
+         11.6819         -1.71178
+         11.7188         -1.64488
+         11.7556         -1.57742
+         11.7925         -1.50943
+         11.8293         -1.44092
+         11.8662         -1.37193
+          11.903         -1.30247
+         11.9399         -1.23256
+         11.9767         -1.16224
+         12.0136         -1.09152
+         12.0504         -1.02044
+         12.0873        -0.949003
+         12.1242        -0.877248
+          12.161        -0.805194
+         12.1979        -0.732867
+         12.2347        -0.660291
+         12.2716        -0.587491
+         12.3084        -0.514492
+         12.3453        -0.441318
+         12.3821        -0.367994
+          12.419        -0.294545
+         12.4558        -0.220997
+         12.4927        -0.147373
+         12.5295       -0.0736989
+         12.5664     -9.79685e-16
+         12.6032        0.0736989
+         12.6401         0.147373
+         12.6769         0.220997
+         12.7138         0.294545
+         12.7506         0.367994
+         12.7875         0.441318
+         12.8243         0.514492
+         12.8612         0.587491
+          12.898         0.660291
+         12.9349         0.732867
+         12.9717         0.805194
+         13.0086         0.877248
+         13.0454         0.949003
+         13.0823          1.02044
+         13.1191          1.09152
+          13.156          1.16224
+         13.1928          1.23256
+         13.2297          1.30247
+         13.2665          1.37193
+         13.3034          1.44092
+         13.3403          1.50943
+         13.3771          1.57742
+          13.414          1.64488
+         13.4508          1.71178
+         13.4877           1.7781
+         13.5245          1.84382
+         13.5614           1.9089
+         13.5982          1.97335
+         13.6351          2.03712
+         13.6719           2.1002
+         13.7088          2.16256
+         13.7456           2.2242
+         13.7825          2.28507
+         13.8193          2.34517
+         13.8562          2.40448
+          13.893          2.46297
+         13.9299          2.52062
+         13.9667          2.57742
+         14.0036          2.63334
+         14.0404          2.68837
+         14.0773          2.74248
+         14.1141          2.79567
+          14.151           2.8479
+         14.1878          2.89917
+         14.2247          2.94946
+         14.2615          2.99874
+         14.2984            3.047
+         14.3352          3.09423
+         14.3721          3.14041
+         14.4089          3.18553
+         14.4458          3.22956
+         14.4827          3.27249
+         14.5195          3.31432
+         14.5564          3.35502
+         14.5932          3.39458
+         14.6301          3.43298
+         14.6669          3.47023
+         14.7038          3.50629
+         14.7406          3.54117
+         14.7775          3.57484
+         14.8143          3.60729
+         14.8512          3.63853
+          14.888          3.66853
+         14.9249          3.69728
+         14.9617          3.72478
+         14.9986          3.75101
+         15.0354          3.77597
+         15.0723          3.79965
+         15.1091          3.82203
+          15.146          3.84312
+         15.1828          3.86291
+         15.2197          3.88138
+         15.2565          3.89854
+         15.2934          3.91437
+         15.3302          3.92887
+         15.3671          3.94204
+         15.4039          3.95387
+         15.4408          3.96436
+         15.4776          3.97351
+         15.5145           3.9813
+         15.5513          3.98774
+         15.5882          3.99283
+          15.625          3.99656
+         15.6619          3.99894
+         15.6988          3.99996
+         15.7356          3.99962
+         15.7725          3.99792
+         15.8093          3.99487
+         15.8462          3.99046
+          15.883          3.98469
+         15.9199          3.97757
+         15.9567           3.9691
+         15.9936          3.95929
+         16.0304          3.94813
+         16.0673          3.93562
+         16.1041          3.92179
+          16.141          3.90662
+         16.1778          3.89012
+         16.2147          3.87231
+         16.2515          3.85318
+         16.2884          3.83274
+         16.3252            3.811
+         16.3621          3.78797
+         16.3989          3.76365
+         16.4358          3.73805
+         16.4726          3.71118
+         16.5095          3.68306
+         16.5463          3.65368
+         16.5832          3.62307
+           16.62          3.59122
+         16.6569          3.55815
+         16.6937          3.52388
+         16.7306          3.48841
+         16.7674          3.45175
+         16.8043          3.41393
+         16.8411          3.37494
+          16.878          3.33481
+         16.9149          3.29354
+         16.9517          3.25116
+         16.9886          3.20768
+         17.0254           3.1631
+         17.0623          3.11745
+         17.0991          3.07075
+          17.136            3.023
+         17.1728          2.97422
+         17.2097          2.92444
+         17.2465          2.87366
+         17.2834          2.82191
+         17.3202          2.76919
+         17.3571          2.71554
+         17.3939          2.66097
+         17.4308          2.60549
+         17.4676          2.54913
+         17.5045           2.4919
+         17.5413          2.43383
+         17.5782          2.37493
+          17.615          2.31522
+         17.6519          2.25473
+         17.6887          2.19347
+         17.7256          2.13147
+         17.7624          2.06874
+         17.7993          2.00532
+         17.8361          1.94121
+          17.873          1.87644
+         17.9098          1.81104
+         17.9467          1.74502
+         17.9835           1.6784
+         18.0204          1.61122
+         18.0572          1.54349
+         18.0941          1.47524
+          18.131          1.40649
+         18.1678          1.33725
+         18.2047          1.26757
+         18.2415          1.19745
+         18.2784          1.12693
+         18.3152          1.05603
+         18.3521         0.984762
+         18.3889         0.913164
+         18.4258         0.841257
+         18.4626         0.769063
+         18.4995         0.696609
+         18.5363         0.623918
+         18.5732         0.551015
+           18.61         0.477925
+         18.6469         0.404673
+         18.6837         0.331284
+         18.7206         0.257782
+         18.7574         0.184192
+         18.7943         0.110541
+         18.8311         0.036851
+          18.868        -0.036851
+         18.9048        -0.110541
+         18.9417        -0.184192
+         18.9785        -0.257782
+         19.0154        -0.331284
+         19.0522        -0.404673
+         19.0891        -0.477925
+         19.1259        -0.551015
+         19.1628        -0.623918
+         19.1996        -0.696609
+         19.2365        -0.769063
+         19.2733        -0.841257
+         19.3102        -0.913164
+         19.3471        -0.984762
+         19.3839         -1.05603
+         19.4208         -1.12693
+         19.4576         -1.19745
+         19.4945         -1.26757
+         19.5313         -1.33725
+         19.5682         -1.40649
+          19.605         -1.47524
+         19.6419         -1.54349
+         19.6787         -1.61122
+         19.7156          -1.6784
+         19.7524         -1.74502
+         19.7893         -1.81104
+         19.8261         -1.87644
+          19.863         -1.94121
+         19.8998         -2.00532
+         19.9367         -2.06874
+         19.9735         -2.13147
+         20.0104         -2.19347
+         20.0472         -2.25473
+         20.0841         -2.31522
+         20.1209         -2.37493
+         20.1578         -2.43383
+         20.1946          -2.4919
+         20.2315         -2.54913
+         20.2683         -2.60549
+         20.3052         -2.66097
+          20.342         -2.71554
+         20.3789         -2.76919
+         20.4157         -2.82191
+         20.4526         -2.87366
+         20.4894         -2.92444
+         20.5263         -2.97422
+         20.5632           -3.023
+            20.6         -3.07075
+         20.6369         -3.11745
+         20.6737          -3.1631
+         20.7106         -3.20768
+         20.7474         -3.25116
+         20.7843         -3.29354
+         20.8211         -3.33481
+          20.858         -3.37494
+         20.8948         -3.41393
+         20.9317         -3.45175
+         20.9685         -3.48841
+         21.0054         -3.52388
+         21.0422         -3.55815
+         21.0791         -3.59122
+         21.1159         -3.62307
+         21.1528         -3.65368
+         21.1896         -3.68306
+         21.2265         -3.71118
+         21.2633         -3.73805
+         21.3002         -3.76365
+          21.337         -3.78797
+         21.3739           -3.811
+         21.4107         -3.83274
+         21.4476         -3.85318
+         21.4844         -3.87231
+         21.5213         -3.89012
+         21.5581         -3.90662
+          21.595         -3.92179
+         21.6318         -3.93562
+         21.6687         -3.94813
+         21.7055         -3.95929
+         21.7424          -3.9691
+         21.7793         -3.97757
+         21.8161         -3.98469
+          21.853         -3.99046
+         21.8898         -3.99487
+         21.9267         -3.99792
+         21.9635         -3.99962
+         22.0004         -3.99996
+         22.0372         -3.99894
+         22.0741         -3.99656
+         22.1109         -3.99283
+         22.1478         -3.98774
+         22.1846          -3.9813
+         22.2215         -3.97351
+         22.2583         -3.96436
+         22.2952         -3.95387
+          22.332         -3.94204
+         22.3689         -3.92887
+         22.4057         -3.91437
+         22.4426         -3.89854
+         22.4794         -3.88138
+         22.5163         -3.86291
+         22.5531         -3.84312
+           22.59         -3.82203
+         22.6268         -3.79965
+         22.6637         -3.77597
+         22.7005         -3.75101
+         22.7374         -3.72478
+         22.7742         -3.69728
+         22.8111         -3.66853
+         22.8479         -3.63853
+         22.8848         -3.60729
+         22.9216         -3.57484
+         22.9585         -3.54117
+         22.9954         -3.50629
+         23.0322         -3.47023
+         23.0691         -3.43298
+         23.1059         -3.39458
+         23.1428         -3.35502
+         23.1796         -3.31432
+         23.2165         -3.27249
+         23.2533         -3.22956
+         23.2902         -3.18553
+          23.327         -3.14041
+         23.3639         -3.09423
+         23.4007           -3.047
+         23.4376         -2.99874
+         23.4744         -2.94946
+         23.5113         -2.89917
+         23.5481          -2.8479
+          23.585         -2.79567
+         23.6218         -2.74248
+         23.6587         -2.68837
+         23.6955         -2.63334
+         23.7324         -2.57742
+         23.7692         -2.52062
+         23.8061         -2.46297
+         23.8429         -2.40448
+         23.8798         -2.34517
+         23.9166         -2.28507
+         23.9535          -2.2242
+         23.9903         -2.16256
+         24.0272          -2.1002
+          24.064         -2.03712
+         24.1009         -1.97335
+         24.1378          -1.9089
+         24.1746         -1.84382
+         24.2115          -1.7781
+         24.2483         -1.71178
+         24.2852         -1.64488
+          24.322         -1.57742
+         24.3589         -1.50943
+         24.3957         -1.44092
+         24.4326         -1.37193
+         24.4694         -1.30247
+         24.5063         -1.23256
+         24.5431         -1.16224
+           24.58         -1.09152
+         24.6168         -1.02044
+         24.6537        -0.949003
+         24.6905        -0.877248
+         24.7274        -0.805194
+         24.7642        -0.732867
+         24.8011        -0.660291
+         24.8379        -0.587491
+         24.8748        -0.514492
+         24.9116        -0.441318
+         24.9485        -0.367994
+         24.9853        -0.294545
+         25.0222        -0.220997
+          25.059        -0.147373
+         25.0959       -0.0736989
+         25.1327     -1.95937e-15
+         25.1696        0.0736989
+         25.2064         0.147373
+         25.2433         0.220997
+         25.2801         0.294545
+          25.317         0.367994
+         25.3539         0.441318
+         25.3907         0.514492
+         25.4276         0.587491
+         25.4644         0.660291
+         25.5013         0.732867
+         25.5381         0.805194
+          25.575         0.877248
+         25.6118         0.949003
+         25.6487          1.02044
+         25.6855          1.09152
+         25.7224          1.16224
+         25.7592          1.23256
+         25.7961          1.30247
+         25.8329          1.37193
+         25.8698          1.44092
+         25.9066          1.50943
+         25.9435          1.57742
+         25.9803          1.64488
+         26.0172          1.71178
+          26.054           1.7781
+         26.0909          1.84382
+         26.1277           1.9089
+         26.1646          1.97335
+         26.2014          2.03712
+         26.2383           2.1002
+         26.2751          2.16256
+          26.312           2.2242
+         26.3488          2.28507
+         26.3857          2.34517
+         26.4225          2.40448
+         26.4594          2.46297
+         26.4962          2.52062
+         26.5331          2.57742
+           26.57          2.63334
+         26.6068          2.68837
+         26.6437          2.74248
+         26.6805          2.79567
+         26.7174           2.8479
+         26.7542          2.89917
+         26.7911          2.94946
+         26.8279          2.99874
+         26.8648            3.047
+         26.9016          3.09423
+         26.9385          3.14041
+         26.9753          3.18553
+         27.0122          3.22956
+          27.049          3.27249
+         27.0859          3.31432
+         27.1227          3.35502
+         27.1596          3.39458
+         27.1964          3.43298
+         27.2333          3.47023
+         27.2701          3.50629
+          27.307          3.54117
+         27.3438          3.57484
+         27.3807          3.60729
+         27.4175          3.63853
+         27.4544          3.66853
+         27.4912          3.69728
+         27.5281          3.72478
+         27.5649          3.75101
+         27.6018          3.77597
+         27.6386          3.79965
+         27.6755          3.82203
+         27.7123          3.84312
+         27.7492          3.86291
+         27.7861          3.88138
+         27.8229          3.89854
+         27.8598          3.91437
+         27.8966          3.92887
+         27.9335          3.94204
+         27.9703          3.95387
+         28.0072          3.96436
+          28.044          3.97351
+         28.0809           3.9813
+         28.1177          3.98774
+         28.1546          3.99283
+         28.1914          3.99656
+         28.2283          3.99894
+         28.2651          3.99996
+          28.302          3.99962
+         28.3388          3.99792
+         28.3757          3.99487
+         28.4125          3.99046
+         28.4494          3.98469
+         28.4862          3.97757
+         28.5231           3.9691
+         28.5599          3.95929
+         28.5968          3.94813
+         28.6336          3.93562
+         28.6705          3.92179
+         28.7073          3.90662
+         28.7442          3.89012
+          28.781          3.87231
+         28.8179          3.85318
+         28.8547          3.83274
+         28.8916            3.811
+         28.9284          3.78797
+         28.9653          3.76365
+         29.0022          3.73805
+          29.039          3.71118
+         29.0759          3.68306
+         29.1127          3.65368
+         29.1496          3.62307
+         29.1864          3.59122
+         29.2233          3.55815
+         29.2601          3.52388
+          29.297          3.48841
+         29.3338          3.45175
+         29.3707          3.41393
+         29.4075          3.37494
+         29.4444          3.33481
+         29.4812          3.29354
+         29.5181          3.25116
+         29.5549          3.20768
+         29.5918           3.1631
+         29.6286          3.11745
+         29.6655          3.07075
+         29.7023            3.023
+         29.7392          2.97422
+          29.776          2.92444
+         29.8129          2.87366
+         29.8497          2.82191
+         29.8866          2.76919
+         29.9234          2.71554
+         29.9603          2.66097
+         29.9971          2.60549
+          30.034          2.54913
+         30.0708           2.4919
+         30.1077          2.43383
+         30.1445          2.37493
+         30.1814          2.31522
+         30.2183          2.25473
+         30.2551          2.19347
+          30.292          2.13147
+         30.3288          2.06874
+         30.3657          2.00532
+         30.4025          1.94121
+         30.4394          1.87644
+         30.4762          1.81104
+         30.5131          1.74502
+         30.5499           1.6784
+         30.5868          1.61122
+         30.6236          1.54349
+         30.6605          1.47524
+         30.6973          1.40649
+         30.7342          1.33725
+          30.771          1.26757
+         30.8079          1.19745
+         30.8447          1.12693
+         30.8816          1.05603
+         30.9184         0.984762
+         30.9553         0.913164
+         30.9921         0.841257
+          31.029         0.769063
+         31.0658         0.696609
+         31.1027         0.623918
+         31.1395         0.551015
+         31.1764         0.477925
+         31.2132         0.404673
+         31.2501         0.331284
+         31.2869         0.257782
+         31.3238         0.184192
+         31.3606         0.110541
+         31.3975         0.036851
+         31.4344        -0.036851
+         31.4712        -0.110541
+         31.5081        -0.184192
+         31.5449        -0.257782
+         31.5818        -0.331284
+         31.6186        -0.404673
+         31.6555        -0.477925
+         31.6923        -0.551015
+         31.7292        -0.623918
+          31.766        -0.696609
+         31.8029        -0.769063
+         31.8397        -0.841257
+         31.8766        -0.913164
+         31.9134        -0.984762
+         31.9503         -1.05603
+         31.9871         -1.12693
+          32.024         -1.19745
+         32.0608         -1.26757
+         32.0977         -1.33725
+         32.1345         -1.40649
+         32.1714         -1.47524
+         32.2082         -1.54349
+         32.2451         -1.61122
+         32.2819          -1.6784
+         32.3188         -1.74502
+         32.3556         -1.81104
+         32.3925         -1.87644
+         32.4293         -1.94121
+         32.4662         -2.00532
+          32.503         -2.06874
+         32.5399         -2.13147
+         32.5767         -2.19347
+         32.6136         -2.25473
+         32.6505         -2.31522
+         32.6873         -2.37493
+         32.7242         -2.43383
+          32.761          -2.4919
+         32.7979         -2.54913
+         32.8347         -2.60549
+         32.8716         -2.66097
+         32.9084         -2.71554
+         32.9453         -2.76919
+         32.9821         -2.82191
+          33.019         -2.87366
+         33.0558         -2.92444
+         33.0927         -2.97422
+         33.1295           -3.023
+         33.1664         -3.07075
+         33.2032         -3.11745
+         33.2401          -3.1631
+         33.2769         -3.20768
+         33.3138         -3.25116
+         33.3506         -3.29354
+         33.3875         -3.33481
+         33.4243         -3.37494
+         33.4612         -3.41393
+          33.498         -3.45175
+         33.5349         -3.48841
+         33.5717         -3.52388
+         33.6086         -3.55815
+         33.6454         -3.59122
+         33.6823         -3.62307
+         33.7191         -3.65368
+          33.756         -3.68306
+         33.7929         -3.71118
+         33.8297         -3.73805
+         33.8666         -3.76365
+         33.9034         -3.78797
+         33.9403           -3.811
+         33.9771         -3.83274
+          34.014         -3.85318
+         34.0508         -3.87231
+         34.0877         -3.89012
+         34.1245         -3.90662
+         34.1614         -3.92179
+         34.1982         -3.93562
+         34.2351         -3.94813
+         34.2719         -3.95929
+         34.3088          -3.9691
+         34.3456         -3.97757
+         34.3825         -3.98469
+         34.4193         -3.99046
+         34.4562         -3.99487
+          34.493         -3.99792
+         34.5299         -3.99962
+         34.5667         -3.99996
+         34.6036         -3.99894
+         34.6404         -3.99656
+         34.6773         -3.99283
+         34.7141         -3.98774
+          34.751          -3.9813
+         34.7878         -3.97351
+         34.8247         -3.96436
+         34.8615         -3.95387
+         34.8984         -3.94204
+         34.9352         -3.92887
+         34.9721         -3.91437
+          35.009         -3.89854
+         35.0458         -3.88138
+         35.0827         -3.86291
+         35.1195         -3.84312
+         35.1564         -3.82203
+         35.1932         -3.79965
+         35.2301         -3.77597
+         35.2669         -3.75101
+         35.3038         -3.72478
+         35.3406         -3.69728
+         35.3775         -3.66853
+         35.4143         -3.63853
+         35.4512         -3.60729
+          35.488         -3.57484
+         35.5249         -3.54117
+         35.5617         -3.50629
+         35.5986         -3.47023
+         35.6354         -3.43298
+         35.6723         -3.39458
+         35.7091         -3.35502
+          35.746         -3.31432
+         35.7828         -3.27249
+         35.8197         -3.22956
+         35.8565         -3.18553
+         35.8934         -3.14041
+         35.9302         -3.09423
+         35.9671           -3.047
+         36.0039         -2.99874
+         36.0408         -2.94946
+         36.0776         -2.89917
+         36.1145          -2.8479
+         36.1513         -2.79567
+         36.1882         -2.74248
+         36.2251         -2.68837
+         36.2619         -2.63334
+         36.2988         -2.57742
+         36.3356         -2.52062
+         36.3725         -2.46297
+         36.4093         -2.40448
+         36.4462         -2.34517
+          36.483         -2.28507
+         36.5199          -2.2242
+         36.5567         -2.16256
+         36.5936          -2.1002
+         36.6304         -2.03712
+         36.6673         -1.97335
+         36.7041          -1.9089
+          36.741         -1.84382
+         36.7778          -1.7781
+         36.8147         -1.71178
+         36.8515         -1.64488
+         36.8884         -1.57742
+         36.9252         -1.50943
+         36.9621         -1.44092
+         36.9989         -1.37193
+         37.0358         -1.30247
+         37.0726         -1.23256
+         37.1095         -1.16224
+         37.1463         -1.09152
+         37.1832         -1.02044
+           37.22        -0.949003
+         37.2569        -0.877248
+         37.2937        -0.805194
+         37.3306        -0.732867
+         37.3674        -0.660291
+         37.4043        -0.587491
+         37.4412        -0.514492
+          37.478        -0.441318
+         37.5149        -0.367994
+         37.5517        -0.294545
+         37.5886        -0.220997
+         37.6254        -0.147373
+         37.6623       -0.0736989
+         37.6991     -2.93906e-15
+&
+@target G0.S3
+@type xy
+               0                0
+       0.0368515       0.00203648
+       0.0737031       0.00813899
+        0.110555        0.0182868
+        0.147406        0.0324455
+        0.184258         0.050567
+        0.221109        0.0725897
+        0.257961        0.0984388
+        0.294812         0.128026
+        0.331664         0.161251
+        0.368515         0.198001
+        0.405367          0.23815
+        0.442218         0.281561
+         0.47907         0.328085
+        0.515921         0.377564
+        0.552773         0.429828
+        0.589624         0.484697
+        0.626476         0.541983
+        0.663327         0.601487
+        0.700179         0.663006
+        0.737031         0.726325
+        0.773882         0.791224
+        0.810734         0.857479
+        0.847585         0.924857
+        0.884437         0.993122
+        0.921288          1.06203
+         0.95814          1.13135
+        0.994991          1.20083
+         1.03184          1.27021
+         1.06869          1.33926
+         1.10555          1.40772
+          1.1424          1.47535
+         1.17925           1.5419
+          1.2161          1.60712
+         1.25295          1.67078
+          1.2898          1.73263
+         1.32665          1.79245
+         1.36351             1.85
+         1.40036          1.90505
+         1.43721          1.95741
+         1.47406          2.00685
+         1.51091          2.05318
+         1.54776          2.09619
+         1.58462          2.13572
+         1.62147          2.17159
+         1.65832          2.20362
+         1.69517          2.23168
+         1.73202          2.25561
+         1.76887           2.2753
+         1.80572          2.29061
+         1.84258          2.30145
+         1.87943          2.30772
+         1.91628          2.30935
+         1.95313          2.30626
+         1.98998          2.29841
+         2.02683          2.28575
+         2.06369          2.26827
+         2.10054          2.24594
+         2.13739          2.21879
+         2.17424          2.18681
+         2.21109          2.15005
+         2.24794          2.10855
+         2.28479          2.06236
+         2.32165          2.01157
+          2.3585          1.95626
+         2.39535          1.89652
+          2.4322          1.83248
+         2.46905          1.76425
+          2.5059          1.69198
+         2.54276          1.61581
+         2.57961          1.53591
+         2.61646          1.45244
+         2.65331           1.3656
+         2.69016          1.27556
+         2.72701          1.18255
+         2.76386          1.08675
+         2.80072         0.988408
+         2.83757         0.887733
+         2.87442         0.784963
+         2.91127         0.680337
+         2.94812         0.574101
+         2.98497         0.466504
+         3.02183         0.357802
+         3.05868         0.248249
+         3.09553         0.138108
+         3.13238         0.027638
+         3.16923       -0.0828975
+         3.20608        -0.193236
+         3.24293        -0.303115
+         3.27979        -0.412275
+         3.31664        -0.520457
+         3.35349        -0.627405
+         3.39034        -0.732866
+         3.42719        -0.836595
+         3.46404        -0.938347
+          3.5009         -1.03789
+         3.53775         -1.13498
+          3.5746         -1.22942
+         3.61145         -1.32097
+          3.6483         -1.40943
+         3.68515         -1.49461
+           3.722         -1.57631
+         3.75886         -1.65437
+         3.79571         -1.72861
+         3.83256         -1.79888
+         3.86941         -1.86503
+         3.90626         -1.92694
+         3.94311         -1.98447
+         3.97996         -2.03754
+         4.01682         -2.08603
+         4.05367         -2.12989
+         4.09052         -2.16902
+         4.12737          -2.2034
+         4.16422         -2.23297
+         4.20107         -2.25771
+         4.23793         -2.27761
+         4.27478         -2.29268
+         4.31163         -2.30293
+         4.34848         -2.30839
+         4.38533         -2.30912
+         4.42218         -2.30516
+         4.45903          -2.2966
+         4.49589         -2.28351
+         4.53274           -2.266
+         4.56959         -2.24417
+         4.60644         -2.21816
+         4.64329         -2.18809
+         4.68014         -2.15412
+           4.717         -2.11641
+         4.75385         -2.07511
+          4.7907         -2.03041
+         4.82755         -1.98251
+          4.8644         -1.93158
+         4.90125         -1.87785
+          4.9381         -1.82152
+         4.97496         -1.76281
+         5.01181         -1.70195
+         5.04866         -1.63916
+         5.08551         -1.57469
+         5.12236         -1.50878
+         5.15921         -1.44166
+         5.19607         -1.37358
+         5.23292         -1.30479
+         5.26977         -1.23555
+         5.30662         -1.16608
+         5.34347         -1.09666
+         5.38032         -1.02751
+         5.41717        -0.958893
+         5.45403        -0.891042
+         5.49088        -0.824197
+         5.52773        -0.758591
+         5.56458        -0.694454
+         5.60143        -0.632008
+         5.63828         -0.57147
+         5.67514         -0.51305
+         5.71199        -0.456948
+         5.74884        -0.403359
+         5.78569        -0.352466
+         5.82254        -0.304443
+         5.85939        -0.259456
+         5.89624        -0.217659
+          5.9331        -0.179193
+         5.96995        -0.144191
+          6.0068        -0.112771
+         6.04365       -0.0850411
+          6.0805       -0.0610951
+         6.11735       -0.0410145
+          6.1542       -0.0248675
+         6.19106       -0.0127091
+         6.22791      -0.00458045
+         6.26476     -0.000509227
+         6.30161     -0.000509227
+         6.33846      -0.00458045
+         6.37531       -0.0127091
+         6.41217       -0.0248675
+         6.44902       -0.0410145
+         6.48587       -0.0610951
+         6.52272       -0.0850411
+         6.55957        -0.112771
+         6.59642        -0.144191
+         6.63327        -0.179193
+         6.67013        -0.217659
+         6.70698        -0.259456
+         6.74383        -0.304443
+         6.78068        -0.352466
+         6.81753        -0.403359
+         6.85438        -0.456948
+         6.89124         -0.51305
+         6.92809         -0.57147
+         6.96494        -0.632008
+         7.00179        -0.694454
+         7.03864        -0.758591
+         7.07549        -0.824197
+         7.11234        -0.891042
+          7.1492        -0.958893
+         7.18605         -1.02751
+          7.2229         -1.09666
+         7.25975         -1.16608
+          7.2966         -1.23555
+         7.33345         -1.30479
+         7.37031         -1.37358
+         7.40716         -1.44166
+         7.44401         -1.50878
+         7.48086         -1.57469
+         7.51771         -1.63916
+         7.55456         -1.70195
+         7.59141         -1.76281
+         7.62827         -1.82152
+         7.66512         -1.87785
+         7.70197         -1.93158
+         7.73882         -1.98251
+         7.77567         -2.03041
+         7.81252         -2.07511
+         7.84938         -2.11641
+         7.88623         -2.15412
+         7.92308         -2.18809
+         7.95993         -2.21816
+         7.99678         -2.24417
+         8.03363           -2.266
+         8.07048         -2.28351
+         8.10734          -2.2966
+         8.14419         -2.30516
+         8.18104         -2.30912
+         8.21789         -2.30839
+         8.25474         -2.30293
+         8.29159         -2.29268
+         8.32845         -2.27761
+          8.3653         -2.25771
+         8.40215         -2.23297
+           8.439          -2.2034
+         8.47585         -2.16902
+          8.5127         -2.12989
+         8.54955         -2.08603
+         8.58641         -2.03754
+         8.62326         -1.98447
+         8.66011         -1.92694
+         8.69696         -1.86503
+         8.73381         -1.79888
+         8.77066         -1.72861
+         8.80751         -1.65437
+         8.84437         -1.57631
+         8.88122         -1.49461
+         8.91807         -1.40943
+         8.95492         -1.32097
+         8.99177         -1.22942
+         9.02862         -1.13498
+         9.06548         -1.03789
+         9.10233        -0.938347
+         9.13918        -0.836595
+         9.17603        -0.732866
+         9.21288        -0.627405
+         9.24973        -0.520457
+         9.28658        -0.412275
+         9.32344        -0.303115
+         9.36029        -0.193236
+         9.39714       -0.0828975
+         9.43399         0.027638
+         9.47084         0.138108
+         9.50769         0.248249
+         9.54455         0.357802
+          9.5814         0.466504
+         9.61825         0.574101
+          9.6551         0.680337
+         9.69195         0.784963
+          9.7288         0.887733
+         9.76565         0.988408
+         9.80251          1.08675
+         9.83936          1.18255
+         9.87621          1.27556
+         9.91306           1.3656
+         9.94991          1.45244
+         9.98676          1.53591
+         10.0236          1.61581
+         10.0605          1.69198
+         10.0973          1.76425
+         10.1342          1.83248
+          10.171          1.89652
+         10.2079          1.95626
+         10.2447          2.01157
+         10.2816          2.06236
+         10.3184          2.10855
+         10.3553          2.15005
+         10.3921          2.18681
+          10.429          2.21879
+         10.4658          2.24594
+         10.5027          2.26827
+         10.5395          2.28575
+         10.5764          2.29841
+         10.6132          2.30626
+         10.6501          2.30935
+         10.6869          2.30772
+         10.7238          2.30145
+         10.7606          2.29061
+         10.7975           2.2753
+         10.8343          2.25561
+         10.8712          2.23168
+         10.9081          2.20362
+         10.9449          2.17159
+         10.9818          2.13572
+         11.0186          2.09619
+         11.0555          2.05318
+         11.0923          2.00685
+         11.1292          1.95741
+          11.166          1.90505
+         11.2029             1.85
+         11.2397          1.79245
+         11.2766          1.73263
+         11.3134          1.67078
+         11.3503          1.60712
+         11.3871           1.5419
+          11.424          1.47535
+         11.4608          1.40772
+         11.4977          1.33926
+         11.5345          1.27021
+         11.5714          1.20083
+         11.6082          1.13135
+         11.6451          1.06203
+         11.6819         0.993122
+         11.7188         0.924857
+         11.7556         0.857479
+         11.7925         0.791224
+         11.8293         0.726325
+         11.8662         0.663006
+          11.903         0.601487
+         11.9399         0.541983
+         11.9767         0.484697
+         12.0136         0.429828
+         12.0504         0.377564
+         12.0873         0.328085
+         12.1242         0.281561
+          12.161          0.23815
+         12.1979         0.198001
+         12.2347         0.161251
+         12.2716         0.128026
+         12.3084        0.0984388
+         12.3453        0.0725897
+         12.3821         0.050567
+          12.419        0.0324455
+         12.4558        0.0182868
+         12.4927       0.00813899
+         12.5295       0.00203648
+         12.5664      3.59919e-31
+         12.6032       0.00203648
+         12.6401       0.00813899
+         12.6769        0.0182868
+         12.7138        0.0324455
+         12.7506         0.050567
+         12.7875        0.0725897
+         12.8243        0.0984388
+         12.8612         0.128026
+          12.898         0.161251
+         12.9349         0.198001
+         12.9717          0.23815
+         13.0086         0.281561
+         13.0454         0.328085
+         13.0823         0.377564
+         13.1191         0.429828
+          13.156         0.484697
+         13.1928         0.541983
+         13.2297         0.601487
+         13.2665         0.663006
+         13.3034         0.726325
+         13.3403         0.791224
+         13.3771         0.857479
+          13.414         0.924857
+         13.4508         0.993122
+         13.4877          1.06203
+         13.5245          1.13135
+         13.5614          1.20083
+         13.5982          1.27021
+         13.6351          1.33926
+         13.6719          1.40772
+         13.7088          1.47535
+         13.7456           1.5419
+         13.7825          1.60712
+         13.8193          1.67078
+         13.8562          1.73263
+          13.893          1.79245
+         13.9299             1.85
+         13.9667          1.90505
+         14.0036          1.95741
+         14.0404          2.00685
+         14.0773          2.05318
+         14.1141          2.09619
+          14.151          2.13572
+         14.1878          2.17159
+         14.2247          2.20362
+         14.2615          2.23168
+         14.2984          2.25561
+         14.3352           2.2753
+         14.3721          2.29061
+         14.4089          2.30145
+         14.4458          2.30772
+         14.4827          2.30935
+         14.5195          2.30626
+         14.5564          2.29841
+         14.5932          2.28575
+         14.6301          2.26827
+         14.6669          2.24594
+         14.7038          2.21879
+         14.7406          2.18681
+         14.7775          2.15005
+         14.8143          2.10855
+         14.8512          2.06236
+          14.888          2.01157
+         14.9249          1.95626
+         14.9617          1.89652
+         14.9986          1.83248
+         15.0354          1.76425
+         15.0723          1.69198
+         15.1091          1.61581
+          15.146          1.53591
+         15.1828          1.45244
+         15.2197           1.3656
+         15.2565          1.27556
+         15.2934          1.18255
+         15.3302          1.08675
+         15.3671         0.988408
+         15.4039         0.887733
+         15.4408         0.784963
+         15.4776         0.680337
+         15.5145         0.574101
+         15.5513         0.466504
+         15.5882         0.357802
+          15.625         0.248249
+         15.6619         0.138108
+         15.6988         0.027638
+         15.7356       -0.0828975
+         15.7725        -0.193236
+         15.8093        -0.303115
+         15.8462        -0.412275
+          15.883        -0.520457
+         15.9199        -0.627405
+         15.9567        -0.732866
+         15.9936        -0.836595
+         16.0304        -0.938347
+         16.0673         -1.03789
+         16.1041         -1.13498
+          16.141         -1.22942
+         16.1778         -1.32097
+         16.2147         -1.40943
+         16.2515         -1.49461
+         16.2884         -1.57631
+         16.3252         -1.65437
+         16.3621         -1.72861
+         16.3989         -1.79888
+         16.4358         -1.86503
+         16.4726         -1.92694
+         16.5095         -1.98447
+         16.5463         -2.03754
+         16.5832         -2.08603
+           16.62         -2.12989
+         16.6569         -2.16902
+         16.6937          -2.2034
+         16.7306         -2.23297
+         16.7674         -2.25771
+         16.8043         -2.27761
+         16.8411         -2.29268
+          16.878         -2.30293
+         16.9149         -2.30839
+         16.9517         -2.30912
+         16.9886         -2.30516
+         17.0254          -2.2966
+         17.0623         -2.28351
+         17.0991           -2.266
+          17.136         -2.24417
+         17.1728         -2.21816
+         17.2097         -2.18809
+         17.2465         -2.15412
+         17.2834         -2.11641
+         17.3202         -2.07511
+         17.3571         -2.03041
+         17.3939         -1.98251
+         17.4308         -1.93158
+         17.4676         -1.87785
+         17.5045         -1.82152
+         17.5413         -1.76281
+         17.5782         -1.70195
+          17.615         -1.63916
+         17.6519         -1.57469
+         17.6887         -1.50878
+         17.7256         -1.44166
+         17.7624         -1.37358
+         17.7993         -1.30479
+         17.8361         -1.23555
+          17.873         -1.16608
+         17.9098         -1.09666
+         17.9467         -1.02751
+         17.9835        -0.958893
+         18.0204        -0.891042
+         18.0572        -0.824197
+         18.0941        -0.758591
+          18.131        -0.694454
+         18.1678        -0.632008
+         18.2047         -0.57147
+         18.2415         -0.51305
+         18.2784        -0.456948
+         18.3152        -0.403359
+         18.3521        -0.352466
+         18.3889        -0.304443
+         18.4258        -0.259456
+         18.4626        -0.217659
+         18.4995        -0.179193
+         18.5363        -0.144191
+         18.5732        -0.112771
+           18.61       -0.0850411
+         18.6469       -0.0610951
+         18.6837       -0.0410145
+         18.7206       -0.0248675
+         18.7574       -0.0127091
+         18.7943      -0.00458045
+         18.8311     -0.000509227
+          18.868     -0.000509227
+         18.9048      -0.00458045
+         18.9417       -0.0127091
+         18.9785       -0.0248675
+         19.0154       -0.0410145
+         19.0522       -0.0610951
+         19.0891       -0.0850411
+         19.1259        -0.112771
+         19.1628        -0.144191
+         19.1996        -0.179193
+         19.2365        -0.217659
+         19.2733        -0.259456
+         19.3102        -0.304443
+         19.3471        -0.352466
+         19.3839        -0.403359
+         19.4208        -0.456948
+         19.4576         -0.51305
+         19.4945         -0.57147
+         19.5313        -0.632008
+         19.5682        -0.694454
+          19.605        -0.758591
+         19.6419        -0.824197
+         19.6787        -0.891042
+         19.7156        -0.958893
+         19.7524         -1.02751
+         19.7893         -1.09666
+         19.8261         -1.16608
+          19.863         -1.23555
+         19.8998         -1.30479
+         19.9367         -1.37358
+         19.9735         -1.44166
+         20.0104         -1.50878
+         20.0472         -1.57469
+         20.0841         -1.63916
+         20.1209         -1.70195
+         20.1578         -1.76281
+         20.1946         -1.82152
+         20.2315         -1.87785
+         20.2683         -1.93158
+         20.3052         -1.98251
+          20.342         -2.03041
+         20.3789         -2.07511
+         20.4157         -2.11641
+         20.4526         -2.15412
+         20.4894         -2.18809
+         20.5263         -2.21816
+         20.5632         -2.24417
+            20.6           -2.266
+         20.6369         -2.28351
+         20.6737          -2.2966
+         20.7106         -2.30516
+         20.7474         -2.30912
+         20.7843         -2.30839
+         20.8211         -2.30293
+          20.858         -2.29268
+         20.8948         -2.27761
+         20.9317         -2.25771
+         20.9685         -2.23297
+         21.0054          -2.2034
+         21.0422         -2.16902
+         21.0791         -2.12989
+         21.1159         -2.08603
+         21.1528         -2.03754
+         21.1896         -1.98447
+         21.2265         -1.92694
+         21.2633         -1.86503
+         21.3002         -1.79888
+          21.337         -1.72861
+         21.3739         -1.65437
+         21.4107         -1.57631
+         21.4476         -1.49461
+         21.4844         -1.40943
+         21.5213         -1.32097
+         21.5581         -1.22942
+          21.595         -1.13498
+         21.6318         -1.03789
+         21.6687        -0.938347
+         21.7055        -0.836595
+         21.7424        -0.732866
+         21.7793        -0.627405
+         21.8161        -0.520457
+          21.853        -0.412275
+         21.8898        -0.303115
+         21.9267        -0.193236
+         21.9635       -0.0828975
+         22.0004         0.027638
+         22.0372         0.138108
+         22.0741         0.248249
+         22.1109         0.357802
+         22.1478         0.466504
+         22.1846         0.574101
+         22.2215         0.680337
+         22.2583         0.784963
+         22.2952         0.887733
+          22.332         0.988408
+         22.3689          1.08675
+         22.4057          1.18255
+         22.4426          1.27556
+         22.4794           1.3656
+         22.5163          1.45244
+         22.5531          1.53591
+           22.59          1.61581
+         22.6268          1.69198
+         22.6637          1.76425
+         22.7005          1.83248
+         22.7374          1.89652
+         22.7742          1.95626
+         22.8111          2.01157
+         22.8479          2.06236
+         22.8848          2.10855
+         22.9216          2.15005
+         22.9585          2.18681
+         22.9954          2.21879
+         23.0322          2.24594
+         23.0691          2.26827
+         23.1059          2.28575
+         23.1428          2.29841
+         23.1796          2.30626
+         23.2165          2.30935
+         23.2533          2.30772
+         23.2902          2.30145
+          23.327          2.29061
+         23.3639           2.2753
+         23.4007          2.25561
+         23.4376          2.23168
+         23.4744          2.20362
+         23.5113          2.17159
+         23.5481          2.13572
+          23.585          2.09619
+         23.6218          2.05318
+         23.6587          2.00685
+         23.6955          1.95741
+         23.7324          1.90505
+         23.7692             1.85
+         23.8061          1.79245
+         23.8429          1.73263
+         23.8798          1.67078
+         23.9166          1.60712
+         23.9535           1.5419
+         23.9903          1.47535
+         24.0272          1.40772
+          24.064          1.33926
+         24.1009          1.27021
+         24.1378          1.20083
+         24.1746          1.13135
+         24.2115          1.06203
+         24.2483         0.993122
+         24.2852         0.924857
+          24.322         0.857479
+         24.3589         0.791224
+         24.3957         0.726325
+         24.4326         0.663006
+         24.4694         0.601487
+         24.5063         0.541983
+         24.5431         0.484697
+           24.58         0.429828
+         24.6168         0.377564
+         24.6537         0.328085
+         24.6905         0.281561
+         24.7274          0.23815
+         24.7642         0.198001
+         24.8011         0.161251
+         24.8379         0.128026
+         24.8748        0.0984388
+         24.9116        0.0725897
+         24.9485         0.050567
+         24.9853        0.0324455
+         25.0222        0.0182868
+          25.059       0.00813899
+         25.0959       0.00203648
+         25.1327      1.43967e-30
+         25.1696       0.00203648
+         25.2064       0.00813899
+         25.2433        0.0182868
+         25.2801        0.0324455
+          25.317         0.050567
+         25.3539        0.0725897
+         25.3907        0.0984388
+         25.4276         0.128026
+         25.4644         0.161251
+         25.5013         0.198001
+         25.5381          0.23815
+          25.575         0.281561
+         25.6118         0.328085
+         25.6487         0.377564
+         25.6855         0.429828
+         25.7224         0.484697
+         25.7592         0.541983
+         25.7961         0.601487
+         25.8329         0.663006
+         25.8698         0.726325
+         25.9066         0.791224
+         25.9435         0.857479
+         25.9803         0.924857
+         26.0172         0.993122
+          26.054          1.06203
+         26.0909          1.13135
+         26.1277          1.20083
+         26.1646          1.27021
+         26.2014          1.33926
+         26.2383          1.40772
+         26.2751          1.47535
+          26.312           1.5419
+         26.3488          1.60712
+         26.3857          1.67078
+         26.4225          1.73263
+         26.4594          1.79245
+         26.4962             1.85
+         26.5331          1.90505
+           26.57          1.95741
+         26.6068          2.00685
+         26.6437          2.05318
+         26.6805          2.09619
+         26.7174          2.13572
+         26.7542          2.17159
+         26.7911          2.20362
+         26.8279          2.23168
+         26.8648          2.25561
+         26.9016           2.2753
+         26.9385          2.29061
+         26.9753          2.30145
+         27.0122          2.30772
+          27.049          2.30935
+         27.0859          2.30626
+         27.1227          2.29841
+         27.1596          2.28575
+         27.1964          2.26827
+         27.2333          2.24594
+         27.2701          2.21879
+          27.307          2.18681
+         27.3438          2.15005
+         27.3807          2.10855
+         27.4175          2.06236
+         27.4544          2.01157
+         27.4912          1.95626
+         27.5281          1.89652
+         27.5649          1.83248
+         27.6018          1.76425
+         27.6386          1.69198
+         27.6755          1.61581
+         27.7123          1.53591
+         27.7492          1.45244
+         27.7861           1.3656
+         27.8229          1.27556
+         27.8598          1.18255
+         27.8966          1.08675
+         27.9335         0.988408
+         27.9703         0.887733
+         28.0072         0.784963
+          28.044         0.680337
+         28.0809         0.574101
+         28.1177         0.466504
+         28.1546         0.357802
+         28.1914         0.248249
+         28.2283         0.138108
+         28.2651         0.027638
+          28.302       -0.0828975
+         28.3388        -0.193236
+         28.3757        -0.303115
+         28.4125        -0.412275
+         28.4494        -0.520457
+         28.4862        -0.627405
+         28.5231        -0.732866
+         28.5599        -0.836595
+         28.5968        -0.938347
+         28.6336         -1.03789
+         28.6705         -1.13498
+         28.7073         -1.22942
+         28.7442         -1.32097
+          28.781         -1.40943
+         28.8179         -1.49461
+         28.8547         -1.57631
+         28.8916         -1.65437
+         28.9284         -1.72861
+         28.9653         -1.79888
+         29.0022         -1.86503
+          29.039         -1.92694
+         29.0759         -1.98447
+         29.1127         -2.03754
+         29.1496         -2.08603
+         29.1864         -2.12989
+         29.2233         -2.16902
+         29.2601          -2.2034
+          29.297         -2.23297
+         29.3338         -2.25771
+         29.3707         -2.27761
+         29.4075         -2.29268
+         29.4444         -2.30293
+         29.4812         -2.30839
+         29.5181         -2.30912
+         29.5549         -2.30516
+         29.5918          -2.2966
+         29.6286         -2.28351
+         29.6655           -2.266
+         29.7023         -2.24417
+         29.7392         -2.21816
+          29.776         -2.18809
+         29.8129         -2.15412
+         29.8497         -2.11641
+         29.8866         -2.07511
+         29.9234         -2.03041
+         29.9603         -1.98251
+         29.9971         -1.93158
+          30.034         -1.87785
+         30.0708         -1.82152
+         30.1077         -1.76281
+         30.1445         -1.70195
+         30.1814         -1.63916
+         30.2183         -1.57469
+         30.2551         -1.50878
+          30.292         -1.44166
+         30.3288         -1.37358
+         30.3657         -1.30479
+         30.4025         -1.23555
+         30.4394         -1.16608
+         30.4762         -1.09666
+         30.5131         -1.02751
+         30.5499        -0.958893
+         30.5868        -0.891042
+         30.6236        -0.824197
+         30.6605        -0.758591
+         30.6973        -0.694454
+         30.7342        -0.632008
+          30.771         -0.57147
+         30.8079         -0.51305
+         30.8447        -0.456948
+         30.8816        -0.403359
+         30.9184        -0.352466
+         30.9553        -0.304443
+         30.9921        -0.259456
+          31.029        -0.217659
+         31.0658        -0.179193
+         31.1027        -0.144191
+         31.1395        -0.112771
+         31.1764       -0.0850411
+         31.2132       -0.0610951
+         31.2501       -0.0410145
+         31.2869       -0.0248675
+         31.3238       -0.0127091
+         31.3606      -0.00458045
+         31.3975     -0.000509227
+         31.4344     -0.000509227
+         31.4712      -0.00458045
+         31.5081       -0.0127091
+         31.5449       -0.0248675
+         31.5818       -0.0410145
+         31.6186       -0.0610951
+         31.6555       -0.0850411
+         31.6923        -0.112771
+         31.7292        -0.144191
+          31.766        -0.179193
+         31.8029        -0.217659
+         31.8397        -0.259456
+         31.8766        -0.304443
+         31.9134        -0.352466
+         31.9503        -0.403359
+         31.9871        -0.456948
+          32.024         -0.51305
+         32.0608         -0.57147
+         32.0977        -0.632008
+         32.1345        -0.694454
+         32.1714        -0.758591
+         32.2082        -0.824197
+         32.2451        -0.891042
+         32.2819        -0.958893
+         32.3188         -1.02751
+         32.3556         -1.09666
+         32.3925         -1.16608
+         32.4293         -1.23555
+         32.4662         -1.30479
+          32.503         -1.37358
+         32.5399         -1.44166
+         32.5767         -1.50878
+         32.6136         -1.57469
+         32.6505         -1.63916
+         32.6873         -1.70195
+         32.7242         -1.76281
+          32.761         -1.82152
+         32.7979         -1.87785
+         32.8347         -1.93158
+         32.8716         -1.98251
+         32.9084         -2.03041
+         32.9453         -2.07511
+         32.9821         -2.11641
+          33.019         -2.15412
+         33.0558         -2.18809
+         33.0927         -2.21816
+         33.1295         -2.24417
+         33.1664           -2.266
+         33.2032         -2.28351
+         33.2401          -2.2966
+         33.2769         -2.30516
+         33.3138         -2.30912
+         33.3506         -2.30839
+         33.3875         -2.30293
+         33.4243         -2.29268
+         33.4612         -2.27761
+          33.498         -2.25771
+         33.5349         -2.23297
+         33.5717          -2.2034
+         33.6086         -2.16902
+         33.6454         -2.12989
+         33.6823         -2.08603
+         33.7191         -2.03754
+          33.756         -1.98447
+         33.7929         -1.92694
+         33.8297         -1.86503
+         33.8666         -1.79888
+         33.9034         -1.72861
+         33.9403         -1.65437
+         33.9771         -1.57631
+          34.014         -1.49461
+         34.0508         -1.40943
+         34.0877         -1.32097
+         34.1245         -1.22942
+         34.1614         -1.13498
+         34.1982         -1.03789
+         34.2351        -0.938347
+         34.2719        -0.836595
+         34.3088        -0.732866
+         34.3456        -0.627405
+         34.3825        -0.520457
+         34.4193        -0.412275
+         34.4562        -0.303115
+          34.493        -0.193236
+         34.5299       -0.0828975
+         34.5667         0.027638
+         34.6036         0.138108
+         34.6404         0.248249
+         34.6773         0.357802
+         34.7141         0.466504
+          34.751         0.574101
+         34.7878         0.680337
+         34.8247         0.784963
+         34.8615         0.887733
+         34.8984         0.988408
+         34.9352          1.08675
+         34.9721          1.18255
+          35.009          1.27556
+         35.0458           1.3656
+         35.0827          1.45244
+         35.1195          1.53591
+         35.1564          1.61581
+         35.1932          1.69198
+         35.2301          1.76425
+         35.2669          1.83248
+         35.3038          1.89652
+         35.3406          1.95626
+         35.3775          2.01157
+         35.4143          2.06236
+         35.4512          2.10855
+          35.488          2.15005
+         35.5249          2.18681
+         35.5617          2.21879
+         35.5986          2.24594
+         35.6354          2.26827
+         35.6723          2.28575
+         35.7091          2.29841
+          35.746          2.30626
+         35.7828          2.30935
+         35.8197          2.30772
+         35.8565          2.30145
+         35.8934          2.29061
+         35.9302           2.2753
+         35.9671          2.25561
+         36.0039          2.23168
+         36.0408          2.20362
+         36.0776          2.17159
+         36.1145          2.13572
+         36.1513          2.09619
+         36.1882          2.05318
+         36.2251          2.00685
+         36.2619          1.95741
+         36.2988          1.90505
+         36.3356             1.85
+         36.3725          1.79245
+         36.4093          1.73263
+         36.4462          1.67078
+          36.483          1.60712
+         36.5199           1.5419
+         36.5567          1.47535
+         36.5936          1.40772
+         36.6304          1.33926
+         36.6673          1.27021
+         36.7041          1.20083
+          36.741          1.13135
+         36.7778          1.06203
+         36.8147         0.993122
+         36.8515         0.924857
+         36.8884         0.857479
+         36.9252         0.791224
+         36.9621         0.726325
+         36.9989         0.663006
+         37.0358         0.601487
+         37.0726         0.541983
+         37.1095         0.484697
+         37.1463         0.429828
+         37.1832         0.377564
+           37.22         0.328085
+         37.2569         0.281561
+         37.2937          0.23815
+         37.3306         0.198001
+         37.3674         0.161251
+         37.4043         0.128026
+         37.4412        0.0984388
+          37.478        0.0725897
+         37.5149         0.050567
+         37.5517        0.0324455
+         37.5886        0.0182868
+         37.6254       0.00813899
+         37.6623       0.00203648
+         37.6991      3.23927e-30
+&

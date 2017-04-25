@@ -1,0 +1,192 @@
+#!/bin/sh
+# demos for Grace
+#
+
+export GRACE_HOME
+
+# define the location
+#
+if test -x ../src/xmgrace
+then
+	GRACE=../src/xmgrace
+	GRACE_HOME=`pwd`/..
+else
+if test -x ../bin/xmgrace
+then
+        GRACE=../bin/xmgrace
+	GRACE_HOME=`pwd`/..
+else
+	GRACE=xmgrace
+fi
+fi
+
+# don't ask stupid questions :)
+#
+GRACE="$GRACE -noask"
+#
+
+# explain the row of single character buttons and a few other things
+$GRACE explain.agr 
+#
+# display the various axes available
+$GRACE axes.agr 
+#
+# display the symbols and line styles
+$GRACE symslines.agr 
+#
+# display various fill styles
+$GRACE fills.agr 
+#
+# some graph stuff and ticks
+$GRACE -p graphs.par 
+#
+# some graph stuff and ticks
+$GRACE props.agr 
+#
+# demonstration of many graphs
+$GRACE manygraphs.agr
+#
+# some graph stuff and ticks
+$GRACE brw.dat -p regions.par 
+#
+# test of a graph inset
+$GRACE tinset.agr
+#
+# some time and date formats
+$GRACE times.agr 
+#
+# some more tick label formats
+$GRACE -p tforms.par 
+#
+# Australia map
+$GRACE au.agr 
+#
+# log plots
+$GRACE -autoscale none -p logtest.par log.dat -graph 1 log.dat 
+#
+# more log plots
+$GRACE tlog.agr 
+#
+# a log2 example
+$GRACE log2.agr 
+#
+# a log2/log example with engineering and computing tick labels
+$GRACE log2log.agr 
+#
+# a logit scale sample
+$GRACE logit.agr 
+#
+# a reciprocal scale sample
+$GRACE reciprocal.agr 
+#
+# display fonts and font mappings
+$GRACE tfonts.agr 
+#
+# text transforms
+$GRACE txttrans.agr 
+#
+# advaned typesetting
+$GRACE typeset.agr
+#
+# example of world stack
+$GRACE tstack.agr 
+#
+# a graph with a parameter file
+$GRACE -p test1.par -autoscale xy test.dat 
+#
+# a graph with a parameter file in reverse video
+$GRACE -rvideo -p test1.par -autoscale xy test.dat 
+#
+$GRACE test2.agr 
+#
+# explanation of arrow shape parameters
+$GRACE arrows.agr 
+#
+# multiple graphs with a parameter file
+$GRACE mlo.dat -graph 1 brw.dat -p co2.par 
+#
+# multiple graphs created with arrange feature
+$GRACE co2.agr 
+#
+# a nice sample
+$GRACE spectrum.agr 
+#
+# a graph with alternate axes
+$GRACE -p altaxis.par test.dat -autoscale xy 
+#
+# a graph with error bars
+$GRACE terr.agr
+#
+# a fixed graph with XY RADIUS format
+$GRACE txyr.agr 
+#
+# string annotations
+$GRACE motif.agr 
+#
+# a graph with an XYZ set
+$GRACE xyz.agr 
+#
+# a graph with HILO data
+$GRACE hilo.agr 
+#
+# a graph with BOXPLOT data
+$GRACE boxplot.agr 
+#
+# polar plots
+$GRACE polar.agr
+#
+# bar charts
+#
+# a bar graph demonstrating specified ticks and tick labels
+$GRACE bar.agr
+#
+# a stacked bar chart
+$GRACE stackedb.agr
+#
+# a bar chart with error bars
+$GRACE chartebar.agr
+#
+# display all types of XY charts
+$GRACE charts.agr
+#
+# pie charts
+$GRACE pie.agr
+#
+# vector map
+$GRACE vmap.agr
+#
+# a bubble plot
+$GRACE xysize.agr
+#
+# an xycolor map
+$GRACE xycolor.agr
+#
+# non-linear curve fitting
+$GRACE logistic.agr
+#
+# some interesting stuff
+$GRACE -b test.com
+#
+# need a program
+# modified from previous versions, a thank you goes to Bruce Barnett
+# this modification allows others without write permission
+# to run the demos.
+#
+echo ""
+if test ! -f tmc
+then
+      echo ""
+      echo "Compiling a short program to test the -pipe option"
+      echo "Executing 'cc tmc.c -o tmc -lm'"
+      cc tmc.c -o tmc -lm
+      echo "Done compilation"
+      echo ""
+fi
+
+#
+# a graph with the -pipe option
+echo "Testing -pipe option, executing './tmc | $GRACE -pipe' "
+./tmc | $GRACE -pipe 
+
+rm -f tmc.o tmc
+

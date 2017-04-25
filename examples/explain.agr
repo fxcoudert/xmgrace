@@ -1,0 +1,474 @@
+# Grace project file
+#
+@version 50001
+@page size 600 600
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman" , "Times-Roman"
+@map font 2 to "Times-Italic" , "Times-Italic"
+@map font 1 to "Times-Bold" , "Times-Bold"
+@map font 3 to "Times-BoldItalic" , "Times-BoldItalic"
+@map font 4 to "Helvetica" , "Helvetica"
+@map font 6 to "Helvetica-Oblique" , "Helvetica-Oblique"
+@map font 5 to "Helvetica-Bold" , "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique" , "Helvetica-BoldOblique"
+@map font 8 to "Symbol" , "Symbol"
+@map font 9 to "ZapfDingbats" , "ZapfDingbats"
+@default linewidth 1
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 2
+@default char size 1.000000
+@default symbol size 1.000000
+@background color 0
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Sun Sep 13 23:37:42 1998"
+@with line
+@    line on
+@    line loctype view
+@    line 0.04, 0.988571428571, 0.08625, 0.978571428571
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 1
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.1575, 0.34, 0.19, 0.41
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 1
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.4, 0.56, 0.4, 0.49
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 1
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.4, 0.525, 0.435, 0.525
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 2
+@    line arrow size 1.000000
+@    line arrow type 1
+@line def
+@with string
+@    string on
+@    string loctype view
+@    string 0.09625, 0.97
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.800000
+@    string def "Locator (see Edit/Locator props...) - The G0: indicates which graph is current"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.93
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Zoom - Autoscale"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.88
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Expand - Shrink"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.83
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Scroll left - Scroll right"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.785
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Scroll down - Scroll up"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.73
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Automatically set the tick spacing"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.69
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Autoscale on a set"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.64
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Zoom in X /Y only"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.59
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Autoscale in X /Y only"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.55
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Push then Zoom - Push"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.5
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Pop - Cycle through the stack"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.46
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Stack depth"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.43
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Current world"
+@with string
+@    string on
+@    string loctype view
+@    string 0.015, 0.39
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "End session"
+@with string
+@    string on
+@    string loctype view
+@    string 0.2, 0.46
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "The current graph is indicated by the markers at the corners"
+@with string
+@    string on
+@    string loctype view
+@    string 0.2, 0.435
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 1.000000
+@    string def "of a graph."
+@with string
+@    string on
+@    string loctype view
+@    string 0.4475, 0.59
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.900000
+@    string def "These buttons control the World Stack."
+@with string
+@    string on
+@    string loctype view
+@    string 0.4475, 0.56
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.900000
+@    string def "Each graph has up to 20 different allowable"
+@with string
+@    string on
+@    string loctype view
+@    string 0.4475, 0.54
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.900000
+@    string def "views of the data. Use this feature to zoom"
+@with string
+@    string on
+@    string loctype view
+@    string 0.4475, 0.515
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.900000
+@    string def "in on an area of the graph, then Po (pop) to"
+@with string
+@    string on
+@    string loctype view
+@    string 0.4475, 0.49
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 0
+@    string char size 0.900000
+@    string def "return to the original scale."
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 autoscale type auto
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world xmin 0
+@    world xmax 1
+@    world ymin 0
+@    world ymax 1
+@    stack world 0, 0, 0, 0 tick 0, 0, 0, 0
+@    view xmin 0.150000
+@    view xmax 0.850000
+@    view ymin 0.146667
+@    view ymax 0.321667
+@    title "Double click here to edit the graph title"
+@    title font 4
+@    title size 1.000000
+@    title color 1
+@    subtitle "or use Plot/Graph appearance"
+@    subtitle font 4
+@    subtitle size 0.950000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  label "Double click here to set the X-axis props or use Plot/Tick labels/tick marks"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label op bottom
+@    xaxis  tick on
+@    xaxis  tick major 0.5
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel prec 1
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick op both
+@    xaxis  ticklabel type auto
+@    xaxis  tick type auto
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  label "Same for Y-axis "
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label op left
+@    yaxis  tick on
+@    yaxis  tick major 0.5
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel prec 1
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick op both
+@    yaxis  ticklabel type auto
+@    yaxis  tick type auto
+@    altxaxis  off
+@    altyaxis  off
+@    legend off
+@    legend loctype view
+@    legend x1 0.8
+@    legend y1 0.8
+@    legend box off
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@WITH G0
+@G0 ON

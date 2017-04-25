@@ -1,0 +1,1586 @@
+<HTML>
+<HEAD>
+ <TITLE>Grace: List of changes</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>Grace list of changes</H1>
+
+<PRE>
+<H2>5.1.25</H2>
+<H3>Functionality</H3>
+ *  [ES] killing set data from GUI and scripts now clears set comments
+
+<H3>Bug fixes</H3>
+ *  [ES] undid "always overwrite set comments when reading data in" from 5.1.24
+ *  [ES] fixed Fourier transform DC-term amplitude (rep. #630)
+ *  [ES] newer versions of "make" tried to regenerate documentation (rep. #2240)
+
+
+<H2>5.1.24</H2>
+<H3>Portability/Compilation</H3>
+ *  [ES] fixed detection of dynamic loading libraries (rep. #2238)
+ 
+<H3>Documentation/Info</H3>
+ *  [ES] install PDF docs instead of the DVI ones
+ *  [ES] added cephes/COPYING (from Debian)
+
+<H3>Bug fixes</H3>
+ *  [ES] a workaround for broken input of non-ASCII text under UTF8 locales
+ *  [ES] always overwrite set comments when reading data in
+
+
+<H2>5.1.23</H2>
+
+<H3>Bug fixes</H3>
+ *  [ES] removed *86 specific optimizations (rep. #2154)
+ *  [ES] renamed RMS per cent error -> relative error (rep. #2192)
+ *  [ES] a workaround for a bug in recent Xorg not releasing grab of popup menus
+ *  [ES] accept -graphtype chart instead of bar. List possible values in the
+         help output
+ *  [TK] fix building against png-1.5
+ *  [SM] a grace_np fix
+ *  [ES] IsoLatin5.enc was not included in the distribution
+
+
+<H2>5.1.22</H2>
+
+<H3>Interface</H3>
+ *  [DC] mention object type when asking for user's confirmation on delete
+
+<H3>Parser</H3>
+ *  [ES] added "LINCONV(set1, set2)" command - an equivalent of
+         Transformations-&gt;Linear convolution
+ *  [ES] added "VOIGT(gamma, sigma, x)" function (rep. #2144)
+
+<H3>Bug fixes</H3>
+ *  [ES] in the grace_np library GraceClose() could kill all user processes
+         if by that time the Grace subprocess has exited (rep. #2035)
+ *  [ES] certain hand-modified settings in project files might cause the GUI
+         crash (incl. rep. #2139)
+ *  [ES] ungraceful closing of anonymous pipes could result in high CPU load
+
+
+<H2>5.1.21</H2>
+
+<H3>Functionality</H3>
+ *  [ES] added IsoLatin5 (ISO 8859-9) encoding file
+ *  [ES] now honor locale in number stringifications (rep. #2109)
+ *  [ES] extended range of prefixes in the Engineering format up to 10^{+/-24}
+ *  [HR] added "Computing" tick label format
+
+<H3>Interface</H3>
+ *  [ES] added "-maxpath" command line option for setting maximal drawing
+         path length
+ *  [ES] allow for longer legend lines
+
+<H3>Parser</H3>
+ *  [ES] added "KILL BLOCK" command (deallocates the memory of the current
+         block data)
+
+<H3>Bug fixes</H3>
+ *  [ES] there was a misleading error message when attempting to redefine an
+         existing variable/keyword in the parser
+ *  [ES] fixed rounding-off problem with zero labels (rep. #2098)
+
+<H3>Portability/Compilation</H3>
+ *  [IG] eliminated some of gcc-4.1 warnings (rep. #2111)
+ *  [IG] man page cleaned (rep. #2110)
+
+
+<H2>5.1.20</H2>
+
+<H3>Parser</H3>
+ *  [ES] added SGN() function
+
+<H3>Defaults</H3>
+ *  [ES] changed default major tick spacings to 0.2
+
+<H3>Bug fixes</H3>
+ *  [ES] command argument "-graphtype pie" wasn't recognized (rep. #2058)
+ *  [ES] fixed openning of help documents when using an external browser
+ *  [ES] "Geometric transforms" with order: "Rotate, scale, translate" in fact
+         was doing "Translate, scale, rotate"
+ *  [ES] Grace might crash when using "Engineering" tick label format
+         (rep. #2094)
+ *  [ES] file selection dialog wasn't closed when fit parameters file was
+         read in successfully
+
+
+<H2>5.1.19</H2>
+
+<H3>Functionality</H3>
+ *  [ES] BARDY and BARDYDY sets are now allowed in XY graphs
+
+<H3>Bug fixes</H3>
+ *  [RL] loading a DL module could fail with an irrelevant error message 
+         (rep. #2071)
+ *  [ES] a bug in the PS driver caused CUPS to output empty page if printing
+         accounting was enabled in foomatic (rep. #2047)
+ *  [ES] automatic data point purging (enabled when set length exceeds "Max
+	 drawing path length" in Edit/Preferences) could fail silently
+         (rep. #2069)
+ *  [ES] the point purging could result in wrong set filling when fill to
+         the baseline was selected
+ *  [ES] configure's option --with-helpviewer was broken (rep. #1414)
+
+
+<H2>5.1.18</H2>
+
+<H3>Parser</H3>
+ *  [ES] implemented concatenation of quoted strings and numerical expressions
+
+<H3>Bug fixes</H3>
+ *  [ES] some X font configurations could make Grace crash (rep. #1436)
+ *  [ES] DEFAULT ... commands had no effect on new drawing objects (including
+         rep. #1437)
+ *  [ES] DEFAULT CHAR SIZE had no effect on tick labels of new axes
+
+
+<H2>5.1.17</H2>
+
+<H3>Drivers</H3>
+ *  [ES] changed default resolution of the PDF driver to 300 dpi
+
+<H3>Documentation/Info</H3>
+ *  [ES] minor documentation updates, including rep. #1421
+
+<H3>Bug fixes</H3>
+ *  [ES] with page fill disabled, the page frame line might be drawn with
+         wrong properties
+ *  [ES] due to a bug in the Xbae widget, when a TrueType font was used,
+         several dialogs could become unusable (including rep. #1366)
+ *  [ES] enabling patterned fills and PDF-1.4 compatibility mode could result
+         in crash when printing to PDF
+
+
+<H2>5.1.16</H2>
+
+<H3>Interface</H3>
+ *  [ES] set scrolling of the custom ticks/labels table to 1 row per
+         click (rep. #1419)
+
+<H3>Documentation/Info</H3>
+ *  [ES] updates relevant to the status of mailing lists/forums
+
+<H3>Portability/Compilation</H3>
+ *  [ES] PDF driver updated to work with PDFlib-6 (rep. #1426). Minimal
+         supported version is now 5.0
+
+<H3>Drivers</H3>
+ *  [ES] added option to generate PDF-1.4 format (Acrobat5). Support for
+         PDF-1.2 (Acrobat3) removed
+
+<H3>Bug fixes</H3>
+ *  [ES] replaced meaningless error message issued when trying to load data
+         with a few string columns as a single set
+ *  [ES] in the spreadsheet editor, the last entered cell's data wasn't
+         committed (rep. #1420)
+
+
+<H2>5.1.15</H2>
+
+<H3>Functionality</H3>
+ *  [ES] increased max number of custom tick marks/labels to 256 per a
+         popular demand
+
+<H3>Project files</H3>
+ *  [ES] now using one-line format for saving graph's world and viewport
+         settings
+
+<H3>Defaults</H3>
+ *  [ES] changed default external help viewer to mozilla
+
+<H3>Documentation/Info</H3>
+ *  [ES] misc documentation updates (including rep. #1411)
+
+<H3>Bug fixes</H3>
+ *  [ES] fixed crash when number of custom tick marks/labels exceeded 100
+ *  [ES] fixed evaluation of FWHM in "Feature extraction" (old version
+         might produce wrong results for multi-peak data)
+ *  [ES] support for loadable functions of 4 and 5 parameters, introduced
+         in 5.1.14, was incomplete
+ *  [ES] in correlation/covariance, only the absolute value at 0 is
+         normalized to 1, so for anti-correlation the sign is preserved
+
+
+<H2>5.1.14</H2>
+
+<H3>Interface</H3>
+ *  [ES] use multiplication sign in formulae of regression report (rep.
+         #1360)
+
+<H3>Parser</H3>
+ *  [ES] allow for DL modules to define functions of 4 and 5 parameters
+         (rep. #1343)
+
+<H3>Portability/Compilation</H3>
+ *  [ES] fixed compilation under FreeBSD-5.1 and OS/X (rep. #1371)
+
+<H3>Bug fixes</H3>
+ *  [ES] on 64-bit platforms, when specific compiler/optimization
+         combinations were used, some dialogs could crash randomly
+         (e.g. rep. #1310)
+ *  [ES] on 64-bit platforms, when specific compiler/optimization
+         combinations were used, X run-time warnings could be issued
+         about unrecognized XKeySym's
+ *  [ES] set filling defaulted to even-odd filling rule in the X11
+         driver (rep. #1368)
+ *  [ES] fixed potential memory corruption
+ *  [ES] fixed page size sync in the free mode
+ *  [TO] fixed a race condition in the grace_np library
+
+
+<H2>5.1.13</H2>
+
+<H3>Functionality</H3>
+ *  [ES] enabled annotated values for HILO sets
+
+<H3>Parser</H3>
+ *  [ES] added IMIN(x) and IMAX(x) functions returning index of minimal or
+    maximal value of array x (thusly providing a way to solve reps. #1340
+    and #1344)
+
+<H3>Portability/Compilation</H3>
+ *  [ES] updates for T1lib-5.0 API (rep. #1303)
+
+<H3>Documentation/Info</H3>
+ *  [WB] documented commands for calculating running properties
+
+<H3>Drivers</H3>
+ *  [MD] enabled font kerning in the MIF driver
+
+<H3>Bug fixes</H3>
+ *  [ES] Grace might fail starting in the GUI mode when a certain
+         sequence of command line arguments was passed
+
+
+<H2>5.1.12</H2>
+
+<H3>Functionality</H3>
+ *  [MO] implemented zooming and scrolling of log plots
+
+<H3>Parser</H3>
+ *  [ES] added INT(x,y) evaluating integral value of y dx
+ *  [ES] added RSUM(vexpr) - running sum
+
+<H3>Bug fixes</H3>
+ *  [ES] fixed memory corruption when reading in block data (rep. #1258). The
+         bug was introduced in 5.1.11
+ *  [ES] fixed a couple of tiny memory leaks associated with loading block
+	 data
+ *  [ES] fixed crash in histogram and interpolation dialogs with multiple sets
+	 selected (rep. #1259)
+ *  [TO] signal issues with the grace_np library fixed (rep. #1270)
+ *  [ES] implied references to current graph in parser might crash Grace if
+         the graph didn't exist (including reps. #886 and #1267)
+ *  [ES] removed extraneous accent glyphs in the 0x9? range of IsoLatin1 and
+         IsoLatin2 encodings (including rep. #1269)
+ *  [MO] IsoLatin7 encoding file wasn't installed by "make install"
+ *  [ES] entering negative values of set symbol skip could crash Grace
+         (rep. #1276)
+
+
+<H2>5.1.11</H2>
+
+<H3>Functionality</H3>
+ *  [ES] hotlinks now work for all set types (rep. #572)
+ *  [ES] updating hot-linked sets now works for all graphs, not the current
+         one only
+ *  [YZ] added encoding files for Russian codepages koi8-r and cp1251 and for
+         Ukrainian codepage koi8-u
+
+<H3>Interface</H3>
+ *  [ES] use "+"/"-" instead of "shown"/"hidden" in the graph selectors
+
+<H3>Parser</H3>
+ *  [ES] added UPDATEALL command, equivalent of "View/Update all"
+
+<H3>Drivers</H3>
+ *  [ES] set resolution in the PNG output (rep. #1225)
+
+<H3>Portability/Compilation</H3>
+ *  [ES] updated auto* stuff to work with autoconf-2.5.* (rep. #1199)
+
+<H3>Bug fixes</H3>
+ *  [SR] precision used for special tick locations was insufficient
+         (rep. #1228)
+ *  [ES] referring to "S_" in the parser with no sets in the current project
+         crashed the app
+ *  [ES] GraceIsOpen() from the grace_np library returned true after the Grace
+	 process exited (rep. #922)
+ *  [ES] excluded .cvsignore files from source tarballs (rep. #1248)
+ *  [ES] a minor memory leak fixed (40 bytes per set import/reading in)
+ *  [ES] configure --with=f77=/absolute/path/to/f77 was broken (rep. #1243)
+ *  [ES] in XY charts, explicitly check that abscissas of all sets are the same
+
+
+<H2>5.1.10</H2>
+
+<H3>Functionality</H3>
+ *  [MO] added IsoLatin7 encoding file
+
+<H3>Interface</H3>
+ *  [ES] disable showing hidden files in file selection dialogs by default
+         and added a checkbox to alter this behaviour (Motif-2.* only)
+ *  [ES] in the spreadsheet dataset editor, set text insertion position
+	 corresponding to the mouse click location
+
+<H3>Defaults</H3>
+ *  [ES] changed default data format to %.8g (rep. #985)
+
+<H3>Bug fixes</H3>
+ *  [ES] the default GRACE_HELPVIEWER command was incompatible with Mozilla
+         (rep. #1198)
+ *  [ES] fonts with long names (&gt; 27 chars) could crash Grace (rep. #1200)
+ *  [ES] font antialiasing was broken for projects with more than 16 default
+         colors defined
+ *  [ES] fonttool might crash on fonts with an invalid FontBBox entry
+         (rep. #1202)
+ *  [ES] some font glyphs might not fit in the fonttool matrix cells,
+         especially on low-resolution displays
+ *  [ES] canvas wasn't refreshed after a region started to be re-defined
+         (rep. #1211)
+ *  [ES] provided workaround for a PDFlib bug, resulting, in rare cases,
+         in wrong colorspace settings in the PDF output (rep. #1209)
+
+
+<H2>5.1.9</H2>
+
+<H3>Drivers</H3>
+ *  [MD] implemented patterned fills in the SVG driver
+ *  [MD] better font name definitions in the SVG driver
+ *  [MD] updated SVG DTD reference
+
+<H3>Compilation</H3>
+ *  [PB] installed binary of convcal now gets stripped
+ *  [PB] "make install links" now works
+ *  [PB] DESTDIR introduced for building binary packages (e.g.
+         "make DESTDIR=/tmp install links")
+
+<H3>Bug fixes</H3>
+ *  [SR] -(no)safe flags were missed in the -help output
+ *  [ES] some standard Xt flags (-geometry etc) were ignored (the bug was
+         introduced in 5.1.8)
+ *  [MD] patterned fills were transparent in the PDF output
+ *  [MD] font family might be set inconsistently in the MIF driver
+ *  [ES] xmgrace was run in the safe mode when invoked from GraceOpen() via
+         the grace_np interface (rep. #1179)
+ *  [ES] fixed 1/n error in calculation of correlation coefficient in the
+         non-linear fit (the value was used for information purposes only).
+         The bug was introduced in 5.1.5
+ *  [ES] redrawing canvas in the free mode might in some cases result in
+         modified graph viewport values (rep. #1176)
+ *  [ES] allow trailing semicolon in the batch language (rep. #1193)
+ *  [ES] some fonts couldn't be opened when running under NT4 (rep. #1186).
+	 This was a T1lib bug, in fact
+ *  [ES] the cross-covariance was wrongly calculated (rep. #1196)
+
+
+<H2>5.1.8</H2>
+
+<H3>Security</H3>
+ *  [ES] implemented (and enabled by default) "safe" mode, in which statements
+         of the command language which may result in file modifications are
+         disabled. This is to prevent execution of such commands contained in
+         potentially malicious project files acquired from untrusted sources
+
+<H3>Functionality</H3>
+ *  [ES] use leading zeros in axis year formats so to make up to 2 or 4
+         digits in total (depending on whether the two-digit year span is
+	 enabled in the project preferences)
+
+<H3>Interface</H3>
+ *  [ES] simplified X initialization - the resolution detection introduced
+         in 5.1.5 prevented Grace from starting up with some buggy X servers
+	 (notably, StarNet's X-win32) (rep. #1138)
+ *  [ES] -safe/-nosafe command line options for switching the safe mode
+ *  [ES] "Run in safe mode" checkbox in "Edit/Preferences" for the same
+         purpose
+ *  [ES] removed broken "Command" function of the hotlink popup
+
+<H3>Drivers</H3>
+ *  [MD] backported from 5.2 pattern fills in PDF driver (off by default)
+ *  [MD] better font definitions in the MIF driver 
+
+<H3>Portability/Compilation</H3>
+ *  [ES] use strchr() instead of BSD-ish index() which broke compilation
+         under newer IRIX boxes (rep. #1139)
+ *  [ES] stop with error (instead of warning as used to be) if Motif can't be
+	 found by configure
+
+<H3>Bug fixes</H3>
+ *  [ES] background of the canvas, if page filling was disabled, might get
+         filled in with the last object's fill props (rep. #1152)
+ *  [ES] changing HTML viewer by setting the GRACE_HELPVIEWER shell variable
+         might result in memory corruption (rep. #1160)
+ *  [ES] canvas wasn't refreshed after feature extraction
+
+
+<H2>5.1.7</H2>
+
+<H3>Functionality</H3>
+ *  [ES] allow XYZ sets in polar graphs
+ *  [ES] allow defining string columns when creating sets from block data
+         via the command line or parser, e.g. -bxy "1:2:{3}" (rep. #978)
+ *  [ES] honour symskip for all set types (it wasn't for BAR, BARDY,
+	 BARDYDY, XYHILO, XYR, XYVMAP, and BOXPLOT)
+ *  [ES] extended x-correlation routines to calculate x-covariance if desired
+ *  [ES] implemented optional snake-like matrix fill in graph arranging
+         (rep. #1119)
+
+<H3>Interface</H3>
+ *  [ES] accept non-ASCII characters from nationalized keyboards
+
+<H3>Documentation/Info</H3>
+ *  [ES] added compile-time $(LDFLAGS) to the `-version' output
+
+<H3>Parser</H3>
+ *  [ES] added an extra flag to the XCOR function to switch between
+         x-correlation/x-covariance
+ *  [ES] when accessing drawing objects by id (e.g. "WITH STRING nexpr")
+	 allocate the referenced object if necessary
+ *  [ES] added optional argument to ARRANGE command to enable snake-like 
+         graph matrix filling
+
+<H3>Drivers</H3>
+ *  [ES] set resolution of the X11 device from the X server props
+ *  [ES] detect max request size of the X server and set max drawing path
+         length accordingly
+
+<H3>Portability/Compilation</H3>
+ *  [ES] fixed new Motif checks introduced in 5.1.6 (rep. #1107)
+
+<H3>Bug fixes</H3>
+ *  [ES] applying graph properties reset axis limits of polar graphs
+ *  [ES] simply ignore comments (lines beginning with '#') in data files
+         instead of splitting the set (rep. #831)
+ *  [ES] honour symskip for error bars (rep. #936)
+ *  [ES] when enabling log axis scaling on the command line, set reasonable
+         major/minor settings and world bounds (reps. #723, #1021)
+ *  [ES] under very rare circumstances, Grace might cause a (probably buggy)
+         X window manager misbehave
+ *  [MD] make sure the EPS/PS output lines don't exceed 255 chars in lenth
+         (rep. #1100)
+
+
+<H2>5.1.6</H2>
+
+<H3>Parser</H3>
+ !  [ES] implemented region on set evaluation: REGNUM(selectset)
+ *  [ES] implemented applying region and logical restrictions to a set:
+         RESTRICT(selectset, vexpr) and RESTRICT(selectset, REGNUM, onoff)
+ !  [ES] implemented KILL REGNUM
+ *  [ES] added SUM(vexpr)
+ *  [ES] allow accessing array segments (e.g. x[4:10])
+
+<H3>Portability/Compilation</H3>
+ *  [ES] use the bundled Xbae by default to make sure we don't come across
+         a buggy version installed
+ *  [ES] upgraded to T1lib-1.3.1, which fixed several bugs (see below)
+ *  [ES] re-wrote Motif checks; in some rare cases, Motif libraries might
+         be misdetected
+ *  [ES] added a "My Computer" (actually, a list of drives) file selection
+         box chdir entry for the Cygwin port
+ *  [ES] check for FFTW library version &gt;= 2.1.3
+ *  [ES] fixed compilation on systems without setlocale()
+
+<H3>Bug fixes</H3>
+ *  [ES] re-loading projects with polygon regions defined might result in
+         memory leaks and wrong region evaluations
+ *  [ES] optimize (again) updating large pulldown selectors (rep. #1082)
+ *  [ES] axis label with "Auto" placement was misplaced/absent with tick marks
+         and labels disabled on the respective side (rep. #1086)
+ *  [ES] in the interpolation and histogram dialogs it wasn't checked that
+         the source and destinations sets were different (rep. #1084)
+ *  [ES] when the invert x-axis flag was turned on, pie charts were wrongly
+         reproduced in all but screen outputs (rep. #1092)
+ *  [ES] when saving project under the same name, don't warn about file
+         overwriting (rep. #1094)
+ *  [ES] there might be problems finding fonts under non-Unix environments
+	 (rep. #1013). This was a T1lib bug, in fact 
+ *  [ES] text overlining didn't work for Symbol font (rep. #1026). This was a
+	 T1lib bug, in fact 
+ *  [ES] fixed calculation of x-correlation. Previously, a broken x-covariance
+         was calculated
+ *  [ES] lines starting with spaces weren't parsed  by the command interpreter
+         (rep. #1101)
+
+
+<H2>5.1.5</H2>
+
+<H3>Functionality</H3>
+ *  [ES] honour X axis start value and invert flag in pie charts
+ *  [ES] extended maximum allowed line width to 20
+
+<H3>Interface</H3>
+ *  [ES] automatically adjust Xresources for low-resolution (800x600) displays
+         so all dialogs fit in the screen
+ *  [ES] allow for setting via the GUI negative gaps in bar charts (rep. #1059)
+ *  [ES] allow to select font and symbol sizes up to 1000
+ *  [ES] make the size scale controls change by 25 and angle controls by 10
+         when pressing Ctrl+Left/Right arrows on them
+
+<H3>Parser</H3>
+ *  [ES] implicitly cast to boolean double arguments used as bool
+
+<H3>Documentation/Info</H3>
+ *  [JS] added man page for convcal
+ *  [ES] added examples of XYCOLOR set presentation and reciprocal axis scale,
+         contributed by Nels Dumin
+ *  [AM] include libpng, libjpeg, and libpdf versions in the `-version' and
+	 "Help/About" outputs
+ *  [ES] documented S$ and S_ special parser set names
+
+<H3>Bug fixes</H3>
+ *  [ES] PS output might be broken for plots containing XYCOLOR sets
+ *  [ES] when Line type:left/right stairs was selected, drawing with a
+         dashed line of multiple short steps broke the dash pattern (rep.
+         #1024)
+ *  [PM] the argument of --with-printcmd configure switch wasn't quoted
+ *  [ES] make result file output line-buffered instead of block-buffered
+ *  [LM] date format hint was ignored in the parser
+ *  [ES] legend and viewport dialog were not updated when moving legend or
+         resizing graph from canvas
+ *  [ES] std. dev. was calculated using n instead of n-1 in the denominator
+         (rep. #1042)
+ *  [ES] fixed crash under some platforms with zero width world/view
+	 coordinates (rep. #1014)
+ *  [ES] optimize updating large pulldown selectors (e.g. in the "Edit block
+         data" popup)
+ *  [ES] fixed broken AA font rendering and potential crash when the color
+         palette size exceeded 128 (rep. #1061)
+
+
+<H2>5.1.4</H2>
+
+<H3>Bug fixes</H3>
+ *  [ES] reading in a project file right after printing to a raster file
+         (PNG, JPEG,...) caused a crash (rep. #990)
+ *  [ES] in the "Sample points" dialog, even when the "log. expression" is
+         selected, one had to input some values into start/step input fields
+         anyway
+ *  [AM] ellpe(x) and ellpk(x) in fact returned ellpe(1-x) and ellpk(1-x),
+         respectively (rep. #989)
+ *  [ES] "graphno OFF" merely makes the graph hidden instead of killing it
+
+
+<H2>5.1.3</H2>
+
+<H3>Interface</H3>
+ *  [AM/ES] set icon's title = project name (rep. #957)
+ *  [ES] when switching to log scale, set major/minor tick settings to 10/9 
+         respectively (rep. #826)
+
+<H3>Documentation</H3>
+ *  [ES] docs updates (including reps. #926, #965)
+ *  [EV] fixed a typo in Tutorials (rep. #916)
+
+<H3>Parser</H3>
+ *  [ES] added "HELP url" and "HELP" to the parser
+ *  [LM] added "AUTOSCALE ONREAD NONE|XAXES|YAXES|XYAXES" to the parser
+
+<H3>Drivers</H3>
+ *  [MD] produce MIF files with a textflow in which the graph is included, so
+         it can be included in another FrameMaker document
+ *  [ES] list used fonts in %%DocumentNeededResources in the PS output
+         (rep. #956)
+
+<H3>Portability/Compilation</H3>
+ *  [AM] allow to specify print command at config time
+ *  [AM] fixed problem compiling bundled Xbae (rep. #959)
+
+<H3>Bug fixes</H3>
+ *  [ES] fixed rounding error in calculation of pulldown menu length
+         (rep. #929)
+ *  [RL] precision of offsets in the Axes dialog were restricted to two
+         digits (rep. #911)
+ *  [AM/ES] double click on canvas with a pie chart might cause crash
+ *  [EV] legend entries for BARDY and BARDYDY sets weren't drawn
+ *  [MD] fixed conversion table for non-ASCII codes in the MIF driver
+         (rep. #946)
+ *  [LM] reading in data files with floats when they were explicitly signed
+         and positive resulted in parse error
+ *  [ES] failure to save project to a file due to wrong permissions didn't
+         produce an error message
+ *  [ES] using non-standard fonts might crash the PDF driver
+ *  [ES] specifing a file-only output device with "-hdevice" didn't actually
+         set the output to file (rep. #899)
+ *  [ES] the "Rescale plot on page size change" option in the
+         "File/Print setup" dialog had no effect if the selected device was
+         X11
+ *  [ES] fixed (actually, just now implemented) automatic axis label placement
+         (rep. #744)
+ *  [ES] projects with sets using symbol char from the upper half of the ASCII
+         table weren't saved correctly
+ *  [ES] line width of drawing elements wasn't accounted for in the bbox
+         calculations, which in rare cases resulted in a wrong EPS bbox
+
+
+<H2>5.1.2</H2>
+
+<H3>Functionality</H3>
+ *  [DB] implemented baseline setting to the set (y) average
+
+<H3>Interface</H3>
+ *  [ES] don't hardcode file extensions in file selection dialogs, but define
+         them via X resources instead (rep. #671)
+
+<H3>Documentation</H3>
+ *  [ES] HTML docs now include tables of contents
+
+<H3>Parser</H3>
+ *  [ES] added "PAGE RESIZE xdim, ydim" which sets the page dimensions of all
+         output devices (in pp) and rescales the current plot accordingly
+
+<H3>Drivers</H3>
+ *  [ES] implemented font kerning in the (E)PS output
+ *  [ES] added option to choose document data (7bit/8bit/binary) for the PS
+         driver
+
+<H3>Portability/Compilation</H3>
+ *  [AM] OS/2 updates
+
+<H3>Bug fixes</H3>
+ *  [ES] "-saveall" filename argument was ignored (rep. #841)
+ *  [ES] not enough arguments to "-world" or "-viewport" could cause crash
+ *  [ES] with "Auto redraw" disabled, several operations still caused an
+         immediate redraw
+ *  [ES] backslashes in text strings weren't escaped in the (E)PS output
+ *  [AM] interpolating non-monotonic data by spline caused crash or
+         meaningless results (rep. #866)
+ *  [ES] for some non-standard fonts and/or encodings, the (E)PS output might
+         be binary while declared as 8bit clean
+ *  [ES] path in print setup
+ *  [ES] too wide pulldowns in "Edit block data" if block data contained too
+         many columns
+ *  [ES] it was impossible using GUI to disable annotated values in the XYZ
+         set type
+ *  [LM] creating sets with strings from block data might crash
+ *  [ES] fixed a floating point rounding bug in the polygon clipping which
+         (in rare cases under some OS's) caused set filling be performed wrong
+         (rep. #874)
+ *  [ES] fixed a bug in the Xbae widget crashing under a multi-head X server
+         (rep. #878)
+
+
+<H2>5.1.1</H2>
+
+<H3>Functionality</H3>
+ *  [ES] interpolation now takes into account all data set columns
+ *  [ES] normalized histograms can be calculated
+ *  [ES] histograms with varying bin widths - abscissas of a set can be used
+         as the bin mesh
+ *  [EV/ES] added GraceOpenVA() function to the grace_np API
+ *  [ES] \V{} escape code in strings - baseline shift
+ *  [ES] \n escape code in strings - new line
+ *  [ES] a region can be linked only to a single graph
+ *  [UH] implemented logit axis scale
+ 
+<H3>Interface</H3>
+ *  [ES] "Edit/Locator props" popup rewritten
+ *  [ES] "Spline" popup removed
+ *  [ES] "Interpolation" popup rewritten; now includes the former "Spline"
+         functionality
+ *  [ES] "Histograms" popup rewritten
+ *  [ES] "Arrange graphs" rewritten (including reps. #368, #592, #735)
+ *  [ES] double click on a set selector entry now pops up the SS editor
+ *  [ES] date/time format can be used in the SS editor to display/enter values
+ *  [ES] many other enhancements in the SS editor
+ *  [ES] if the XmHTML widget library is available, it will be used for
+         displaying on-line help ("Gracilla"). The libhelp support is
+         scheduled to be withdrawn soon
+ *  [ES] removed -[no]logwindow command line options and X resource
+ *  [ES] removed -arrange, -cols, and -rows command line options
+ *  [ES] "Results" and error message windows merged into "Console"
+ *  [ES] menubar added to the "Graph appearance" dialog
+ *  [ES] "File/Read/Sets" and "File/Write/Sets" moved to the "Data/Import"
+         and "Data/Export" submenus, respectively
+ *  [ES] "File/Read/Parameters" and "File/Write/Parameters" moved to the
+         "Plot" menu
+ *  [ES] renamed "File/Device setup" to "File/Print setup" and added
+         "View/Page setup" (same dialog but with X11 as the selected device)
+ *  [ES] split axis/tick label offset input fields into two
+ 
+<H3>Documentation/Info</H3>
+ *  [WB] some fixes/additions to the User's Guide
+ *  [AM] include Xbae version in -version and "Help/About"
+ *  [DP] User's Guide additions
+ *  [EV] Tutorials updated
+ *  [AM] man page corrections
+ *  [ES] re-enabled on-line help for several dialogs
+ 
+<H3>Parser</H3>
+ *  [ES] removed restriction on the max line length (512) in parameter files
+ *  [ES] SPLINE, ASPLINE, and INTERP removed and INTERPOLATE added which
+         includes the functionality of the former ones
+ *  [ES] added RAND(N) - creates an array of N random numbers
+ *  [ES] HISTO renamed to HISTOGRAM and syntax changed
+ *  [ES] changed syntax of ARRANGE command
+ *  [ES] removed UNLINK REGNUM FROM selectgraph; now that a region links to a
+         single graph only the command makes no sense
+ *  [DP] added READ NXY CHRSTR for reading in data in the NXY format
+ 
+<H3>Portability/Compilation</H3>
+ *  [ES] configure checks for netCDF version
+ *  [AC] a couple of configure fixes
+ *  [AM] check for build/runtime Xbae version match
+ *  [AM] OS/2 updates
+ *  [JH] VMS updates
+ 
+<H3>Bug fixes</H3>
+ *  [ES] fixed text under/overlining in SVG
+ *  [ES] fixed dashed patterns for thick lines in SVG
+ *  [ES] a bug in interpolation caused crash under some conditions (rep. #783)
+ *  [ES] fixed overflowing of some tables in dvi output of the User's guide
+ *  [ES] fixed interpolation of reversed arrays (rep. #675)
+ *  [ES] fixed a memory leak in interpolation using splines
+ *  [ES] there was no automatic canvas refresh after performing interpolation
+ *  [ES] there was no automatic canvas refresh after changes in locator props
+ *  [ES] fixed "\\" in strings
+ *  [ES] check for positive page dims and dpi in device setup (rep. #779)
+ *  [ES] invert logics of the yesno dialog popped up if printout is truncated
+         (rep. #778)
+ *  [JSB] text color might be wrongly set on raster devices with antialiasing
+         off (rep. #803)
+ *  [ES] memory leak fix in the SS editor
+ *  [ES] "File/New" didn't update project description in "File/Save as"
+ *  [ES] graph operations on killed graphs result in crash (rep. #805)
+ *  [ES] drawing objects cursor remained active after closing window
+         (rep. #807)
+ *  [ES] switching between (overlaid) graphs updated the locator bar only
+         after pointer move (rep. #808)
+ *  [GJ] canvas didn't refresh on autoscale shortcut (rep. #809)
+ *  [ES] initial values of fit parameters with bounds set were printed wrongly
+         in the "Results" window
+ *  [ES] disable canvas events on hidden graphs
+ *  [ES] white space at the beginning of text strings wasn't accounted in bbox
+         calculations
+ *  [ES] fixed wrong initial canvas size in the free page mode (rep. #821)
+ *  [ES] fixed set split crash
+ *  [ES] couldn't use constant expressions in "Load &amp; evaluate" (rep. #828)
+ *  [ES] a severe memory leak in "Load &amp; evaluate" fixed
+ *  [ES] regions were displayed wrongly on plots with several graphs
+
+
+<H2>5.1.0</H2>
+
+<H3>Functionality</H3>
+ *  [ES] VMAP plots implemented (rep. #440)
+ *  [ES] BOXPLOT sets re-implemented. The control over appearance details is
+         more detailed than in Xmgr (including rep. #188)
+ *  [ES] XYSIZE sets implemented (a generalized form of "bubble" plots)
+ *  [ES] XYCOLOR sets implemented (rep. #484)
+ *  [ES] pie charts implemented
+ !  [EV] set restrictions in "Window/Point explorer"
+ *  [ES] \#{} escape code in strings - allows to enter non-printable chars by
+         their hex codes
+ *  [ES] \r{} escape code in strings - text rotation
+ *  [ES] \q, \Q escape codes in strings - start/stop text slanting (rep. #716)
+ *  [ES] \l{} escape code in strings - slanting text with any factor
+ *  [ES] \t{}, \T{} escape codes in strings - generic text coordinate
+         transforms
+ *  [ES] \R{} escape code in strings - changes color inside a string
+         (rep. #535)
+ *  [ES] \Fl, \FL escape codes in strings - start/stop ligature processing
+ *  [ES] \Fk, \FK escape codes in strings - start/stop kerning pair processing
+ *  [ES] more font encoding files added
+ !  [ES] alternative tick labels ("transformed" axes) (rep. #93)
+ *  [ES] changed default placement of error bars to two-sided (rep. #737)
+ *  [ES] for XYBAR/XYBOXPLOT sets draw the symbols in the legend with the
+         fixed height (of the legend text) for better readability (rep. #741)
+ !  [ES] user-defined tick labels are no longer allowed without tick mark
+         positions
+ !  [ES] autoticking now alters # of minor ticks only if the current value
+         is anomalous
+ *  [LM] allow to use 'T' as date-time separator (as recommended by ISO8601)
+ *  [ES] new fonts from GNU gs-5.50 (including the euro symbol)
+
+<H3>Interface</H3>
+ !  [ES] re-designed "Create by formula"; any set type can be defined
+ !  [ES] controls for justifications of strings cover all possibilities
+         (vertical and horizontal alignments)
+ !  [ES] combined point ops dialogs into one, "Window/Point explorer"
+ *  [ES] print all point data (was only x, y) during point tracking
+ *  [ES] (optional) set comments in set selectors
+ *  [ES] "File/Describe" merged with "File/Save as"
+ *  [ES] reading in block data no longer resets set column selectors
+ *  [ES] implemented the color sync option in the "set app." dialog
+ *  [EV] "-barebones" command line switch (switch all tool bars off)
+ *  [ES] annotated strings can be modified in the spreadsheet editor
+ *  [ES] in "File/Device setup", introduced options to sync page size of all
+         devices and rescale plot on page size change
+
+<H3>Drivers</H3>
+ *  [LM] FrameMaker MIF driver added (rep. #590)
+ *  [LM] implemented SVG driver
+ *  [ES] PS Level 1/2 option in the EPS driver
+ *  [ES] now any font encoding is correctly represented in (E)PS output
+ *  [ES] added under/overlining to the E(PS) driver (rep. #756)
+ *  [ES] PS output made a bit more compact
+ *  [ES] under/overlining now works in PDF output
+ *  [ES] PDF driver setup options: 1.2/1.3 compatibility and compression
+         level
+ *  [ES] use "thin" lines in X11 driver if the line width &lt;= 1 pixel
+ *  [ES] list fonts, colors and other resources in the metafile driver
+ *  [ES] don't rotate output in EPS landscape mode
+ *  [ES] optionally set hardware resolution in PS output
+ *  [ES] in PS driver, option to select input tray: auto/manual/match page
+         dimensions
+
+<H3>Documentation/Info</H3>
+ *  [AM] omit a few GUI-specific flags/help strings when compiling a GUI-less
+         exec
+ *  [EV] Tutorials updated - added a regions section and updated the create
+         by formula
+ *  [LM] added usage help for convcal
+ *  [HS] updated instructions for Motif-2.1 bug work-around
+         (&lt;Ctrl&gt;+&lt;left mouse button&gt; = crash) in the FAQ
+ *  [ES] re-structured the FAQ
+ *  [ES] documented numeric operators and functions
+
+<H3>Parser</H3>
+ *  [ES] finally, introduced variables (usual and 1D arrays)...
+ *  [ES] as a result of the above, removed scratch arrays (A, B, C, D)
+ !  [DP] SWAP selectset AND selectset
+ *  [ES] EXIT(iexpr)
+ *  [ES] enlarged parser buffer to 4K
+
+<H3>Portability/Compilation</H3>
+ *  [ES] new configure options (including rep. #757)
+ *  [ES] the GRACE_HOME dir is now set by `configure' as PREFIX/grace
+         (rep. #758)
+ *  [ES] checks for proper versions and consistency of libs and includes
+ *  [AM/ES] checks for Motif/LessTif run-time clash
+ *  [ES] the grace_np Fortran wrapper is compiled independently of whether a
+         F77 compiler has been found
+ *  [JH] VMS updates
+ *  [AM] OS/2 updates
+
+<H3>Bug fixes</H3>
+ *  [ES] "duplicate graph" caused memory corruption (rep. #752)
+ *  [ES] too long text strings (&gt;255) crashed Grace (rep. #759)
+ *  [ES] parser errors in too long lines (&gt;255), if processed from a RTI
+         caused crash
+ *  [ES] using very long formulae (&gt;~100) in the non-linear fit caused
+         memory corruption
+ *  [ES] text strings were justified by the lower edge of the bounding box
+         instead of the baseline (rep. #710)
+ *  [ES] "-" in PS output was squeezed (rep. #711)
+ *  [RW] empty src/buildinfo.h prevented further compilation (rep. #717)
+ *  [ES] fixed \m{} in the beginning of a string
+ *  [AM] fixed reading in files with DOS &lt;cr&gt;
+ *  [ES] graph overlay fixes (including rep. #734)
+ *  [ES] fixed spurious error message about non-monotonic bins when
+         calculating histograms (happened sometimes due to a rounding error)
+ *  [ES] histogramming from command file crashed (rep. #736)
+ *  [KS] the lower error bar in BARDY and BARDYDY was shadowed by bar
+ *  [ES] rescaling did not follow mouse (rep. #715)
+ *  [JM] a workaround for strange behaviour of some versions of Motif resulting
+         in several popup windows being too big (rep. #720)
+ *  [AH] on some platforms, "make install" moved files instead of copying
+         (rep. #743)
+ *  [AM] feature extraction didn't update set lists (rep. #731)
+ *  [ES] fixed triangle symbols (now correctly centered)
+ *  [ES] font antialising was broken on X displays with 24 bits per pixel
+         format of pixmaps
+ *  [EV] feature extraction/FFT was incorrectly determining if the set length
+         was a power of 2 (unimportant if FFTW was used)
+ *  [ES] upon loading a project, set print file name automatically (rep. #641)
+ *  [ES] fixed a memory leak in set sort
+ *  [ES] fixed bugs in set and point operations with sets containing annotated
+         strings (including rep. #767)
+ *  [ES] in "Window/Results...", the vertical scrollbar was missing when
+         compiled with Motif-2.1
+ *  [ES] closing (by means of window manager) a dialog with file selection
+         box in it rendered the window unusable next time it was popped
+         up (rep. #743)
+
+
+<H2>5.0.5</H2>
+
+<H3>Functionality</H3>
+ !  [ES] long drawing paths (of polylines and polygons) with length exceeding
+         a threshold are transformed to be shorter than the limit; the latter
+         is adjustable in "Edit/Preferences" popup. This works around internal
+         restrictions of some devices, notably old X11 and PS, causing visual
+         data point drops (rep. #634, #651)
+
+<H3>Interface</H3>
+ *  [ES] the "Autoscale on read" option moved back from "Edit/Preferences"
+         to "File/Read sets"
+ !  [ES] added "Autoscale on load" for creating sets from block data
+ *  [ES] added possibility to select target set(s) produced from a block
+         data (rep. #87)
+
+<H3>Documentation/Info</H3>
+ *  [ES] added docs on adding/replacing fonts
+ *  [AM] miscellaneous FAQ updates
+
+<H3>Portability/Compilation</H3>
+ *  [AM] OS/2 updates
+ *  [JH] VMS updates (including rep. #681)
+ *  [ES] fixed compilation on HP/UX-11.0
+ *  [ES] compilation outside of the source tree is now possible
+
+<H3>Bug fixes</H3>
+ *  [HS] fixed text string copy/edit bug (rep. #661)
+ *  [LM/ES] under some conditions, project or parameter saving caused
+         crash (rep. #678)
+ *  [ES] quotes were not escaped in several places (append/prepend strings
+         of tick labels, avalues etc)
+ *  [LM] setting reference date worked incorrectly since did not ignore
+         current reference date 
+ *  [ES] a Linux libc5/locale memory leak workaround (rep. #676)
+ *  [ES] a parser memory leak fixed
+ *  [ES] applied a patch to fix a nasty memory leak in the bundled T1lib
+ *  [ES] compiling GUI-less version failed (rep. #680)
+ *  [ES/HS] a workaround for bug in Motif-2.1 (&lt;Ctrl&gt;+&lt;left mouse
+         button&gt crashed) (rep. #685)
+ *  [OT/ES] fixed a floating point overflow, causing crashes on non-IEEE
+         compliant FPU (rep. #689)
+ *  [AM/ES] problems with autoscale and log axis scales (rep. #325, #688)
+ *  [ES] killing set data erroneously set the "hidden" flag of the set on
+         (rep. #691)
+ *  [ES] hidden sets were not saved (rep. #338)
+
+
+<H2>5.0.4</H2>
+
+<H3>Functionality</H3>
+ *  [ES] nonl-fit: added region restrictions (rep. #251)
+ *  [ES] nonl-fit: added optional stat weights
+ *  [ES] print some basic statistics on the non-linear fit quality
+ *  [LM] implemented proper rounding for date/time axis formats
+ *  [ES] in PS output, issue an explicit page size selection call. This
+         should allow to automatically choose between several input trays
+         with different paper (for printers that have mutiple trays, of
+         course)
+
+<H3>Interface</H3>
+ *  [ES] nonl-fit GUI reworked (including part of rep. #77)
+
+<H3>Documentation/Info</H3>
+ *  [AM] docs on building DL modules under OS/2
+
+<H3>Parser</H3>
+ !  [ES] extended variant of NONLFIT added: NONLFIT (selectset, vexpr, nexpr).
+         The vexpr argument is an array of weights (of proper length)
+
+<H3>Defaults</H3>
+ *  [ES] the default template had the 2-digit year format enabled and 
+         the wrap year set to 1900, imitating older versions. Changed to
+         off and 1950 respectively - should be more Y2K compliant :)
+
+<H3>Portability/Compilation</H3>
+ *  [ES] upgraded to T1lib-0.9.2 (fixing rep. #650)
+ *  [AM] OS/2 updates
+ *  [AM/ES] header files of the bundled Xbae and T1lib could in some cases
+         clash with system-wide installations of respective library
+
+<H3>Bug fixes</H3>
+ *  [ES] strings (titles, legends,...) with only spaces in them caused crash
+         (rep. #640)
+ *  [ES] enabling bounds for fit parameters in the non-linear fit popup
+         crashed Grace (rep. #642)
+ *  [HF/ES] fixed bug in creating sets from block data (rep. #644)
+ *  [ES] "rawbits" PPM format was broken on big endian machines (rep. #645)
+ *  [ES] in the non-linear fit window, set was deselected after each step of
+         fit (rep. #646)
+ *  [JB] WRITE setselect crashed
+ *  [ES] fixed crash when selecting "Show data-less" or "Show hidden" from
+         set popup menus (rep. #652)
+ *  [LM] fixed a few bugs in the date/Julian day conversion
+ *  [LM] fixed "day of week" format that was broken for negative dates
+ *  [ES] use "%g" format in the point tracking window
+ *  [ES] selecting multiple graphs in "graph appearance" corrupted titles/
+         subtitles (#566)
+ *  [ES] couldn't parse data from multicolumn files containing non-numerics
+         fields (rep. #655)
+ *  [ES] the user tick locations were saved with insufficient precision;
+         now we use the same format as for storing data sets (rep. #298)
+
+
+<H2>5.0.3</H2>
+
+<H3>Functionality</H3>
+ !  [ES] added "Fixed" graph type (rep. #556)
+ *  [ES] XYR set is back
+ !  [ES] filled circles in XYR (rep. #206)
+ *  [ES] RtoL text advancing (not yet if using device fonts)
+ !  [ES] extended options for line arrows - see "examples/arrows.agr"
+ *  [ES] automatic allocation of drawing objects; -maxlines and like
+         command line options removed
+ *  [LM] RTI is processed also when running in gui-less or batch mode
+ *  [LM] millisecond resolution of timer
+ !  [ES] added XYdXdXdYdY set type
+ !  [ES] color &amp; pattern of error bars can be selected independently from
+         symbols
+ !  [ES] arrow clipping of error bars (rep. #451)
+ *  [ES] no limit on number of columns in block and nxy data reads anymore
+         (reps. #357, #596)
+ *  [ES] empty line works as set delimiter (#540)
+ *  [ES] added JPEG backend
+ *  [ES] added PNG backend
+ !  [ES] any set type now may have an additional column of text strings
+         associated; as a result, the XYSTRING set type removed
+ *  [ES] canvas page dimensions, as saved in the project file, set the
+         page dimensions of all devices (which afterwards can be adjusted
+         separately)
+ *  [LM] Grace now can parse input data in several date/time formats,
+         including the recommended ISO8601
+ *  [LM] reference date for date conversions is adjustable
+ *  [LM] 2-digit format for years for the current century is now optional and
+         the wrap year is adjustable
+
+<H3>Interface</H3>
+ *  [ES] start in the command line interface (CLI) mode if the exec's 
+         name is "grace"
+ !  [ES] dataset operations GUI re-worked
+ *  [ES] new canvas hotkeys for drawing objects (rep. #585)
+ *  [ES] changind axis scale to Log updates world min if necessary
+         (rep. #625)
+ !  [ES] all file selection box (FSB) dialogs replaced (fixing reps. #465,
+         #549, #568)
+ *  [ES] "File/Working dir" removed, since this option is in any FSB now
+ *  [ES] "File/Read/Block data" removed - it's in the "File/Read/Sets" now
+ *  [EV] in the non-linear fit popup, allow to use expressions when giving
+         bounds for the loaded function
+ !  [ES] applying changes in "Set appearance" for multiple sets selected
+         doesn't act on legends by default; this can be changed from the
+         "Options" menu (part of rep. #588)
+ *  [ES] added "File/Revert to saved" 
+ *  [ES] -nxy command line flag requires a filename immediately after it
+ *  [ES] use GXinvert rather than GXxor for rubberband lines by default
+ !  [ES] "Evaluate expression" rewritten
+ *  [HS] invert selection in set/graph lists
+ !  [ES] removed column width controls from SS editor; the spreadsheet 
+         columns may be resized with Shift+middle button
+ !  [ES] option to select set string column from block data
+
+<H3>Documentation/Info</H3>
+ *  [AM/ES] many more buildinfo details are displayed by "-version" command
+         line option
+ *  [LM] many User's Guide additions/updates
+ *  [AM/ES] added man page for grace/xmgrace/gracebat
+ *  [AM] added man page for grconvert
+ *  [AM] FAQ updates (including rep. #562)
+ *  [ES] FAQ updates (including reps. #580, #587)
+ *  [ES] "Help/Examples" menu tree
+
+<H3>Parser</H3>
+ *  [HS/ES] several logical constructs of mixed type arguments (vector and
+         scalar) didn't work
+ *  [ES] added '?' and ':' to the operator precedence list; no conflicts in the
+         parser anymore
+ *  [ES] no need for () around boolean expressions
+ !  [ES] new color selection options: COLOR "name", COLOR (R, G, B)
+ !  [ES] PRINT TO DEVICE added; PRINT TO "filename" doesn't actually
+         print, only sets the output to a file (rep. #605)
+ !  [LM] TIMER NUMBER - set timer's resolution
+ !  [ES] G.S can be used anywhere
+ !  [ES] allow to use SET[index] amd GRAPH[index] for set &amp; graph
+         selections
+ !  [EV] REVERSE setselect
+         APPEND setselect TO setselect
+         SPLIT setselect number
+ !  [ES] no setno.extremetype
+ !  [ES] extremetype(vexpr)
+ !  [ES] expressions can be used virtually in any statement (where only numbers
+         were allowed formerly)
+ !  [ES] checks for expression types
+ !  [ES] JDAY function (has been never documented) renamed to DATE
+ !  [ES] removed INDEX and LOAD SCRARRAY
+ !  [ES] added MESH (a la linspace)
+ !  [ES] several statements per line are allowed, separated by ';'
+ *  [ES] PAGE SIZE x y -&gt; PAGE SIZE x, y
+ !  [LM] REFERENCE DATE, DATE WRAP onoff, DATE WRAP YEAR iexpr
+ !  [ES] strict array length checks
+
+<H3>Defaults</H3>
+ !  [LM] the default value for the timer has been reduced from 1000 to
+         200ms 
+ *  [ES] sformat is saved in projects
+
+<H3>Portability</H3>
+ *  [ES] configure honours $CC; if available and not overridden, gcc will
+         be picked
+ *  [ES] motif find fix
+ *  [ES] Irix-6.5 config fix (rep. #558)
+ *  [ES] compilation errors when using some weird old versions of make 
+         fixed (rep. #583)
+ *  [ES] configure checks for declarations of all math functions
+ *  [ES] removed the remnants of support for Motif-1.1
+ *  [ES] PDF driver updated to use pdflib-2.01
+ *  [ES] updated to Xbae-4.7 (which fixed rep. #560)
+ *  [ES] T1 font machinery updated to T1lib-0.9.1
+ *  [ES] no need for GD lib (for raster drivers); a customized version is
+         included
+ *  [AM] OS/2 updates
+ *  [JH] VMS updates
+
+<H3>Bug fixes</H3>
+ *  [MR] popping up PS GUI setup window caused crash (rep. #563)
+ *  [ES] set split was broken in 5.0.2
+ *  [EV] frequency/period feature extraction fix (rep. #538)
+ *  [ES] in the PS driver, pattern fills were not opaque (rep. #567)
+ *  [ES] crosshairs were left as lines on canvas (rep. #571)
+ *  [ES] description length was limited to 2K (rep. #575)
+ *  [ES] setting negative offsets for PS driver was impossible via
+         GUI (rep. #579)
+ *  [ES] antialiased (default) text strings were invisible on mono X terminals
+         (rep. #582)
+ *  [ES] join sets is working now (rep. #513)
+ *  [ES] error bar clipping wasn't enabled
+ *  [ES] error bars were drawn above symbols
+ *  [ES] settings from "Ellipse props..." were ignored
+ *  [ES] Bitmapped strings with no AA were broken in the PDF output
+ *  [ES] non-POSIX locales caused invalid PS output in rare cases
+ *  [LM] detect cases of accesses beyond array bounds of drawing objects
+ *  [ES] problems with operations with sets of different lengths (rep. #227)
+         resolved
+ *  [HS] "Start load at" of the regression window was ignored
+ *  [ES] non-linear fit didn't work in batch mode for any but S0 set
+ *  [ES] fixed crashes with log axes (rep. #282, #525)
+ *  [AM/ES] fixed crashes when major tick spacing was equal to 0 (rep. #591)
+ *  [AM] the default filename of hardcopy output was truncated at first
+         period (rep. #593)
+ *  [LM] several bugs in date formats fixed
+ *  [ES] locator properties didn't work; changing the locator format
+         caused chaotic behavior (rep. #621)
+ *  [ES] patterned fills of ellipses gave segmentation fault (rep. #616). This
+         was a GD library's bug, in fact
+
+<H3>Misc</H3>
+ *  [ES] removed GD and GIF backends (the latter due to patent issues)
+ *  [LM] an auxiliary utility added (convcal) to convert between "usual"
+         and julian day date formats. This obsoletes the former greg2jul.c 
+         and jul2greg.c utilities.
+
+
+<H2>5.0.2</H2>
+
+<H3>Functionality</H3>
+ *  [ES] graphs and sets are allocated dynamically; -maxgraph, -maxsets and
+         -graphsets removed
+ *  [ES] XY chart is back
+ *  [ES] XYZ set type is back
+ !  [ES] new chart set presentations: stacked line and scatter
+ !  [ES] new options for charts (different bar border/fill colors and
+         patterns etc)
+ !  [ES] inter-bar gap for bar charts is adjustable (rep. #198)
+ !  [ES] new set type: BarDY (bar charts with error bars)
+ *  [ES] precision can be used for XYZ sets (rep. #519)
+ *  [ES] new set auto-coloring is back
+ *  [ES] added 16 new patterns
+ *  [ES] added a few more line styles (rep. #305)
+ !  [ES] legends can be displayed in reverse order (rep. #205)
+ *  [ES] legends are drawn by default
+ *  [ES] enhanced backward compatibility with Xmgr
+ *  [ES] in free mode, auto-re-scale all the plot objects (imitating Xmgr)
+         (rep. #537)
+ !  [ES] color map stuff (rep. #512)
+ !  [AM] auto-scaling with range restrictions
+ *  [LM] added internals for RT (real time) input monitoring 
+ !  [LM] grace_np library now uses anonymous instead of named pipes
+ !  [ES] write format is used for all dataset types
+ !  [ES] FP line widths (rep. #483)
+ !  [ES] locale, if available and set, is used for numeric labels
+ *  [ES] in case of crash, Grace tries to save the project anyway
+ !  [ES] added an option to fill (or not to) the page background
+ *  [ES] Grace honors $GRACE_PRINT_CMD environment variable (rep. #522)
+ *  [ES] PS and PDF drivers optimized for speed and file size
+ *  [ES] added color/gray-scale and bbox:tight/page options to the EPS driver
+ *  [ES] added adjustable printer page offsets to the PS driver
+ *  [ES] warning issued on truncated printout (if display and hard-copy
+         device aspect ratio don't coincide, for example)
+
+<H3>Interface</H3>
+ !  [ES] menu shuffles
+ !  [ES] new graph selectors - with many operations available from the popup
+         menu (right mouse button)
+ !  [ES] new set selectors - with many operations available from the popup
+         menu (right mouse button). Set selectors in the Data/* popups are
+         of the old style yet
+ *  [ES] pattern selectors have pattern bitmaps displayed
+ *  [ES] line style selectors have dash bitmaps displayed
+ *  [ES] graph number for ops is automatically graph that has focus
+         (rep. #104)
+ !  [ES] (approximate) number of tick divisions for auto-ticking is set in 
+         "Axis properties" now instead of "Autoscale"
+ !  [ES] a simplistic (by now) fonttool added
+ *  [ES] removed all set pick operations
+ !  [ES] "Set appearance/Edit/*" now act on selected sets only
+ *  [HS] it's possible to refer to the index of blockdata as column 0
+         via command line (rep. #464)
+ *  [ES] removed -xy, -xydy etc command line flags; use -(set)type instead
+ *  [ES] -source stdin removed
+ !  [ES] "-" and "stdin/stdout" can be used anywhere (rep. #486)
+ *  [ES] Block data window reworked
+ !  [ES] canvas events redone
+ *  [ES] immediate feedback for drawing object reposition/editing is
+         back (rep. #532)
+ !  [ES] Activate/Edit/Create/Reactivate Set menu confusion eliminated
+         (rep. #136)
+ *  [ES] print popup fixes
+ !  [ES] in the X11 driver, put dots every 0.1 viewport (visible only
+         if the page bg is not filled)
+ !  [ES] &lt;Ctrl+E&gt; from text inputs fires up font tool
+ *  [ES] xwindow title has "Grace: " prefix prepended and, if project is
+         modified, "(modified)" suffix
+ !  [ES] removed "Clear all" and added "New" instead
+ !  [ES] removed "Verify Pick sets operations" option, added "Don't 
+         ask questions" (same as -noask)
+ !  [LM] added -dpipe command line switch for monitoring an already open
+         file descriptor
+ *  [ES] removed -symcolorbug command line option
+ *  [ES] removed -dc/-nodc, -redraw/-noredraw, -GXxor/-GXinvert command
+         line options
+ *  [ES] max error count upon reading in reduced from 50 to 5
+
+<H3>Documentation/Info</H3>
+ *  [ES] old HTML docs removed; a draft version of User's Guide added
+ *  [EV] Tutorials prepared. It's a recommended reading not only for newbies,
+         especially taking into account the rudimentary state of the User's
+         Guide
+ *  [AM] -version additions
+
+<H3>Parser</H3>
+ *  [ES] device commands (rep. #490)
+ !  [ES] VXMAX and VYMAX - max viewport values of the current device
+ !  [ES] TRUE/FALSE and ON/OFF are interchangeable
+ !  [ES] NEW - start new project from scratch using default template;
+         NEW FROM "filename" - start new project from scratch using filename
+         template
+ !  [ES] MAP COLOR color_id TO (R, G, B), "colorname"
+         (0 &lt;= R, G, B &lt; 256)
+ !  [ES] S$ - currently processed (in parser) SETNUM
+ !  [ES] S_ - recently assigned SETNUM (e.g., after a data have been read in)
+ !  [ES] SETNUM.ID - id of the set (i.e., S5.ID is 5)
+ !  [ES] G$, G_ and GRAPHNO.ID - same as above, but for graphs
+
+<H3>Defaults</H3>
+ *  [ES] toolbar X resources
+ !  [ES] use IsoLatin1 encoding if Default.enc is not found
+ *  [ES] gracerc magic path
+ !  [ES] gracerc re-read upon SIGHUP
+ *  [ES] templates (rep. #520)
+
+<H3>Portability</H3>
+ *  [LM] grace_np library now compiles and works correctly on OS/2 and Win32
+         (in addition to all Unices, of course). There is an unresolved
+         problem with VMS, though
+ *  [ES] added configuration for use of lcc as compiler
+ *  [JH] VMS updates
+ *  [AM] OS/2 updates
+ *  [ES] grconvert works on Win32
+ *  [ES] Win32 port should compile out of the box
+
+<H3>Bug fixes</H3>
+ *  [ES] configure issued wrong messages
+ *  [ES] drawing objects might not be drawn sometimes
+ *  [ES] fixed patterns #7, #14 and #15
+ *  [ES] fixed rounding errors in clipping routines (in particular, rep. #476
+         and #504)
+ *  [EV] a feature extraction bug fixed
+ *  [ES] view/world coords in string edit (rep. #469)
+ *  [LM] input data line length restriction removed (rep. #260, #357,
+         #443)
+ *  [ES] npipe "buffer overflow" fixed
+ *  [ES] npipe load bug fixed
+ *  [LM] linear regression on a two-point set was performed wrongly
+ *  [ES] spreadsheet fixes and clean-ups (rep. #203, #259, #409)
+ *  [ES] auto-scale fixes (rep. #510)
+ *  [LM] configure fixes
+ *  [LM] updated several explanation strings on example files with the new
+         GUI layout
+ *  [LM] the correct stack depth was displayed only after cycling
+ *  [ES] regions and graph fixed points not drawn in hardcopy output anymore
+ *  [ES] if no set has a legend string defined, the empty legend box is not
+         drawn (even when legends are enabled)
+ *  [ES] Disk/Pipe selector was broken (rep. #454)
+ *  [ES] Set appearance/Data/Load comments didn't update GUI settings
+         for the currently selected set (rep. #474)
+ *  [ES] ignore non-printable characters in formulae (rep. #241)
+ *  [ES] working dir not initialized (rep. #470)
+ *  [ES] `make tests' failed if ran before `make install' (rep. #491)
+ *  [ES] incorrect postscript output of bar charts fixed (rep. #341, #410) 
+ *  [ES] fixed crash if applying axis settings to all graphs (rep. #503)
+ *  [ES] warning popup on exit sometimes appeared even after no changes 
+         have been made (rep. #274)
+ *  [ES] auto-scale didn't work if specified from the command line together
+         with some other arguments (rep. #385, #441)
+ *  [ES] File/Write/Sets didn't work for multiple set selection (rep. #394)
+ *  [ES] strange font size decrement (rep. #242)
+ *  [ES] crashes on SGI when accents are used in the legends (rep. #268)
+ *  [ES] Strings & Things : Default size is zero on HP (rep. #288)
+ *  [ES] sometimes in plots with multiple graphs, one couldn't get the x axis
+         tick marks or labels to be displayed on any of the graphs except for
+         graph 0 (rep. #339)
+ *  [LM] in applications linked against grace_np, a call to system() or
+         like functions would abort execution (rep. #382)
+ *  [ES] Core dump in SetSelectedSet if optimized (rep. #366)
+ *  [ES] misc other bug fixes
+
+<H3>Misc</H3>
+ *  [ES] memory consumption reduced (typically, 0.5 MB less than that
+         of 5.0.1 and about same as of Xmgr-4.1.2)
+ *  [ES] removed "Coalesce sets" (will be back in 5.0.3)
+ *  [ES] no input date/time formats (a smart input data filter is planned
+         for 5.0.3). Please use Julian dates for a time being
+
+
+<H2>5.0.1</H2>
+
+<H3>Functionality</H3>
+ !  [ES] added FORMAT_SCIENTIFIC, FORMAT_ENGINEERING
+ !  [ES] polar plots (a work in progress - far from being completed, but
+         definitely better than nothing :))
+ !  [ES] added tunable offsets for tick labels (in particular, rep. #467)
+ !  [ES] added option of placing axis ticks at rounded positions (rep. #124)
+ *  [HS2] implemented axis label placement op (normal/opposite side) 
+          (rep. #463)
+ *  [HS2] changed tick and axis label offsets from (x,y) to 
+          (parallel/perpendicular)
+ *  [HS2] introduced tick label placement auto/spec (similar to axis label)
+ !  [ES] fill rules for sets: winding/even-odd; not honored by raster formats
+ !  [ES] smart colormap management: -install/-noinstall flags force a given
+         behavior; default is to switch to the private colormap automatically
+         as needed
+ !  [ES] -rvideo now acts on all devices; XMgrace.reverseVideo removed from
+         the list of X resources
+ !  [ES] selecting devices by names instead of numbers; "-device" command 
+         line argument renamed to "-hdevice"; GR_HDEV not used anymore
+ !  [ES] zero axes are back. Now, both "primary" and alternative axes can be
+         "zero" ones
+ !  [ES] PDF device options added: binary/ASCII output; misc fixes
+ !  [ES] GIF device options added: transparent and interlaced output
+ !  [ES] PS device options added: grayscale/color; Level2 toggle is back (in
+         fact, nobody of developers has a Level 1 printer to really check it)
+ *  [ES] fixed bug when text strings might be typed wrong sometimes in the PS
+         output
+ *  [ES] all drivers slightly rewritten
+ !  [ES] added PNM (PBM/PGM/PPM) device (both ASCII and "rawbits" outputs)
+ !  [ES] Courier font family added
+ *  [ES] added \f, \h, \v, \z, \m, \M and \d string controls. Load typeset.agr
+         in the "examples" dir to get an idea
+ !  [ES] in the batch language, in any statement with FONT NUMBER, the 
+         font selection can be done by fontname instead of the number:
+         FONT "fontname"
+ !  [ES] Grace can now use any number of user-defined fonts, both in addition
+         and as a replacement for bundled ones (rep. #26)
+
+<H3>Documentation/Info</H3>
+ *  [HS] added a text (http://plasma-gate.weizmann.ac.il/Grace/y2k.html)
+         on the Year 2000 problem (rep. #342)
+ *  [HS2] new extended FAQ written
+ *  [AM] version string includes GUI toolkit (Motif/Lesstif/None)
+ *  [AM] help screen updated
+ *  [ES] font docs (doc/fonts.html) updated
+
+<H3>Portability</H3>
+ *  [ES] configure should now be smarter about finding Motif (rep. #416)
+ *  [ES] added configuration file for Interix (aka OpenNT) (rep. #437)
+ *  [ES] SunOS4 build fixes
+ *  [AM] OS/2 updates
+
+<H3>Bug fixes</H3>
+ *  [AM] "Read/Block data" crash fixed (rep. #445)
+ *  [ES] Zooming now zooms exactly to the window specified by mouse (rep. #5)
+ *  [ES] "AutoT" doesn't alter graph min/max values (rep. #165)
+ *  [ES] killing sets in polar plots with parameters preserved caused crash
+         (rep. #125)
+ *  [HS2] ellipses might be sometimes drawn incorrectly in X11
+ *  [ES] a memory leak in "Edit String" fixed
+ *  [HS] leap year function corrected
+ *  [ES] XYString sets were not saved (rep. #452)
+ *  [ES] Disk/Pipe selector was broken (rep. #455)
+ *  [AM] fixed broken axis scaling when set min/max was +/- Inf
+ *  [EV] stack manipulation fixed (#417)
+ *  [AM] "-version" now outputs to stdout instead of stderr
+ *  [ES] misc small fixes
+
+<H2>5.0.0 (since Xmgr-4.1.2):</H2>
+
+<H3>Functionality</H3>
+ *  [ES] T1 fonts are used for all devices using the T1lib library of Rainer
+         Menzner. There should be no discrepancies anymore between characters
+         displayed and printed (rep. #16)
+ *  [ES] routines of drawing layer rewritten from the scratch; Grace is now
+         almost WYSIWYG, except patterns (rep. #184)
+ *  [EV] generic I/O filtering implemented (including rep. #240); see docs
+         for details
+ !  [ES] reciprocal axis scale implemented (rep. #33)
+ *  [EV] system-wide gracerc ($GRACE_HOME/gracerc) will be read at startup
+         time, if exists
+ !  [ES] overlined strings are possible (\o \O) (rep. #176). Doesn't work with
+         device fonts yet
+ !  [MM] extensions to regions including horizontal-inside, horizontal-outside,
+         vertical-inside and vertical-outside
+ !  [MM] Grace will use the FFTW library for Fourier transform if present on
+         the system; see README.FFTW
+ *  [MM] negative indices in "Drop points" allowed (counting from the end of
+         a set)
+ *  [EV] added a new feature to be extracted - the integral of each set
+ !  [ES] "unit" and "const" added to the possible proctype's for modules.
+         DEG (below) is an example what "unit" can be used for
+ !  [ES] DEG and RAD are now meaningful. E.g., expressions like sin(90 deg)
+         and sin(pi/2 rad) both are legitimate (and equivalent!) ("rad" can be 
+         omitted - it's there just for the sake of completeness)
+ *  [ES] metafile driver (not in final state)
+ *  [ES] PDF driver using the PDFlib of Thomas Merz; see README.PDF
+ *  [ES] GIF/GD driver using the GD library of Thomas Boutell (rep. #14); see
+         README.GIF
+ *  [ES] logarithmic scales can have any base (rep. #370)
+ *  [ES] patterns and colors can be used simultaneously (rep. #291)
+ *  [ES] power tick label format changed to work in scientific format 
+         (rep. #361)
+ *  [ES] \B in composite strings will reset the font to the string's initial
+         font (rep. #388)
+ *  [ES] PS/EPS driver rewritten from the scratch
+ *  [ES] X11 driver heavily rewritten
+
+<H3>Interface</H3>
+ !  [ES] removed "Plot/World scaling" popup
+ !  [ES] re-designed axis props GUI popup (in particular, rep. #63, #313)
+ *  [EV] point ops popup fixes
+ !  [ES] graph appearance props GUI popup
+ !  [ES] removed "Viewport", "Frame", "Titles" and "Legends"  popups.
+ !  [ES] removed "Error bars" and "Edit legends"  popups.
+ !  [ES] re-designed set appearance props GUI popup (rep. #311, #369 should be
+         fixed)
+ *  [EV] added expression evaluation to text input fields in all widgets
+ *  [EV] error window changed - only 1 window, not 1 window per error
+ !  [EV] regression fits can be applied to specified interval and results are
+         printed out in readable form
+ *  [EV] scrolled windows for explicitly requested expressions
+ *  [EV] canvas hotkeys added
+ !  [ES] re-designed print setup GUI popup (problems in rep. #372, #412 
+         should be fixed)
+ *  [ES] changing page size is possible for any device separately; the units
+         can be "pix"els, "cm" or "in" (rep. #108, #211, #216, #405)
+
+<H3>Project files</H3>
+ *  [EV] background color saved
+ *  [MM] all regions, whether active or not, are saved to the file, so
+         temporarily inactive regions don't get lost
+ *  [ES] page size is saved (rep. #312)
+ 
+<H3>Parser</H3>
+ *  [ES] cleaned grammar parser; instead of 350 shift/reduce and 231 
+         reduce/reduce conflicts - &gt; 61 &amp; 0 respectively
+ *  [ES] MAX() and MIN() renamed to MAXOF() and MINOF()
+ !  [ES] removed DX, DY, IMAGE 
+ !  [ES] removed GRAPHNO *BAR SIZE NUMBER 
+ !  [ES] removed SETNUM = SETNUM etc 
+ !  [ES] removed CMAP, STATUS, STATUSBAR, TOOLBAR, LOCATORBAR, LOCATOR
+
+
+<H3>Defaults</H3>
+ !  [ES] default page layout changed from free to fixed
+ *  [ES] \+ increases font size sqrt(sqrt(2)) times; \- respectively,
+         decreases. Sub/superscripts are 1/sqrt(2) of the preceeding font size
+
+<H3>Portability</H3>
+ *  [AM] implemented dynamic modules for OS/2
+ *  [EV] popen() for VMS
+ *  [JH/RN] VMS fixes
+ *  [AM] OS/2 updates
+ 
+<H3>Misc</H3>
+ !  [ES] removed (broke) xwd image loading
+ !  [ES] removed all app-defaults not specific to GUI
+ !  [ES] \x and \b control sequences removed
+
+<H3>Bug fixes</H3>
+ *  [ES] "-mono" command line flag now works
+ *  [EV] "-wd" command line flag fixed
+ *  [EV] trying to create a new set preceded with soft kill of all sets
+         caused crash (rep. #367)
+ *  [MM] FFT fixes
+ *  [MM] when regions were read in from a saved file, they ended up linked
+         to all graphs
+ *  [MM] in saved projects, REGNUM TRUE was used instead of REGNUM ON
+ *  [EV] several sets can be linked to the same file as in xny data (rep. #269)
+ *  [ES] crash on mono X servers fixed (rep. #285)
+ *  [ES] canvas refresh (rep. #217, #271 #317, #333, #375) 
+ *  [ES] axis labels were not displayed if `display tick marks' wasn't
+         selected (rep. #3)
+ *  [ES] coordinates of legend frame now corresponds to the left upper corner
+         of the frame (rep. #31)
+ *  [ES] ticklabel format was reset by autoscale (rep. #119, #144)
+ *  [ES] bounding box of EPS was calculated only approximately (rep. #123,
+         #145)
+ *  [ES] legend frame didn't account for sub/superscripts (rep. #189)
+ *  [ES] extraneous logarithmic tick marks were drawn in some cases (rep. #193)
+ *  [ES] accentuated titles weren't centered correctly (rep. #195)
+ *  [ES] switch to log scale with an axis containing zero might cause 
+         error messages infinitely looped (rep. #210)
+ *  [ES] filling of legend frame didn't work unless one turned the frame on
+         (rep. #215)
+ *  [ES] the axes tick marks were behind set curves (rep. #224)
+ *  [ES] popup positioning left up to WM for all windows (rep. #273)
+ *  [ES] if graph contained too many ticks, autoscale was applied instead
+         of tick position recalculation (rep. #275)
+ *  [EV] in "Point ops", 'Delete' ignored set number (rep. #293)
+ *  [ES] once activated, legends fill frame couldn't be switched off
+         from within GUI (rep. #326)
+ *  [CM] adding legends to plots with number of data sets exceeding the
+         default maximum caused a crash (rep. #344)
+ *  [ES] arranging or rearranging graphs by means of the "arrange" dialog reset
+         previously set tick properties to defaults (rep. #356)
+ *  [ES] user tick labels w/subscripts did not show up in PS output (rep. #383)
+ *  [ES] FFT command didn't work correctly in parser (rep. #398)
+ *  [HS] command line parsing was wrong in several places (rep. #400)
+ *  [ES] misc. small fixes (including rep. #289, #406, #287)
+
+
+ <B>Legend:</B>
+
+    [EV]  - Ed Vigmond &lt;vigmonde(at-nospam)IGB.UMontreal.CA&gt;
+    [RN]  - Rolf Niepraschk &lt;niepraschk(at-nospam)ChbRB.berlin.ptb.de&gt;
+    [HS]  - Henrik Seidel &lt;henrik.seidel(at-nospam)gmx.de&gt;
+    [JH]  - John Hasstedt &lt;John.Hasstedt(at-nospam)sunysb.edu&gt;
+    [AM]  - Alexander Mai &lt;st002279(at-nospam)hrzpub.tu-darmstadt.de&gt;
+    [CM]  - Charles Myers &lt;myers(at-nospam)oicinc.com&gt;
+    [MM]  - Marcus H. Mendenhall &lt;marcus.h.mendenhall(at-nospam)vanderbilt.edu&gt;
+    [HS2] - Heiko R. Selber &lt;selber(at-nospam)fhi-berlin.mpg.de&gt;
+    [LM]  - Luc Maisonobe
+    [MR]  - Mark Rintoul &lt;rintoul(at-nospam)cs.sandia.gov&gt;
+    [HF]  - Harald Freyer &lt;hf(at-nospam)nike.cup.uni-muenchen.de&gt;
+    [JB]  - Jesko Brudermann &lt;jbruder(at-nospam)gwdg.de&gt;
+    [OT]  - Ovidiu Toader &lt;ovidiut(at-nospam)ostrich.physics.utoronto.ca&gt;
+    [RW]  - Robin Williams &lt;Robin.Williams(at-nospam)astro.cf.ac.uk&gt;
+    [JM]  - John McKitterick &lt;jbmck(at-nospam)batc.allied.com&gt;
+    [AH]  - A. Stewart Hopkins &lt;ahopkins(at-nospam)mail.arc.nasa.gov&gt;
+    [KS]  - Keith Stribley &lt;keith(at-nospam)stribley.dabsol.co.uk&gt;
+    [DP]  - Donald A. Peterson &lt;donald(at-nospam)nd.edu&gt;
+    [WB]  - Wolfgang Braun &lt;braun(at-nospam)pdi-berlin.de&gt;
+    [JSB] - J. Scott Berg &lt;jsberg(at-nospam)bnl.gov&gt;
+    [AC]  - Alber Chin &lt;china(at-nospam)thewrittenword.com&gt;
+    [GJ]  - Gerd Jahn &lt;Gerd.Jahn(at-nospam)dss.dornier.dasa.de&gt;
+    [UH]  - Ulrich Harttig &lt;harttigu(at-nospam)ucs.orst.edu&gt;
+    [DB]  - Dominique Bissieres &lt;dominique.bissieres(at-nospam)turbomeca.fr&gt;
+    [RL]  - R. Lahaye &lt;lahaye(at-nospam)postech.edu&gt;
+    [MD]  - Matthias Dillier &lt;Matthias.Dillier(at-nospam)snb.ch&gt;
+    [PM]  - Petrie L M &lt;lmp(at-nospam)ornl.gov&gt;
+    [JS]  - Jan Schaumann &lt;jschauma(at-nospam)netmeister.org&gt;
+    [SR]  - Stewart Rounds &lt;sarounds(at-nospam)usgs.gov&gt;
+    [PB]  - Peter Breitenlohner &lt;peb(at-nospam)mppmu.mpg.de&gt;
+    [MO]  - Marius Olechnovi&ccaron;ius &lt;img(at-nospam)mail.lt&gt;
+    [YZ]  - Yura Zotov &lt;yznews(at-nospam)hotbox.ru&gt;
+    [TO]  - Tobias Oed &lt;tobias(at-nospam)physics.odu.edu&gt;
+    [IG]  - Ionut Georgescu &lt;ionutg(at-nospam)gmail.com&gt;
+    [HR]  - Harvey Richardson
+    [DC]  - Dan Connelly &lt;djconnel(at-nospam)ieee.org&gt;
+    [TK]  - Thomas Klausner
+    [SM]  - Stan Maree &lt;stan.maree(at-nospam)bbsrc.ac.uk&gt;
+    [ES]  - Evgeny Stambulchik &lt;evgeny(at-nospam)stambulchik.net&gt;
+
+    "!" means no documentation provided (yet)
+ 
+</PRE>
+
+</BODY>
+</HTML>

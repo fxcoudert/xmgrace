@@ -1,0 +1,263 @@
+.TH GRACE 1 "Jan 28, 2007"
+.LO 1
+.SH NAME
+grace \- command line interface
+.br
+xmgrace \- full-featured GUI mode
+.br
+gracebat \- batch mode \- print and exit
+
+.SH DESCRIPTION
+Grace is a WYSIWYG tool to make two-dimensional plots of scientific
+data.
+
+.SH SYNOPSIS
+.B grace
+.RI "[ " option " | " filename " ]..."
+.br
+.B xmgrace
+.RI "[ " option " | " filename " ]..."
+.br
+.B gracebat
+.RI "[ " option " | " filename " ]..."
+
+.SH OPTIONS
+.TP
+.BI "\-autoscale " "x|y|xy|none"
+Set autoscale type
+.TP
+.B "\-barebones "
+Turn off all toolbars
+.TP
+.BI "\-batch "    "file"
+Execute batch
+.I file
+on start up (i.e., after all other options have been processed and the UI
+initialized)
+.TP
+.BI "\-block "    "file"               
+Assume the data
+.I file
+is block data
+.TP
+.BI "\-bxy "       "x:y:etc."
+Form a set from the current block data set using the current set type
+from columns given in the argument
+.TP
+.BI "\-datehint "    "iso|european|us|days|seconds|nohint"              
+Set the hint for dates analysis
+.TP
+.BI "\-dpipe "    "descriptor"               
+Read data from descriptor on startup
+.TP
+.BI "\-fixed "    "width height"           
+Set canvas size fixed to width*height
+.TP
+.B "\-free"                                 
+Use free page layout
+.TP
+.BI "\-graph "     "number"             
+Set the current graph number
+.TP
+.BI "\-graphtype " "xy|chart|fixed|polar|pie"               
+Set the type of the current graph
+.TP
+.B "\-hardcopy"
+No interactive session, just print and quit
+.TP
+.BI "\-hdevice "   "device_name"     
+Set default hardcopy device. See
+.B "xmgrace \-version"
+for a list of supported devices.
+.TP
+.B "\-install"
+Install private colormap
+.TP
+.B "\-legend"    "load"
+Turn the graph legend on
+.TP
+.BI "\-log "       "x|y|xy" 
+Set the axis scaling of the current graph to logarithmic
+.TP
+.BI "\-maxpath "   "length" 
+Set the maximal drawing path length
+.TP
+.B "\-mono"                                 
+Run grace in monochrome mode (affects the display only)
+.TP
+.BI "\-netcdf "  "file"
+Assume data file is in netCDF format. This option is present
+only if the netCDF support was compiled in
+.TP
+.BI "\-netcdfxy " "X_var Y_var"
+If \-netcdf was used previously, read from the netCDF file
+X_var and Y_var variables and create a set.
+If X_var is "null" then load the index of Y to X.
+This option is present only if the netCDF support was compiled in
+.TP
+.B "\-noask"
+Assume the answer is yes to all requests, if the operation would overwrite
+a file, grace will do so without prompting
+.TP
+.B "\-noinstall"                            
+Don't use private colormap
+.TP
+.B "\-noprint"                              
+In batch mode, do not print
+.TP
+.B "\-nosafe"                              
+Disable safe mode
+.TP
+.B "\-nosigcatch"                           
+Don't catch signals
+.TP
+.BI "\-npipe "     "file"                     
+Read data from named pipe on startup
+.TP
+.BI "\-nxy "       "file"
+Assume data file is in X Y1 Y2 Y3 ...  format
+.TP
+.BI "\-param "     "file"
+Load parameters from 
+.I file
+to the current graph
+.TP
+.BI "\-pexec "    "string"         
+Interpret string as a parameter setting
+.TP
+.B "\-pipe"
+Read data from stdin on startup
+.TP
+.BI "\-printfile " "file" 
+Save print output to 
+.I file 
+.TP
+.B "\-remove"                               
+Remove data file(s) after read
+.TP
+.BI "\-results "  "file"             
+Write results of some data manipulations to 
+.I file
+.TP
+.B "\-rvideo"
+Exchange the color indices for black and white
+.TP
+.B "\-safe"                              
+Run in the safe mode (default)
+.TP
+.BI "\-saveall "  "file"
+Save all to 
+.I file
+.TP
+.BI "\-seed "     "value"               
+Integer seed for random number generator
+.TP
+.BI "\-settype "   "xy|xydx|..."              
+Set the type of the next data file
+.TP
+.BI "\-source "    "disk|pipe"                
+Source type of next data file
+.TP
+.BI "\-timer "    "delay"                    
+Set allowed time slice for real time inputs to
+.I delay
+ms
+.TP
+.B "\-timestamp"                            
+Add timestamp to plot
+.TP
+.B "\-version"                             
+Show the program version, registered devices and build time configuration information.
+.TP
+.BI "\-viewport " "xmin ymin xmax ymax"      
+Set the viewport for the current graph
+.TP
+.BI "\-wd "       "path"                
+Set the working directory
+.TP
+.BI "\-world "    "xmin ymin xmax ymax"
+Set the world coordinates for the current graph
+.TP
+.B "\-usage|\-help"
+This message
+
+.SH RESOURCES
+.TP
+When run in the GUI mode, the interface is a subject to X resource settings.
+Please refer to the User's Guide for a list of important ones.
+
+.SH ENVIRONMENT
+.TP
+.B GRACE_HOME
+Specifies the directory where the Grace docs and libs are stored. Default is
+.BR /usr/local/grace
+.TP
+.B GRACE_HELPVIEWER
+The shell command to run an HTML viewer for on-line browsing of the help
+documents. Must include at least one instance of "%s" which will be replaced
+with the actual URL by Grace. Default is 
+.B mozilla %s
+.TP
+.B GRACE_EDITOR
+Specifies the editor which is used to edit sets. Default is 
+.B xterm \-e vi
+.TP
+.B GRACE_PRINT_CMD
+The print command.
+.TP
+.B GRACE_FFTW_RAM_WISDOM
+and
+.B GRACE_FFTW_WISDOM_FILE
+A flag (0 or 1) and a file name which determine whether a FFT should use 
+`wisdom' when using the FFTW libraries.
+
+.SH FILES
+In many cases, when Grace needs to access a file given with a
+relative 
+.ft I
+pathname\c
+.ft R
+, it searches for the file along the following path:
+.ft I
+ ./pathname:./.grace/pathname:~/.grace/pathname:$GRACE_HOME/pathname
+.ft R
+
+The following files are of a special importance:
+
+.B gracerc
+- init file loaded upon start up.
+
+.B templates/Default.agr
+- the default template, loaded whenever a new project is started.
+
+.B fonts/FontDataBase
+- the file responsible for font configuration.
+
+.SH "SEE ALSO"
+grconvert(1), X(1) [or Xorg(1)], Grace User's Guide
+
+.SH HOME PAGE
+http://plasma-gate.weizmann.ac.il/Grace/
+
+.SH BUGS
+The best way to submit a bug report is using the "Help/Comments" menu entry.
+Alternatively, see the home page.
+
+.SH AUTHORS
+.B Grace
+is derived from 
+.B ACE/gr
+(a.k.a
+.B Xmgr
+) written by Paul J Turner. From version number 4.00, the development was taken
+over by a team of volunteers under the coordination of Evgeny Stambulchik.
+
+.SH COPYRIGHT
+Copyright (c) 1991-1995 Paul J Turner, Portland, OR
+.br
+Copyright (c) 1996-2007 Grace Development Team
+
+.SH LICENSE
+The program is distributed under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.

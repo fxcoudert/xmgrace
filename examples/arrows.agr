@@ -1,0 +1,422 @@
+# Grace project file
+#
+@version 50003
+@page size 612 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Thu May 13 18:52:21 1999"
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.1, 0.475, 0.875, 0.475
+@    line linewidth 0.5
+@    line linestyle 6
+@    line color 1
+@    line arrow 0
+@    line arrow type 0
+@    line arrow length 2.000000
+@    line arrow layout 1.000000, 0.000000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.45, 0.32, 0.45, 0.175
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow type 0
+@    line arrow length 2.000000
+@    line arrow layout 1.000000, 0.000000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.85, 0.495, 0.85, 0.175
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow type 0
+@    line arrow length 2.000000
+@    line arrow layout 1.000000, 0.000000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.55, 0.46, 0.55, 0.225
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow type 0
+@    line arrow length 2.000000
+@    line arrow layout 1.000000, 0.000000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.45, 0.185, 0.85, 0.185
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 3
+@    line arrow type 1
+@    line arrow length 2.000000
+@    line arrow layout 0.500000, 0.200000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.45, 0.24, 0.55, 0.24
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 3
+@    line arrow type 1
+@    line arrow length -2.000000
+@    line arrow layout 0.500000, 0.200000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.47, 0.3, 0.4, 0.3
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow type 1
+@    line arrow length 2.000000
+@    line arrow layout 0.500000, 0.200000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.47, 0.65, 0.4, 0.65
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow type 1
+@    line arrow length 2.000000
+@    line arrow layout 0.500000, 0.200000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.415, 0.65, 0.415, 0.3
+@    line linewidth 0.5
+@    line linestyle 1
+@    line color 1
+@    line arrow 3
+@    line arrow type 1
+@    line arrow length 2.000000
+@    line arrow layout 0.500000, 0.200000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.1, 0.64, 0.25, 0.85
+@    line linewidth 1.0
+@    line linestyle 1
+@    line color 2
+@    line arrow 3
+@    line arrow type 1
+@    line arrow length 3.000000
+@    line arrow layout 1.000000, 0.400000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.34, 0.86, 0.45, 0.8
+@    line linewidth 2.0
+@    line linestyle 3
+@    line color 3
+@    line arrow 2
+@    line arrow type 2
+@    line arrow length 3.000000
+@    line arrow layout 0.800000, -0.300000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.08, 0.32, 0.25, 0.15
+@    line linewidth 6.0
+@    line linestyle 5
+@    line color 14
+@    line arrow 2
+@    line arrow type 2
+@    line arrow length 4.000000
+@    line arrow layout 2.000000, 0.400000
+@line def
+@with line
+@    line on
+@    line loctype world
+@    line g0
+@    line 0.7, 0.85, 0.85, 0.85
+@    line linewidth 3.0
+@    line linestyle 1
+@    line color 8
+@    line arrow 2
+@    line arrow type 0
+@    line arrow length 3.000000
+@    line arrow layout 0.900000, 0.000000
+@line def
+@with string
+@    string on
+@    string loctype world
+@    string g0
+@    string 0.6625, 0.2
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 2
+@    string char size 1.000000
+@    string def "L"
+@with string
+@    string on
+@    string loctype world
+@    string g0
+@    string 0.5, 0.255
+@    string color 1
+@    string rot 0
+@    string font 0
+@    string just 2
+@    string char size 1.000000
+@    string def "l"
+@with string
+@    string on
+@    string loctype world
+@    string g0
+@    string 0.395, 0.53
+@    string color 1
+@    string rot 90
+@    string font 0
+@    string just 2
+@    string char size 1.000000
+@    string def "d"
+@with string
+@    string on
+@    string loctype world
+@    string g0
+@    string 0.24, 0.74
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.800000
+@    string def "The arrow shape is defined by the three parameters:"
+@with string
+@    string on
+@    string loctype world
+@    string g0
+@    string 0.24, 0.7
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 0.800000
+@    string def "length (\+\f{Times-Roman}L\f{}\N), and two layout form factors, \+\f{Times-Roman}d/L\f{}\N and \+\f{Times-Roman}l/L\f{}\N"
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type Fixed
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world xmin 0
+@    world xmax 0.9
+@    world ymin 0.3
+@    world ymax 0.7
+@    stack world 0, 0, 0, 0
+@    view xmin 0.100000
+@    view xmax 0.900000
+@    view ymin 0.100000
+@    view ymax 0.850000
+@    title "Anatomy of arrows"
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  off
+@    yaxis  off
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend x1 0.85
+@    legend y1 0.8
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 10.0
+@    frame color 11
+@    frame pattern 26
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol color 1
+@    s0 symbol pattern 1
+@    s0 symbol fill color 1
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 1.0
+@    s0 line color 4
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 1
+@    s0 fill rule 0
+@    s0 fill color 4
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar type both
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 comment "Editor"
+@    s0 legend  ""
+@target G0.S0
+@type xy
+            0.15              0.5
+            0.55              0.5
+            0.45             0.65
+            0.85            0.475
+            0.45              0.3
+            0.55             0.45
+            0.15             0.45
+          0.1525             0.46
+          0.1475             0.47
+          0.1525             0.48
+          0.1475             0.49
+            0.15              0.5
+&

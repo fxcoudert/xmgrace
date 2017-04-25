@@ -1,0 +1,14 @@
+
+Contents of auxiliary:
+
+convcal.c  -  Source for a utility to convert between different
+              date/time formats
+
+magic.grace - Section for magic(4) so file(1) would recognize ACE/gr and Grace
+              file types.
+	      If it isn't already in your magic number file (probably
+              /etc/magic) you may add it simply by this command:
+	          cat magic.grace >> /etc/magic
+
+fdf2fit     - Script to convert Origin-4 .fdf fit parameter files to Grace
+              format
