@@ -67,10 +67,6 @@
 #  include <X11/Xmu/Editres.h>
 #endif
 
-#if XmVersion < 2000
-#  define XmStringConcatAndFree(a, b) XmStringConcat(a, b); XmStringFree(a); XmStringFree(b)
-#endif
-
 #include "Tab.h"
 #include "motifinc.h"
 
@@ -1036,14 +1032,12 @@ static OptionItem fsb_items[] = {
 
 #define FSB_ITEMS_NUM   sizeof(fsb_items)/sizeof(OptionItem)
 
-#if XmVersion >= 2000    
 static void show_hidden_cb(int onoff, void *data)
 {
     FSBStructure *fsb = (FSBStructure *) data;
     XtVaSetValues(fsb->FSB, XmNfileFilterStyle,
         onoff ? XmFILTER_NONE:XmFILTER_HIDDEN_FILES, NULL);
 }
-#endif
 
 FSBStructure *CreateFileSelectionBox(Widget parent, char *s)
 {
@@ -1073,11 +1067,9 @@ FSBStructure *CreateFileSelectionBox(Widget parent, char *s)
     AddHelpCB(retval->FSB, "doc/UsersGuide.html#FS-dialog");
     
     retval->rc = XmCreateRowColumn(retval->FSB, "rc", NULL, 0);
-#if XmVersion >= 2000    
     button = CreateToggleButton(retval->rc, "Show hidden files");
     AddToggleButtonCB(button, show_hidden_cb, retval);
     XtVaSetValues(retval->FSB, XmNfileFilterStyle, XmFILTER_HIDDEN_FILES, NULL);
-#endif
     fr = CreateFrame(retval->rc, NULL);
     form = XtVaCreateWidget("form", xmFormWidgetClass, fr, NULL);
     opt = CreateOptionChoice(form, "Chdir to:", 1, FSB_ITEMS_NUM, fsb_items);
@@ -1621,11 +1613,7 @@ GraphPopupMenu *CreateGraphPopupEntries(ListStructure *listp)
     graph_popup_menu = xmalloc(sizeof(GraphPopupMenu));
 
     popup = XmCreatePopupMenu(listp->list, "graphPopupMenu", NULL, 0);
-#if XmVersion >= 2000    
     XtVaSetValues(popup, XmNpopupEnabled, XmPOPUP_DISABLED, NULL);
-#else
-    XtVaSetValues(popup, XmNpopupEnabled, False, NULL);
-#endif
     graph_popup_menu->popup = popup;
     
     graph_popup_menu->label_item = CreateMenuLabel(popup, "Selection:");
@@ -2249,11 +2237,7 @@ SetPopupMenu *CreateSetPopupEntries(ListStructure *listp)
     
     set_popup_menu = xmalloc(sizeof(SetPopupMenu));
     popup = XmCreatePopupMenu(listp->list, "setPopupMenu", NULL, 0);
-#if XmVersion >= 2000    
     XtVaSetValues(popup, XmNpopupEnabled, XmPOPUP_DISABLED, NULL);
-#else
-    XtVaSetValues(popup, XmNpopupEnabled, False, NULL);
-#endif
     set_popup_menu->popup = popup;
     
     set_popup_menu->label_item = CreateMenuLabel(popup, "Selection:");
@@ -2801,9 +2785,7 @@ Widget CreateScale(Widget parent, char *s, int min, int max, int delta)
 	XmNshowValue, True,
 	XmNprocessingDirection, XmMAX_ON_RIGHT,
 	XmNorientation, XmHORIZONTAL,
-#if XmVersion >= 2000    
 	XmNsliderMark, XmROUND_MARK,
-#endif
 	NULL);
 
     XmStringFree(str);
