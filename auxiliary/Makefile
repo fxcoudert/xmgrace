@@ -1,14 +1,12 @@
 #####################################################
 # Makefile for auxiliary stuff of Grace             #
 #####################################################
-# You should not change anything here.              #
-#####################################################
 
 TOP=..
 
 include $(TOP)/Make.conf
 
-AUXILIARIES = README convcal.c magic.grace
+AUXILIARIES = README convcal.c
 PROGRAMS = convcal$(EXE)
 SCRIPTS = fdf2fit
 
