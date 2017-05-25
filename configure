@@ -2550,8 +2550,6 @@ ac_config_headers="$ac_config_headers config.h:ac-tools/config.h.in"
 
 
 
-
-
 if test "x${prefix}" = "xNONE"
 then
   GRACE_HOME=${ac_default_prefix}/grace
@@ -6222,18 +6220,6 @@ _ACEOF
 
 fi
 fi
-
-
-for ac_func in setlocale
-do :
-  ac_fn_c_check_func "$LINENO" "setlocale" "ac_cv_func_setlocale"
-if test "x$ac_cv_func_setlocale" = xyes; then :
-  cat >>confdefs.h <<_ACEOF
-#define HAVE_SETLOCALE 1
-_ACEOF
-
-fi
-done
 
 
 

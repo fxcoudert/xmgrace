@@ -57,10 +57,7 @@
 #  include <sys/select.h>
 #endif
 #include <limits.h>
-
-#ifdef HAVE_SETLOCALE
-#  include <locale.h>
-#endif
+#include <locale.h>
 
 #include "buildinfo.h"
 
@@ -1406,7 +1403,6 @@ void msleep_wrap(unsigned int msec)
     select(0, NULL, NULL, NULL, &timeout);    
 }
 
-#ifdef HAVE_SETLOCALE
 static int need_locale = FALSE;
 static char *system_locale_string, *posix_locale_string;
 
@@ -1439,16 +1435,6 @@ void set_locale_num(int flag)
         }
     }
 }
-#else
-int init_locale(void)
-{
-    return RETURN_SUCCESS;
-}
-
-void set_locale_num(int flag)
-{
-}
-#endif
 
 /*
  * Build info stuff

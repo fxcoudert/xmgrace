@@ -415,9 +415,6 @@ AC_CHECK_FUNCS(on_exit)
 
 ICE_CHECK_DECL(drand48, stdlib.h)
 
-dnl **** Check for locale
-AC_CHECK_FUNCS(setlocale)
-
 dnl **** Check for buggy realloc()
 ACX_CHECK_REALLOC(AC_DEFINE(REALLOC_IS_BUGGY))
 
