@@ -404,7 +404,6 @@ dnl **** Checks for library functions.
 AC_TYPE_SIGNAL
 AC_FUNC_ALLOCA
 AC_CHECK_FUNCS(getcwd gethostname)
-AC_CHECK_FUNCS(strstr)
 AC_CHECK_FUNCS(memcpy memmove)
 AC_CHECK_FUNCS(unlink fcntl)
 AC_CHECK_FUNCS(popen)

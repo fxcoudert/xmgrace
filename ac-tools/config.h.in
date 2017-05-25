@@ -142,9 +142,6 @@
 /* Define if you have the on_exit function.  */
 #undef HAVE_ON_EXIT
 
-/* Define if you have the strstr function.  */
-#undef HAVE_STRSTR
-
 /* Define if you have the dlopen function.  */
 #undef HAVE_DLOPEN
 

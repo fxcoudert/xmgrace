@@ -6059,17 +6059,6 @@ _ACEOF
 fi
 done
 
-for ac_func in strstr
-do :
-  ac_fn_c_check_func "$LINENO" "strstr" "ac_cv_func_strstr"
-if test "x$ac_cv_func_strstr" = xyes; then :
-  cat >>confdefs.h <<_ACEOF
-#define HAVE_STRSTR 1
-_ACEOF
-
-fi
-done
-
 for ac_func in memcpy memmove
 do :
   as_ac_var=`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
