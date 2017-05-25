@@ -393,11 +393,7 @@ GracePrintf(const char* fmt, ...)
     }
     /* Print to the string buffer according to the function arguments */
     va_start (ap, fmt);
-#if defined(HAVE_VSNPRINTF)
     nchar = vsnprintf (str, bufsize - 2, fmt, ap);
-#else
-    nchar = vsprintf (str, fmt, ap);
-#endif
     va_end (ap);
     nchar++;               /* This is for the appended "\n" */
     if (GraceCommand (str) == -1) {

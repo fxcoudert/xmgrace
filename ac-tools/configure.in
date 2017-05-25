@@ -410,7 +410,6 @@ AC_CHECK_FUNCS(unlink fcntl)
 AC_CHECK_FUNCS(popen)
 AC_CHECK_FUNCS(gettimeofday)
 AC_CHECK_FUNCS(fnmatch)
-AC_CHECK_FUNCS(vsnprintf)
 AC_CHECK_FUNCS(on_exit)
 
 ICE_CHECK_DECL(drand48, stdlib.h)

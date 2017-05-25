@@ -6127,17 +6127,6 @@ _ACEOF
 fi
 done
 
-for ac_func in vsnprintf
-do :
-  ac_fn_c_check_func "$LINENO" "vsnprintf" "ac_cv_func_vsnprintf"
-if test "x$ac_cv_func_vsnprintf" = xyes; then :
-  cat >>confdefs.h <<_ACEOF
-#define HAVE_VSNPRINTF 1
-_ACEOF
-
-fi
-done
-
 for ac_func in on_exit
 do :
   ac_fn_c_check_func "$LINENO" "on_exit" "ac_cv_func_on_exit"
